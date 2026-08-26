@@ -50,7 +50,6 @@ class UserRef(BaseModel):
     userid: str
 
 
-
 # ---------- Enums (select fields) ----------
 class ProjectStatus(str, Enum):
     SCOPING = "🔵 Scoping"

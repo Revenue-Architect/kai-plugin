@@ -3,8 +3,8 @@
   "schema_version": 1,
   "app_info": {
     "display_name": "Kaizen Commerce",
-    "subtitle": "Retail commerce intelligence",
-    "description": "Kaizen Commerce helps merchant and solution teams search verified commerce knowledge, assess Shopify POS and retail migration opportunities, map architecture, draft evidence-labeled delivery documents, and—when each user signs in—read, preview, and commit bounded CRM and project-management changes in KaizenOS.",
+    "subtitle": "Private commerce tools",
+    "description": "A private workspace tool for authorized operators handling commerce research, planning, and connected records. Access requires sign-in and permissions; write actions require review and approval.",
     "category": "BUSINESS"
   },
   "tools": {

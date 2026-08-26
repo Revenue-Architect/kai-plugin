@@ -1,7 +1,7 @@
 {
   "name": "kaizen-commerce",
   "version": "0.4.0+codex.20260826170000",
-  "description": "Scope-first Shopify POS, B2B, retail operations, migration, proposal, delivery intelligence, and authenticated KaizenOS operations.",
+  "description": "Private commerce workspace tools for authorized operators.",
   "author": {
     "name": "Kaizen Commerce",
     "url": "https://github.com/Kaizen-Commerce"
@@ -19,8 +19,8 @@
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "Kaizen Commerce",
-    "shortDescription": "Shopify POS and retail commerce delivery intelligence.",
-    "longDescription": "Kaizen Commerce helps merchants and solution teams reason through Shopify POS, B2B, retail operations, migrations, integrations, scope, proposals, and delivery with evidence and commercial guardrails. When authenticated, its bounded KaizenOS adapter can read canonical CRM and delivery records and preview or commit named CRM and project-management writes after explicit operator approval.",
+    "shortDescription": "Private commerce workspace tools.",
+    "longDescription": "A private workspace tool for authorized operators handling commerce research, planning, and connected records. Access requires sign-in and permissions; write actions require review and approval.",
     "developerName": "Kaizen Commerce",
     "category": "Business",
     "capabilities": [
@@ -29,9 +29,9 @@
       "Interactive"
     ],
     "defaultPrompt": [
-      "Prep me for a Shopify POS discovery call.",
-      "Assess this merchant's migration and operations risks.",
-      "Draft a scope-first proposal or SOW."
+      "Review a commerce workspace.",
+      "Assess an operations workflow.",
+      "Draft a planning document."
     ]
   },
   "apps": "./.app.json"
