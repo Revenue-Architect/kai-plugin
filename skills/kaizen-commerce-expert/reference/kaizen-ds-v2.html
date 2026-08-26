@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KaizenCommerce Design System</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --black:  #0e0e0e;
+  --mid:    #181818;
+  --dim:    #222222;
+  --white:  #F5F7F9;
+  --red:    #a8201a;
+  --red-lt: #a8201a;
+  --navy:   #0D1B2A;
+  --nav-lt: #aaccdb;
+  --serif:  'EB Garamond', Georgia, serif;
+  --sans:   'Hanken Grotesk', sans-serif;
+}
+body{background:var(--white);color:var(--black);font-family:var(--sans);padding:64px 56px;max-width:1100px;margin:0 auto}
+h1{font-family:var(--serif);font-size:56px;font-weight:500;line-height:1;letter-spacing:-0.02em;margin-bottom:8px}
+.doc-sub{font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(14,14,14,0.5);margin-bottom:80px}
+.section{margin-bottom:72px}
+.sec-label{font-size:10px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:rgba(14,14,14,0.42);margin-bottom:24px;display:flex;align-items:center;gap:16px}
+.sec-label::after{content:'';flex:1;height:1px;background:rgba(14,14,14,0.08)}
+h2{font-family:var(--serif);font-size:32px;font-weight:500;margin-bottom:6px}
+p.note{font-size:13px;line-height:1.7;color:rgba(14,14,14,0.65);max-width:560px;margin-bottom:32px}
+
+/* COLOR SWATCHES */
+.swatches{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:rgba(14,14,14,0.08);border:1px solid rgba(14,14,14,0.08);margin-bottom:8px}
+.swatch{padding:0}
+.swatch-block{height:96px}
+.swatch-info{padding:14px 16px;background:var(--white)}
+.swatch-name{font-size:11px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;color:var(--black);margin-bottom:4px}
+.swatch-hex{font-family:var(--serif);font-size:14px;font-style:italic;color:rgba(14,14,14,0.6)}
+.swatch-role{font-size:10px;color:rgba(14,14,14,0.55);margin-top:4px;line-height:1.4}
+.color-rule{font-size:12px;line-height:1.65;color:rgba(14,14,14,0.45);padding:16px 0;border-top:1px solid rgba(14,14,14,0.08)}
+.color-rule strong{color:var(--black);font-weight:700}
+
+/* TYPE SPECIMENS */
+.type-rows{display:flex;flex-direction:column;gap:0;border:1px solid rgba(14,14,14,0.08)}
+.type-row{display:grid;grid-template-columns:200px 1fr;gap:0;border-bottom:1px solid rgba(14,14,14,0.06)}
+.type-row:last-child{border-bottom:none}
+.type-meta{padding:20px 24px;border-right:1px solid rgba(14,14,14,0.06);display:flex;flex-direction:column;justify-content:center}
+.type-token{font-size:10px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:rgba(14,14,14,0.5);margin-bottom:6px}
+.type-spec{font-size:11px;color:rgba(14,14,14,0.45);line-height:1.6}
+.type-spec code{font-size:10px;background:rgba(14,14,14,0.06);padding:1px 5px}
+.type-sample{padding:24px 32px;display:flex;align-items:center}
+
+/* SPACING */
+.space-rows{display:flex;flex-direction:column;gap:12px}
+.space-row{display:flex;align-items:center;gap:24px}
+.space-bar-wrap{width:240px;flex-shrink:0}
+.space-bar{background:var(--red);height:12px}
+.space-label{font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(14,14,14,0.5)}
+.space-val{font-size:12px;color:rgba(14,14,14,0.55);margin-left:8px}
+
+/* COMPONENTS */
+.comp-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(14,14,14,0.08);border:1px solid rgba(14,14,14,0.08);margin-bottom:32px}
+.comp-cell{padding:40px;background:var(--white)}
+.comp-cell.dark{background:var(--black)}
+.comp-cell.navy{background:var(--navy)}
+.comp-cell.red{background:var(--red)}
+.comp-lbl{font-size:10px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:rgba(14,14,14,0.5);margin-bottom:24px;display:block}
+.comp-cell.dark .comp-lbl,.comp-cell.navy .comp-lbl,.comp-cell.red .comp-lbl{color:rgba(245,247,249,0.25)}
+
+/* BUTTON specimens */
+.btn-demo{display:inline-block;font-family:var(--sans);font-size:10px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;padding:12px 28px;text-decoration:none;cursor:default;margin-right:16px;margin-bottom:12px}
+.btn-primary{background:var(--white);color:var(--black)}
+.btn-primary-dark{background:var(--black);color:var(--white)}
+.btn-ghost{border-bottom:1px solid rgba(14,14,14,0.2);color:rgba(14,14,14,0.5);padding:0 0 3px}
+.btn-ghost-lt{border-bottom:1px solid rgba(245,247,249,0.2);color:rgba(245,247,249,0.5);padding:0 0 3px}
+
+/* USAGE RULES */
+.rules{display:flex;flex-direction:column;gap:0;border:1px solid rgba(14,14,14,0.08)}
+.rule-row{display:grid;grid-template-columns:40px 1fr;border-bottom:1px solid rgba(14,14,14,0.06)}
+.rule-row:last-child{border-bottom:none}
+.rule-mark{padding:20px 0 20px 20px;font-family:var(--serif);font-size:20px;font-weight:500;color:var(--red)}
+.rule-txt{padding:20px 24px;font-size:13px;line-height:1.65;color:rgba(14,14,14,0.72)}
+.rule-txt strong{color:var(--black);font-weight:700}
+
+/* DO / DONT */
+.do-dont{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(14,14,14,0.08);border:1px solid rgba(14,14,14,0.08);margin-top:24px}
+.do{background:#f0faf5;padding:28px 32px}
+.dont{background:#fff5f5;padding:28px 32px}
+.do-label{font-size:10px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:#1a7a40;margin-bottom:12px}
+.dont-label{font-size:10px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--red);margin-bottom:12px}
+.do-txt,.dont-txt{font-size:13px;line-height:1.65;color:rgba(14,14,14,0.72)}
+</style>
+
+<style>
+.version-tabs {
+  position: fixed;
+  top: 20px;
+  right: 40px;
+  display: flex;
+  gap: 12px;
+  z-index: 999;
+}
+.tab-btn {
+  padding: 10px 20px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  background: #111;
+  color: #F5F7F9;
+  transition: background 0.2s;
+}
+.tab-btn.active {
+  background: #a8201a;
+}
+.tab-btn:hover {
+  background: #a8201a;
+}
+.version {
+  display: none;
+}
+.version.active {
+  display: block;
+}
+@media (max-width: 640px) {
+  .version-tabs {
+    top: 12px;
+    right: 16px;
+    gap: 8px;
+  }
+  .tab-btn {
+    padding: 8px 14px;
+    font-size: 10px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="version-tabs">
+  <button class="tab-btn active" onclick="switchVersion('light')">Light</button>
+  <button class="tab-btn" onclick="switchVersion('dark')">Dark</button>
+</div>
+
+<div id="light" class="version active">
+
+
+<h1>KaizenCommerce<br>Design System</h1>
+<div class="doc-sub">Brand Specification v1.0 · 2024</div>
+
+<!-- ── COLORS ── -->
+<div class="section">
+  <div class="sec-label">01 · Color</div>
+  <h2>Four-color palette. No exceptions.</h2>
+  <p class="note">Every color serves a structural role. Adding new colors is a breaking change. When in doubt, use Black.</p>
+
+  <div class="swatches">
+    <div class="swatch">
+      <div class="swatch-block" style="background:#0e0e0e"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Black</div>
+        <div class="swatch-hex">#0e0e0e</div>
+        <div class="swatch-role">Primary background. Default surface. 60–70% visual weight.</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-block" style="background:#181818"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Mid Black</div>
+        <div class="swatch-hex">#181818</div>
+        <div class="swatch-role">Secondary cells. Contrast against primary black only.</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-block" style="background:#0D1B2A"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Deep Navy</div>
+        <div class="swatch-hex">#0D1B2A</div>
+        <div class="swatch-role">Process, trust, featured context. Blueprint &amp; Gold tier.</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-block" style="background:#a8201a"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Red</div>
+        <div class="swatch-hex">#a8201a</div>
+        <div class="swatch-role">Problem framing, primary CTA, urgency. Use sparingly.</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-block" style="background:#F5F7F9;border-bottom:1px solid rgba(14,14,14,0.08)"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">White</div>
+        <div class="swatch-hex">#F5F7F9</div>
+        <div class="swatch-role">Maximum contrast. CTA buttons on dark. Rare emphasis only.</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-block" style="background:#aaccdb"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Ice Blue</div>
+        <div class="swatch-hex">#aaccdb</div>
+        <div class="swatch-role">Text accent on Navy only. Never used as a background.</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:0;border:1px solid rgba(14,14,14,0.08);border-top:none">
+    <div class="color-rule"><strong>Black dominates.</strong> 60–70% of every layout. It is the resting state of the brand.</div>
+    <div class="color-rule" style="border-top:1px solid rgba(14,14,14,0.08)"><strong>Red means action or pain.</strong> Problem sections and primary CTAs. One red zone per page section maximum.</div>
+    <div class="color-rule" style="border-top:1px solid rgba(14,14,14,0.08)"><strong>Navy means process and trust.</strong> Reserved for Blueprint steps, featured tiers, and credentialing moments.</div>
+    <div class="color-rule" style="border-top:1px solid rgba(14,14,14,0.08)"><strong>White is a signal, not a field.</strong> Use only for maximum-contrast buttons and isolated highlight moments — never as a section background.</div>
+    <div class="color-rule" style="border-top:1px solid rgba(14,14,14,0.08)"><strong>Ice Blue is Navy's accent.</strong> Text only, on Navy backgrounds. Never use as fill, never use on black.</div>
+  </div>
+</div>
+
+<!-- ── TYPOGRAPHY ── -->
+<div class="section">
+  <div class="sec-label">02 · Typography</div>
+  <h2>Two typefaces. One purpose each.</h2>
+  <p class="note">EB Garamond carries authority, editorial weight, and numbers. Hanken Grotesk carries UI, labels, and functional copy. Never swap their roles.</p>
+
+  <div class="type-rows">
+    <div class="type-row">
+      <div class="type-meta">
+        <div class="type-token">Display</div>
+        <div class="type-spec">EB Garamond 500<br><code>clamp(52px, 6.5vw, 96px)</code><br>LH 1.0 · LS −0.02em</div>
+      </div>
+      <div class="type-sample">
+        <span style="font-family:'EB Garamond',serif;font-size:56px;font-weight:500;line-height:1;letter-spacing:-0.02em">Ready to make <em>the move?</em></span>
+      </div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta">
+        <div class="type-token">Display SM</div>
+        <div class="type-spec">EB Garamond 500<br><code>clamp(32px, 4vw, 56px)</code><br>LH 1.06 · LS −0.015em</div>
+      </div>
+      <div class="type-sample">
+        <span style="font-family:'EB Garamond',serif;font-size:44px;font-weight:500;line-height:1.06;letter-spacing:-0.015em">Every engagement starts here.</span>
+      </div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta">
+        <div class="type-token">Stat</div>
+        <div class="type-spec">EB Garamond 500<br><code>clamp(44px, 5vw, 72px)</code><br>LH 1 · LS −0.02em</div>
+      </div>
+      <div class="type-sample">
+        <span style="font-family:'EB Garamond',serif;font-size:64px;font-weight:500;line-height:1;letter-spacing:-0.02em">48h &nbsp;·&nbsp; Zero &nbsp;·&nbsp; $1K</span>
+      </div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta">
+        <div class="type-token">Body Serif</div>
+        <div class="type-spec">EB Garamond 400<br><code>18–22px</code><br>LH 1.5</div>
+      </div>
+      <div class="type-sample">
+        <span style="font-family:'EB Garamond',serif;font-size:20px;font-weight:400;line-height:1.5">Three locations. Three counts. None of them agree with the spreadsheet your ops manager built in March.</span>
+      </div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta">
+        <div class="type-token">Eyebrow</div>
+        <div class="type-spec">Hanken Grotesk 800<br><code>10px</code><br>LS 0.14em · UPPERCASE</div>
+      </div>
+      <div class="type-sample">
+        <span style="font-family:'Hanken Grotesk',sans-serif;font-size:10px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:rgba(14,14,14,0.55);display:flex;align-items:center;gap:14px"><span style="width:20px;height:1px;background:currentColor;display:inline-block;flex-shrink:0"></span>Shopify Implementation · Montreal</span>
+      </div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta">
+        <div class="type-token">UI Label</div>
+        <div class="type-spec">Hanken Grotesk 700<br><code>13–14px</code><br>LS −0.01em</div>
+      </div>
+      <div class="type-sample">
+        <span style="font-family:'Hanken Grotesk',sans-serif;font-size:14px;font-weight:700;letter-spacing:-0.01em">Discovery Call</span>
+      </div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta">
+        <div class="type-token">Body Sans</div>
+        <div class="type-spec">Hanken Grotesk 400<br><code>13–15px</code><br>LH 1.65–1.75</div>
+      </div>
+      <div class="type-sample">
+        <span style="font-family:'Hanken Grotesk',sans-serif;font-size:13px;font-weight:400;line-height:1.7;color:rgba(14,14,14,0.55)">We map your full stack — POS, ERP, inventory, integrations, staff workflows. No assumptions, no templated questions. Forty-five minutes.</span>
+      </div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta">
+        <div class="type-token">Ghost Input</div>
+        <div class="type-spec">EB Garamond 400 Italic<br><code>24–26px</code><br>Bottom-border only</div>
+      </div>
+      <div class="type-sample">
+        <span style="font-family:'EB Garamond',serif;font-size:26px;font-style:italic;color:rgba(14,14,14,0.25);border-bottom:2px solid rgba(14,14,14,0.2);display:inline-block;padding-bottom:4px">your@email.com</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── GRID / SPACING ── -->
+<div class="section">
+  <div class="sec-label">03 · Grid &amp; Spacing</div>
+  <h2>Bento grid. Hairline gaps.</h2>
+  <p class="note">The layout system is a single flat grid. Hierarchy comes from background fills, not elevation. The 1px gap between cells IS the border — do not add additional CSS borders to cells.</p>
+
+  <div class="space-rows" style="margin-bottom:32px">
+    <div class="space-row">
+      <div class="space-bar-wrap"><div class="space-bar" style="width:8px"></div></div>
+      <div class="space-label">Base Unit</div>
+      <div class="space-val">8px — all spacing is a multiple of this</div>
+    </div>
+    <div class="space-row">
+      <div class="space-bar-wrap"><div class="space-bar" style="width:1px;background:rgba(14,14,14,0.3)"></div></div>
+      <div class="space-label">Grid Gap</div>
+      <div class="space-val">1px — the gap between bento cells; sets the grid line color via wrapper background</div>
+    </div>
+    <div class="space-row">
+      <div class="space-bar-wrap"><div class="space-bar" style="width:40px"></div></div>
+      <div class="space-label">Page Margin</div>
+      <div class="space-val">40px — outer margin of all bento wrappers</div>
+    </div>
+    <div class="space-row">
+      <div class="space-bar-wrap"><div class="space-bar" style="width:60px"></div></div>
+      <div class="space-label">Cell Padding</div>
+      <div class="space-val">56px top/bottom · 60px left/right — default for full cells</div>
+    </div>
+    <div class="space-row">
+      <div class="space-bar-wrap"><div class="space-bar" style="width:44px"></div></div>
+      <div class="space-label">Compact Pad</div>
+      <div class="space-val">44px — stat cells and secondary cells</div>
+    </div>
+  </div>
+
+  <div class="rules">
+    <div class="rule-row">
+      <div class="rule-mark">→</div>
+      <div class="rule-txt"><strong>Bento wrappers have borders, cells do not.</strong> Set <code>background: rgba(245,247,249,0.07)</code> on the wrapper and <code>gap: 1px</code>. The wrapper color bleeds through the gap to form grid lines.</div>
+    </div>
+    <div class="rule-row">
+      <div class="rule-mark">→</div>
+      <div class="rule-txt"><strong>No border-radius anywhere.</strong> 0px on all elements — buttons, inputs, cells, images. The sharp grid is the brand.</div>
+    </div>
+    <div class="rule-row">
+      <div class="rule-mark">→</div>
+      <div class="rule-txt"><strong>No shadows or Z-axis depth.</strong> Hierarchy is tonal: use background fill contrast, not elevation. Active states are high-contrast reversals.</div>
+    </div>
+    <div class="rule-row">
+      <div class="rule-mark">→</div>
+      <div class="rule-txt"><strong>Adjacent bentos share a border.</strong> Remove duplicate border with <code>border-top: none</code> on all sections after the first. The page reads as one continuous grid.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── COMPONENTS ── -->
+<div class="section">
+  <div class="sec-label">04 · Components</div>
+  <h2>Flat primitives only.</h2>
+  <p class="note">No cards, no modals, no floating layers. Every component is either a cell-fill, a text style, or a line.</p>
+
+  <div class="comp-grid">
+    <div class="comp-cell dark">
+      <span class="comp-lbl">Buttons — on dark</span>
+      <div>
+        <span class="btn-demo btn-primary">Book Blueprint</span>
+        <br>
+        <a class="btn-demo btn-ghost-lt" style="font-family:'Hanken Grotesk',sans-serif;font-size:10px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;border-bottom:1px solid rgba(245,247,249,0.2);color:rgba(245,247,249,0.5);padding-bottom:3px">See our tiers →</a>
+      </div>
+    </div>
+    <div class="comp-cell">
+      <span class="comp-lbl">Buttons — on light</span>
+      <div>
+        <span class="btn-demo btn-primary-dark">Book Blueprint</span>
+        <br>
+        <a class="btn-demo" style="font-family:'Hanken Grotesk',sans-serif;font-size:10px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;border-bottom:1px solid rgba(14,14,14,0.15);color:rgba(14,14,14,0.45);padding-bottom:3px">See our tiers →</a>
+      </div>
+    </div>
+    <div class="comp-cell navy">
+      <span class="comp-lbl">Eyebrow — on navy</span>
+      <div style="font-family:'Hanken Grotesk',sans-serif;font-size:10px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:rgba(170,204,219,0.45);display:flex;align-items:center;gap:14px">
+        <span style="width:20px;height:1px;background:rgba(170,204,219,0.3);display:inline-block"></span>
+        Blueprint Diagnostic
+      </div>
+    </div>
+    <div class="comp-cell red">
+      <span class="comp-lbl">Ghost input — on red</span>
+      <div style="border-bottom:2px solid rgba(245,247,249,0.3);display:flex;max-width:320px">
+        <span style="font-family:'EB Garamond',serif;font-size:24px;font-style:italic;color:rgba(245,247,249,0.25);padding-bottom:8px;flex:1">your@email.com</span>
+        <span style="font-family:'Hanken Grotesk',sans-serif;font-size:10px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:rgba(245,247,249,0.6);padding-bottom:8px;padding-left:20px;align-self:flex-end">Send →</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="do-dont">
+    <div class="do">
+      <div class="do-label">✓ Do</div>
+      <div class="do-txt">Use flat background fills to define cell context. Let the 1px gap be the border. Use Garamond for numbers and editorial copy. Use ghost inputs with bottom-border only. Keep all interactive elements as full-width rectangular blocks.</div>
+    </div>
+    <div class="dont">
+      <div class="dont-label">✗ Don't</div>
+      <div class="dont-txt">Add border-radius to anything. Use box-shadows. Nest cards inside cells. Use purple, orange, teal, or any color outside the system. Use Inter, Space Grotesk, or Geist. Add decorative dividers, horizontal rules styled as accents, or gradient overlays.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── VOICE / COLOR SEMANTICS ── -->
+<div class="section">
+  <div class="sec-label">05 · Color Semantics</div>
+  <h2>Color assigns meaning, not mood.</h2>
+  <p class="note">The same color means the same thing everywhere — across the website, decks, proposals, and print.</p>
+
+  <div class="rules">
+    <div class="rule-row" style="background:rgba(168,32,26,0.04)">
+      <div class="rule-mark" style="color:var(--red)">R</div>
+      <div class="rule-txt"><strong>Red = Problem &amp; Action.</strong> Pain points, obstacles, urgency, and primary CTAs. If you're using red, something is wrong (pain framing) or something must be done right now (CTA).</div>
+    </div>
+    <div class="rule-row" style="background:rgba(13,27,42,0.04)">
+      <div class="rule-mark" style="color:var(--navy)">N</div>
+      <div class="rule-txt"><strong>Navy = Process &amp; Trust.</strong> The Blueprint diagnostic, methodology, featured tier. Moments where you're building credibility or walking someone through a structured approach.</div>
+    </div>
+    <div class="rule-row">
+      <div class="rule-mark">B</div>
+      <div class="rule-txt"><strong>Black = Default &amp; Authority.</strong> Everything that isn't red or navy. The brand rests here. Black cells are neutral — they don't signal anything beyond "this is information."</div>
+    </div>
+    <div class="rule-row" style="background:rgba(245,247,249,0.5)">
+      <div class="rule-mark">W</div>
+      <div class="rule-txt"><strong>White = Maximum Contrast Only.</strong> The primary CTA button on dark backgrounds. Occasionally a single emphasis cell in a hero bento. Never a section background. White is used to create a single focal point per view.</div>
+    </div>
+  </div>
+</div>
+
+<div style="margin-top:80px;padding-top:24px;border-top:1px solid rgba(14,14,14,0.08);display:flex;justify-content:space-between;align-items:center">
+  <div style="font-size:11px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:rgba(14,14,14,0.25)">KaizenCommerce · Design System v1.0</div>
+  <div style="font-family:'EB Garamond',serif;font-size:14px;font-style:italic;color:rgba(14,14,14,0.3)">改善 — continuous improvement</div>
+</div>
+
+
+</div>
+
+<div id="dark" class="version">
+
+
+<h1>KaizenCommerce<br>Design System</h1>
+<div class="doc-sub">Brand Specification v1.0 · 2024</div>
+
+<!-- ── COLORS ── -->
+<div class="section">
+  <div class="sec-label">01 · Color</div>
+  <h2>Four-color palette. No exceptions.</h2>
+  <p class="note">Every color serves a structural role. Adding new colors is a breaking change. When in doubt, use Black.</p>
+
+  <div class="swatches">
+    <div class="swatch">
+      <div class="swatch-block" style="background:#0e0e0e"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Black</div>
+        <div class="swatch-hex">#0e0e0e</div>
+        <div class="swatch-role">Primary background. Default surface. 60–70% visual weight.</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-block" style="background:#181818"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Mid Black</div>
+        <div class="swatch-hex">#181818</div>
+        <div class="swatch-role">Secondary cells. Contrast against primary black only.</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-block" style="background:#0D1B2A"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Deep Navy</div>
+        <div class="swatch-hex">#0D1B2A</div>
+        <div class="swatch-role">Process, trust, featured context. Blueprint &amp; Gold tier.</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-block" style="background:#a8201a"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Red</div>
+        <div class="swatch-hex">#a8201a</div>
+        <div class="swatch-role">Problem framing, primary CTA, urgency. Use sparingly.</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-block" style="background:#F5F7F9;border-bottom:1px solid rgba(245,247,249,0.08)"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">White</div>
+        <div class="swatch-hex">#F5F7F9</div>
+        <div class="swatch-role">Maximum contrast. CTA buttons on dark. Rare emphasis only.</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-block" style="background:#aaccdb"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Ice Blue</div>
+        <div class="swatch-hex">#aaccdb</div>
+        <div class="swatch-role">Text accent on Navy only. Never used as a background.</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:0;border:1px solid rgba(245,247,249,0.08);border-top:none">
+    <div class="color-rule"><strong>Black dominates.</strong> 60–70% of every layout. It is the resting state of the brand.</div>
+    <div class="color-rule" style="border-top:1px solid rgba(245,247,249,0.08)"><strong>Red means action or pain.</strong> Problem sections and primary CTAs. One red zone per page section maximum.</div>
+    <div class="color-rule" style="border-top:1px solid rgba(245,247,249,0.08)"><strong>Navy means process and trust.</strong> Reserved for Blueprint steps, featured tiers, and credentialing moments.</div>
+    <div class="color-rule" style="border-top:1px solid rgba(245,247,249,0.08)"><strong>White is a signal, not a field.</strong> Use only for maximum-contrast buttons and isolated highlight moments — never as a section background.</div>
+    <div class="color-rule" style="border-top:1px solid rgba(245,247,249,0.08)"><strong>Ice Blue is Navy's accent.</strong> Text only, on Navy backgrounds. Never use as fill, never use on black.</div>
+  </div>
+</div>
+
+<!-- ── TYPOGRAPHY ── -->
+<div class="section">
+  <div class="sec-label">02 · Typography</div>
+  <h2>Two typefaces. One purpose each.</h2>
+  <p class="note">EB Garamond carries authority, editorial weight, and numbers. Hanken Grotesk carries UI, labels, and functional copy. Never swap their roles.</p>
+
+  <div class="type-rows">
+    <div class="type-row">
+      <div class="type-meta">
+        <div class="type-token">Display</div>
+        <div class="type-spec">EB Garamond 500<br><code>clamp(52px, 6.5vw, 96px)</code><br>LH 1.0 · LS −0.02em</div>
+      </div>
+      <div class="type-sample">
+        <span style="font-family:'EB Garamond',serif;font-size:56px;font-weight:500;line-height:1;letter-spacing:-0.02em">Ready to make <em>the move?</em></span>
+      </div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta">
+        <div class="type-token">Display SM</div>
+        <div class="type-spec">EB Garamond 500<br><code>clamp(32px, 4vw, 56px)</code><br>LH 1.06 · LS −0.015em</div>
+      </div>
+      <div class="type-sample">
+        <span style="font-family:'EB Garamond',serif;font-size:44px;font-weight:500;line-height:1.06;letter-spacing:-0.015em">Every engagement starts here.</span>
+      </div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta">
+        <div class="type-token">Stat</div>
+        <div class="type-spec">EB Garamond 500<br><code>clamp(44px, 5vw, 72px)</code><br>LH 1 · LS −0.02em</div>
+      </div>
+      <div class="type-sample">
+        <span style="font-family:'EB Garamond',serif;font-size:64px;font-weight:500;line-height:1;letter-spacing:-0.02em">48h &nbsp;·&nbsp; Zero &nbsp;·&nbsp; $1K</span>
+      </div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta">
+        <div class="type-token">Body Serif</div>
+        <div class="type-spec">EB Garamond 400<br><code>18–22px</code><br>LH 1.5</div>
+      </div>
+      <div class="type-sample">
+        <span style="font-family:'EB Garamond',serif;font-size:20px;font-weight:400;line-height:1.5">Three locations. Three counts. None of them agree with the spreadsheet your ops manager built in March.</span>
+      </div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta">
+        <div class="type-token">Eyebrow</div>
+        <div class="type-spec">Hanken Grotesk 800<br><code>10px</code><br>LS 0.14em · UPPERCASE</div>
+      </div>
+      <div class="type-sample">
+        <span style="font-family:'Hanken Grotesk',sans-serif;font-size:10px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:rgba(245,247,249,0.35);display:flex;align-items:center;gap:14px"><span style="width:20px;height:1px;background:currentColor;display:inline-block;flex-shrink:0"></span>Shopify Implementation · Montreal</span>
+      </div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta">
+        <div class="type-token">UI Label</div>
+        <div class="type-spec">Hanken Grotesk 700<br><code>13–14px</code><br>LS −0.01em</div>
+      </div>
+      <div class="type-sample">
+        <span style="font-family:'Hanken Grotesk',sans-serif;font-size:14px;font-weight:700;letter-spacing:-0.01em">Discovery Call</span>
+      </div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta">
+        <div class="type-token">Body Sans</div>
+        <div class="type-spec">Hanken Grotesk 400<br><code>13–15px</code><br>LH 1.65–1.75</div>
+      </div>
+      <div class="type-sample">
+        <span style="font-family:'Hanken Grotesk',sans-serif;font-size:13px;font-weight:400;line-height:1.7;color:rgba(245,247,249,0.55)">We map your full stack — POS, ERP, inventory, integrations, staff workflows. No assumptions, no templated questions. Forty-five minutes.</span>
+      </div>
+    </div>
+    <div class="type-row">
+      <div class="type-meta">
+        <div class="type-token">Ghost Input</div>
+        <div class="type-spec">EB Garamond 400 Italic<br><code>24–26px</code><br>Bottom-border only</div>
+      </div>
+      <div class="type-sample">
+        <span style="font-family:'EB Garamond',serif;font-size:26px;font-style:italic;color:rgba(245,247,249,0.25);border-bottom:2px solid rgba(245,247,249,0.2);display:inline-block;padding-bottom:4px">your@email.com</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── GRID / SPACING ── -->
+<div class="section">
+  <div class="sec-label">03 · Grid &amp; Spacing</div>
+  <h2>Bento grid. Hairline gaps.</h2>
+  <p class="note">The layout system is a single flat grid. Hierarchy comes from background fills, not elevation. The 1px gap between cells IS the border — do not add additional CSS borders to cells.</p>
+
+  <div class="space-rows" style="margin-bottom:32px">
+    <div class="space-row">
+      <div class="space-bar-wrap"><div class="space-bar" style="width:8px"></div></div>
+      <div class="space-label">Base Unit</div>
+      <div class="space-val">8px — all spacing is a multiple of this</div>
+    </div>
+    <div class="space-row">
+      <div class="space-bar-wrap"><div class="space-bar" style="width:1px;background:rgba(245,247,249,0.3)"></div></div>
+      <div class="space-label">Grid Gap</div>
+      <div class="space-val">1px — the gap between bento cells; sets the grid line color via wrapper background</div>
+    </div>
+    <div class="space-row">
+      <div class="space-bar-wrap"><div class="space-bar" style="width:40px"></div></div>
+      <div class="space-label">Page Margin</div>
+      <div class="space-val">40px — outer margin of all bento wrappers</div>
+    </div>
+    <div class="space-row">
+      <div class="space-bar-wrap"><div class="space-bar" style="width:60px"></div></div>
+      <div class="space-label">Cell Padding</div>
+      <div class="space-val">56px top/bottom · 60px left/right — default for full cells</div>
+    </div>
+    <div class="space-row">
+      <div class="space-bar-wrap"><div class="space-bar" style="width:44px"></div></div>
+      <div class="space-label">Compact Pad</div>
+      <div class="space-val">44px — stat cells and secondary cells</div>
+    </div>
+  </div>
+
+  <div class="rules">
+    <div class="rule-row">
+      <div class="rule-mark">→</div>
+      <div class="rule-txt"><strong>Bento wrappers have borders, cells do not.</strong> Set <code>background: rgba(245,247,249,0.07)</code> on the wrapper and <code>gap: 1px</code>. The wrapper color bleeds through the gap to form grid lines.</div>
+    </div>
+    <div class="rule-row">
+      <div class="rule-mark">→</div>
+      <div class="rule-txt"><strong>No border-radius anywhere.</strong> 0px on all elements — buttons, inputs, cells, images. The sharp grid is the brand.</div>
+    </div>
+    <div class="rule-row">
+      <div class="rule-mark">→</div>
+      <div class="rule-txt"><strong>No shadows or Z-axis depth.</strong> Hierarchy is tonal: use background fill contrast, not elevation. Active states are high-contrast reversals.</div>
+    </div>
+    <div class="rule-row">
+      <div class="rule-mark">→</div>
+      <div class="rule-txt"><strong>Adjacent bentos share a border.</strong> Remove duplicate border with <code>border-top: none</code> on all sections after the first. The page reads as one continuous grid.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── COMPONENTS ── -->
+<div class="section">
+  <div class="sec-label">04 · Components</div>
+  <h2>Flat primitives only.</h2>
+  <p class="note">No cards, no modals, no floating layers. Every component is either a cell-fill, a text style, or a line.</p>
+
+  <div class="comp-grid">
+    <div class="comp-cell dark">
+      <span class="comp-lbl">Buttons — on dark</span>
+      <div>
+        <span class="btn-demo btn-primary">Book Blueprint</span>
+        <br>
+        <a class="btn-demo btn-ghost-lt" style="font-family:'Hanken Grotesk',sans-serif;font-size:10px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;border-bottom:1px solid rgba(245,247,249,0.2);color:rgba(245,247,249,0.5);padding-bottom:3px">See our tiers →</a>
+      </div>
+    </div>
+    <div class="comp-cell">
+      <span class="comp-lbl">Buttons — on light</span>
+      <div>
+        <span class="btn-demo btn-primary-dark">Book Blueprint</span>
+        <br>
+        <a class="btn-demo" style="font-family:'Hanken Grotesk',sans-serif;font-size:10px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;border-bottom:1px solid rgba(245,247,249,0.15);color:rgba(245,247,249,0.45);padding-bottom:3px">See our tiers →</a>
+      </div>
+    </div>
+    <div class="comp-cell navy">
+      <span class="comp-lbl">Eyebrow — on navy</span>
+      <div style="font-family:'Hanken Grotesk',sans-serif;font-size:10px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:rgba(170,204,219,0.45);display:flex;align-items:center;gap:14px">
+        <span style="width:20px;height:1px;background:rgba(170,204,219,0.3);display:inline-block"></span>
+        Blueprint Diagnostic
+      </div>
+    </div>
+    <div class="comp-cell red">
+      <span class="comp-lbl">Ghost input — on red</span>
+      <div style="border-bottom:2px solid rgba(245,247,249,0.3);display:flex;max-width:320px">
+        <span style="font-family:'EB Garamond',serif;font-size:24px;font-style:italic;color:rgba(245,247,249,0.25);padding-bottom:8px;flex:1">your@email.com</span>
+        <span style="font-family:'Hanken Grotesk',sans-serif;font-size:10px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:rgba(245,247,249,0.6);padding-bottom:8px;padding-left:20px;align-self:flex-end">Send →</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="do-dont">
+    <div class="do">
+      <div class="do-label">✓ Do</div>
+      <div class="do-txt">Use flat background fills to define cell context. Let the 1px gap be the border. Use Garamond for numbers and editorial copy. Use ghost inputs with bottom-border only. Keep all interactive elements as full-width rectangular blocks.</div>
+    </div>
+    <div class="dont">
+      <div class="dont-label">✗ Don't</div>
+      <div class="dont-txt">Add border-radius to anything. Use box-shadows. Nest cards inside cells. Use purple, orange, teal, or any color outside the system. Use Inter, Space Grotesk, or Geist. Add decorative dividers, horizontal rules styled as accents, or gradient overlays.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── VOICE / COLOR SEMANTICS ── -->
+<div class="section">
+  <div class="sec-label">05 · Color Semantics</div>
+  <h2>Color assigns meaning, not mood.</h2>
+  <p class="note">The same color means the same thing everywhere — across the website, decks, proposals, and print.</p>
+
+  <div class="rules">
+    <div class="rule-row" style="background:rgba(168,32,26,0.12)">
+      <div class="rule-mark" style="color:var(--red)">R</div>
+      <div class="rule-txt"><strong>Red = Problem &amp; Action.</strong> Pain points, obstacles, urgency, and primary CTAs. If you're using red, something is wrong (pain framing) or something must be done right now (CTA).</div>
+    </div>
+    <div class="rule-row" style="background:rgba(13,27,42,0.3)">
+      <div class="rule-mark" style="color:var(--navy)">N</div>
+      <div class="rule-txt"><strong>Navy = Process &amp; Trust.</strong> The Blueprint diagnostic, methodology, featured tier. Moments where you're building credibility or walking someone through a structured approach.</div>
+    </div>
+    <div class="rule-row">
+      <div class="rule-mark">B</div>
+      <div class="rule-txt"><strong>Black = Default &amp; Authority.</strong> Everything that isn't red or navy. The brand rests here. Black cells are neutral — they don't signal anything beyond "this is information."</div>
+    </div>
+    <div class="rule-row" style="background:rgba(245,247,249,0.04)">
+      <div class="rule-mark">W</div>
+      <div class="rule-txt"><strong>White = Maximum Contrast Only.</strong> The primary CTA button on dark backgrounds. Occasionally a single emphasis cell in a hero bento. Never a section background. White is used to create a single focal point per view.</div>
+    </div>
+  </div>
+</div>
+
+<div style="margin-top:80px;padding-top:24px;border-top:1px solid rgba(245,247,249,0.08);display:flex;justify-content:space-between;align-items:center">
+  <div style="font-size:11px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:rgba(245,247,249,0.25)">KaizenCommerce · Design System v1.0</div>
+  <div style="font-family:'EB Garamond',serif;font-size:14px;font-style:italic;color:rgba(245,247,249,0.15)">改善 — continuous improvement</div>
+</div>
+
+
+</div>
+
+<script>
+function switchVersion(mode) {
+  document.getElementById('light').classList.remove('active');
+  document.getElementById('dark').classList.remove('active');
+  document.getElementById(mode).classList.add('active');
+  
+  document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>
+
+
+<style>
+.ds-dark {
+  background: #0e0e0e;
+  color: #F5F7F9;
+  font-family: 'Hanken Grotesk', sans-serif;
+  padding: 64px 56px;
+}
+.ds-dark h1 { font-family: 'EB Garamond', Georgia, serif; font-size: 56px; font-weight: 500; line-height: 1; letter-spacing: -0.02em; margin-bottom: 8px; color: #F5F7F9; }
+.ds-dark .doc-sub { font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(245,247,249,0.35); margin-bottom: 80px; }
+.ds-dark .section { margin-bottom: 72px; }
+.ds-dark .sec-label { font-size: 10px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(245,247,249,0.35); margin-bottom: 24px; display: flex; align-items: center; gap: 16px; }
+.ds-dark .sec-label::after { content: ''; flex: 1; height: 1px; background: rgba(245,247,249,0.1); }
+.ds-dark h2 { font-family: 'EB Garamond', Georgia, serif; font-size: 32px; font-weight: 500; margin-bottom: 6px; color: #F5F7F9; }
+.ds-dark p.note { font-size: 13px; line-height: 1.7; color: rgba(245,247,249,0.5); max-width: 560px; margin-bottom: 32px; }
+
+/* Swatches */
+.ds-dark .swatches { display: grid; grid-template-columns: repeat(6,1fr); gap: 1px; background: rgba(245,247,249,0.1); border: 1px solid rgba(245,247,249,0.1); margin-bottom: 8px; }
+.ds-dark .swatch-block { height: 96px; }
+.ds-dark .swatch-info { padding: 14px 16px; background: #181818; }
+.ds-dark .swatch-name { font-size: 11px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #F5F7F9; margin-bottom: 4px; }
+.ds-dark .swatch-hex { font-family: 'EB Garamond', Georgia, serif; font-size: 14px; font-style: italic; color: rgba(245,247,249,0.55); }
+.ds-dark .swatch-role { font-size: 10px; color: rgba(245,247,249,0.45); margin-top: 4px; line-height: 1.4; }
+.ds-dark .color-rule { font-size: 12px; line-height: 1.65; color: rgba(245,247,249,0.55); padding: 16px 0; border-top: 1px solid rgba(245,247,249,0.08); }
+.ds-dark .color-rule strong { color: #F5F7F9; font-weight: 700; }
+.ds-dark > div > div[style*="border-top"] { border-top-color: rgba(245,247,249,0.08) !important; }
+
+/* Type */
+.ds-dark .type-rows { display: flex; flex-direction: column; gap: 0; border: 1px solid rgba(245,247,249,0.08); }
+.ds-dark .type-row { display: grid; grid-template-columns: 200px 1fr; gap: 0; border-bottom: 1px solid rgba(245,247,249,0.06); background: #181818; }
+.ds-dark .type-row:last-child { border-bottom: none; }
+.ds-dark .type-meta { padding: 20px 24px; border-right: 1px solid rgba(245,247,249,0.06); display: flex; flex-direction: column; justify-content: center; }
+.ds-dark .type-token { font-size: 10px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(245,247,249,0.35); margin-bottom: 6px; }
+.ds-dark .type-spec { font-size: 11px; color: rgba(245,247,249,0.5); line-height: 1.6; }
+.ds-dark .type-spec code { font-size: 10px; background: rgba(245,247,249,0.07); padding: 1px 5px; color: rgba(245,247,249,0.7); }
+.ds-dark .type-sample { padding: 24px 32px; display: flex; align-items: center; }
+
+/* Spacing */
+.ds-dark .space-rows { display: flex; flex-direction: column; gap: 12px; margin-bottom: 32px; }
+.ds-dark .space-row { display: flex; align-items: center; gap: 24px; }
+.ds-dark .space-bar-wrap { width: 240px; flex-shrink: 0; }
+.ds-dark .space-bar { background: #a8201a; height: 12px; }
+.ds-dark .space-label { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(245,247,249,0.55); }
+.ds-dark .space-val { font-size: 12px; color: rgba(245,247,249,0.4); margin-left: 8px; }
+
+/* Components */
+.ds-dark .comp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: rgba(245,247,249,0.1); border: 1px solid rgba(245,247,249,0.1); margin-bottom: 32px; }
+.ds-dark .comp-cell { padding: 40px; background: #181818; }
+.ds-dark .comp-cell.dark { background: #0e0e0e; }
+.ds-dark .comp-cell.navy { background: #0D1B2A; }
+.ds-dark .comp-cell.red { background: #a8201a; }
+.ds-dark .comp-lbl { font-size: 10px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(245,247,249,0.35); margin-bottom: 24px; display: block; }
+
+/* Buttons */
+.ds-dark .btn-demo { display: inline-block; font-family: 'Hanken Grotesk', sans-serif; font-size: 10px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; padding: 12px 28px; text-decoration: none; cursor: default; margin-right: 16px; margin-bottom: 12px; }
+.ds-dark .btn-primary { background: #F5F7F9; color: #0e0e0e; }
+.ds-dark .btn-primary-dark { background: #0e0e0e; color: #F5F7F9; }
+.ds-dark .btn-ghost { border-bottom: 1px solid rgba(245,247,249,0.25); color: rgba(245,247,249,0.55); padding: 0 0 3px; background: transparent; }
+.ds-dark .btn-ghost-lt { border-bottom: 1px solid rgba(245,247,249,0.25); color: rgba(245,247,249,0.55); padding: 0 0 3px; background: transparent; }
+
+/* Rules */
+.ds-dark .rules { display: flex; flex-direction: column; gap: 0; border: 1px solid rgba(245,247,249,0.08); }
+.ds-dark .rule-row { display: grid; grid-template-columns: 40px 1fr; border-bottom: 1px solid rgba(245,247,249,0.06); }
+.ds-dark .rule-row:last-child { border-bottom: none; }
+.ds-dark .rule-mark { padding: 20px 0 20px 20px; font-family: 'EB Garamond', Georgia, serif; font-size: 20px; font-weight: 500; color: #a8201a; }
+.ds-dark .rule-txt { padding: 20px 24px; font-size: 13px; line-height: 1.65; color: rgba(245,247,249,0.62); }
+.ds-dark .rule-txt strong { color: #F5F7F9; font-weight: 700; }
+.ds-dark .rule-row[style*="rgba(168,32,26"] { background: rgba(168,32,26,0.12); }
+.ds-dark .rule-row[style*="rgba(13,27,42"] { background: rgba(13,27,42,0.5); }
+.ds-dark .rule-row[style*="rgba(245,247,249,0.5"] { background: rgba(245,247,249,0.04); }
+
+/* Do/Dont */
+.ds-dark .do-dont { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: rgba(245,247,249,0.1); border: 1px solid rgba(245,247,249,0.1); margin-top: 24px; }
+.ds-dark .do { background: #0a1f12; padding: 28px 32px; }
+.ds-dark .dont { background: #200a0a; padding: 28px 32px; }
+.ds-dark .do-label { font-size: 10px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: #4ade80; margin-bottom: 12px; }
+.ds-dark .dont-label { font-size: 10px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: #a8201a; margin-bottom: 12px; }
+.ds-dark .do-txt, .ds-dark .dont-txt { font-size: 13px; line-height: 1.65; color: rgba(245,247,249,0.65); }
+
+/* Footer */
+.ds-dark .ds-footer { margin-top: 80px; padding-top: 24px; border-top: 1px solid rgba(245,247,249,0.08); display: flex; justify-content: space-between; align-items: center; }
+.ds-dark .ds-footer-left { font-size: 11px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(245,247,249,0.2); }
+.ds-dark .ds-footer-right { font-family: 'EB Garamond', Georgia, serif; font-size: 14px; font-style: italic; color: rgba(245,247,249,0.12); }
+</style>
+
+
+<!-- DARK MODE BELOW -->
+<div style="margin-top:120px;border-top:4px solid #0e0e0e"></div>
+
+<div class="ds-dark">
+
+  <h1>KaizenCommerce<br>Design System</h1>
+  <div class="doc-sub">Dark Mode · v1.0</div>
+
+  <!-- 01 COLOR -->
+  <div class="section">
+    <div class="sec-label">01 · Color</div>
+    <h2>Four-color palette. No exceptions.</h2>
+    <p class="note">Every color serves a structural role. Adding new colors is a breaking change. When in doubt, use Black.</p>
+    <div class="swatches">
+      <div class="swatch">
+        <div class="swatch-block" style="background:#0e0e0e"></div>
+        <div class="swatch-info"><div class="swatch-name">Black</div><div class="swatch-hex">#0e0e0e</div><div class="swatch-role">Primary background. Default surface. 60–70% visual weight.</div></div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-block" style="background:#181818"></div>
+        <div class="swatch-info"><div class="swatch-name">Mid Black</div><div class="swatch-hex">#181818</div><div class="swatch-role">Secondary cells. Contrast against primary black only.</div></div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-block" style="background:#0D1B2A"></div>
+        <div class="swatch-info"><div class="swatch-name">Deep Navy</div><div class="swatch-hex">#0D1B2A</div><div class="swatch-role">Process, trust, featured context. Blueprint &amp; Gold tier.</div></div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-block" style="background:#a8201a"></div>
+        <div class="swatch-info"><div class="swatch-name">Red</div><div class="swatch-hex">#a8201a</div><div class="swatch-role">Problem framing, primary CTA, urgency. Use sparingly.</div></div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-block" style="background:#F5F7F9"></div>
+        <div class="swatch-info"><div class="swatch-name">White</div><div class="swatch-hex">#F5F7F9</div><div class="swatch-role">Maximum contrast. CTA buttons on dark. Rare emphasis only.</div></div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-block" style="background:#aaccdb"></div>
+        <div class="swatch-info"><div class="swatch-name">Ice Blue</div><div class="swatch-hex">#aaccdb</div><div class="swatch-role">Text accent on Navy only. Never used as a background.</div></div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:0;border:1px solid rgba(245,247,249,0.08);border-top:none">
+      <div class="color-rule"><strong>Black dominates.</strong> 60–70% of every layout. It is the resting state of the brand.</div>
+      <div class="color-rule"><strong>Red means action or pain.</strong> Problem sections and primary CTAs. One red zone per page section maximum.</div>
+      <div class="color-rule"><strong>Navy means process and trust.</strong> Reserved for Blueprint steps, featured tiers, and credentialing moments.</div>
+      <div class="color-rule"><strong>White is a signal, not a field.</strong> Use only for maximum-contrast buttons and isolated highlight moments — never as a section background.</div>
+      <div class="color-rule"><strong>Ice Blue is Navy's accent.</strong> Text only, on Navy backgrounds. Never use as fill, never use on black.</div>
+    </div>
+  </div>
+
+  <!-- 02 TYPOGRAPHY -->
+  <div class="section">
+    <div class="sec-label">02 · Typography</div>
+    <h2>Two typefaces. One purpose each.</h2>
+    <p class="note">EB Garamond carries authority, editorial weight, and numbers. Hanken Grotesk carries UI, labels, and functional copy. Never swap their roles.</p>
+    <div class="type-rows">
+      <div class="type-row">
+        <div class="type-meta"><div class="type-token">Display</div><div class="type-spec">EB Garamond 500<br><code>clamp(52px, 6.5vw, 96px)</code><br>LH 1.0 · LS −0.02em</div></div>
+        <div class="type-sample"><span style="font-family:'EB Garamond',serif;font-size:52px;font-weight:500;line-height:1;letter-spacing:-0.02em;color:#F5F7F9">Ready to make <em>the move?</em></span></div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta"><div class="type-token">Display SM</div><div class="type-spec">EB Garamond 500<br><code>clamp(32px, 4vw, 56px)</code><br>LH 1.06 · LS −0.015em</div></div>
+        <div class="type-sample"><span style="font-family:'EB Garamond',serif;font-size:44px;font-weight:500;line-height:1.06;letter-spacing:-0.015em;color:#F5F7F9">Every engagement starts here.</span></div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta"><div class="type-token">Stat</div><div class="type-spec">EB Garamond 500<br><code>clamp(44px, 5vw, 72px)</code><br>LH 1 · LS −0.02em</div></div>
+        <div class="type-sample"><span style="font-family:'EB Garamond',serif;font-size:64px;font-weight:500;line-height:1;letter-spacing:-0.02em;color:#F5F7F9">48h &nbsp;·&nbsp; Zero &nbsp;·&nbsp; $1K</span></div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta"><div class="type-token">Body Serif</div><div class="type-spec">EB Garamond 400<br><code>18–22px</code><br>LH 1.5</div></div>
+        <div class="type-sample"><span style="font-family:'EB Garamond',serif;font-size:20px;font-weight:400;line-height:1.5;color:rgba(245,247,249,0.75)">Three locations. Three counts. None of them agree with the spreadsheet your ops manager built in March.</span></div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta"><div class="type-token">Eyebrow</div><div class="type-spec">Hanken Grotesk 800<br><code>10px</code><br>LS 0.14em · UPPERCASE</div></div>
+        <div class="type-sample"><span style="font-family:'Hanken Grotesk',sans-serif;font-size:10px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:rgba(245,247,249,0.4);display:flex;align-items:center;gap:14px"><span style="width:20px;height:1px;background:currentColor;display:inline-block;flex-shrink:0"></span>Shopify Implementation · Montreal</span></div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta"><div class="type-token">UI Label</div><div class="type-spec">Hanken Grotesk 700<br><code>13–14px</code><br>LS −0.01em</div></div>
+        <div class="type-sample"><span style="font-family:'Hanken Grotesk',sans-serif;font-size:14px;font-weight:700;letter-spacing:-0.01em;color:#F5F7F9">Discovery Call</span></div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta"><div class="type-token">Body Sans</div><div class="type-spec">Hanken Grotesk 400<br><code>13–15px</code><br>LH 1.65–1.75</div></div>
+        <div class="type-sample"><span style="font-family:'Hanken Grotesk',sans-serif;font-size:13px;font-weight:400;line-height:1.7;color:rgba(245,247,249,0.5)">We map your full stack — POS, ERP, inventory, integrations, staff workflows. No assumptions, no templated questions. Forty-five minutes.</span></div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta"><div class="type-token">Ghost Input</div><div class="type-spec">EB Garamond 400 Italic<br><code>24–26px</code><br>Bottom-border only</div></div>
+        <div class="type-sample"><span style="font-family:'EB Garamond',serif;font-size:26px;font-style:italic;color:rgba(245,247,249,0.25);border-bottom:2px solid rgba(245,247,249,0.2);display:inline-block;padding-bottom:4px">your@email.com</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 03 GRID -->
+  <div class="section">
+    <div class="sec-label">03 · Grid &amp; Spacing</div>
+    <h2>Bento grid. Hairline gaps.</h2>
+    <p class="note">The layout system is a single flat grid. Hierarchy comes from background fills, not elevation. The 1px gap between cells IS the border.</p>
+    <div class="space-rows">
+      <div class="space-row"><div class="space-bar-wrap"><div class="space-bar" style="width:8px"></div></div><div class="space-label">Base Unit</div><div class="space-val">8px — all spacing is a multiple of this</div></div>
+      <div class="space-row"><div class="space-bar-wrap"><div class="space-bar" style="width:1px;background:rgba(245,247,249,0.2)"></div></div><div class="space-label">Grid Gap</div><div class="space-val">1px — the gap between bento cells</div></div>
+      <div class="space-row"><div class="space-bar-wrap"><div class="space-bar" style="width:40px"></div></div><div class="space-label">Page Margin</div><div class="space-val">40px — outer margin of all bento wrappers</div></div>
+      <div class="space-row"><div class="space-bar-wrap"><div class="space-bar" style="width:60px"></div></div><div class="space-label">Cell Padding</div><div class="space-val">56px top/bottom · 60px left/right — default for full cells</div></div>
+      <div class="space-row"><div class="space-bar-wrap"><div class="space-bar" style="width:44px"></div></div><div class="space-label">Compact Pad</div><div class="space-val">44px — stat cells and secondary cells</div></div>
+    </div>
+    <div class="rules">
+      <div class="rule-row"><div class="rule-mark">→</div><div class="rule-txt"><strong>Bento wrappers have borders, cells do not.</strong> Set <code style="background:rgba(245,247,249,0.07);padding:1px 5px;font-size:10px">background: rgba(245,247,249,0.07)</code> on the wrapper and <code style="background:rgba(245,247,249,0.07);padding:1px 5px;font-size:10px">gap: 1px</code>.</div></div>
+      <div class="rule-row"><div class="rule-mark">→</div><div class="rule-txt"><strong>No border-radius anywhere.</strong> 0px on all elements. The sharp grid is the brand.</div></div>
+      <div class="rule-row"><div class="rule-mark">→</div><div class="rule-txt"><strong>No shadows or Z-axis depth.</strong> Hierarchy is tonal: background fill contrast only.</div></div>
+      <div class="rule-row"><div class="rule-mark">→</div><div class="rule-txt"><strong>Adjacent bentos share a border.</strong> Remove duplicates with <code style="background:rgba(245,247,249,0.07);padding:1px 5px;font-size:10px">border-top: none</code>. The page reads as one continuous grid.</div></div>
+    </div>
+  </div>
+
+  <!-- 04 COMPONENTS -->
+  <div class="section">
+    <div class="sec-label">04 · Components</div>
+    <h2>Flat primitives only.</h2>
+    <p class="note">No cards, no modals, no floating layers. Every component is either a cell-fill, a text style, or a line.</p>
+    <div class="comp-grid">
+      <div class="comp-cell dark">
+        <span class="comp-lbl">Buttons — on black</span>
+        <span class="btn-demo btn-primary">Book Blueprint</span><br>
+        <span class="btn-demo btn-ghost" style="font-family:'Hanken Grotesk',sans-serif;font-size:10px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase">See our tiers →</span>
+      </div>
+      <div class="comp-cell" style="background:#181818">
+        <span class="comp-lbl">Buttons — on mid black</span>
+        <span class="btn-demo btn-primary">Book Blueprint</span><br>
+        <span class="btn-demo btn-ghost" style="font-family:'Hanken Grotesk',sans-serif;font-size:10px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase">See our tiers →</span>
+      </div>
+      <div class="comp-cell navy">
+        <span class="comp-lbl">Eyebrow — on navy</span>
+        <div style="font-family:'Hanken Grotesk',sans-serif;font-size:10px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:rgba(170,204,219,0.85);display:flex;align-items:center;gap:14px"><span style="width:20px;height:1px;background:rgba(170,204,219,0.5);display:inline-block"></span>Blueprint Diagnostic</div>
+      </div>
+      <div class="comp-cell red">
+        <span class="comp-lbl">Ghost input — on red</span>
+        <div style="border-bottom:2px solid rgba(245,247,249,0.3);display:flex;max-width:320px">
+          <span style="font-family:'EB Garamond',serif;font-size:24px;font-style:italic;color:rgba(245,247,249,0.25);padding-bottom:8px;flex:1">your@email.com</span>
+          <span style="font-family:'Hanken Grotesk',sans-serif;font-size:10px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:rgba(245,247,249,0.6);padding-bottom:8px;padding-left:20px;align-self:flex-end">Send →</span>
+        </div>
+      </div>
+    </div>
+    <div class="do-dont">
+      <div class="do"><div class="do-label">✓ Do</div><div class="do-txt">Use flat background fills to define cell context. Let the 1px gap be the border. Use Garamond for numbers and editorial copy. Ghost inputs with bottom-border only. Full-width rectangular interactive elements.</div></div>
+      <div class="dont"><div class="dont-label">✗ Don't</div><div class="dont-txt">Add border-radius to anything. Use box-shadows. Nest cards inside cells. Use colors outside the system. Use Inter, Space Grotesk, or Geist. Add decorative dividers or gradient overlays.</div></div>
+    </div>
+  </div>
+
+  <!-- 05 COLOR SEMANTICS -->
+  <div class="section">
+    <div class="sec-label">05 · Color Semantics</div>
+    <h2>Color assigns meaning, not mood.</h2>
+    <p class="note">The same color means the same thing everywhere — across the website, decks, proposals, and print.</p>
+    <div class="rules">
+      <div class="rule-row" style="background:rgba(168,32,26,0.12)"><div class="rule-mark">R</div><div class="rule-txt"><strong>Red = Problem &amp; Action.</strong> Pain points, obstacles, urgency, and primary CTAs. If you're using red, something is wrong (pain framing) or something must be done right now (CTA).</div></div>
+      <div class="rule-row" style="background:rgba(13,27,42,0.5)"><div class="rule-mark">N</div><div class="rule-txt"><strong>Navy = Process &amp; Trust.</strong> The Blueprint diagnostic, methodology, featured tier. Moments where you're building credibility or walking someone through a structured approach.</div></div>
+      <div class="rule-row"><div class="rule-mark">B</div><div class="rule-txt"><strong>Black = Default &amp; Authority.</strong> Everything that isn't red or navy. The brand rests here. Black cells are neutral — they don't signal anything beyond "this is information."</div></div>
+      <div class="rule-row" style="background:rgba(245,247,249,0.04)"><div class="rule-mark">W</div><div class="rule-txt"><strong>White = Maximum Contrast Only.</strong> The primary CTA button on dark backgrounds. Never a section background. White is used to create a single focal point per view.</div></div>
+    </div>
+  </div>
+
+  <div class="ds-footer">
+    <div class="ds-footer-left">KaizenCommerce · Design System v1.0 · Dark</div>
+    <div class="ds-footer-right">改善 — continuous improvement</div>
+  </div>
+
+</div>
+
+
+</body>
+</html>

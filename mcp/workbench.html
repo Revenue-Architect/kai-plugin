@@ -1,0 +1,1567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kaizen Commerce Workbench</title>
+    <style>
+      :root {
+        color: #171a17;
+        background: #f3f2ed;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-synthesis: none;
+        --ink: #171a17;
+        --muted: #6c716a;
+        --line: #d8d9d0;
+        --paper: #fbfbf8;
+        --wash: #ecece4;
+        --green: #8be28a;
+        --green-dark: #1e6b43;
+        --amber: #f6c66d;
+        --red: #e78e7e;
+        --blue: #9dbbe8;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-width: 320px;
+        min-height: 100vh;
+        background:
+          radial-gradient(circle at 88% -8%, rgba(139, 226, 138, 0.34), transparent 28rem),
+          linear-gradient(180deg, #f7f7f2 0%, #ecece5 100%);
+      }
+
+      button,
+      input,
+      select,
+      textarea {
+        font: inherit;
+      }
+
+      button {
+        border: 0;
+        cursor: pointer;
+      }
+
+      button:disabled {
+        cursor: wait;
+        opacity: 0.55;
+      }
+
+      .app-shell {
+        width: min(1180px, 100%);
+        margin: 0 auto;
+        padding: 18px;
+      }
+
+      .topbar,
+      .titlebar,
+      .panel,
+      .view-panel {
+        border: 1px solid var(--line);
+        background: rgba(251, 251, 248, 0.88);
+        box-shadow: 0 12px 32px rgba(36, 41, 31, 0.05);
+      }
+
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 13px 15px;
+        border-radius: 17px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        min-width: 0;
+      }
+
+      .brand-mark {
+        display: grid;
+        place-items: center;
+        width: 34px;
+        height: 34px;
+        border-radius: 10px;
+        color: var(--ink);
+        background: var(--green);
+        font-size: 12px;
+        font-weight: 900;
+        letter-spacing: -0.05em;
+      }
+
+      .brand-copy {
+        min-width: 0;
+      }
+
+      .brand-copy strong,
+      .brand-copy span {
+        display: block;
+      }
+
+      .brand-copy strong {
+        font-size: 13px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .brand-copy span,
+      .eyebrow,
+      .form-note,
+      .status-line,
+      .meta-line {
+        color: var(--muted);
+        font-size: 11px;
+      }
+
+      .brand-copy span {
+        margin-top: 2px;
+      }
+
+      .top-actions,
+      .button-row,
+      .inline-actions {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .pill,
+      .evidence-chip,
+      .risk-chip {
+        display: inline-flex;
+        align-items: center;
+        width: fit-content;
+        border-radius: 999px;
+        padding: 5px 9px;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .pill {
+        color: #224d32;
+        background: #dcefd9;
+      }
+
+      .button-primary,
+      .button-secondary,
+      .button-quiet,
+      .button-danger {
+        border-radius: 9px;
+        padding: 9px 12px;
+        font-size: 12px;
+        font-weight: 800;
+        transition: transform 120ms ease, background 120ms ease;
+      }
+
+      .button-primary:hover,
+      .button-secondary:hover,
+      .button-quiet:hover,
+      .button-danger:hover,
+      .nav-button:hover {
+        transform: translateY(-1px);
+      }
+
+      .button-primary {
+        color: #102217;
+        background: var(--green);
+      }
+
+      .button-secondary {
+        color: #f7f8f1;
+        background: var(--ink);
+      }
+
+      .button-quiet {
+        color: var(--ink);
+        border: 1px solid var(--line);
+        background: transparent;
+      }
+
+      .button-danger {
+        color: #541e19;
+        background: #f4c8bd;
+      }
+
+      .workspace {
+        display: grid;
+        grid-template-columns: 210px minmax(0, 1fr);
+        gap: 16px;
+        margin-top: 16px;
+      }
+
+      .sidebar {
+        align-self: start;
+        position: sticky;
+        top: 16px;
+        padding: 12px;
+        border: 1px solid var(--line);
+        border-radius: 17px;
+        background: rgba(251, 251, 248, 0.72);
+      }
+
+      .sidebar-label {
+        margin: 3px 8px 9px;
+        color: var(--muted);
+        font-size: 10px;
+        font-weight: 900;
+        letter-spacing: 0.11em;
+        text-transform: uppercase;
+      }
+
+      .nav {
+        display: grid;
+        gap: 4px;
+      }
+
+      .nav-button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 9px;
+        border-radius: 9px;
+        color: #525850;
+        background: transparent;
+        text-align: left;
+        font-size: 12px;
+        font-weight: 750;
+        transition: transform 120ms ease, background 120ms ease, color 120ms ease;
+      }
+
+      .nav-button::after {
+        content: "↗";
+        color: #a3a89f;
+        font-size: 13px;
+      }
+
+      .nav-button.active {
+        color: var(--ink);
+        background: var(--green);
+      }
+
+      .nav-button.active::after {
+        color: var(--green-dark);
+      }
+
+      .sidebar-foot {
+        margin: 17px 8px 4px;
+        padding-top: 12px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 10px;
+        line-height: 1.45;
+      }
+
+      .content {
+        min-width: 0;
+      }
+
+      .titlebar {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 21px 22px;
+        border-radius: 17px 17px 0 0;
+        border-bottom: 0;
+      }
+
+      .eyebrow {
+        margin: 0 0 8px;
+        font-weight: 900;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+
+      h1 {
+        max-width: 620px;
+        font-size: clamp(24px, 4vw, 41px);
+        line-height: 0.98;
+        letter-spacing: -0.055em;
+      }
+
+      h2 {
+        font-size: 15px;
+        letter-spacing: -0.02em;
+      }
+
+      h3 {
+        font-size: 12px;
+      }
+
+      .title-description {
+        max-width: 680px;
+        margin-top: 10px;
+        color: #60665d;
+        font-size: 13px;
+        line-height: 1.5;
+      }
+
+      .title-meta {
+        display: grid;
+        gap: 6px;
+        justify-items: end;
+        color: var(--muted);
+        font-size: 10px;
+        text-align: right;
+        white-space: nowrap;
+      }
+
+      .view-panel {
+        min-height: 265px;
+        padding: 16px 22px 22px;
+        border-radius: 0 0 17px 17px;
+      }
+
+      .metrics {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 8px;
+        margin-bottom: 16px;
+      }
+
+      .metric-card {
+        min-width: 0;
+        padding: 12px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: var(--paper);
+      }
+
+      .metric-label {
+        color: var(--muted);
+        font-size: 9px;
+        font-weight: 900;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .metric-value {
+        overflow: hidden;
+        margin-top: 7px;
+        color: var(--ink);
+        font-size: 17px;
+        font-weight: 900;
+        letter-spacing: -0.04em;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .metric-card.accent {
+        border-color: #aed9ae;
+        background: #e4f2df;
+      }
+
+      .empty-state {
+        display: grid;
+        place-items: center;
+        min-height: 175px;
+        padding: 24px;
+        border: 1px dashed #c4c8bc;
+        border-radius: 13px;
+        color: var(--muted);
+        text-align: center;
+      }
+
+      .empty-state strong {
+        display: block;
+        margin-bottom: 7px;
+        color: var(--ink);
+        font-size: 14px;
+      }
+
+      .result-grid,
+      .data-grid,
+      .section-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      .result-card,
+      .data-card,
+      .section-card,
+      .evidence-card,
+      .risk-card,
+      .source-card,
+      .json-card {
+        min-width: 0;
+        padding: 13px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: var(--paper);
+      }
+
+      .result-card.full,
+      .json-card,
+      .section-card.full {
+        grid-column: 1 / -1;
+      }
+
+      .card-heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 9px;
+        margin-bottom: 9px;
+      }
+
+      .card-heading span,
+      .section-evidence {
+        color: var(--muted);
+        font-size: 10px;
+      }
+
+      .plain-list {
+        display: grid;
+        gap: 7px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+
+      .plain-list li {
+        position: relative;
+        padding-left: 15px;
+        color: #4f554d;
+        font-size: 12px;
+        line-height: 1.45;
+      }
+
+      .plain-list li::before {
+        content: "";
+        position: absolute;
+        top: 0.55em;
+        left: 0;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: var(--green-dark);
+      }
+
+      .evidence-list,
+      .risk-list,
+      .source-list {
+        display: grid;
+        gap: 8px;
+      }
+
+      .evidence-card {
+        background: #f0f4ec;
+      }
+
+      .evidence-chip.confirmed {
+        color: #235b39;
+        background: #d9edd7;
+      }
+
+      .evidence-chip.inferred {
+        color: #5d4b1c;
+        background: #f4e9c9;
+      }
+
+      .evidence-chip.assumed,
+      .evidence-chip.estimated {
+        color: #57408a;
+        background: #e9ddfa;
+      }
+
+      .evidence-card p,
+      .risk-card p,
+      .source-card p,
+      .section-card p {
+        margin-top: 8px;
+        color: #4f554d;
+        font-size: 12px;
+        line-height: 1.45;
+      }
+
+      .risk-card {
+        border-left: 4px solid var(--amber);
+      }
+
+      .risk-card.high {
+        border-left-color: var(--red);
+      }
+
+      .risk-card.medium {
+        border-left-color: var(--amber);
+      }
+
+      .risk-chip.high {
+        color: #782e27;
+        background: #f5d3cc;
+      }
+
+      .risk-chip.medium {
+        color: #6d541f;
+        background: #f6e7bd;
+      }
+
+      .source-card {
+        display: grid;
+        grid-template-columns: 100px minmax(0, 1fr);
+        gap: 10px;
+      }
+
+      .source-card strong {
+        font-size: 11px;
+        text-transform: capitalize;
+      }
+
+      .source-card p {
+        margin: 0;
+      }
+
+      .section-card h3 {
+        font-size: 13px;
+      }
+
+      .json-card pre {
+        overflow: auto;
+        max-height: 270px;
+        margin: 0;
+        color: #4b5049;
+        font-family: "SFMono-Regular", Consolas, monospace;
+        font-size: 10px;
+        line-height: 1.5;
+        white-space: pre-wrap;
+        word-break: break-word;
+      }
+
+      .panels {
+        display: grid;
+        gap: 12px;
+        margin-top: 14px;
+      }
+
+      .panel {
+        padding: 16px;
+        border-radius: 15px;
+      }
+
+      .panel-head {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 13px;
+      }
+
+      .panel-head p {
+        max-width: 680px;
+        margin-top: 5px;
+        color: var(--muted);
+        font-size: 11px;
+        line-height: 1.45;
+      }
+
+      .form-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      .field {
+        display: grid;
+        gap: 5px;
+      }
+
+      .field.full {
+        grid-column: 1 / -1;
+      }
+
+      .field label,
+      .check-label {
+        color: #575d55;
+        font-size: 10px;
+        font-weight: 850;
+      }
+
+      .field input,
+      .field select,
+      .field textarea {
+        width: 100%;
+        border: 1px solid #cfd2c8;
+        border-radius: 8px;
+        padding: 9px 10px;
+        color: var(--ink);
+        outline: none;
+        background: #fffefa;
+        font-size: 12px;
+      }
+
+      .field textarea {
+        min-height: 74px;
+        resize: vertical;
+      }
+
+      .field input:focus,
+      .field select:focus,
+      .field textarea:focus {
+        border-color: var(--green-dark);
+        box-shadow: 0 0 0 3px rgba(139, 226, 138, 0.26);
+      }
+
+      .checks {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px 14px;
+        min-height: 36px;
+      }
+
+      .check-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .check-label input {
+        accent-color: var(--green-dark);
+      }
+
+      .panel-actions {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin-top: 13px;
+      }
+
+      .form-note {
+        line-height: 1.4;
+      }
+
+      .footer-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin: 14px 0 4px;
+        padding: 12px 2px 0;
+        border-top: 1px solid var(--line);
+      }
+
+      .status-line {
+        min-height: 16px;
+      }
+
+      .status-line.error {
+        color: #8b332b;
+      }
+
+      .status-line.success {
+        color: var(--green-dark);
+      }
+
+      [hidden] {
+        display: none !important;
+      }
+
+      @media (max-width: 850px) {
+        .workspace {
+          grid-template-columns: 1fr;
+        }
+
+        .sidebar {
+          position: static;
+        }
+
+        .nav {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+
+        .sidebar-foot {
+          display: none;
+        }
+
+        .nav-button {
+          min-height: 42px;
+          font-size: 10px;
+        }
+
+        .nav-button::after {
+          display: none;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .app-shell {
+          padding: 9px;
+        }
+
+        .topbar,
+        .titlebar {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .top-actions,
+        .title-meta {
+          justify-items: start;
+          text-align: left;
+        }
+
+        .nav {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .metrics,
+        .result-grid,
+        .data-grid,
+        .section-grid,
+        .form-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .result-card.full,
+        .json-card,
+        .section-card.full,
+        .field.full {
+          grid-column: auto;
+        }
+
+        .panel-actions,
+        .footer-bar {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand">
+          <div class="brand-mark">KAI</div>
+          <div class="brand-copy">
+            <strong>Kaizen Commerce</strong>
+            <span>Scope-first commerce delivery intelligence</span>
+          </div>
+        </div>
+        <div class="top-actions">
+          <span class="pill">Read-only</span>
+          <button class="button-quiet" id="fullscreen-button" type="button">Expand view</button>
+          <button class="button-secondary" id="ask-button" type="button">Ask Kai</button>
+        </div>
+      </header>
+
+      <div class="workspace">
+        <aside class="sidebar">
+          <div class="sidebar-label">Workbench views</div>
+          <nav class="nav" aria-label="Workbench views">
+            <button class="nav-button active" data-view="deal_snapshot" type="button">Deal Snapshot</button>
+            <button class="nav-button" data-view="architecture_map" type="button">Architecture</button>
+            <button class="nav-button" data-view="migration_risk" type="button">Migration Risk</button>
+            <button class="nav-button" data-view="scope_builder" type="button">Scope Builder</button>
+            <button class="nav-button" data-view="blueprint" type="button">Blueprint</button>
+            <button class="nav-button" data-view="proposal" type="button">Proposal</button>
+            <button class="nav-button" data-view="sow" type="button">SOW</button>
+          </nav>
+          <div class="sidebar-foot">
+            Kai separates confirmed facts from inference and keeps pricing, scope, and connector actions behind evidence gates.
+          </div>
+        </aside>
+
+        <main class="content">
+          <section class="titlebar">
+            <div>
+              <p class="eyebrow">Kaizen Workbench / v3</p>
+              <h1 id="view-title">Deal Snapshot</h1>
+              <p class="title-description" id="view-description">Start with a merchant brief. The workbench keeps the opportunity profile, risks, and missing discovery inputs visible in one place.</p>
+            </div>
+            <div class="title-meta">
+              <span id="view-state">No snapshot loaded</span>
+              <span>Canonical source: Kaizen Commerce skills</span>
+            </div>
+          </section>
+
+          <section class="view-panel" aria-live="polite">
+            <div class="metrics" id="metrics"></div>
+            <div id="view-panel-content"></div>
+          </section>
+
+          <div class="panels">
+            <section class="panel" id="analysis-panel">
+              <div class="panel-head">
+                <div>
+                  <h2>Run a read-only opportunity analysis</h2>
+                  <p>Supply only the facts you want Kai to reason over. This does not query CRM, Shopify, or any external system.</p>
+                </div>
+                <span class="pill">Data tool</span>
+              </div>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="merchant-name">Merchant name</label>
+                  <input id="merchant-name" type="text" placeholder="Optional" />
+                </div>
+                <div class="field">
+                  <label for="location-count">Location count</label>
+                  <input id="location-count" type="number" min="1" placeholder="e.g. 12" />
+                </div>
+                <div class="field full">
+                  <label for="analysis-systems">Current systems</label>
+                  <input id="analysis-systems" type="text" placeholder="Lightspeed Retail, NetSuite ERP, Shopify ecommerce" />
+                </div>
+                <div class="field">
+                  <label for="timeline-pressure">Timeline pressure</label>
+                  <select id="timeline-pressure">
+                    <option value="">Unknown</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label>Workflow signals</label>
+                  <div class="checks">
+                    <label class="check-label"><input id="b2b-signal" type="checkbox" /> B2B / wholesale</label>
+                    <label class="check-label"><input id="special-orders-signal" type="checkbox" /> Special orders</label>
+                  </div>
+                </div>
+                <div class="field full">
+                  <label for="analysis-notes">Discovery notes</label>
+                  <textarea id="analysis-notes" placeholder="What is confirmed about the merchant's current state, desired outcome, or constraints?"></textarea>
+                </div>
+              </div>
+              <div class="panel-actions">
+                <span class="form-note">Result is an inference from supplied inputs and carries evidence labels.</span>
+                <button class="button-primary" id="analyze-button" type="button">Analyze opportunity</button>
+              </div>
+            </section>
+
+            <section class="panel" id="architecture-panel" hidden>
+              <div class="panel-head">
+                <div>
+                  <h2>Build a first-pass architecture</h2>
+                  <p>Use named systems and domains to surface ownership heuristics, integration workstreams, and open questions.</p>
+                </div>
+                <span class="pill">Data tool</span>
+              </div>
+              <div class="form-grid">
+                <div class="field full">
+                  <label for="architecture-systems">Systems</label>
+                  <input id="architecture-systems" type="text" placeholder="Shopify, NetSuite ERP, Lightspeed Retail" />
+                </div>
+                <div class="field">
+                  <label for="architecture-domains">Domains</label>
+                  <input id="architecture-domains" type="text" value="catalog, inventory, orders, customers, pricing" />
+                </div>
+                <div class="field">
+                  <label for="architecture-locations">Location count</label>
+                  <input id="architecture-locations" type="number" min="1" placeholder="Optional" />
+                </div>
+                <div class="field full">
+                  <label class="check-label"><input id="architecture-b2b" type="checkbox" /> B2B / wholesale is in scope</label>
+                </div>
+              </div>
+              <div class="panel-actions">
+                <span class="form-note">Ownership is a heuristic until the merchant confirms the system of record.</span>
+                <button class="button-primary" id="architecture-button" type="button">Build architecture</button>
+              </div>
+            </section>
+
+            <section class="panel" id="migration-panel" hidden>
+              <div class="panel-head">
+                <div>
+                  <h2>Assess migration exposure</h2>
+                  <p>Identify high-risk entities and the evidence gates needed before a migration or cutover decision.</p>
+                </div>
+                <span class="pill">Data tool</span>
+              </div>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="current-platform">Current platform</label>
+                  <input id="current-platform" type="text" placeholder="Lightspeed Retail" />
+                </div>
+                <div class="field">
+                  <label for="target-platform">Target platform</label>
+                  <input id="target-platform" type="text" value="Shopify" />
+                </div>
+                <div class="field full">
+                  <label>Entities in migration scope</label>
+                  <div class="checks">
+                    <label class="check-label"><input name="migration-entity" value="products" type="checkbox" checked /> Products</label>
+                    <label class="check-label"><input name="migration-entity" value="inventory" type="checkbox" checked /> Inventory</label>
+                    <label class="check-label"><input name="migration-entity" value="customers" type="checkbox" checked /> Customers</label>
+                    <label class="check-label"><input name="migration-entity" value="orders" type="checkbox" /> Orders</label>
+                    <label class="check-label"><input name="migration-entity" value="locations" type="checkbox" checked /> Locations</label>
+                    <label class="check-label"><input name="migration-entity" value="companies" type="checkbox" /> B2B companies</label>
+                    <label class="check-label"><input name="migration-entity" value="price_lists" type="checkbox" /> Price lists</label>
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="migration-pressure">Timeline pressure</label>
+                  <select id="migration-pressure">
+                    <option value="">Unknown</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="migration-locations">Location count</label>
+                  <input id="migration-locations" type="number" min="1" placeholder="Optional" />
+                </div>
+                <div class="field full">
+                  <label for="migration-notes">Data-quality notes</label>
+                  <textarea id="migration-notes" placeholder="Duplicates, missing identifiers, inconsistent inventory, or other known exposure"></textarea>
+                </div>
+              </div>
+              <div class="panel-actions">
+                <span class="form-note">The tool does not connect to or modify source or target platforms.</span>
+                <button class="button-primary" id="migration-button" type="button">Assess migration</button>
+              </div>
+            </section>
+
+            <section class="panel" id="document-panel" hidden>
+              <div class="panel-head">
+                <div>
+                  <h2>Draft delivery artifacts</h2>
+                  <p>Generate a structured draft from the current workbench snapshot. These are not client-ready documents, quotes, or contracts.</p>
+                </div>
+                <span class="pill">Draft tools</span>
+              </div>
+              <div class="field">
+                <label for="document-facts">Confirmed facts / context</label>
+                <textarea id="document-facts" placeholder="Run a data tool first, or add the confirmed facts you want the draft to use."></textarea>
+              </div>
+              <div class="panel-actions">
+                <span class="form-note">Pricing, payment terms, dates, and unsupported scope are never invented.</span>
+                <div class="button-row">
+                  <button class="button-quiet" id="blueprint-button" type="button">Draft Blueprint</button>
+                  <button class="button-quiet" id="proposal-button" type="button">Draft proposal</button>
+                  <button class="button-primary" id="sow-button" type="button">Draft SOW</button>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <footer class="footer-bar">
+            <span class="status-line" id="status-line">Ready for a supplied merchant brief.</span>
+            <div class="inline-actions">
+              <button class="button-quiet" id="share-context-button" type="button">Share view with Kai</button>
+              <button class="button-secondary" id="next-step-button" type="button">Ask for next evidence gate</button>
+            </div>
+          </footer>
+        </main>
+      </div>
+    </div>
+
+    <script>
+      const viewDescriptions = {
+        deal_snapshot: "Start with a merchant brief. The workbench keeps the opportunity profile, risks, and missing discovery inputs visible in one place.",
+        architecture_map: "Map system ownership and integration workstreams before anyone promises a connector, migration, or launch date.",
+        migration_risk: "Surface entity-level migration exposure, reconciliation gates, and recovery ownership before cutover planning.",
+        scope_builder: "Turn discovery evidence into a visible lane recommendation, assumptions list, and next scoping decision.",
+        blueprint: "Use a Blueprint Diagnostic + Advisory draft to expose current-state findings, open questions, and a decision path.",
+        proposal: "Review a proposal structure with pricing and scope guardrails still visible for commercial review.",
+        sow: "Review a SOW structure with inclusions, exclusions, assumptions, and milestones before scope authority is granted.",
+      };
+
+      const viewLabels = {
+        deal_snapshot: "Deal Snapshot",
+        architecture_map: "Architecture Map",
+        migration_risk: "Migration Risk",
+        scope_builder: "Scope Builder",
+        blueprint: "Blueprint Diagnostic",
+        proposal: "Proposal Draft",
+        sow: "SOW Draft",
+      };
+
+      const state = {
+        activeView: "deal_snapshot",
+        snapshots: {},
+      };
+
+      let rpcId = 0;
+      const pendingRequests = new Map();
+
+      const byId = (id) => document.getElementById(id);
+      const setText = (id, value) => {
+        byId(id).textContent = value;
+      };
+
+      const rpcNotify = (method, params) => {
+        if (window.parent && window.parent !== window) {
+          window.parent.postMessage({ jsonrpc: "2.0", method, params }, "*");
+        }
+      };
+
+      const rpcRequest = (method, params) =>
+        new Promise((resolve, reject) => {
+          const id = ++rpcId;
+          const timeout = window.setTimeout(() => {
+            pendingRequests.delete(id);
+            reject(new Error(`MCP Apps bridge timed out while calling ${method}.`));
+          }, 3500);
+          pendingRequests.set(id, { resolve, reject, timeout });
+          if (window.parent && window.parent !== window) {
+            window.parent.postMessage({ jsonrpc: "2.0", id, method, params }, "*");
+          } else {
+            window.clearTimeout(timeout);
+            pendingRequests.delete(id);
+            reject(new Error("No MCP Apps host is attached to this workbench."));
+          }
+        });
+
+      window.addEventListener(
+        "message",
+        (event) => {
+          if (event.source !== window.parent) return;
+          const message = event.data;
+          if (!message || message.jsonrpc !== "2.0") return;
+
+          if (typeof message.id === "number") {
+            const pending = pendingRequests.get(message.id);
+            if (!pending) return;
+            pendingRequests.delete(message.id);
+            window.clearTimeout(pending.timeout);
+            if (message.error) pending.reject(message.error);
+            else pending.resolve(message.result);
+            return;
+          }
+
+          if (message.method === "ui/notifications/tool-result") {
+            const result = message.params?.structuredContent ?? message.params?.result?.structuredContent;
+            if (result) applyToolResult(result);
+          }
+        },
+        { passive: true },
+      );
+
+      const initializeBridge = async () => {
+        if (!window.parent || window.parent === window) return false;
+        await rpcRequest("ui/initialize", {
+          appInfo: { name: "kaizen-commerce-workbench", version: "3.0.0" },
+          appCapabilities: {},
+          protocolVersion: "2026-01-26",
+        });
+        rpcNotify("ui/notifications/initialized", {});
+        return true;
+      };
+
+      const bridgeReady = initializeBridge().catch(() => false);
+
+      async function callTool(name, args) {
+        if (await bridgeReady) {
+          try {
+            return await rpcRequest("tools/call", { name, arguments: args });
+          } catch (error) {
+            if (typeof window.openai?.callTool === "function") return window.openai.callTool(name, args);
+            throw error;
+          }
+        }
+        if (typeof window.openai?.callTool === "function") return window.openai.callTool(name, args);
+        throw new Error("Connect this widget to an MCP Apps host before running a tool.");
+      }
+
+      function setStatus(message, kind = "") {
+        const status = byId("status-line");
+        status.textContent = message;
+        status.className = `status-line ${kind}`.trim();
+      }
+
+      function setBusy(button, busy, label) {
+        button.disabled = busy;
+        if (busy) {
+          button.dataset.originalLabel = button.textContent;
+          button.textContent = label;
+        } else if (button.dataset.originalLabel) {
+          button.textContent = button.dataset.originalLabel;
+          delete button.dataset.originalLabel;
+        }
+      }
+
+      function splitList(value) {
+        return String(value || "")
+          .split(",")
+          .map((item) => item.trim())
+          .filter(Boolean);
+      }
+
+      function optionalNumber(value) {
+        const number = Number(value);
+        return Number.isFinite(number) && number > 0 ? Math.trunc(number) : undefined;
+      }
+
+      function compactArgs(args) {
+        return Object.fromEntries(Object.entries(args).filter(([, value]) => value !== undefined && value !== ""));
+      }
+
+      function structuredPayload(result) {
+        return result?.structuredContent ?? result ?? {};
+      }
+
+      function setSnapshot(view, result, title) {
+        const structured = structuredPayload(result);
+        const isWorkbenchResult = structured && structured.view && structured.payload;
+        const payload = isWorkbenchResult ? structured.payload : structured;
+        state.snapshots[view] = {
+          view,
+          title: title || (isWorkbenchResult ? structured.title : viewLabels[view]),
+          payload: payload && typeof payload === "object" ? payload : { value: payload },
+          stateVersion: structured.stateVersion || Date.now(),
+        };
+        saveWidgetState();
+        renderWorkbench();
+      }
+
+      function applyToolResult(result) {
+        if (!result || typeof result !== "object") return;
+        const view = result.view || state.activeView;
+        if (result.view && viewLabels[result.view]) state.activeView = result.view;
+        setSnapshot(view, result, result.title);
+        syncNavigation();
+        syncPanels();
+        setStatus(`${viewLabels[view] || "Workbench"} updated from the latest tool result.`, "success");
+      }
+
+      function saveWidgetState() {
+        if (typeof window.openai?.setWidgetState !== "function") return;
+        const active = state.snapshots[state.activeView];
+        try {
+          window.openai.setWidgetState({
+            activeView: state.activeView,
+            snapshot: active
+              ? { view: active.view, title: active.title, payload: active.payload, stateVersion: active.stateVersion }
+              : null,
+          });
+        } catch {
+          // Widget state is a convenience cache, never the source of truth.
+        }
+      }
+
+      function hydrateInitialState() {
+        const persisted = window.openai?.widgetState;
+        if (persisted?.activeView && viewLabels[persisted.activeView]) state.activeView = persisted.activeView;
+        if (persisted?.snapshot?.payload) {
+          state.snapshots[persisted.snapshot.view || state.activeView] = persisted.snapshot;
+        }
+        if (window.openai?.toolOutput) {
+          const output = window.openai.toolOutput;
+          const view = output.view || state.activeView;
+          if (output.payload || output.view) setSnapshot(view, output, output.title);
+        }
+      }
+
+      function createElement(tag, className, text) {
+        const element = document.createElement(tag);
+        if (className) element.className = className;
+        if (text !== undefined) element.textContent = String(text);
+        return element;
+      }
+
+      function humanize(key) {
+        return String(key).replace(/([A-Z])/g, " $1").replace(/[_-]+/g, " ").trim();
+      }
+
+      function addListCard(parent, heading, values, full = false) {
+        const card = createElement("div", `result-card${full ? " full" : ""}`);
+        const head = createElement("div", "card-heading");
+        head.append(createElement("h3", "", heading), createElement("span", "", `${values.length} item${values.length === 1 ? "" : "s"}`));
+        const list = createElement("ul", "plain-list");
+        values.forEach((value) => list.append(createElement("li", "", typeof value === "string" ? value : JSON.stringify(value))));
+        card.append(head, list);
+        parent.append(card);
+      }
+
+      function renderMetrics(payload) {
+        const metrics = byId("metrics");
+        metrics.replaceChildren();
+        const values = [];
+        if (state.activeView === "deal_snapshot" || state.activeView === "scope_builder") {
+          values.push(["Profile", payload.classification || "Awaiting input", true]);
+          values.push(["Risks", Array.isArray(payload.risks) ? payload.risks.length : 0, false]);
+          values.push(["Open inputs", Array.isArray(payload.missingInputs) ? payload.missingInputs.length : 0, false]);
+          values.push(["Lane", payload.recommendedLane || "Not decided", false]);
+        } else if (state.activeView === "architecture_map") {
+          values.push(["Architecture", payload.architectureType || "Not assessed", true]);
+          values.push(["Sources of truth", Object.keys(payload.sourceOfTruth || {}).length, false]);
+          values.push(["Workstreams", Array.isArray(payload.integrationWorkstreams) ? payload.integrationWorkstreams.length : 0, false]);
+          values.push(["Questions", Array.isArray(payload.openQuestions) ? payload.openQuestions.length : 0, false]);
+        } else if (state.activeView === "migration_risk") {
+          values.push(["Risk level", payload.riskLevel || "Not assessed", true]);
+          values.push(["Migration risks", Array.isArray(payload.risks) ? payload.risks.length : 0, false]);
+          values.push(["Gates", Array.isArray(payload.gates) ? payload.gates.length : 0, false]);
+          values.push(["Target", payload.targetPlatform || "Shopify", false]);
+        } else {
+          values.push(["Artifact", payload.documentType || viewLabels[state.activeView], true]);
+          values.push(["Sections", Array.isArray(payload.sections) ? payload.sections.length : 0, false]);
+          values.push(["Guardrails", Array.isArray(payload.guardrails) ? payload.guardrails.length : 0, false]);
+          values.push(["Status", payload.status || "Draft", false]);
+        }
+        values.forEach(([label, value, accent]) => {
+          const card = createElement("div", `metric-card${accent ? " accent" : ""}`);
+          card.append(createElement("div", "metric-label", label), createElement("div", "metric-value", value));
+          metrics.append(card);
+        });
+      }
+
+      function renderEvidence(parent, evidence) {
+        const entries = Object.entries(evidence || {}).filter(([, values]) => Array.isArray(values) && values.length);
+        if (!entries.length) return;
+        const wrapper = createElement("div", "result-card full");
+        const head = createElement("div", "card-heading");
+        head.append(createElement("h3", "", "Evidence ledger"), createElement("span", "", "facts / inference boundary"));
+        const list = createElement("div", "evidence-list");
+        entries.forEach(([kind, values]) => {
+          const card = createElement("div", "evidence-card");
+          card.append(createElement("span", `evidence-chip ${kind.toLowerCase()}`, humanize(kind)));
+          values.forEach((value) => card.append(createElement("p", "", typeof value === "string" ? value : JSON.stringify(value))));
+          list.append(card);
+        });
+        wrapper.append(head, list);
+        parent.append(wrapper);
+      }
+
+      function renderRisks(parent, risks) {
+        if (!Array.isArray(risks) || !risks.length) return;
+        const wrapper = createElement("div", "result-card full");
+        const head = createElement("div", "card-heading");
+        head.append(createElement("h3", "", "Risk register"), createElement("span", "", `${risks.length} surfaced`));
+        const list = createElement("div", "risk-list");
+        risks.forEach((risk) => {
+          const level = typeof risk === "string" ? "medium" : risk.level || "medium";
+          const card = createElement("div", `risk-card ${level}`);
+          const row = createElement("div", "card-heading");
+          row.append(createElement("h3", "", typeof risk === "string" ? "Risk" : risk.area || "Risk"), createElement("span", `risk-chip ${level}`, level));
+          card.append(row, createElement("p", "", typeof risk === "string" ? risk : risk.reason || "Review required."));
+          list.append(card);
+        });
+        wrapper.append(head, list);
+        parent.append(wrapper);
+      }
+
+      function renderSources(parent, sources) {
+        const entries = Object.entries(sources || {});
+        if (!entries.length) return;
+        const wrapper = createElement("div", "result-card full");
+        const head = createElement("div", "card-heading");
+        head.append(createElement("h3", "", "Source-of-truth map"), createElement("span", "", "confirm before build"));
+        const list = createElement("div", "source-list");
+        entries.forEach(([domain, owner]) => {
+          const card = createElement("div", "source-card");
+          card.append(createElement("strong", "", humanize(domain)), createElement("p", "", owner));
+          list.append(card);
+        });
+        wrapper.append(head, list);
+        parent.append(wrapper);
+      }
+
+      function renderSections(parent, sections) {
+        if (!Array.isArray(sections) || !sections.length) return;
+        const wrapper = createElement("div", "result-card full");
+        const head = createElement("div", "card-heading");
+        head.append(createElement("h3", "", "Draft sections"), createElement("span", "", "review before sharing"));
+        const grid = createElement("div", "section-grid");
+        sections.forEach((section) => {
+          const card = createElement("div", "section-card");
+          card.append(createElement("h3", "", section.heading || "Section"), createElement("p", "", section.body || ""));
+          if (section.evidence) card.append(createElement("div", "section-evidence", section.evidence));
+          grid.append(card);
+        });
+        wrapper.append(head, grid);
+        parent.append(wrapper);
+      }
+
+      function renderWorkbench() {
+        const view = state.activeView;
+        const snapshot = state.snapshots[view];
+        setText("view-title", snapshot?.title || viewLabels[view]);
+        setText("view-description", viewDescriptions[view]);
+        setText("view-state", snapshot ? `State ${snapshot.stateVersion || "ready"} · ${snapshot.payload?.readOnly === true ? "read-only" : "supplied result"}` : "No snapshot loaded");
+
+        if (!snapshot) {
+          byId("metrics").replaceChildren();
+          const empty = createElement("div", "empty-state");
+          const copy = createElement("div");
+          copy.append(
+            createElement("strong", "", `No ${viewLabels[view].toLowerCase()} snapshot yet`),
+            createElement("span", "", view === "deal_snapshot" ? "Use the analysis panel below to create the first evidence-backed snapshot." : "Run the matching data or draft tool below, then return to this view."),
+          );
+          empty.append(copy);
+          byId("view-panel-content").replaceChildren(empty);
+          return;
+        }
+
+        const payload = snapshot.payload || {};
+        renderMetrics(payload);
+        const content = createElement("div", "result-grid");
+        renderRisks(content, payload.risks);
+        renderSources(content, payload.sourceOfTruth);
+        renderEvidence(content, payload.evidence);
+        renderSections(content, payload.sections);
+
+        const recognized = ["risks", "sourceOfTruth", "evidence", "sections", "classification", "recommendedLane", "missingInputs", "gates", "guardrails", "architectureType", "riskLevel", "documentType", "status", "targetPlatform", "currentPlatform"];
+        const extra = Object.fromEntries(Object.entries(payload).filter(([key]) => !recognized.includes(key)));
+        if (Object.keys(extra).length) {
+          const jsonCard = createElement("div", "json-card");
+          const head = createElement("div", "card-heading");
+          head.append(createElement("h3", "", "Structured result"), createElement("span", "", "model-visible payload"));
+          const pre = createElement("pre", "", JSON.stringify(extra, null, 2));
+          jsonCard.append(head, pre);
+          content.append(jsonCard);
+        }
+
+        if (!content.childElementCount) {
+          const jsonCard = createElement("div", "json-card");
+          jsonCard.append(createElement("pre", "", JSON.stringify(payload, null, 2)));
+          content.append(jsonCard);
+        }
+        byId("view-panel-content").replaceChildren(content);
+      }
+
+      function syncNavigation() {
+        document.querySelectorAll(".nav-button").forEach((button) => {
+          button.classList.toggle("active", button.dataset.view === state.activeView);
+        });
+      }
+
+      function syncPanels() {
+        byId("analysis-panel").hidden = !["deal_snapshot", "scope_builder"].includes(state.activeView);
+        byId("architecture-panel").hidden = state.activeView !== "architecture_map";
+        byId("migration-panel").hidden = state.activeView !== "migration_risk";
+        byId("document-panel").hidden = !["blueprint", "proposal", "sow"].includes(state.activeView);
+        const deal = state.snapshots.deal_snapshot?.payload;
+        if (deal && !byId("document-facts").value) byId("document-facts").value = summarizeForModel();
+      }
+
+      function summarizeForModel() {
+        const relevant = Object.fromEntries(
+          Object.entries(state.snapshots)
+            .filter(([key]) => ["deal_snapshot", "architecture_map", "migration_risk"].includes(key))
+            .map(([key, value]) => [key, value.payload]),
+        );
+        const manual = byId("document-facts")?.value?.trim();
+        return manual || JSON.stringify(relevant, null, 2).slice(0, 9000);
+      }
+
+      function analysisArguments() {
+        return compactArgs({
+          merchantName: byId("merchant-name").value.trim() || undefined,
+          locationCount: optionalNumber(byId("location-count").value),
+          currentSystems: splitList(byId("analysis-systems").value),
+          b2b: byId("b2b-signal").checked,
+          specialOrders: byId("special-orders-signal").checked,
+          timelinePressure: byId("timeline-pressure").value || undefined,
+          notes: byId("analysis-notes").value.trim() || undefined,
+        });
+      }
+
+      async function runAnalysis() {
+        const button = byId("analyze-button");
+        setBusy(button, true, "Analyzing…");
+        setStatus("Running the read-only opportunity analysis…");
+        try {
+          const result = await callTool("analyze_opportunity", analysisArguments());
+          state.activeView = "deal_snapshot";
+          setSnapshot("deal_snapshot", result, byId("merchant-name").value.trim() || "Deal Snapshot");
+          syncNavigation();
+          syncPanels();
+          setStatus("Opportunity snapshot ready. Review evidence and missing inputs before choosing a lane.", "success");
+        } catch (error) {
+          setStatus(error.message || "Opportunity analysis failed.", "error");
+        } finally {
+          setBusy(button, false);
+        }
+      }
+
+      async function runArchitecture() {
+        const button = byId("architecture-button");
+        const systems = splitList(byId("architecture-systems").value);
+        if (!systems.length) {
+          setStatus("Name at least one system before building an architecture.", "error");
+          return;
+        }
+        const allowedDomains = new Set(["catalog", "inventory", "orders", "customers", "pricing", "fulfillment", "payments"]);
+        const domains = splitList(byId("architecture-domains").value).filter((domain) => allowedDomains.has(domain));
+        setBusy(button, true, "Mapping…");
+        setStatus("Building source-of-truth and integration workstreams…");
+        try {
+          const result = await callTool("build_solution_architecture", compactArgs({
+            systems,
+            domains: domains.length ? domains : undefined,
+            locationCount: optionalNumber(byId("architecture-locations").value),
+            b2b: byId("architecture-b2b").checked,
+          }));
+          state.activeView = "architecture_map";
+          setSnapshot("architecture_map", result, "Architecture Map");
+          syncNavigation();
+          syncPanels();
+          setStatus("Architecture map ready. Confirm ownership before build or migration commitments.", "success");
+        } catch (error) {
+          setStatus(error.message || "Architecture build failed.", "error");
+        } finally {
+          setBusy(button, false);
+        }
+      }
+
+      function selectedMigrationEntities() {
+        return [...document.querySelectorAll("input[name='migration-entity']:checked")].map((input) => input.value);
+      }
+
+      async function runMigration() {
+        const button = byId("migration-button");
+        const currentPlatform = byId("current-platform").value.trim();
+        if (!currentPlatform) {
+          setStatus("Name the current platform before assessing migration exposure.", "error");
+          return;
+        }
+        setBusy(button, true, "Assessing…");
+        setStatus("Scoring migration exposure and QA gates…");
+        try {
+          const result = await callTool("assess_migration", compactArgs({
+            currentPlatform,
+            targetPlatform: byId("target-platform").value.trim() || undefined,
+            entities: selectedMigrationEntities(),
+            locationCount: optionalNumber(byId("migration-locations").value),
+            dataQualityNotes: byId("migration-notes").value.trim() || undefined,
+            timelinePressure: byId("migration-pressure").value || undefined,
+          }));
+          state.activeView = "migration_risk";
+          setSnapshot("migration_risk", result, "Migration Risk");
+          syncNavigation();
+          syncPanels();
+          setStatus("Migration risk snapshot ready. Do not skip dry run, reconciliation, or rollback ownership.", "success");
+        } catch (error) {
+          setStatus(error.message || "Migration assessment failed.", "error");
+        } finally {
+          setBusy(button, false);
+        }
+      }
+
+      async function runDocument(kind, view, buttonId) {
+        const button = byId(buttonId);
+        setBusy(button, true, "Drafting…");
+        setStatus(`Drafting the ${viewLabels[view].toLowerCase()} from supplied facts…`);
+        const confirmedFacts = summarizeForModel();
+        try {
+          let name;
+          let args;
+          if (kind === "generate_blueprint") {
+            name = kind;
+            args = { merchantName: byId("merchant-name").value.trim() || undefined, confirmedFacts, openQuestions: state.snapshots.deal_snapshot?.payload?.missingInputs || state.snapshots.architecture_map?.payload?.openQuestions };
+          } else if (kind === "generate_proposal") {
+            name = kind;
+            const laneText = state.snapshots.deal_snapshot?.payload?.recommendedLane || "";
+            args = {
+              confirmedFacts,
+              lane: /full implementation/i.test(laneText) ? "full-implementation" : /blueprint|advisory|scoping/i.test(laneText) ? "blueprint-advisory" : "unknown",
+              scope: state.snapshots.architecture_map?.payload?.integrationWorkstreams,
+              assumptions: state.snapshots.deal_snapshot?.payload?.missingInputs,
+            };
+          } else {
+            name = "generate_sow";
+            args = {
+              objective: confirmedFacts,
+              inScope: state.snapshots.architecture_map?.payload?.integrationWorkstreams || ["Discovery, architecture, and evidence-gated delivery planning"],
+              outOfScope: ["Unconfirmed connector actions, unsupported capabilities, and unapproved commercial commitments"],
+              assumptions: state.snapshots.deal_snapshot?.payload?.missingInputs,
+              milestones: state.snapshots.migration_risk?.payload?.gates,
+            };
+          }
+          const result = await callTool(name, compactArgs(args));
+          state.activeView = view;
+          setSnapshot(view, result, viewLabels[view]);
+          syncNavigation();
+          syncPanels();
+          setStatus(`${viewLabels[view]} draft ready for human review.`, "success");
+        } catch (error) {
+          setStatus(error.message || "Draft generation failed.", "error");
+        } finally {
+          setBusy(button, false);
+        }
+      }
+
+      function currentContextPrompt() {
+        const snapshot = state.snapshots[state.activeView];
+        return `Review the current Kaizen Workbench ${viewLabels[state.activeView]} snapshot. Recommend the next evidence-gated action, identify the most important missing input, and do not invent pricing, capabilities, or live records.\n\n${JSON.stringify(snapshot?.payload || {}, null, 2).slice(0, 7000)}`;
+      }
+
+      function askKai() {
+        const prompt = currentContextPrompt();
+        if (window.parent && window.parent !== window) {
+          rpcNotify("ui/message", { role: "user", content: [{ type: "text", text: prompt }] });
+          setStatus("Sent the current view to Kai for a next-step recommendation.", "success");
+        } else if (typeof window.openai?.sendFollowUpMessage === "function") {
+          window.openai.sendFollowUpMessage({ prompt, scrollToBottom: true });
+          setStatus("Sent the current view to Kai for a next-step recommendation.", "success");
+        } else {
+          setStatus("Connect this widget to an MCP Apps host to ask Kai for the next step.", "error");
+        }
+      }
+
+      function shareContext() {
+        const snapshot = state.snapshots[state.activeView];
+        const content = [{ type: "text", text: `Kaizen Workbench ${viewLabels[state.activeView]} context:\n${JSON.stringify(snapshot?.payload || {}, null, 2).slice(0, 7000)}` }];
+        if (window.parent && window.parent !== window) {
+          rpcNotify("ui/update-model-context", { content });
+          setStatus("Shared the current view as model context.", "success");
+        } else {
+          setStatus("Model context sharing requires an MCP Apps host.", "error");
+        }
+      }
+
+      function expandView() {
+        if (typeof window.openai?.requestDisplayMode === "function") {
+          window.openai.requestDisplayMode({ mode: "fullscreen" });
+          return;
+        }
+        setStatus("Fullscreen is available when the host exposes ChatGPT display controls.");
+      }
+
+      document.querySelectorAll(".nav-button").forEach((button) => {
+        button.addEventListener("click", () => {
+          state.activeView = button.dataset.view;
+          syncNavigation();
+          syncPanels();
+          renderWorkbench();
+          saveWidgetState();
+        });
+      });
+
+      byId("analyze-button").addEventListener("click", runAnalysis);
+      byId("architecture-button").addEventListener("click", runArchitecture);
+      byId("migration-button").addEventListener("click", runMigration);
+      byId("blueprint-button").addEventListener("click", () => runDocument("generate_blueprint", "blueprint", "blueprint-button"));
+      byId("proposal-button").addEventListener("click", () => runDocument("generate_proposal", "proposal", "proposal-button"));
+      byId("sow-button").addEventListener("click", () => runDocument("generate_sow", "sow", "sow-button"));
+      byId("ask-button").addEventListener("click", askKai);
+      byId("next-step-button").addEventListener("click", askKai);
+      byId("share-context-button").addEventListener("click", shareContext);
+      byId("fullscreen-button").addEventListener("click", expandView);
+
+      byId("analysis-systems").addEventListener("input", (event) => {
+        if (!byId("architecture-systems").value) byId("architecture-systems").value = event.target.value;
+      });
+      byId("location-count").addEventListener("input", (event) => {
+        if (!byId("architecture-locations").value) byId("architecture-locations").value = event.target.value;
+        if (!byId("migration-locations").value) byId("migration-locations").value = event.target.value;
+      });
+
+      hydrateInitialState();
+      syncNavigation();
+      syncPanels();
+      renderWorkbench();
+    </script>
+  </body>
+</html>

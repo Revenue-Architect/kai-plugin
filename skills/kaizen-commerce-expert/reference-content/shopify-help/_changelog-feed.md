@@ -1,0 +1,376 @@
+# Shopify merchant changelog feed
+
+Generated from canonical vendor change surfaces. Validate live before production guidance.
+
+## Update run - 2026-05-14
+
+- [AUTO-CURATED] 2026-05-14 - [Updates to Italy's Sardinian province definitions](https://changelog.shopify.com/posts/italy-s-sardinian-province-definitions-updated)
+  - Source: Shopify merchant changelog; route: Shopify Taxes; categories: Admin
+  - Note: We've updated Italy's province definitions to reflect the Sardinian administrative restoration that took effect in June 2025: * Gallura Nord-Est Sardegna (OT) is now a selectable province * Carbonia-Iglesias (CI) has been renamed to Sulcis Iglesiente to match the restored province name. Merchants shipping to Sardinia may notice updated province names in checkout. Partners using the address validation or autocomplete...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-13 - [Shopify Tax has expanded to Canada](https://changelog.shopify.com/posts/shopify-tax-has-expanded-to-canada)
+  - Source: Shopify merchant changelog; route: Shopify Taxes; categories: Admin
+  - Note: Managing Canadian sales tax is complicated, which is why we're committed to making it better. Shopify Tax is bringing brand new features to your admin that will make it easier to collect the right amounts at the right time, and know where your business is liable. New Enhanced calculations Stay confidently compliant selling across Canada knowing that Shopify Tax is accurately calculating sales tax rates (GST, HST, PS...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-13 - [Unified branding customization across checkout and customer accounts](https://changelog.shopify.com/posts/draft-unified-branding-customization-across-checkout-and-customer-accounts)
+  - Source: Shopify merchant changelog; route: Shopify Checkout and Customer Accounts; categories: Admin
+  - Note: Your checkout branding settings now apply consistently across checkout, customer accounts, and sign-in pages - all from the checkout and accounts editor. Set your brand once . Configure your logo, colors, typography, and section styles in one place, and they carry through consistently across checkout, customer account, and sign-in surfaces. No more discovering that a change in checkout looks broken on your customer...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-05-12 - [All Shopify Payments payment methods now available in Shop Pay checkout.](https://changelog.shopify.com/posts/more-shopify-payments-methods-available-in-shop-pay-checkout)
+  - Source: Shopify merchant changelog; route: Shopify Payments; categories: Payments
+  - Note: Shop Pay checkout now supports more of the payment methods you offer through Shopify Payments, so buyers are more likely to complete the order in Shop Pay instead of switching flows. Details * What it is: Greater parity between Shop Pay and guest checkout for which Shopify Payments methods appear, including local and regional options (such as Bancontact, BLIK, EPS, MobilePay, Multibanco, Przelewy24, Swish, TWINT, an...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-12 - [Simpler inventory transfers](https://changelog.shopify.com/posts/simpler-inventory-transfers)
+  - Source: Shopify merchant changelog; route: Shopify Products and Inventory; categories: Admin
+  - Note: We redesigned the inventory transfer workflow to match how merchants actually move inventory. Shipment creation is optional. No more manually creating, packing, and shipping a shipment for every transfer. Just create a transfer, move it to in transit, and receive at the destination. Redesigned transfer page . See your transfer progress at a glance with quantity changes at origin and destination visible at every step...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-11 - [Print packing slips for inventory transfers](https://changelog.shopify.com/posts/print-packing-slips-for-inventory-transfers)
+  - Source: Shopify merchant changelog; route: Shopify POS merchant features; categories: Pos
+  - Note: Previously, staff fulfilling outgoing inventory transfers in Shopify POS had no way to print a packing slip to include with the shipment. Now, staff on POS Pro can generate and print a packing slip directly from the shipment details for any outgoing transfer. The slip uses the same familiar format as order packing slips, adapted for transfers - it lists the items being sent (variant name and quantity), the origin an...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-11 - [A new home for Agentic Storefronts in your admin](https://changelog.shopify.com/posts/a-new-home-for-agentic-storefronts-in-your-admin)
+  - Source: Shopify merchant changelog; route: Shopify Products and Inventory; categories: Admin
+  - Note: Agentic Storefronts now has its own page in your Shopify admin . Your products are automatically accessible to AI channels like ChatGPT and Copilot through Shopify Catalog. Now you can track performance across all major AI channels, see which queries you rank for, and get recommendations to improve your product data. Learn more about Agentic Storefronts by visiting our Help Center
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-11 - [Sell gift cards in your customers' local currency](https://changelog.shopify.com/posts/sell-gift-cards-in-your-customers-local-currency)
+  - Source: Shopify merchant changelog; route: Shopify Markets and localization; categories: Admin
+  - Note: Merchants selling to multiple markets from a single shop can now sell and issue gift cards in any currency they operate it, not just the shop's primary currency. A USD-based store can issue EUR, CAD, GBP, or any other market currency gift card, with the value held in that currency end-to-end. This removes a long-standing blocker for merchants expanding internationally and for retail merchants in particular: a 10 USD...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-09 - [Flow: New action to get analytics data using ShopifyQL](https://changelog.shopify.com/posts/flow-new-action-to-get-analytics-data-using-shopifyql)
+  - Source: Shopify merchant changelog; route: Shopify Flow and Merchant Automation; categories: Apps
+  - Note: Using the new "Get analytics data" action, you can now use ShopifyQL inside your workflows to pull data from Shopify analytics (sales figures, sessions, inventory levels) and act on what you find. Query results become variables you can use in subsequent conditions and actions. Some examples of what you can do: * Schedule a report that includes your analytics data to go to Slack * Send an alert when sales drop below...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-08 - [Collect marketing consent on the account component](https://changelog.shopify.com/posts/collect-marketing-consent-on-the-account-component)
+  - Source: Shopify merchant changelog; route: Shopify Checkout and Customer Accounts; categories: Customer-account
+  - Note: The account component on your storefront now includes a marketing opt-in checkbox below the email field. Customers who select it are added to your email marketing subscriber list when they complete signing in. The checkbox uses the same email marketing opt-in setting for checkout and sign-in. To enable or change it, go to Settings > Checkout > Marketing opt-in in your admin. To learn more, refer to Adding an account...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-05-07 - [Benchmark Comparisons in Analytics will be removed on May 19th](https://changelog.shopify.com/posts/benchmark-comparisons-in-analytics-will-be-removed-on-may-19th)
+  - Source: Shopify merchant changelog; route: Shopify merchant changelog; categories: Analytics
+  - Note: Benchmark Comparison data in Shopify Analytics will no longer show new data, and the feature will be fully removed on May 19, 2026 . Alternatives: Use Metric Targets to set and track your own performance targets directly in your reports, or ask Sidekick for personalized guidance on your store's performance.
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-07 - [Product Variant Publishing](https://changelog.shopify.com/posts/product-variant-publishing)
+  - Source: Shopify merchant changelog; route: Shopify Products and Inventory; categories: Admin
+  - Note: We've just released variant-level publishing for sales channels and catalogs. This helps merchants control exactly which product variants are visible to buyers in each channel or catalog without having to delete variants or create duplicate products. You can now unpublish individual variants from the product details page, the variant details page, or the bulk editor - keeping the variant and its history in your admi...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-07 - [Inventory adjustment workflow now with full change tracking](https://changelog.shopify.com/posts/inventory-adjustment-workflow-now-with-full-change-tracking)
+  - Source: Shopify merchant changelog; route: Shopify Products and Inventory; categories: Admin
+  - Note: When you adjust inventory in your admin, you'll now see two modes in the popover: "Set To" - Enter your quantity. Shopify tracks the change automatically. "Adjust By" - Pick a source and destination for full movement tracking. Every adjustment, regardless of mode, now records the source, destination, who made the change, and when. You can view your full adjustment history any time. The Bulk Editor is unchanged and y...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-05-07 - [Assign discounts to specific markets](https://changelog.shopify.com/posts/assign-discounts-to-specific-markets)
+  - Source: Shopify merchant changelog; route: Shopify Markets and localization; categories: Admin
+  - Note: Assign discounts to specific markets and control exactly where they apply. Run an online-only flash sale without it hitting your retail locations. Create a wholesale offer that only reaches your B2B buyers. No workarounds needed. What's new: - Eligibility selector on the Discount Details page : Assign any code-based or automatic discount to one or more markets - Market and customer filters on the discounts list : Fi...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-05 - [Annotations bring store event context directly to your analytics](https://changelog.shopify.com/posts/annotations-bring-store-event-context-directly-to-your-analytics)
+  - Source: Shopify merchant changelog; route: Shopify Products and Inventory; categories: Analytics
+  - Note: We now visually display annotations with color-coded markers that show when store events happened alongside your data. Say your conversion rate drops on a Tuesday. Instead of wondering what happened, you hover over an annotation marker and see that a new theme was published that same day. Click it to open the annotation panel, which shows a full daily breakdown with every product published, every app installed, ever...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-05 - [Flow: View who edited, activated, or deactivated a workflow version](https://changelog.shopify.com/posts/flow-see-exactly-what-changed-in-any-workflow-and-roll-it-back)
+  - Source: Shopify merchant changelog; route: Shopify Flow and Merchant Automation; categories: Apps
+  - Note: Every workflow now keeps a version history - edits, activations, and deactivations are logged with the staff member and timestamp. When something breaks, open version history from the workflow detail page to see who changed the workflow and when. Version history is available on all workflows. Any staff member with access to the Flow app can view the history and browse past versions. For more information, visit the d...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-04 - [Apply discounts to items on the refund page](https://changelog.shopify.com/posts/apply-discounts-to-items-on-the-refund-page)
+  - Source: Shopify merchant changelog; route: Shopify Taxes; categories: Admin
+  - Note: What changed When issuing a refund from the refund page, you can now add, update, or remove a discount on eligible items without leaving the refund page. How it works 1. Open an order and navigate to the refund page. 2. Add, update, or remove a discount on any eligible item. 3. The page updates with the revised outstanding balance. 4. Issue the refund against the discounted amount. Why it matters Previously, applyin...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-03 - [Mark fulfillments without tracking as delivered](https://changelog.shopify.com/posts/mark-fulfillments-without-tracking-as-delivered)
+  - Source: Shopify merchant changelog; route: Shopify POS merchant features; categories: Admin
+  - Note: Mark as Delivered allows shipping fulfillments without carrier tracking in the Shopify admin to be marked as delivered. This allows merchants who ship with unsupported carriers to keep order delivery status accurate. Mark as delivered lets staff mark a shipping fulfillment as delivered from an order's Fulfilled card, or update multiple orders at once from the Orders page.
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-01 - [Track inventory that isn't for sale or fulfillment](https://changelog.shopify.com/posts/manage-inventory-at-locations-without-activating-them-for-fulfillment)
+  - Source: Shopify merchant changelog; route: Shopify Products and Inventory; categories: Inventory
+  - Note: You can now view and update on-hand inventory at any active location. New: For variants that don't fulfill orders from that location: - On-hand inventory is now shown and can be updated. - Any existing committed or unavailable quantities remain visible until they're reduced to zero. - Available quantity won't be shown, because the location isn't used to fulfill new orders: - On the Inventory page, this is shown as "...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-04-30 - [Flow: New triggers for inventory transfer completed and inventory transfer ready to ship](https://changelog.shopify.com/posts/flow-new-triggers-for-inventory-transfers-completed-and-inventory-transfer-ready-to-ship)
+  - Source: Shopify merchant changelog; route: Shopify Products and Inventory; categories: Apps
+  - Note: Flow now has new triggers that start workflows when inventory transfers change status. Inventory transfers represent stock moving between your business locations - like sending products from a warehouse to a retail store. The Inventory transfer ready to ship trigger starts a workflow when a transfer has been prepared and is marked "ready to ship". Use this to build workflows that alert the receiving location, update...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-04-30 - [Manage all your POS settings in one place with the new POS Editor](https://changelog.shopify.com/posts/manage-all-your-pos-settings-in-one-place-with-the-new-pos-editor)
+  - Source: Shopify merchant changelog; route: Shopify POS merchant features; categories: Pos
+  - Note: No more hopping between settings pages. The new POS Editor brings payments, receipts, tips, customer info, and apps into a single, familiar editor with a cleaner layout and faster navigation. What's changing: - One editor, one navigation . Payments, offline payments, local payment methods, app extensions, customer info, and receipt settings now live alongside Smart grid, Lock screen, Customer display, and Receipts -...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-04-29 - [Shopify Balance Domestic Wire Transfers](https://changelog.shopify.com/posts/shopify-balance-domestic-wire-transfers)
+  - Source: Shopify merchant changelog; route: Shopify Payments; categories: Balance
+  - Note: We've added the capability for US merchants to initiate domestic wire transfers using Shopify Balance. This improvement allows business owners to manage their payments more efficiently and securely. Merchants can now send US domestic wire transfers to pay thier suppliers, contractors, vendors etc. Learn more about enabling US domestic wire transfers in the Shopify Help Center .
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-04-28 - [Data-driven insights now appear on your analytics dashboard](https://changelog.shopify.com/posts/data-driven-insights-now-appear-on-your-analytics-dashboard)
+  - Source: Shopify merchant changelog; route: Shopify Products and Inventory; categories: Analytics
+  - Note: Your analytics dashboard now shows a stream of insights at the top of the page, highlighting the most important trends in your business. Shopify's analytics insights are run daily, analyzing your sales, sessions, and fulfillment data across products, regions, channels, customer types, and more. We surface the top 5 findings ranked by business impact so that when you open your dashboard, you immediately see what's ch...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-04-27 - [Set and track targets in Shopify Analytics](https://changelog.shopify.com/posts/set-and-track-targets-in-shopify-analytics)
+  - Source: Shopify merchant changelog; route: Shopify Products and Inventory; categories: Analytics
+  - Note: You can now set targets for key metrics directly in Shopify Analytics. Pick a metric from gross sales, orders, conversion rate, or dozens more, add a filter like a specific sales channel or product, set a time period , the amount you plan to reach and you've got a target! A visual gauge tracks your progress in real time, showing percentage complete, current vs target value, and days remaining. For example, say you w...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-04-27 - [Returns and exchanges in cart for POS](https://changelog.shopify.com/posts/returns-and-exchanges-in-cart-for-pos)
+  - Source: Shopify merchant changelog; route: Shopify POS merchant features; categories: Pos
+  - Note: Returns, refunds, and exchanges now happen directly in the cart in Shopify POS v11.5. Instead of moving through separate workflows, staff can now complete these transactions in one place. This updated experience makes it faster and simpler to process returns and exchanges at the counter, while supporting a wider range of return and exchange scenarios. This update extends existing operational controls to the new in-c...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-04-27 - [Mid-session cash counts](https://changelog.shopify.com/posts/mid-session-cash-counts)
+  - Source: Shopify merchant changelog; route: Shopify POS merchant features; categories: Pos
+  - Note: Previously, you could only count the cash in your register when opening or closing a session. Now, staff can perform a cash count at any point during an active shift. Simply tap the Register icon and select Count cash to verify the amount in your drawer whenever needed-whether you're doing a till check during a busy day, handing off to a new staff member mid-shift, or reconciling after a large cash deposit or remova...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-04-27 - [Scan discount codes](https://changelog.shopify.com/posts/scan-discount-codes-in-shopify-pos)
+  - Source: Shopify merchant changelog; route: Shopify POS merchant features; categories: Pos
+  - Note: Staff can now apply discount codes at checkout by scanning a QR code - no more typing long codes by hand. You can also generate scannable QR codes for any discount code from the Shopify admin, print them, share them with customers, or keep them at the counter for staff use. What's new - Generate QR codes in the admin : open any discount code and download a scannable QR code to share with customers or display in-stor...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-04-27 - [Keyboard shortcuts and navigation in Shopify POS](https://changelog.shopify.com/posts/keyboard-shortcuts-and-navigation-in-shopify-pos)
+  - Source: Shopify merchant changelog; route: Shopify POS merchant features; categories: Pos
+  - Note: We've added keyboard navigation to Shopify POS so cart-building no longer requires switching between keyboard and touch. Retail staff on iPad and Android tablets with a hardware keyboard can now: - Open search with CMD+K and see all available shortcuts by holding CMD - Navigate Products, Orders, and Customers lists with arrow keys - Select a cart item or list result with Enter, or jump to one of the first nine with...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-04-27 - [Find products faster in Shopify POS with inline search suggestions](https://changelog.shopify.com/posts/find-products-faster-in-shopify-pos-with-inline-search-suggestions)
+  - Source: Shopify merchant changelog; route: Shopify POS merchant features; categories: Pos
+  - Note: Searching for products in Shopify POS just got faster. Starting with POS v11.5, inline suggestions help retail staff complete searches with fewer keystrokes. As you type in the product search field, the next word completes inline as ghost text drawn from your local catalog. Press Space or Tab to accept the suggestion and jump straight to the product, no need to finish typing the word. Product search is one of the mo...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-04-27 - [Custom discount amounts on line items in POS now apply per item](https://changelog.shopify.com/posts/custom-discount-amounts-on-line-items-in-pos-now-apply-per-item)
+  - Source: Shopify merchant changelog; route: Shopify POS merchant features; categories: Pos
+  - Note: What's changing Starting with version 11.5, when you apply a fixed-amount custom discount to a line item in Shopify POS, the value you enter is now the discount per item instead of a total amount spread across the line. For example, on a line with 3 sweaters, entering a $5 fixed-amount discount used to take $5 off the whole line ($1.67 off each sweater). Starting in POS v11.5, that same $5 takes $5 off each sweater,...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-04-27 - [U.S. retailers can adjust retail prices on Shopify Collective](https://changelog.shopify.com/posts/u-s-retailers-can-adjust-retail-prices-on-shopify-collective)
+  - Source: Shopify merchant changelog; route: Shopify POS merchant features; categories: Collective
+  - Note: Retailers connected to suppliers on Shopify Collective have the option to turn off price sync and set their own retail price for imported products, above or below the supplier's listed price. Price sync remains on by default for all existing connections. Retailers must change this setting to adjust prices. Suppliers can view the retail price a retailer has set for their products on the order detail page. Supplier co...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-04-24 - [Use MATCHES in ShopifyQL to filter by what customers did](https://changelog.shopify.com/posts/use-matches-in-shopifyql-to-filter-by-what-customers-did)
+  - Source: Shopify merchant changelog; route: Shopify Flow and Merchant Automation; categories: Analytics
+  - Note: We've added MATCHES to the ShopifyQL editor in Analytics so you can filter your reports by what customers did, not just who they are . You can now use MATCHES in the WHERE clause to filter by customer behavior. For example, you may want to see customers who purchased at least 2 products in the last 30 days. sql FROM customers SHOW customer_id, email WHERE products_purchased MATCHES (quantity >= 2, date >= -30d) GROU...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-04-23 - [Compare multiple metrics on one chart](https://changelog.shopify.com/posts/compare-multiple-metrics-on-one-chart)
+  - Source: Shopify merchant changelog; route: Shopify merchant changelog; categories: Admin
+  - Note: You can now plot multiple metrics on the same chart in Analytics . Add up to 4 metrics to a line chart to see how they trend together, or use the new "Bar and line" visualization to compare volume and rates side by side, all without toggling between charts. What's new: * Multi-metric line charts : Add up to 4 metrics to a single line chart using checkboxes in the config panel. Metrics with different value types (lik...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-04-21 - [Updates to local pickup user experience in checkout](https://changelog.shopify.com/posts/updates-to-local-pickup-user-experience-in-checkout)
+  - Source: Shopify merchant changelog; route: Shopify Payments; categories: Checkout
+  - Note: Previously, checkout listed shipping and local pickup options vertically, creating a long scrollable list that made it hard for customers to quickly scan-especially for complex checkouts with multiple pickup locations. Checkout now displays the first available local pickup location with an option to view and select additional locations. No action is required to display these updates. Shipping and local pickup option...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-04-20 - [Spot trends with new Analytics insights](https://changelog.shopify.com/posts/spot-trends-with-new-analytics-insights)
+  - Source: Shopify merchant changelog; route: Shopify POS merchant features; categories: Analytics
+  - Note: Analytics insights are now available to merchants averaging 10 or more orders per week . If you meet this criteria, you'll now see automated data summaries directly on your Home feed. We have also expanded the data we analyze to include Sessions and Fulfillments . We now monitor over 80 new data combinations to help you spot trends without digging through reports. What you can now track: * Session Trends : Monitor c...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-04-15 - [New Most Relevant sort order for products in a collection](https://changelog.shopify.com/posts/new-most-relevant-sort-order-for-products-in-a-collection)
+  - Source: Shopify merchant changelog; route: Shopify Products and Inventory; categories: Admin
+  - Note: We've added Most Relevant as a collection sort order option. Your existing collections sorting remains unchanged and the new Most Relevant sort appears alongside your existing sort options like Bestselling, Price, and Newest. Learn more about collection sorting options in the Shopify Help Center.
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+
+## Update run - 2026-07-04
+
+- [AUTO-CURATED] 2026-07-01 - [Brazil CNPJ validation now supports alphanumeric identifiers](https://changelog.shopify.com/posts/brazil-cnpj-validation-now-supports-alphanumeric-identifiers)
+  - Source: Shopify merchant changelog; route: Shopify Payments; categories: Checkout
+  - Note: We've updated Brazil CNPJ validation to support Receita Federal's new alphanumeric CNPJ format. New CNPJs can include letters or numbers in the first 12 positions while keeping numeric check digits in the final two positions. Existing numeric CNPJs continue to validate as before. For example, Shopify can now validate alphanumeric CNPJs such as 12.ABC.345/01DE-35 . Partners or apps that validate CNPJ values should ma...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-30 - [Define and manage metafields on inventory transfers](https://changelog.shopify.com/posts/define-and-manage-metafields-on-inventory-transfers)
+  - Source: Shopify merchant changelog; route: Shopify Products and Inventory; categories: Inventory
+  - Note: Inventory transfers now support custom metafields in the Shopify admin and Admin GraphQL API. Set up transfer metafields Go to Settings > Metafields and metaobjects > Transfers to define your metafield definitions, then add and edit values from the Transfer Create and Transfer Details pages. Use cases Transfer metafields are useful when your receiving, logistics, or inventory processes rely on data that the standard...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-30 - [Use location metafields as dimensions and filters in Analytics](https://changelog.shopify.com/posts/use-location-metafields-as-dimensions-and-filters-in-analytics)
+  - Source: Shopify merchant changelog; route: Shopify Products and Inventory; categories: Inventory
+  - Note: If you store custom data on your locations like store tiers, internal store numbers, fulfillment capabilities, or routing zones you can now use those metafields as dimensions and filters in Analytics. How to enable it Open a location metafield definition in Settings > Metafields and metaobjects > Locations and turn on "Filter or group data in Analytics." That definition is then available as a dimension or filter acr...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-30 - [Filter and group your reports by physical storefront](https://changelog.shopify.com/posts/filter-and-group-your-reports-by-physical-storefront)
+  - Source: Shopify merchant changelog; route: Shopify POS merchant features; categories: Analytics
+  - Note: You can now segment your analytics by whether a location is a physical storefront. The new Is physical storefront filter lets you isolate in-store activity from the rest of your business in Reports and Explore, so you can compare your physical retail locations against your other locations and channels without exporting to a spreadsheet. The dimension reflects each location's current setting: it covers every location...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-06-29 - [View data access changes with the new app pixel activity log](https://changelog.shopify.com/posts/view-data-access-changes-with-the-new-app-pixel-activity-log)
+  - Source: Shopify merchant changelog; route: Shopify merchant changelog; categories: Admin
+  - Note: We've just released the activity log for app pixels in the Customer events section of your Shopify admin. This helps merchants who share customer data with apps keep track of when and how that access has changed over time. The activity log lets you view the history of data access changes for each app pixel, right from its detail page. The activity log records every data access change from June 3, 2026 onward, so you...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-29 - [POS activity log](https://changelog.shopify.com/posts/pos-activity-log)
+  - Source: Shopify merchant changelog; route: Shopify POS merchant features; categories: Pos
+  - Note: Introducing the new POS activity log. Keep your team accountable and your store secure. Now high-risk action at the register is logged to a named staff member, with the time, device, and location captured automatically. Use the new sPOS activity log to investigate discrepancies, support loss prevention, and meet compliance requirements at scale. What's logged * Cash drawer operations including open, add cash, remove...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-29 - [View and manage all your POS devices from Shopify admin](https://changelog.shopify.com/posts/view-and-manage-all-your-pos-devices-from-shopify-admin)
+  - Source: Shopify merchant changelog; route: Shopify POS merchant features; categories: Pos
+  - Note: The Devices view in the POS channel now shows every device running Shopify POS, giving you a single source of truth for your entire fleet of tablets, phones, card readers and mobile POS devices. Track which devices are online or offline, which POS app version is installed and more. This visibility helps you maintain consistency across your business and quickly identify devices that need attention. When a device is l...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-26 - [Shopify now supports 3 EU import customs duty collection](https://changelog.shopify.com/posts/new-3-eu-import-customs-duty-arrives-july-1)
+  - Source: Shopify merchant changelog; route: Shopify Markets and localization; categories: Markets
+  - Note: Shopify Managed Markets and Shopify's import tax and duty calculation now support the EU's flat 3 customs duty per tariff line on qualifying orders up to 150 shipped into the EU from outside the EU, effective July 1, 2026. If you use either product, Shopify handles this fee for you automatically. No settings changes required. What's now supported In Shopify Managed Markets: The 3 fee is calculated, displayed, and co...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-24 - [Custom draft order line item discounts now use presentment currency](https://changelog.shopify.com/posts/improvement-to-draft-order-custom-discount-currency)
+  - Source: Shopify merchant changelog; route: Shopify Markets and localization; categories: Admin
+  - Note: Custom discounts added to draft order line items now use the draft order's presentment currency instead of the shop currency. This makes discount amounts easier to understand in draft order flows where the customer is checking out in a different currency than the shop's default currency. Learn more about custom discounts for draft orders in the Help Center .
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-23 - [B2B discounts are now enabled by default for new B2B stores and eligible existing stores](https://changelog.shopify.com/posts/b2b-discounts-are-now-available-by-default-on-new-stores)
+  - Source: Shopify merchant changelog; route: Shopify Markets and localization; categories: Discounts
+  - Note: Previously, stores had to contact Shopify Support to activate discounts for B2B. Now, discounts for B2B are activated automatically, so you can create automatic discounts and discount codes for your B2B customers right away. What's changing New stores using B2B : Discounts for B2B are activated by default. No setup step is required. Existing B2B stores without active or scheduled discounts : Discounts for B2B are be...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-22 - [Staff attribution improvements in POS](https://changelog.shopify.com/posts/staff-attribution-improvements-in-pos)
+  - Source: Shopify merchant changelog; route: Shopify POS merchant features; categories: Pos
+  - Note: We're improving staff attribution over the next two updates, so it's easier to credit the right team member for every sale. Staff attribution in Shopify POS is now automatically enabled for stores that haven't configured it, so every sale is credited to the team member who made it without any extra steps at checkout. Store managers and store owners can track commission, measure performance, and see who sold what acr...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-22 - [Purchase orders now create transfers to move inventory](https://changelog.shopify.com/posts/purchase-orders-now-create-transfers-to-move-inventory)
+  - Source: Shopify merchant changelog; route: Shopify Products and Inventory; categories: Admin
+  - Note: Purchase orders record what you ordered from a supplier and what it cost. Transfers record inventory movement. The two are now connected. When you're ready to receive a purchase order, it now creates a transfer. What this means: Receive in admin or POS - Incoming inventory can be received from either, so it can be done wherever the shipment arrives. Partial deliveries - A single transfer can have multiple shipments,...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-22 - [Checkout email field: new saved indicator and tooltip](https://changelog.shopify.com/posts/checkout-email-field-new-saved-indicator-and-tooltip)
+  - Source: Shopify merchant changelog; route: Shopify Payments; categories: Admin
+  - Note: We've added a new saved indicator to the email field at checkout. When a buyer enters their email, a tooltip now shows a short note explaining how it's used; for order confirmation and cart reminders, along with a brief saved label once entered. This gives buyers clearer visual feedback that their information was saved and its intended use, helping build confidence and trust.
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-18 - [Self-serve returns now support cancellations](https://changelog.shopify.com/posts/self-serve-returns-now-support-cancellations)
+  - Source: Shopify merchant changelog; route: Shopify Markets and localization; categories: Customer-account
+  - Note: Buyers can now request order cancellations through self-serve, in addition to requesting returns. You can set cancellation rules alongside your return rules. Both return and cancellation rules are configurable per market. A default policy applies storewide, with the option to add market-specific rules that override it for individual markets. This enables merchants selling in the EU to offer a withdrawal policy-from...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-17 - [Updated disclosure for subscription purchases on Checkout](https://changelog.shopify.com/posts/updated-disclosure-for-subscription-purchases-on-checkout)
+  - Source: Shopify merchant changelog; route: Shopify Payments; categories: Admin
+  - Note: As checkout evolves over time, we refine defaults to keep your buyer experience clear and consistent. This update refines the disclosure so your buyers see up-to-date information about subscriptions at checkout. As part of this change, we will begin using the following new translation keys for this disclosure: * Purchase options subscription agreement label * Purchase options subscription consent text * Purchase opt...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-06-17 - [The Spring '26 Edition is live](https://changelog.shopify.com/posts/the-spring-26-edition-is-live)
+  - Source: Shopify merchant changelog; route: Shopify merchant changelog; categories: Admin
+  - Note: Announcing 150+ updates to Shopify. See the updates .
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-17 - [Flow: Automatic charging for vaulted payment methods](https://changelog.shopify.com/posts/flow-automatic-charging-for-vaulted-payment-methods)
+  - Source: Shopify merchant changelog; route: Shopify Payments; categories: B2b
+  - Note: The Charge vaulted payment for B2B order action charges a customer's vaulted credit card or debits a vaulted bank account for an order with payment terms when payment is due. Learn more about the Charge vaulted payment for B2B order Flow action in the Shopify Help Center .
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-06-17 - [Online Store Editor with Sidekick on mobile](https://changelog.shopify.com/posts/online-store-editor-with-sidekick-on-mobile)
+  - Source: Shopify merchant changelog; route: Shopify merchant changelog; categories: Admin
+  - Note: The mobile Online Store Editor has been rebuilt to keep your store canvas visible while you make changes. This update also includes touch controls and Sidekick integration. What's new: * The canvas stays visible while you edit. Settings open in a compact sheet that does not cover your store * Tap any section or block directly on the canvas to open its settings and see changes as you make them * Controls and inputs a...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-17 - [Checkout Blocks: Prevent non-compliant shipping addresses at checkout](https://changelog.shopify.com/posts/checkout-blocks-block-non-compliant-shipping-addresses-at-checkout)
+  - Source: Shopify merchant changelog; route: Shopify Payments; categories: Apps
+  - Note: Address format validation in Checkout Blocks is now available to all merchants. Use the new checkout rule to block noncompliant shipping addresses. This can be found by going to Settings  Checkout  Checkout rules  Address format validation in the Shopify admin. Rules are enforced consistently in checkouts across online and agentic experiences. Buyers see an inline error and can't complete checkout until the address...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-17 - [Customer accounts get a design uplift](https://changelog.shopify.com/posts/customer-accounts-get-a-design-uplift)
+  - Source: Shopify merchant changelog; route: Shopify Checkout and Customer Accounts; categories: Customer-account
+  - Note: Customer account pages get a design uplift that makes it easier for your customers to navigate their account, track orders, and take actions. The refreshed pages now use a streamlined single-column layout, feature more intuitive and accessible navigation, and include mobile-first optimizations. What's new for your buyer experience Account menus with up to 4 navigation links are now displayed inline on mobile , at th...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-17 - [Ship and pickup in one order available for Plus and Enterprise plans](https://changelog.shopify.com/posts/ship-and-pickup-in-one-order)
+  - Source: Shopify merchant changelog; route: Shopify Payments; categories: Checkout
+  - Note: Merchants on Plus and Enterprise plans can now offer customers the flexibility to select shipping and store pickup for different items within a single checkout. Previously, customers had to create separate orders for each delivery method. Customers can see all available delivery options for each item based on the shop's configured locations, inventory, and delivery methods. Customers can choose to ship or pick up al...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-17 - [Visualize your data with bubble and sunburst charts in Analytics](https://changelog.shopify.com/posts/visualize-your-data-with-bubble-and-sunburst-charts-in-analytics)
+  - Source: Shopify merchant changelog; route: Shopify Products and Inventory; categories: Admin
+  - Note: Bubble and sunburst charts are now available in Analytics. These two new chart types give you more ways to explore your store data, whether you're comparing multiple metrics at once or breaking down totals across nested categories. The new chart types appear in the visualization picker when you create or edit a report. Bubble charts plot three metrics together so you can spot outliers, like products with high sales...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-06-17 - [The Marketing tab is now the Growth tab](https://changelog.shopify.com/posts/the-marketing-tab-is-now-the-growth-tab)
+  - Source: Shopify merchant changelog; route: Shopify merchant changelog; categories: Admin
+  - Note: The Marketing tab in your admin has a new name and a new look. It's now called Growth, and it's where you'll find everything related to growing your business, including Campaigns, Attribution, and the new Autopilot experience. Here's where to find things: * Campaigns and Attribution are in the Growth tab, right where you'd expect them * Automations now live in the Shopify Messaging app * Campaign Autopilot is availa...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-17 - [Product listings now support a disclosures field](https://changelog.shopify.com/posts/product-listings-now-support-a-disclosures-field)
+  - Source: Shopify merchant changelog; route: Shopify Products and Inventory; categories: Products
+  - Note: Merchants can now add structured product disclosures directly in Shopify admin instead of storing warnings in product descriptions, theme code, or custom workarounds. Product disclosures are stored as product metafields and support built-in disclosure types for California Proposition 65 warnings and choking-hazard notices, plus custom disclosure types for other product-specific warnings or notices. On supported Onli...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-17 - [Set channel-specific prices, availability and currency with Markets](https://changelog.shopify.com/posts/set-channel-specific-prices-availability-and-currency-with-markets)
+  - Source: Shopify merchant changelog; route: Shopify Markets and localization; categories: Admin
+  - Note: Channels are now available as a market type in Shopify Markets. This enables merchants to create a market for one or more sales channels and, optionally, region(s), assign a catalog, and customize pricing, product availability, and currency while keeping each channel's own publishing controls in place. Channel Markets are now available to all merchants using Markets. Learn more about using Markets with sales channel...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-17 - [Understand your Markets setup at a glance with the redesigned graph](https://changelog.shopify.com/posts/understand-your-markets-setup-at-a-glance-with-the-redesigned-graph)
+  - Source: Shopify merchant changelog; route: Shopify Markets and localization; categories: Admin
+  - Note: The Markets graph now makes your configuration easy to understand at a glance. No more clicking into individual market pages to simply verify the number of products or mentally tracing what settings each sub-market inherits from its parent. Redesigned graph - A clearer visual map with product images on nodes, number of products and discounts for each node. Aggregated panel for all markets - See what settings are car...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-06-17 - [Smart delivery in Shopify Messaging](https://changelog.shopify.com/posts/smart-delivery-in-shopify-messaging)
+  - Source: Shopify merchant changelog; route: Shopify merchant changelog; categories: Apps
+  - Note: Shopify Messaging now includes smart delivery, a feature that intelligently prioritizes which messages to send and hold back, helping you optimize for conversion while lowering unsubscribes and marketing costs. For example, if a customer hasn't opened your recent marketing emails, they may be filtered from your next campaign. That way, you can focus your sends on customers who are more likely to engage. This is a bu...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-06-17 - [Manage WhatsApp marketing consent in Shopify](https://changelog.shopify.com/posts/manage-whatsapp-marketing-consent-in-shopify)
+  - Source: Shopify merchant changelog; route: Shopify merchant changelog; categories: Admin
+  - Note: Now you can manage WhatsApp marketing consent directly in each customer's profile in Shopify, alongside email and SMS consent. This gives you a more complete view of each customer's marketing preferences across all channels. You can also save time using the bulk import and export tool to add consent from an existing subscriber list or export your current subscriber data. To learn more about managing WhatsApp consent...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-17 - [Reduced bot noise in abandoned checkouts](https://changelog.shopify.com/posts/reduced-bot-noise-in-abandoned-checkouts)
+  - Source: Shopify merchant changelog; route: Shopify Payments; categories: Admin
+  - Note: When bots test your checkout with stolen card numbers and don't complete payment, Shopify no longer creates an abandoned checkout for that session. Previously, these bot attempts filled your recovery list with sessions that were never real customers. Now your abandoned checkout list stays focused on buyers who are worth following up with. Learn more about recovering abandoned checkouts .
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-13 - [Expanded multi-currency payout support in US, HK and SG](https://changelog.shopify.com/posts/expanded-multi-currency-payout-support-in-us-hk-and-sg)
+  - Source: Shopify merchant changelog; route: Shopify Payments; categories: Payments
+  - Note: We've expanded Multi-Currency Payouts for eligible Shopify Payments merchants. For the first time, merchants in the United States can receive payouts in multiple currencies, with support for CAD, EUR, AUD and GBP. We've also added more supported payout currencies in Singapore and Hong Kong: Singapore merchants can now receive payouts in EUR, GBP, and JPY, and Hong Kong merchants can now receive payouts in EUR, GBP,...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-11 - [Unified staff permissions for retail teams](https://changelog.shopify.com/posts/unified-pos-staff-management)
+  - Source: Shopify merchant changelog; route: Shopify POS merchant features; categories: Pos
+  - Note: Staff management for your entire team-POS and admin users-is now unified in Settings > Users. We've also made it easier to manage seasonal staff, high trust permissions and permissions across Shopify Plus organizations. Your existing users, permissions, and roles have been automatically migrated, so everyone keeps their current access. What's new: Manage POS users in admin settings Set up POS users, assign roles, an...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-11 - [Unlink a customer from your custom identity provider](https://changelog.shopify.com/posts/unlink-a-customer-from-your-custom-identity-provider)
+  - Source: Shopify merchant changelog; route: Shopify Checkout and Customer Accounts; categories: Customer-account
+  - Note: If your store uses a connected OpenID Connect (OIDC) identity provider for customer accounts (such as Okta, Auth0, Microsoft Entra ID), you can now unlink a customer from your identity provider directly in the Shopify admin. When a customer's account is linked to the wrong subject in your identity provider, the customer might see the following error when they try to sign in: "The sign-in method you used doesn't matc...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-10 - [Shopify Collective is now available in Australia](https://changelog.shopify.com/posts/shopify-collective-is-now-available-in-australia)
+  - Source: Shopify merchant changelog; route: Shopify Products and Inventory; categories: Collective
+  - Note: Shopify Collective is now available to merchants in Australia. Australian retailers can partner with Australian suppliers to sell their products directly through their storefronts. Retailers can expand their catalog without holding inventory or upfront cost. Suppliers can reach new customers by selling through Australian retailers that match their brand. To get started, install Shopify Collective from the Shopify Ap...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-06-10 - [Shipping performance metrics and Verified Tracking badge in Shopify Collective](https://changelog.shopify.com/posts/shipping-performance-metrics-and-verified-tracking-badge-in-shopify-collective)
+  - Source: Shopify merchant changelog; route: Shopify merchant changelog; categories: Collective
+  - Note: Suppliers on Shopify Collective can now earn a Verified Tracking badge by maintaining consistent carrier tracking coverage across all of their orders. The badge appears on their supplier profile in Discovery, where badged suppliers increase their discoverability to retailers. Three shipping metrics now appear on the home page of the Collective: Supplier app: carrier tracking coverage, on-time fulfillment, and on-tim...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-08 - [Multi-location pickup is now available in POS](https://changelog.shopify.com/posts/multi-location-pickup-is-now-available-in-pos)
+  - Source: Shopify merchant changelog; route: Shopify POS merchant features; categories: Pos
+  - Note: We've just released multi-location pickup in POS, allowing in-store staff to create pickup orders for collection at any of your pickup-enabled locations, right from the cart in POS. The Pickup location row in the cart is now tappable: staff can switch stores in one tap, with live inventory shown for each location so they can pick one that can actually fulfill the order. Available with POS version 11.8 for POS Pro me...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-08 - [Improved catalog publishing](https://changelog.shopify.com/posts/improved-catalog-publishing)
+  - Source: Shopify merchant changelog; route: Shopify Products and Inventory; categories: Admin
+  - Note: You can now make edits to your catalog, then save or discard all the changes together. Configure publishing changes across multiple products in a catalog. Review changes, then save or discard them in one action. Learn more: Create and manage your catalogs
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-05 - [Schedule, publish, and A/B test new themes and checkout and customer account configurations](https://changelog.shopify.com/posts/schedule-publish-and-a-b-test-new-themes-and-checkout-and-customer-account-configurations)
+  - Source: Shopify merchant changelog; route: Shopify Checkout and Customer Accounts; categories: Admin
+  - Note: Rollouts now supports scheduling, gradually publishing and A/B testing your themes and checkout and customer accounts configurations. You can now: 1. Schedule an entire new checkout or theme to go live at a specific date and time. For example, switch from Dawn to Horizon on a specific date. 2. Temporarily swap to a different theme or checkout setup. For example, activating a BFCM theme for one week with automatic re...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-04 - [Scatter plots and radar charts are now in Shopify Analytics](https://changelog.shopify.com/posts/scatter-plots-and-radar-charts-are-now-in-shopify-analytics)
+  - Source: Shopify merchant changelog; route: Shopify Products and Inventory; categories: Admin
+  - Note: Custom reports in Shopify Analytics now support two new chart types: scatter plots and radar charts. These give you more ways to spot patterns and compare performance across your store data without exporting to a spreadsheet. Use scatter plots to see how two metrics relate. Plot revenue against units sold per product to find which products move volume but not margin. Plot session count against conversion rate per tr...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-30 - [Local payment methods are now available in more countries](https://changelog.shopify.com/posts/more-local-payment-methods-are-now-available-in-additional-countries)
+  - Source: Shopify merchant changelog; route: Shopify Payments; categories: Payments
+  - Note: Offering buyers a familiar, local way to pay can reduce friction and improve conversion at checkout. We've expanded the local payment methods available through Shopify Payments to more countries across Europe and beyond. Depending on where your business is located, you can now offer: MobilePay Austria, Belgium, Bulgaria, Croatia, Cyprus, Czechia, Estonia, Finland, Greece, Hungary, Ireland, Italy, Latvia, Liechtenste...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-23 - [Clearer payout balance and reserve information in Shopify Payments](https://changelog.shopify.com/posts/clearer-payout-balance-and-reserve-information-in-shopify-payments)
+  - Source: Shopify merchant changelog; route: Shopify Payments; categories: Payments
+  - Note: We've updated the Shopify Payments Payouts page to make payout information easier to understand. The amount previously labeled To be paid is now labeled Payout balance , matching the language used across Finance. We've also added help text that explains how payout balance is calculated: payments minus refunds, disputes, and fees. If funds are held in reserve on your account, the Payouts page continues to show the re...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-05-20 - [A refreshed sign-in page for customer accounts, now customizable in the editor](https://changelog.shopify.com/posts/draft-a-refreshed-sign-in-page-for-customer-accounts-now-customizable-in-the-editor)
+  - Source: Shopify merchant changelog; route: Shopify Checkout and Customer Accounts; categories: Customer-account
+  - Note: Today, the customer account sign-in page has a refreshed design that gives you greater control over how it looks. The sign-in page now offers a two-column layout, with the sign-in form shifted to the left and a customizable background image on the right, enabling you to express your brand more visually beyond the logo. You can now customize and preview the sign-in page directly in the checkout and accounts editor ....
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-20 - [View cumulative metrics over time in Analytics](https://changelog.shopify.com/posts/view-cumulative-metrics-over-time-in-analytics)
+  - Source: Shopify merchant changelog; route: Shopify Flow and Merchant Automation; categories: Analytics
+  - Note: We've added cumulative metrics to Analytics so you can see how your metrics build up over time. When you turn on the Cumulative toggle in the Visualization panel (or add WITH CUMULATIVE_VALUES to your ShopifyQL query), your time-series chart shows a running total instead of individual daily values making it easy to see progress toward a goal or how a metric is trending across a period. Cumulative view works in three...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-05-19 - [Create SMS marketing automations in Shopify Messaging](https://changelog.shopify.com/posts/create-sms-marketing-automations-in-shopify-messaging)
+  - Source: Shopify merchant changelog; route: Shopify merchant changelog; categories: Admin
+  - Note: Now you can automatically engage your customers with well-timed SMS messages. Send automated SMS with Shopify Messaging using pre-built templates for abandoned carts, abandoned checkouts, and browse abandonment, or create your own. Set up your SMS marketing automations from Shopify Messaging > Automations, and manage your SMS spending threshold from Shopify Messaging > Settings. Learn more about SMS marketing automa...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-15 - [Sell from multiple legal entities in the same country using Shopify Payments](https://changelog.shopify.com/posts/sell-from-multiple-legal-entities-in-the-same-country-using-shopify-payments)
+  - Source: Shopify merchant changelog; route: Shopify Payments; categories: Admin
+  - Note: Merchants with more complex business structures can now sell from multiple legal entities in the same country using Shopify Payments. Previously, merchants often needed separate stores or expansion store workarounds when different parts of their business operated under different legal entities in the same country. Now, eligible merchants can configure multiple Shopify Payments accounts within a single store using Ma...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-14 - [Flow: Make test events for your workflows with existing shop data](https://changelog.shopify.com/posts/flow-sidekick-generates-test-cases-for-your-workflows)
+  - Source: Shopify merchant changelog; route: Shopify Flow and Merchant Automation; categories: Apps
+  - Note: You can now more easily test workflows with existing shop data. Suppose that a recent order was fraudulent and you've built a workflow to block the next one. You can choose that fraudulent order and see if it works. You can also add tests to make sure it doesn't block other other orders. Additionally, by clicking "Generate test events", Sidekick will analyze the workflow and find real shop data to test the logical p...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+
+## Update run - 2026-07-26
+
+- [AUTO-CURATED] 2026-07-24 - [New app-added annotations on your analytics charts](https://changelog.shopify.com/posts/new-app-added-annotations-on-your-analytics-charts)
+  - Source: Shopify merchant changelog; route: Shopify Payments; categories: Analytics
+  - Note: Apps can now add business context directly to your analytics charts with annotations . Annotations mark important events on a specific date or date range, such as a product launch, collection launch, marketing campaign, discount, checkout offer, supplier change, landing page launch, payment method change, popup store, market launch, program change, or business milestone. When an app adds an annotation, we will displ...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-07-16 - [Shopify Managed Markets now supports EU buyer cancellation and return requests](https://changelog.shopify.com/posts/shopify-managed-markets-now-supports-eu-buyer-cancellation-and-return-requests)
+  - Source: Shopify merchant changelog; route: Shopify Markets and localization; categories: Markets
+  - Note: Shopify Managed Markets now supports buyer cancellation and return requests for applicable EU orders to comply with newly established Right of Withdrawal requirements for online stores. For merchants using Managed Markets to sell into EU countries, Shopify has added a managed 14-day cancellation and return rule for covered EU-bound orders. What's supported: * Applicable EU Managed Markets orders now include a 14-day...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-07-16 - [Collections now support multi-source and variants](https://changelog.shopify.com/posts/collections-now-support-multi-source-and-variants)
+  - Source: Shopify merchant changelog; route: Shopify Products and Inventory; categories: Admin
+  - Note: This release expands collection capabilities to help merchants run complex merchandising strategies without workarounds such as duplicate lists or third-party apps. Previously, collections were created only by automated conditions or hand-picked products. You can now build a collection from multiple sources, target specific variants, reuse other collections, and more. Highlights include: Multiple sources in one coll...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-07-15 - [Multiple product discounts on the same item](https://changelog.shopify.com/posts/multiple-product-discounts-on-the-same-item)
+  - Source: Shopify merchant changelog; route: Shopify Products and Inventory; categories: Discounts
+  - Note: You can now combine multiple product discounts on the same item, so overlapping promotions apply together without cart conflicts or workarounds. Previously, only one product discount could apply to an item. For example, run a sitewide 20% off the winter collection sale alongside $10 off boots from an affiliate partnership. When a customer adds winter boots to their cart, both discounts apply automatically. What you...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-07-10 - [Drive international conversion with automated duties-inclusive pricing from Shopify Managed Markets](https://changelog.shopify.com/posts/drive-international-conversion-with-automated-duties-inclusive-pricing-from-shopify-managed-markets)
+  - Source: Shopify merchant changelog; route: Shopify Markets and localization; categories: Markets
+  - Note: Shopify Managed Markets merchants can now use a managed pricing strategy across supported international markets. Pricing will account for cross-border costs like guaranteed duties and import taxes, transaction fees, and currency conversion in product prices, so international buyers can see stable, transparent pricing throughout their journey with no surprise fees at checkout or delivery. When managed pricing is acti...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-07-10 - [Flow: Copy and paste steps in your workflows](https://changelog.shopify.com/posts/flow-copy-and-paste-steps-in-your-workflows)
+  - Source: Shopify merchant changelog; route: Shopify Flow and Merchant Automation; categories: Apps
+  - Note: Building workflows often means recreating steps you've already set up somewhere else. Now you can copy an existing step and paste it, instead of rebuilding it from scratch. Select an action or condition step and use Cmd/Ctrl+C to copy it, then Cmd/Ctrl+V to paste. Flow keeps the copied step's configuration field values and, for conditions, its logic-so a pasted step arrives ready to use with only minor edits. You ca...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-07-10 - [Turn automatic hreflang tags on or off from your admin settings](https://changelog.shopify.com/posts/turn-automatic-hreflang-tags-on-or-off-from-your-admin-settings)
+  - Source: Shopify merchant changelog; route: Shopify Markets and localization; categories: Admin
+  - Note: Hreflang tags tell search engines which language or region version of a page to serve to which visitors. Shopify generates them automatically from your Markets language and domain settings. The automatic hreflang tag setting is on by default, but you can turn it off if you prefer to manage hreflang tags yourself and want to avoid duplicate tags. To turn it off, go in your Shopify admin to Online Store > Preferences...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-07-08 - [Security update Shopify Mobile App on Android](https://changelog.shopify.com/posts/security-update-shopify-mobile-app-ios-android)
+  - Source: Shopify merchant changelog; route: Shopify merchant changelog; categories: Mobile
+  - Note: What's changing: * All users must update to the latest version of the app. * Minimum OS requirement: The app now requires Android 11 or later. If your device runs Android 10 or earlier, you can still manage your store at admin.shopify.com from any mobile browser.
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-07-07 - [See your POS selling environment health at a glance](https://changelog.shopify.com/posts/see-your-pos-selling-environment-health-at-a-glance)
+  - Source: Shopify merchant changelog; route: Shopify POS merchant features; categories: Pos
+  - Note: The connectivity screen in the POS app has been updated to now give a single view of your selling environment health: internet connection, Shopify service status, and hardware connection health. When something is degraded, the panel offers next-best actions, such as guidance on enabling offline checkout, so you can keep selling. Automatically available in POS v11.10. Access the Connectivity screen by hitting the ass...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-07-07 - [New and updated staff permissions for payments, payouts, disputes, and tax documents](https://changelog.shopify.com/posts/new-and-updated-staff-permissions-for-payments-payouts-disputes-and-tax-documents)
+  - Source: Shopify merchant changelog; route: Shopify POS merchant features; categories: Admin
+  - Note: We've released four new staff permissions, giving you more granular control over who on your team can access information and manage settings. You can now grant staff only the access they need to do their job, without sharing full account capabilities. The new permissions are: * Manage payments settings * Manage disputes * View payouts * View tax documents These are rolling out now and can be assigned to a staff memb...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.

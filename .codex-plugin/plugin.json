@@ -1,0 +1,38 @@
+{
+  "name": "kaizen-commerce",
+  "version": "0.4.0+codex.20260826170000",
+  "description": "Scope-first Shopify POS, B2B, retail operations, migration, proposal, delivery intelligence, and authenticated KaizenOS operations.",
+  "author": {
+    "name": "Kaizen Commerce",
+    "url": "https://github.com/Kaizen-Commerce"
+  },
+  "homepage": "https://github.com/Kaizen-Commerce/kaizen-commerce",
+  "repository": "https://github.com/Kaizen-Commerce/kaizen-commerce",
+  "keywords": [
+    "Shopify POS",
+    "retail operations",
+    "B2B commerce",
+    "migration",
+    "solution engineering"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Kaizen Commerce",
+    "shortDescription": "Shopify POS and retail commerce delivery intelligence.",
+    "longDescription": "Kaizen Commerce helps merchants and solution teams reason through Shopify POS, B2B, retail operations, migrations, integrations, scope, proposals, and delivery with evidence and commercial guardrails. When authenticated, its bounded KaizenOS adapter can read canonical CRM and delivery records and preview or commit named CRM and project-management writes after explicit operator approval.",
+    "developerName": "Kaizen Commerce",
+    "category": "Business",
+    "capabilities": [
+      "Read",
+      "Write",
+      "Interactive"
+    ],
+    "defaultPrompt": [
+      "Prep me for a Shopify POS discovery call.",
+      "Assess this merchant's migration and operations risks.",
+      "Draft a scope-first proposal or SOW."
+    ]
+  },
+  "apps": "./.app.json"
+}

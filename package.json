@@ -1,0 +1,28 @@
+{
+  "name": "@kaizen-commerce/kaizen-knowledge-mcp",
+  "version": "0.4.0",
+  "private": true,
+  "type": "module",
+  "description": "Kaizen Commerce knowledge and authenticated KaizenOS CRM/project-management MCP server for the Kaizen Commerce plugin.",
+  "scripts": {
+    "start": "node mcp/server.mjs --http",
+    "start:stdio": "node mcp/server.mjs --stdio",
+    "check": "npm run check:server && npm run check:workbench",
+    "check:server": "node --check mcp/server.mjs",
+    "check:kaizenos": "node scripts/check-kaizenos-adapter.mjs",
+    "check:workbench": "node mcp/check-workbench.mjs",
+    "check:chatgpt": "node scripts/check-chatgpt-config.mjs",
+    "check:oauth": "node scripts/check-oauth.mjs",
+    "generate:submission": "node scripts/generate-chatgpt-submission.mjs",
+    "check:netlify": "node --check netlify/functions/kaizen-mcp.mjs && node scripts/check-netlify-function.mjs",
+    "check:runtime": "node scripts/check-runtime.mjs",
+    "configure:chatgpt": "node scripts/configure-chatgpt-app.mjs",
+    "netlify:dev": "npx netlify dev",
+    "test": "npm run check && npm run check:kaizenos && npm run check:chatgpt && npm run check:oauth && npm run check:netlify && npm run check:runtime"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "jose": "^6.2.10",
+    "zod": "4.4.3"
+  }
+}

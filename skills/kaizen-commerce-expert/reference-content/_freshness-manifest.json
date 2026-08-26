@@ -1,0 +1,33 @@
+{
+  "auto_curated": 11,
+  "blocked": 0,
+  "cutoffs_by_source": {
+    "anydb": "2026-07-26T16:08:55Z",
+    "shopify-dev": "2026-05-12T16:15:47Z",
+    "shopify-help": "2026-07-26T16:08:55Z"
+  },
+  "errors": {},
+  "generated_at": "2026-07-26T16:15:47Z",
+  "lookback_cutoff": "2026-07-26T16:08:55Z",
+  "needs_merge": 15,
+  "new_entries": 23,
+  "reviewed_archived": 2,
+  "reviewed_merged": 37,
+  "sections_updated": [
+    "shopify-dev/admin-api",
+    "shopify-dev/checkout-accounts",
+    "shopify-dev/flow-functions",
+    "shopify-dev/general",
+    "shopify-dev/pos-ui",
+    "shopify-dev/storefront-api"
+  ],
+  "source_urls": {
+    "anydb_releasenotes": "https://www.anydb.com/support/releasenotes/",
+    "anydb_releases": "https://www.anydb.com/community/c/releases/6",
+    "anydb_releases_json": "https://www.anydb.com/community/c/releases/6.json",
+    "anydb_roadmap": "https://www.anydb.com/support/roadmap/",
+    "shopify_developer_changelog": "https://shopify.dev/changelog/feed.xml",
+    "shopify_merchant_changelog": "https://changelog.shopify.com/feed.xml"
+  },
+  "version": 1
+}

@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "kaizen-knowledge": {
+      "command": "node",
+      "args": [
+        "./mcp/server.mjs",
+        "--stdio"
+      ]
+    }
+  }
+}

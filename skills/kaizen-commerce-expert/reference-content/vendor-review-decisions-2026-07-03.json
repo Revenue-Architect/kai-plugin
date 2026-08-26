@@ -1,0 +1,195 @@
+{
+  "anydb:https://www.anydb.com/community/t/anydb-release-april-14-2026/217": {
+    "status": "merged",
+    "destination": "anydb/general.md",
+    "note": "Confirmed in official AnyDB release notes: table view became the default, with inline editing, resizable saved columns, direct record creation, and All-view duplication."
+  },
+  "anydb:https://www.anydb.com/community/t/anydb-release-june-26-2026/260": {
+    "status": "archived",
+    "note": "Reviewed as a duplicate community announcement; the official June 26 release-notes entry is merged separately."
+  },
+  "anydb:https://www.anydb.com/community/t/anydb-shopify-coming-soon/220": {
+    "status": "merged",
+    "destination": "anydb/roadmap.md",
+    "note": "Official AnyDB roadmap still lists Shopify two-way synchronization as In Progress; do not represent it as shipped or build-ready."
+  },
+  "anydb:https://www.anydb.com/support/releasenotes/#jun-26-2026": {
+    "status": "merged",
+    "destination": "anydb/formulas-workflows.md",
+    "note": "Official release notes confirm chart-data fixes, multi-series pie charts, formula-dialog UX, document-preview sizing, and related reliability fixes."
+  },
+  "anydb:https://www.anydb.com/support/roadmap/": {
+    "status": "merged",
+    "destination": "anydb/roadmap.md",
+    "note": "Directional Q2 2026 roadmap only; Now, Next, and Later are not delivery guarantees and every feature still requires release-note or live-product confirmation."
+  },
+  "shopify-dev:https://shopify.dev/changelog/analytics-metric-targets-now-available-in-the-graphql-admin-api": {
+    "status": "merged",
+    "destination": "shopify-dev/admin-api.md",
+    "note": "Shipped GraphQL operations for reading, creating, updating, and deleting Analytics metric targets; validate the target API version before implementation."
+  },
+  "shopify-dev:https://shopify.dev/changelog/app-deployment-in-cicd-is-now-available-for-all-apps": {
+    "status": "merged",
+    "destination": "shopify-dev/general.md",
+    "note": "Shipped app-scoped automation tokens for CI/CD deployment; confirm current Shopify CLI requirements before configuring pipelines."
+  },
+  "shopify-dev:https://shopify.dev/changelog/app-quality-checks-now-managed-in-partner-dashboard": {
+    "status": "merged",
+    "destination": "shopify-dev/general.md",
+    "note": "App quality checks and reviewer communication are now managed in Partner Dashboard under app distribution."
+  },
+  "shopify-dev:https://shopify.dev/changelog/automatic-css-subsetting-for-stylesheet-tags": {
+    "status": "merged",
+    "destination": "shopify-dev/general.md",
+    "note": "Shipped automatic CSS subsetting for stylesheet tags; themes should keep component styles colocated and test cross-section dependencies."
+  },
+  "shopify-dev:https://shopify.dev/changelog/color-palettes": {
+    "status": "merged",
+    "destination": "shopify-dev/general.md",
+    "note": "Themes can define a global color-palette setting; validate current theme schema syntax before implementation."
+  },
+  "shopify-dev:https://shopify.dev/changelog/customize-llmstxt-llms-fulltxt-and-agentsmd": {
+    "status": "merged",
+    "destination": "shopify-dev/general.md",
+    "note": "Stores can customize machine-readable agents and LLM text endpoints through corresponding Liquid templates; validate theme behavior live."
+  },
+  "shopify-dev:https://shopify.dev/changelog/feature-preview-customer-account-improvements": {
+    "status": "merged",
+    "destination": "shopify-dev/checkout-accounts.md",
+    "note": "Feature preview only; test existing customer-account extensions against the refreshed layout before any rollout recommendation."
+  },
+  "shopify-dev:https://shopify.dev/changelog/flow-action-extensions-now-support-relative-paths-for-endpoint-urls": {
+    "status": "merged",
+    "destination": "shopify-dev/flow-functions.md",
+    "note": "Relative endpoint paths are supported for Flow action extensions and resolve differently in development versus production."
+  },
+  "shopify-dev:https://shopify.dev/changelog/hydrogen-developer-preview": {
+    "status": "merged",
+    "destination": "shopify-dev/storefront-api.md",
+    "note": "Developer preview only; Hydrogen's framework-agnostic core is suitable for prototyping, not an unconditional production recommendation."
+  },
+  "shopify-dev:https://shopify.dev/changelog/hydrogen-now-deploys-to-vercel": {
+    "status": "merged",
+    "destination": "shopify-dev/storefront-api.md",
+    "note": "Hydrogen developer-preview projects can deploy to Vercel; preserve preview status and validate the current starter/runtime contract."
+  },
+  "shopify-dev:https://shopify.dev/changelog/market-driven-shipping-now-available-in-feature-preview": {
+    "status": "merged",
+    "destination": "shopify-dev/checkout-accounts.md",
+    "note": "Feature preview with staged rollout; audit assumptions around delivery profiles and Markets before migration or app changes."
+  },
+  "shopify-dev:https://shopify.dev/changelog/more-admin-intents-now-support-settings": {
+    "status": "merged",
+    "destination": "shopify-dev/admin-api.md",
+    "note": "Seven additional Settings intents can open contextual admin settings; validate supported intents against current docs."
+  },
+  "shopify-dev:https://shopify.dev/changelog/next-generation-events-now-available-in-developer-preview": {
+    "status": "merged",
+    "destination": "shopify-dev/admin-api.md",
+    "note": "Developer preview only; field-level filtering and custom webhook payloads require preview-specific validation."
+  },
+  "shopify-dev:https://shopify.dev/changelog/ship-and-pickup-in-one-order-feature-preview": {
+    "status": "merged",
+    "destination": "shopify-dev/checkout-accounts.md",
+    "note": "Plus and Enterprise feature preview; apps must test multiple delivery groups and mixed shipping/pickup fulfillment assumptions."
+  },
+  "shopify-dev:https://shopify.dev/changelog/shipping-line-field-now-available-on-fulfillmentorderlineitem": {
+    "status": "merged",
+    "destination": "shopify-dev/admin-api.md",
+    "note": "Available in Admin API 2026-07; use the shippingLine field only after version-specific schema validation."
+  },
+  "shopify-dev:https://shopify.dev/changelog/shopify-app-pricing-charge-for-usage-recurring-subscriptions-or-both": {
+    "status": "merged",
+    "destination": "shopify-dev/general.md",
+    "note": "Shopify App Pricing replaces Managed Pricing terminology and supports recurring, usage-based, or combined models in Partner Dashboard."
+  },
+  "shopify-dev:https://shopify.dev/changelog/sidekick-app-extensions-app-store-requirements": {
+    "status": "merged",
+    "destination": "shopify-dev/general.md",
+    "note": "App Store requirements now constrain Sidekick extensions to core app functionality and prohibit promotional or cross-sell behavior."
+  },
+  "shopify-dev:https://shopify.dev/changelog/sidekick-app-extensions-available-today": {
+    "status": "merged",
+    "destination": "shopify-dev/general.md",
+    "note": "Sidekick App Data and App Actions extensions are available; validate eligibility, scopes, and App Store requirements before use."
+  },
+  "shopify-dev:https://shopify.dev/changelog/storefront-catalog-mcp-now-implements-ucp": {
+    "status": "merged",
+    "destination": "shopify-dev/storefront-api.md",
+    "note": "Storefront Catalog MCP adopted UCP tool names and endpoint shapes; legacy catalog tools had a June 15, 2026 migration deadline."
+  },
+  "shopify-dev:https://shopify.dev/changelog/update-to-app-uninstall-reasons": {
+    "status": "merged",
+    "destination": "shopify-dev/general.md",
+    "note": "Merchants must select a standardized uninstall reason; treat the resulting analytics as directional rather than perfect causal data."
+  },
+  "shopify-help:https://changelog.shopify.com/posts/assign-discounts-to-specific-markets": {
+    "status": "merged",
+    "destination": "shopify-help/markets.md",
+    "note": "Available to merchants on Basic and above using the new Markets experience; preserve market and customer-eligibility interaction caveats."
+  },
+  "shopify-help:https://changelog.shopify.com/posts/benchmark-comparisons-in-analytics-will-be-removed-on-may-19th": {
+    "status": "merged",
+    "destination": "shopify-help/general.md",
+    "note": "Benchmark Comparisons stopped receiving data and was removed May 19, 2026; use Metric Targets or other current reporting alternatives."
+  },
+  "shopify-help:https://changelog.shopify.com/posts/compare-multiple-metrics-on-one-chart": {
+    "status": "merged",
+    "destination": "shopify-help/general.md",
+    "note": "Analytics supports up to four metrics on a line chart and combined bar-and-line comparisons where metric types are compatible."
+  },
+  "shopify-help:https://changelog.shopify.com/posts/create-sms-marketing-automations-in-shopify-messaging": {
+    "status": "merged",
+    "destination": "shopify-help/flow-automation.md",
+    "note": "Shopify Messaging supports SMS automations, subject to sender registration, consent, country, and channel requirements."
+  },
+  "shopify-help:https://changelog.shopify.com/posts/draft-a-refreshed-sign-in-page-for-customer-accounts-now-customizable-in-the-editor": {
+    "status": "merged",
+    "destination": "shopify-help/checkout-accounts.md",
+    "note": "The refreshed customizable sign-in layout applies to new customer accounts; legacy-account merchants must confirm migration readiness."
+  },
+  "shopify-help:https://changelog.shopify.com/posts/manage-all-your-pos-settings-in-one-place-with-the-new-pos-editor": {
+    "status": "merged",
+    "destination": "shopify-help/pos.md",
+    "note": "The new POS Editor centralizes payment, receipt, customer, app-extension, Smart Grid, and device-related settings with a phased rollout."
+  },
+  "shopify-help:https://changelog.shopify.com/posts/manage-whatsapp-marketing-consent-in-shopify": {
+    "status": "merged",
+    "destination": "shopify-help/general.md",
+    "note": "WhatsApp marketing consent can be managed in customer profiles and imports; verify regional consent and messaging-provider requirements."
+  },
+  "shopify-help:https://changelog.shopify.com/posts/more-shopify-payments-methods-available-in-shop-pay-checkout": {
+    "status": "merged",
+    "destination": "shopify-help/payments.md",
+    "note": "Shop Pay supports additional Shopify Payments local and regional methods; availability still depends on market, currency, and payment-method eligibility."
+  },
+  "shopify-help:https://changelog.shopify.com/posts/online-store-editor-with-sidekick-on-mobile": {
+    "status": "merged",
+    "destination": "shopify-help/general.md",
+    "note": "The mobile Online Store Editor includes touch-oriented editing and Sidekick on supported phones; confirm device and tablet limitations."
+  },
+  "shopify-help:https://changelog.shopify.com/posts/shipping-performance-metrics-and-verified-tracking-badge-in-shopify-collective": {
+    "status": "merged",
+    "destination": "shopify-help/general.md",
+    "note": "Shopify Collective exposes shipping-performance metrics and a Verified Tracking badge based on carrier-tracking coverage; validate current thresholds."
+  },
+  "shopify-help:https://changelog.shopify.com/posts/smart-delivery-in-shopify-messaging": {
+    "status": "merged",
+    "destination": "shopify-help/flow-automation.md",
+    "note": "Smart delivery filters Shopify Messaging audiences using engagement signals and is enabled by default, with merchant controls."
+  },
+  "shopify-help:https://changelog.shopify.com/posts/the-marketing-tab-is-now-the-growth-tab": {
+    "status": "merged",
+    "destination": "shopify-help/general.md",
+    "note": "The admin Marketing surface is now Growth; related campaign, attribution, and automation locations may vary by rollout and app availability."
+  },
+  "shopify-help:https://changelog.shopify.com/posts/the-spring-26-edition-is-live": {
+    "status": "archived",
+    "note": "Reviewed as a high-level Editions index; specific operational changes are tracked through their individual canonical changelog items."
+  },
+  "shopify-help:https://changelog.shopify.com/posts/view-data-access-changes-with-the-new-app-pixel-activity-log": {
+    "status": "merged",
+    "destination": "shopify-help/general.md",
+    "note": "Customer events now includes an app-pixel data-access activity log for audit visibility; confirm retention and access behavior live."
+  }
+}

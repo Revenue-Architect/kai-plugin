@@ -1,0 +1,7 @@
+interface:
+  display_name: "Kaizen Migration QA"
+  short_description: "API job, Matrixify, and reconciliation QA"
+  default_prompt: "Use $kaizen-migration-qa to review the migration results and return an exact remediation plan."
+
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Kaizen Shopify Migration"
+  short_description: "API-first Shopify migration planning, mapping, and cutover work"
+  default_prompt: "Use $kaizen-shopify-migration to own the Shopify migration slice for this KaizenCommerce task."
+
+policy:
+  allow_implicit_invocation: false

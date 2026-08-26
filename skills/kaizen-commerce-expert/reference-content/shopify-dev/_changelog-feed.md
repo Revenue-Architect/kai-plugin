@@ -1,0 +1,444 @@
+# Shopify developer changelog feed
+
+Generated from canonical vendor change surfaces. Validate live before production guidance.
+
+## Update run - 2026-05-14
+
+- [AUTO-CURATED] 2026-05-13 - [Polaris web components migration guides now available for Checkout and Customer Account UI extensions](https://shopify.dev/changelog/polaris-web-components-migration-guides-now-available-for-checkout-and-customer-account-ui-extensions)
+  - Source: Shopify developer changelog; route: Shopify Checkout and Customer Accounts; categories: API, Update, Checkout UI, Customer Accounts
+  - Note: We've published new migration guides to help you upgrade Checkout and Customer Account UI extensions to the latest API version and Polaris web components. The new guides include: Guidance for moving from React or JavaScript extension APIs to Preact, Polaris web components, and the global shopify object. More than 60 component-specific migration pages, covering components such as Button , Checkbox , TextField , Banne...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-13 - [Function run log details are now automatically visible with the right access scopes](https://shopify.dev/changelog/function-run-log-details-are-now-automatically-visible-with-the-right-access-scopes)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: Platform, Update
+  - Note: You no longer need to ask merchants to share function run logs with you. These logs are now automatically available in the Dev Dashboard for any function your app has the necessary access scopes to view. What's Changed Function run logs in the Dev Dashboard are now accessible based on the access scopes granted to your app by the merchant. The required scopes to view a log are determined by the function's input query...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-12 - [New `PRODUCT_UNAVAILABLE_IN_BUYER_LOCATION` warning code in the Storefront API Cart](https://shopify.dev/changelog/new-productunavailableinbuyerlocation-warning-code-in-the-storefront-api-cart)
+  - Source: Shopify developer changelog; route: Shopify Storefront API; categories: API, New, Storefront GraphQL API, 2026-07
+  - Note: Starting with the 2026-07 version of the Storefront API, the Cart emits a PRODUCT_UNAVAILABLE_IN_BUYER_LOCATION warning when a cart line contains a product that isn't available in the buyer's location. Each affected cart line returns its own warning. The warning's target is set to the CartLine ID so you can map it back to the line in your UI. For background on cart warnings and an example of handling them, refer to...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-11 - [App Events: See app usage and performance data in your Dev Dashboard](https://shopify.dev/changelog/app-events-see-app-usage-and-performance-data-in-your-dev-dashboard)
+  - Source: Shopify developer changelog; route: Shopify Flow and Functions; categories: API, New
+  - Note: The App Events API lets you send any event from your app to Shopify. App event data appears in your Dev Dashboard Logs alongside webhooks, Function executions, and API calls. How it works: 1. Send app events to a single API endpoint: Define the event_handle and attributes you want to track and send them to the App Events API, including: Feature usage: bulk_edit_completed , report_generated , automation_created Workf...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-05-11 - [Shopify App Pricing: charge for usage, recurring subscriptions, or both](https://shopify.dev/changelog/shopify-app-pricing-charge-for-usage-recurring-subscriptions-or-both)
+  - Source: Shopify developer changelog; route: Shopify developer changelog; categories: Shopify App Store, New
+  - Note: Shopify App Pricing supports subscriptions, usage-based charges, or combined models, configured in the Partner Dashboard. What's new: Managed Pricing is now Shopify App Pricing Shopify App Pricing replaces Managed Pricing as Shopify's default billing solution that gets configured during app submission in the Partner Dashboard. Apps previously on Managed Pricing will now see "Shopify App Pricing" as their selected bi...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-11 - [The Storefront API's Cart object now exposes warnings for unavailable delivery options](https://shopify.dev/changelog/the-storefront-apis-cart-object-now-exposes-warnings-for-unavailable-delivery-options)
+  - Source: Shopify developer changelog; route: Shopify Storefront API; categories: API, New, Storefront GraphQL API, 2026-07
+  - Note: As of version 2026-07 of the GraphQL Storefront API, the Cart object issues a warning when a buyer's selected delivery option becomes unavailable. Previously, if a buyer's chosen delivery option was no longer available (for example, after changes to the cart's address or contents) the system would automatically switch to a different option without notifying the buyer. This lack of notification made it challenging fo...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-08 - [Target discounts to specific markets](https://shopify.dev/changelog/target-discounts-to-specific-markets)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, New, Admin GraphQL API
+  - Note: We've introduced markets as a new option in DiscountContextInput , enabling you to target discounts to specific regional markets, retail locations, or B2B company locations. This option can be used alongside existing eligibility options such as all , customerSegments , and customers . You can now set market eligibility for all discount types, including: Basic, BXGY, App, and Free Shipping discounts (both automatic a...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-05-08 - [More admin intents now support Settings](https://shopify.dev/changelog/more-admin-intents-now-support-settings)
+  - Source: Shopify developer changelog; route: Shopify developer changelog; categories: API, Update
+  - Note: Seven new Settings intents let apps open editors for notifications, payment capture, gift cards, delivery profiles, and business details. This builds on the initial Settings intents release from March. With a single API call, your app opens the relevant Settings section as a contextual overlay and scrolls the merchant directly to the field they need to edit. New intents Notifications edit:settings/NotificationsSende...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-07 - [Bots and agents should identify themselves via Web Bot Auth](https://shopify.dev/changelog/bots-and-agents-should-identify-themselves-via-web-bot-auth)
+  - Source: Shopify developer changelog; route: Shopify Storefront API; categories: Action Required, Platform, Update
+  - Note: What's changing Shopify now applies stricter rate limits to bots and agents that access the Storefront API and Shopify-hosted online store pages. Bots and agents that don't sign their requests are subject to the strictest limits. To qualify for higher rate limits, operators should sign their requests with Web Bot Auth. For more details, see Storefront rate limits . What you should do If you operate a bot or agent ac...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-07 - [Publish and unpublish product variants independently from product](https://shopify.dev/changelog/publish-and-unpublish-product-variants-independently-from-product)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, New, Admin GraphQL API, Storefront GraphQL API, 2026-07
+  - Note: ProductVariant is now a Publishable . Variants can be published or unpublished per publication (channel or catalog) in API version 2026-07, giving merchants - and your apps - fine-grained control over where each variant is visible without deleting variants, duplicating products, or hiding them via storefront code. This is a non-breaking, additive change: Product-level publishing is unchanged and still takes preceden...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-05-06 - [App deployment in CI/CD is now available for all apps](https://shopify.dev/changelog/app-deployment-in-cicd-is-now-available-for-all-apps)
+  - Source: Shopify developer changelog; route: Shopify developer changelog; categories: Action Required, Tools, New
+  - Note: App deployment in CI/CD is now available for all apps through app automation tokens on the Dev Dashboard. These tokens offer app-scoped authentication, allowing you to use the latest Shopify CLI to automate app releases in GitHub Workflows and similar tools. App-scoped authentication ensures that each token is specific to an individual app, enhancing security and control. To deploy your app using an app automation t...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-04 - [Default value of `appliesOnSubscription` changed to `true` for app discount inputs](https://shopify.dev/changelog/default-value-of-appliesonsubscription-changed-to-true-for-app-discount-inputs)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, Update, Admin GraphQL API, 2026-07
+  - Note: The default value of appliesOnSubscription has been changed from false to true on the DiscountCodeAppInput and DiscountAutomaticAppInput input types in GraphQL Admin API. No action is required. This default value change has no effect on how discounts are applied at checkout. If your app explicitly sets appliesOnSubscription when creating or updating app discounts, your behavior is unchanged. This change applies acro...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-01 - [Add actor field to subscription contract and billing attempt mutations](https://shopify.dev/changelog/add-actor-field-to-subscription-contract-and-billing-attempt-mutations)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, New, Admin GraphQL API, 2026-07
+  - Note: We have introduced a new actor field in subscription mutations to help you track who initiated an action - whether it was the customer, the merchant, or the partner app's automated system. You can now include an actor argument when creating billing attempts or editing subscription contracts. This field accepts the following values: customer : The buyer initiated the action (e.g., clicking "pay now" in a customer por...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-04-30 - [App-owned metaobjects can be used without access scopes](https://shopify.dev/changelog/metaobject-scopes-not-required-for-app-metaobjects)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, New, Admin GraphQL API, 2026-04
+  - Note: App-owned metaobjects, identified by types such as $app:example , including those created using declarative metaobject definitions , can now be utilized by their owning app without requiring any access scopes. This change simplifies the process for developers by eliminating the need to request additional access scopes, thereby reducing potential merchant friction. If you are considering using declarative metaobjects...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-04-29 - [Analytics metric targets now available in the GraphQL Admin API](https://shopify.dev/changelog/analytics-metric-targets-now-available-in-the-graphql-admin-api)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, New, Admin GraphQL API
+  - Note: You can now create and manage metric targets for merchants using four new GraphQL Admin API operations: analyticsTargets , analyticsTargetCreate , analyticsTargetUpdate , and analyticsTargetsDelete . With targets, merchants can set numeric goals for analytics metrics, such as "achieve $50K in gross sales this quarter," and track their progress with a visual gauge. The API has been available to apps from the start, e...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-04-27 - [Minor rounding change for custom line item discounts in POS 11.5](https://shopify.dev/changelog/minor-rounding-change-for-custom-line-item-discounts-in-pos-115)
+  - Source: Shopify developer changelog; route: Shopify POS UI; categories: API, Update, POS Extensions
+  - Note: Starting with POS version 11.5, we are updating the internal calculation method for custom fixed-amount line item discounts. These discounts will now be applied on a per-unit basis rather than across the entire line. Note that this change only affects fixed-amount discounts; percentage discounts remain unchanged. If your app uses setLineItemDiscount or bulkSetLineItemDiscounts from the Cart API with a FixedAmount di...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-04-27 - [Scannable discount codes](https://shopify.dev/changelog/scannable-discount-codes)
+  - Source: Shopify developer changelog; route: Shopify Flow and Functions; categories: Tools, New
+  - Note: As of POS version 11.5, merchants can generate scannable QR codes for any discount code in the Shopify Admin. These QR codes can be applied by both POS staff at checkout and by customers in online store sessions. What this means for discount apps No changes are required with this release. If your app creates discount codes, you can now generate QR codes for them that encode the store's discount URL. What you should...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-04-24 - [Customer tax settings now available in Admin API](https://shopify.dev/changelog/customer-tax-settings-now-available-in-admin-api)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, Update, Admin GraphQL API, 2026-07
+  - Note: Starting in API version 2026-07, the taxSettings field on the Customer object will be publicly accessible in the Admin GraphQL API. Apps with the read_customers or read_taxes access scopes can now query a customer's tax ID, such as a VAT number, which is collected and validated during checkout. This update aligns with the CompanyLocation.taxSettings.taxRegistrationId , which has been available since API version 2025...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-04-23 - [Ship and pickup in one order now available in feature preview](https://shopify.dev/changelog/ship-and-pickup-in-one-order-feature-preview)
+  - Source: Shopify developer changelog; route: Shopify Checkout and Customer Accounts; categories: Action Required, API, New, Admin Extensions, Admin GraphQL API, Checkout UI, Customer Accounts, Functions, Storefront GraphQL API
+  - Note: Shopify Plus and Enterprise merchants will soon be able to enable a single checkout experience where customers can choose both shipping and store pickup within the same order. Previously, customers had to place separate orders for each delivery method. This change impacts how delivery and fulfillment information flows through checkout. If your app reads, calculates, or displays delivery and fulfillment information,...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-04-23 - [Update to app uninstall reasons](https://shopify.dev/changelog/update-to-app-uninstall-reasons)
+  - Source: Shopify developer changelog; route: Shopify developer changelog; categories: Shopify App Store, Update
+  - Note: We have updated the app uninstall reasons in your Partner Dashboard and now require merchants to select a reason before removing an app. These changes provide clearer, more actionable insights into why merchants uninstall apps, helping you enhance your app experience. When uninstalling, merchants will now see the following options and must choose one to complete the process: Testing multiple apps Store is closing or...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-04-22 - [Storefront Catalog MCP now implements UCP](https://shopify.dev/changelog/storefront-catalog-mcp-now-implements-ucp)
+  - Source: Shopify developer changelog; route: Shopify developer changelog; categories: Action Required, API, Breaking API Change
+  - Note: What's changing The following UCP catalog tools in Storefront Catalog are now available: - `search_catalog`: Search a store's product catalog with filters, pagination, and buyer context - `lookup_catalog`: Batch lookup products or variants by identifier with inputs correlation - `get_product`: Retrieve full product details with interactive variant selection, availability signals, and more Tool calls can be placed ag...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-04-21 - [New app submission experience in the Partner Dashboard](https://shopify.dev/changelog/new-app-submission-experience-in-the-partner-dashboard)
+  - Source: Shopify developer changelog; route: Shopify Flow and Functions; categories: Shopify App Store, New
+  - Note: We updated the app submission experience to help apps get reviewed and published faster. Three changes are live now in the Partner Dashboard: End-to-end review management in Partner Dashboard Review feedback for app submissions now lives in the Partner Dashboard under App > Distribution. Each requirement now has its own status, reviewer comments, and a way to ask questions directly. You can see exactly what's outsta...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-04-20 - [New `cartToken` field added to the `Order` object](https://shopify.dev/changelog/new-field-carttoken-added-to-the-order-graphql-admin-api)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, New, Admin GraphQL API, 2026-07
+  - Note: The cartToken field is now available on the GraphQL Admin API's Order object. This field returns the token associated with the cart that was used to create the order, matching the existing cart_token field in the REST Admin API.
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-04-17 - [Added MOST_RELEVANT value for `CollectionSortOrder`](https://shopify.dev/changelog/added-mostrelevant-value-for-collectionsortorder)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, New, Admin GraphQL API, 2026-07
+  - Note: The MOST_RELEVANT value is now available to the GraphQL Admin API's CollectionSortOrder , available in API version 2026-07 and higher. Learn more about collection sorting options in the Shopify Help Center .
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-04-15 - [Automatic CSS subsetting for `{% stylesheet %}` tags](https://shopify.dev/changelog/automatic-css-subsetting-for-stylesheet-tags)
+  - Source: Shopify developer changelog; route: Shopify developer changelog; categories: Action Required, Themes, Update
+  - Note: Shopify is introducing CSS content subsetting for {% stylesheet %} tags to improve storefront performance. Starting April 20, 2026, Shopify only delivers the CSS from {% stylesheet %} tags that are relevant to the sections, blocks, and snippets rendered on each page, instead of serving all {% stylesheet %} CSS on every page load. What this means for your theme If your theme's CSS classes are self-contained - each fi...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-04-15 - [New CSS variable for mobile safe area insets](https://shopify.dev/changelog/new-css-variable-for-mobile-safe-area-insets)
+  - Source: Shopify developer changelog; route: Shopify Flow and Functions; categories: Action Required, API, New, App Bridge
+  - Note: New CSS Variable for Mobile Safe Area Insets A new CSS custom property, --shopify-safe-area-inset-bottom , is now available for embedded apps running on Shopify Mobile. This property provides the exact pixel value of host UI overlays, such as the floating bottom navigation bar, to prevent apps from placing fixed-position content over these overlays. The var(--shopify-safe-area-inset-bottom) is automatically set by A...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+
+## Update run - 2026-07-04
+
+- [AUTO-CURATED] 2026-07-03 - [[DRAFT] Markets APIs now support MarketRegionSubdivision](https://shopify.dev/changelog/markets-apis-now-support-marketregionsubdivision)
+  - Source: Shopify developer changelog; route: Shopify Flow and Functions; categories: API, Update
+  - Note: Sub-region Markets are available in the Admin GraphQL API 2026-07 release candidate Apps using Admin GraphQL 2026-07 can encounter Markets configured with country-subdivision regions, such as states and provinces as merchants upgrade to market-driven shipping. Use MarketRegionSubdivision as the stable country-subdivision region type, and read sub-region membership through market.conditions.regionsCondition.regions ....
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-07-03 - [OrderDisplayFulfillmentStatus now returns FULFILLMENT_NOT_REQUIRED for orders with no items to fulfill](https://shopify.dev/changelog/orderdisplayfulfillmentstatus-now-returns-fulfillmentnotrequired)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, Update, Admin GraphQL API, 2026-10
+  - Note: As of API version 2026-10, the OrderDisplayFulfillmentStatus enum can return a new value: FULFILLMENT_NOT_REQUIRED . It is returned for orders that are not fulfilled but have no items remaining to fulfill - for example, an order that was fully cancelled or fully refunded before any items were fulfilled. Previously, these orders returned UNFULFILLED . This is a backward-compatible, additive change: integrations that...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-07-01 - [Shop Minis May June 2026 update](https://shopify.dev/changelog/shop-minis-may-june-2026-update)
+  - Source: Shopify developer changelog; route: Shopify Flow and Functions; categories: API, New, Shop Minis
+  - Note: New Features Product variant intents The React SDK added typed product variant intent hooks for selecting variants, adding variants to cart, and sending buyers to express checkout: useSelectVariant wraps select:shopify/ProductVariant . useAddToCart wraps add_to_cart:shopify/ProductVariant . useBuyNow wraps buy_now:shopify/ProductVariant . These hooks can open the native Shop variant selector sheet over the Mini WebV...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-07-01 - [Market-driven shipping now available in feature preview](https://shopify.dev/changelog/market-driven-shipping-now-available-in-feature-preview)
+  - Source: Shopify developer changelog; route: Shopify Checkout and Customer Accounts; categories: Action Required, API, New, Admin GraphQL API, 2026-07
+  - Note: Market-driven shipping moves merchant-owned shipping configuration out of delivery profiles and into Markets. Merchants will attach shipping options directly to each market, and then vary rates by product and location conditions within a single option. This makes checkout rate behavior more predictable and easier to understand. What this means for your app: Merchant shipping configuration (today's merchant delivery...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-07-01 - [Draft order deposit fields are now available in the GraphQL Admin API and Customer Account API](https://shopify.dev/changelog/draft-order-deposit-fields-now-available-in-the-admin-and-customer-account-graphql-apis)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, New, Admin GraphQL API, Customer Accounts, 2026-07
+  - Note: As of the 2026-07 API version, draft order deposit fields are available in the GraphQL Admin API and Customer Account API. Apps can now set a deposit when creating or updating a draft order with DraftOrderInput.deposit in the GraphQL Admin API. This supports draft order flows where part of the payment is due at checkout and the remaining balance is due later, such as due-on-fulfillment payment terms. The Customer Ac...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-07-01 - [Deprecation of cumulative marketing engagements](https://shopify.dev/changelog/deprecation-of-cumulative-marketing-engagements)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: Action Required, API, Deprecation Announcement, Admin GraphQL API, 2026-07
+  - Note: The isCumulative argument to the marketingEngagementCreate mutation is being deprecated, defaulting to false . Please update your integration to send non-cumulative engagements, as needed. Existing activities that have been sending cumulative metrics can migrate to non-cumulative at any time.
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-07-01 - [New `lineItem` field on the `GiftCard` object](https://shopify.dev/changelog/new-lineitem-field-on-the-giftcard-graphql-object)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, New, Admin GraphQL API, 2026-07
+  - Note: The GraphQL Admin API's GiftCard object now includes a lineItem field, representing the LineItem from the order that initiated the gift card's creation. The field returns null for gift cards that were issued manually instead of through an order.
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-07-01 - [Discount application information now available for draft orders on the Customer Account API](https://shopify.dev/changelog/discount-application-information-now-available-for-draft-orders-on-the-customer-account-api)
+  - Source: Shopify developer changelog; route: Shopify Flow and Functions; categories: API, New, Customer Account API, 2026-07
+  - Note: As of GraphQL Customer Account API version 2026-07, draft orders now expose discount applications. You can use the new discountApplications field on DraftOrder to query discounts applied to a draft order, and the new discountAllocations field on DraftOrderLineItem to query how discounts are allocated across line items. For example: query DraftOrderDiscounts($id: ID!) { draftOrder(id: $id) { discountApplications(firs...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-07-01 - [`discountedUnitPrice` on `DraftOrderLineItem` Customer Account API deprecation](https://shopify.dev/changelog/discountedunitprice-on-draftorderlineitem-customer-account-api-deprecation)
+  - Source: Shopify developer changelog; route: Shopify Checkout and Customer Accounts; categories: API, Deprecation Announcement, Customer Account API, 2026-07
+  - Note: The discountedUnitPrice field on the DraftOrderLineItem object in the Customer Account API is now deprecated. Use approximateDiscountedUnitPrice instead. This new field calculates the discounted total divided by the quantity, resulting in an approximate per-unit price reduction. Update your queries to use approximateDiscountedUnitPrice .
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-07-01 - [`BusinessEntity` now exposes `legalEntityId` in the GraphQL Admin API](https://shopify.dev/changelog/businessentity-now-exposes-legalentityid-in-the-admin-api)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, New, Admin GraphQL API, 2026-07
+  - Note: As of API version 2026-07 , the BusinessEntity type in the GraphQL Admin API includes a new legalEntityId field. This field returns the stable Central Legal Entity ID from Shopify's Organizations Platform, giving Partners a consistent identifier for the same legal entity across multiple shops, markets, and sales channels. What's new The BusinessEntity type now includes: legalEntityId ( BigInt , nullable): The stable...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-07-01 - [Merchant-owned delivery profile APIs are deprecated for market-driven shipping](https://shopify.dev/changelog/merchant-owned-delivery-profile-apis-are-deprecated-for-market-driven-shipping)
+  - Source: Shopify developer changelog; route: Shopify Flow and Functions; categories: Action Required, API, Deprecation Announcement, Admin GraphQL API, 2026-07
+  - Note: What's changing We're moving merchant-owned shipping configuration from legacy delivery profiles to Markets as part of market-driven shipping, a new model where shipping is configured per Market. When a shop uses market-driven shipping, the legacy delivery profile fields and mutations in the Admin GraphQL API no longer represent the shop's live merchant-owned shipping configuration. Reads may return a stale snapshot...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-07-01 - [Market-driven shipping Admin API](https://shopify.dev/changelog/market-driven-delivery-profiles-admin-api)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, New, Admin GraphQL API, 2026-07
+  - Note: Starting in API version 2026-07, the GraphQL Admin API supports market-driven shipping configuration. You can now configure shipping directly on a market, which helps apps support different shipping strategies for different markets without creating a separate shipping profile resource. What changed The Market object now includes a delivery field for market delivery settings. Use Market.delivery.shipping to read the...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-06-30 - [Hydrogen now deploys to Vercel](https://shopify.dev/changelog/hydrogen-now-deploys-to-vercel)
+  - Source: Shopify developer changelog; route: Shopify Storefront API; categories: API, New, Hydrogen
+  - Note: The Hydrogen developer preview can now be deployed to Vercel in a few clicks. A new Deploy button creates a repo from the Next.js starter template, sets up a Vercel project, and builds it. No local setup required. The template is a working Hydrogen storefront with the typed Storefront API client, cart, and product and collection pages already wired up. Add your store credentials from the Headless channel to connect...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-30 - [Configure order attribution for sales channel apps](https://shopify.dev/changelog/order-attribution-definitions-are-available-in-order-channel-filters)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, New, Admin Extensions, Admin GraphQL API, Storefront GraphQL API, 2026-07
+  - Note: Starting in API version 2026-07 , sales channel apps can use order attribution definitions to identify the source that created an order. Order attribution definitions are useful when your sales channel app needs attribution that is more specific than the app or channel itself. For example, you can attribute orders to a marketplace, region, account, or surface. Apps that only need default app or channel attribution d...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-27 - [Payment mandates now expose an id field](https://shopify.dev/changelog/payment-mandates-id-field)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, New, Admin GraphQL API, 2026-07
+  - Note: In API version 2026-07 and later, the PaymentMandateResource object includes a new id field. PaymentMandateResource is returned by the mandates connection on CustomerPaymentMethod . Its id is the same as the corresponding CustomerPaymentMethod.id , which lets you determine which payment method to use for a given mandate scope (for example, the SUBSCRIPTIONS scope) when a single payment instrument is associated with...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-26 - [Carrier services will no longer be automatically added to the default shipping profile](https://shopify.dev/changelog/carrier-services-will-no-longer-be-automatically-added-to-the-default-shipping-profile)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, Breaking API Change, Admin GraphQL API, Admin REST API, 2026-10
+  - Note: Starting with GraphQL Admin API version 2026-10, creating a carrier service no longer automatically adds it to the shop's General shipping profile. This breaking change affects carrier services created using: GraphQL Admin API: carrierServiceCreate REST Admin API: POST /admin/api/{version}/carrier_services.json Previously, active API carrier services created through these APIs were automatically added to eligible sh...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-24 - [Storefront MCP cart tools are being deprecated in favour of UCP Cart MCP](https://shopify.dev/changelog/storefront-mcp-cart-tools-are-being-deprecated-in-favour-of-ucp-cart-mcp)
+  - Source: Shopify developer changelog; route: Shopify Storefront API; categories: Action Required, API, Deprecation Announcement
+  - Note: What's changing The cart tools on the Storefront MCP server are being deprecated in favour of the UCP-conforming Cart MCP tools: get_cart and update_cart on https://{shop}.myshopify.com/api/mcp are deprecated. Cart MCP implements the UCP cart capability ( dev.ucp.shopping.cart , version 2026-04-08 ) and exposes the following tools at the https://{shop-domain}/api/ucp/mcp endpoint: create_cart : Create a new cart wit...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-23 - [`DraftOrderDiscountNotAppliedWarning.priceRule` removed in GraphQL Admin API 2026-10](https://shopify.dev/changelog/remove-pricerule-from-draft-order-discount-warning)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: Action Required, API, Breaking API Change, Admin GraphQL API, 2026-10
+  - Note: Starting with GraphQL Admin API version 2026-10 , the deprecated priceRule field on the DraftOrderDiscountNotAppliedWarning object is removed. This is a breaking change for apps that query priceRule on DraftOrderDiscountNotAppliedWarning , which is returned in draft order discount warnings from mutations such as draftOrderCalculate , draftOrderCreate , and draftOrderUpdate . If your app selects priceRule in these re...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-19 - [Removal of ITEM_NOT_STOCKED_AT_LOCATION error](https://shopify.dev/changelog/removal-of-itemnotstockedatlocation-error)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: Action Required, API, Breaking API Change, Admin GraphQL API, 2026-10
+  - Note: The ITEM_NOT_STOCKED_AT_LOCATION error will be removed from InventoryAdjustQuantities , InventoryMoveQuantities , InventorySetOnHandQuantities , and InventorySetQuantitiesUserErrorCode as of API version 2026-10. Following the changes described here , inventory quantities can now be adjusted at any location. As a result, the condition that previously triggered ITEM_NOT_STOCKED_AT_LOCATION can no longer occur, and thi...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-06-18 - [Flow action extensions now support relative paths for endpoint URLs](https://shopify.dev/changelog/flow-action-extensions-now-support-relative-paths-for-endpoint-urls)
+  - Source: Shopify developer changelog; route: Shopify Flow and Functions; categories: Tools, Update
+  - Note: You can now use relative paths for endpoint URLs in your Flow action extension configuration . The runtime_url , validation_url , config_page_url , and config_page_preview_url properties accept either an absolute HTTPS URL, such as https://example.com/api/flow/actions/place-bid , or a relative path that starts with a single / , such as /api/flow/actions/place-bid . When you use a relative path, Shopify CLI resolves...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-17 - [New purchaseType and recurringCycleLimit fields in the discounts API for discount UI extensions](https://shopify.dev/changelog/new-purchasetype-and-recurringcyclelimit-fields-available-in-the-discount-ui-extension-api)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, New, Admin Extensions, 2026-04
+  - Note: You can now configure purchaseType and recurringCycleLimit for app discounts directly from discount UI extensions using the discounts plugin. Previously, these fields were only accessible through the GraphQL Admin API. App developers building discount UI extensions had no way to let merchants control whether a discount applies to one-time purchases, subscriptions, or both, or how many subscription billing cycles a d...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-17 - [Apps can now open Shopify's file picker with the Intents API](https://shopify.dev/changelog/intents-api-file-picker)
+  - Source: Shopify developer changelog; route: Shopify Flow and Functions; categories: Tools, New, Admin Extensions, App Bridge
+  - Note: Apps can now open Shopify's native file picker with the Intents API. This lets your app prompt merchants to choose files from their Shopify file library without building a custom picker or sending them through a separate flow. With a single API call, your app can open the file picker, optionally filter by media type, enable multiple selection, and preselect files. When the merchant finishes selecting files, your app...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-17 - [Admin GraphQL API now supports app-owned delivery profiles that cover all shippable items](https://shopify.dev/changelog/admin-graphql-api-now-supports-app-owned-delivery-profiles-that-cover-all-shippable-items)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, Update, Admin GraphQL API, 2026-07
+  - Note: As of GraphQL Admin API version 2026-07, app-owned shipping delivery profiles support a new boolean coversAllItems field. Use coversAllItems on app-owned shipping delivery profiles to indicate that a profile applies to every shippable product variant in the store, without explicitly assigning each product or variant to that profile. The field is available on the DeliveryProfile type: query { deliveryProfiles(first:...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-17 - [Define and set metafields on inventory transfers in the GraphQL Admin API](https://shopify.dev/changelog/define-and-set-metafields-on-inventory-transfers-in-the-admin-graphql-api)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, New, Admin GraphQL API, 2026-07
+  - Note: As of GraphQL Admin API version 2026-07 , you can define metafields for inventory transfers and set metafields directly when creating or editing transfers. Use MetafieldOwnerType.TRANSFER with metafield definition mutations to create transfer-specific metafield definitions. You can also pass metafields in the metafields input on the following mutations: inventoryTransferCreate inventoryTransferCreateAsReadyToShip in...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-17 - [Purchase-type filtering now enforced for app discounts](https://shopify.dev/changelog/purchase-type-filtering-now-enforced-for-app-discounts)
+  - Source: Shopify developer changelog; route: Shopify Flow and Functions; categories: API, New, Admin GraphQL API
+  - Note: The appliesOnSubscription and appliesOnOneTimePurchase fields on app discounts are now enforced at checkout. Previously, these fields existed on DiscountCodeAppInput and DiscountAutomaticAppInput but had no effect. All app discounts applied to every line item regardless of purchase type. What changed If an app discount is configured with appliesOnSubscription: false , it will only apply to one-time purchase line ite...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-06-17 - [Hydrogen developer preview](https://shopify.dev/changelog/hydrogen-developer-preview)
+  - Source: Shopify developer changelog; route: Shopify developer changelog; categories: API, New, Hydrogen
+  - Note: The next version of Hydrogen moves the commerce logic out of React Router into a framework-agnostic core. You can build storefronts in any JavaScript framework using Shopify's commerce primitives, and it ships with skills that coding agents use to scaffold a storefront for you. This is an early developer preview, and we're looking for your feedback as we keep building it out. Learn more about the Hydrogen Developer...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-17 - [Create channel markets with the GraphQL Admin API](https://shopify.dev/changelog/create-channel-markets-with-the-graphql-admin-api)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, New, Admin GraphQL API, 2026-07
+  - Note: Starting in API version 2026-07 , the GraphQL Admin API supports channel markets. Apps can now create and update Markets that apply to one or more sales channels, then use existing catalog and market APIs to manage channel-specific product availability, pricing, and currency. This is an additive change. Existing apps don't need to make updates unless they create, query, or make assumptions about Markets or market ca...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-17 - [WhatsApp marketing consent now available in the Admin API and Customer Account API](https://shopify.dev/changelog/whatsapp-marketing-consent-now-available)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: Action Required, API, New, Admin GraphQL API, Customer Account API, Webhook, 2026-07
+  - Note: WhatsApp marketing consent can now be managed through both the Customer Account and Admin APIs. Use the customerWhatsAppMarketingConsentUpdate mutation to update a customer's WhatsApp marketing consent status for their default phone number. You can read the current WhatsApp marketing consent value from the CustomerPhoneNumber object via the whatsAppMarketingConsent field. For more details on managing WhatsApp market...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-06-17 - [New App Store requirements for Sidekick app extensions](https://shopify.dev/changelog/sidekick-app-extensions-app-store-requirements)
+  - Source: Shopify developer changelog; route: Shopify developer changelog; categories: Shopify App Store, New
+  - Note: We've introduced two new Shopify App Store requirements for Sidekick app extensions to protect platform integrity, ensure merchant transparency, and preserve trust. Starting today, all Sidekick app extensions must comply with the following guidelines: 2.2.8 Sidekick app extensions must align with stated app functionality : Sidekick app extensions must operate within the scope of your app's core functionality. To ens...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-17 - [Bulk queries now execute up to 4X faster](https://shopify.dev/changelog/bulk-queries-now-execute-faster)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, Update, Admin GraphQL API
+  - Note: Exporting large datasets from Shopify is now up to 4X faster, thanks to optimizations to bulk queries . Bulk operations are the most efficient way to import and export data from Shopify stores. Compared to synchronous use of the Admin API, you can build functionality faster with bulk operations, process large datasets in less time, and spend less on infrastructure. Other recent improvements to bulk operations includ...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-06-17 - [Sidekick app extensions available today](https://shopify.dev/changelog/sidekick-app-extensions-available-today)
+  - Source: Shopify developer changelog; route: Shopify Checkout and Customer Accounts; categories: Platform, New
+  - Note: All app developers can now build Sidekick app extensions. These extensions allow your app to integrate with Sidekick, giving Sidekick the ability to access data or take action within your apps. What's available today App data : Make your app's content searchable within Sidekick. Merchants can ask questions like "Find my best-performing email subject lines," and Sidekick will display relevant campaigns from your app...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-06-17 - [Color palettes in Themes](https://shopify.dev/changelog/color-palettes)
+  - Source: Shopify developer changelog; route: Shopify developer changelog; categories: Themes, New
+  - Note: Themes now support a new color_palette setting type. Palettes give merchants a single grid of colors they can edit directly, and changes apply across the entire theme. Individual color and color_background settings can reference palette entries as defaults, and merchants can override any color at the section or block level for local control. Color schemes continue to work, so existing themes don't need to change, an...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-17 - [Built for Shopify requirements for Returns and exchanges apps and Subscription apps (effective December 1, 2026)](https://shopify.dev/changelog/built-for-shopify-requirements-for-returns-and-exchanges-and-subscription-apps)
+  - Source: Shopify developer changelog; route: Shopify Checkout and Customer Accounts; categories: Action Required, Built for Shopify, Update
+  - Note: Effective December 1, 2026 , Returns and exchanges apps and Subscription apps that provide buyer-facing self-service experiences must authenticate customers using the Customer Account API. Apps that don't meet this requirement by the deadline are at risk of losing Built for Shopify status . What's changing Returns and exchanges and Subscription apps with buyer-facing self-service experiences must use the Customer Ac...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-17 - [Monitor admin web vitals in the Dev Dashboard](https://shopify.dev/changelog/monitor-admin-web-vitals-in-the-dev-dashboard)
+  - Source: Shopify developer changelog; route: Shopify Flow and Functions; categories: Tools, Update
+  - Note: Your app's admin performance data is now available in the Dev Dashboard, alongside your existing monitoring tools. This change eliminates the need to switch between Partner Dashboard tabs to check web vitals. What's changed The admin performance dashboards have moved from the Partner Dashboard to the Dev Dashboard. You can now access daily and 28-day P75 rollups for three Core Web Vitals: LCP (Largest Contentful Pai...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-17 - [Standard storefront events and actions](https://shopify.dev/changelog/standard-storefront-events-and-actions)
+  - Source: Shopify developer changelog; route: Shopify Storefront API; categories: Themes, New
+  - Note: Liquid storefronts now have a standard communication layer between themes and the code that runs on them. Themes emit events, while apps and agents call actions. Both work across all themes, and they ship together so you implement only once: Events are DOM events for commerce interactions: shopify:product:view , shopify:cart:lines-update , shopify:search:update , and others. Theme developers implement these in their...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-17 - [Buy Shipping Labels with the GraphQL Admin API](https://shopify.dev/changelog/label-purchase-mutation)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, New, Admin GraphQL API, 2026-07
+  - Note: New shippingLabelPurchase mutation in the GraphQL Admin API The GraphQL Admin API now includes the shippingLabelPurchase mutation, which lets apps purchase Shopify Shipping labels for eligible fulfillment orders. Apps can provide the fulfillment order, shipping date and time, package details, total weight, customer notification preference, and optional preferred carrier/service selection. If a preferred rate isn't p...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-17 - [New Collection model and APIs now available](https://shopify.dev/changelog/new-collection-model-and-apis-now-available)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: Action Required, API, New, Admin GraphQL API, Functions, 2026-07
+  - Note: The 2026-07 release replaces a collection's single ruleSet with a multi-source model in the GraphQL Admin API. Each collection now has one or more CollectionSource objects that define typed inclusion and exclusion conditions, plus manual selections. Shopify Functions also gain variant-level collection membership fields on the ProductVariant type. In API version 2026-07 and later, collections that use the new sources...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-16 - [Metafields now require a definition to be accessed through the Customer Account API](https://shopify.dev/changelog/metafields-now-require-a-definition-to-be-accessed-through-the-customer-account-api)
+  - Source: Shopify developer changelog; route: Shopify Custom Data; categories: Action Required, Platform, Update
+  - Note: Starting today, metafields stored on the app resource must have a metafield definition and customer accounts permissions to be accessible through the Customer Account API. Going forward, when calling the Customer Accounts API, app metafields without a definition will no longer return a value. If your app has functionality which depends on these fields, update those metafields to use definitions with the Customer Acc...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-16 - [New appSubscriptionCancel mutation in the Partner API](https://shopify.dev/changelog/new-appsubscriptioncancel-mutation-in-the-partner-api)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, New, 2026-07
+  - Note: Starting with API version 2026-07, Partner API clients can use the new appSubscriptionCancel mutation to cancel app subscriptions for public apps they own. The mutation supports: Immediate cancellation Deferred cancellation at the end of the current billing cycle Requesting prorated credits, when applicable Optionally skipping the final usage charge for usage-billed subscriptions This mutation is available to Partne...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-13 - [Shop User Metafields in Shopify Functions](https://shopify.dev/changelog/shop-user-metafields-in-shopify-functions)
+  - Source: Shopify developer changelog; route: Shopify Flow and Functions; categories: API, New, Functions, 2026-07
+  - Note: Shop User is Shopify's cross-merchant buyer identity. Partners who use metafields on Shop Users can now read those metafields during checkout using Shopify Functions. To learn more, see the Shop User metafields guide in the Shopify developer documentation: https://shopify.dev/docs/api/shop/guides/use-cases/metafields
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-12 - [Read a cart line's `viewKey` from the `CartLine` type](https://shopify.dev/changelog/cart-line-view-key-field)
+  - Source: Shopify developer changelog; route: Shopify Storefront API; categories: API, New, Storefront GraphQL API, 2026-07
+  - Note: The CartLine type now exposes a viewKey field, so you can correlate a returned cart line with the viewKey you sent to cartLinesUpdate and cartLinesRemove . What's new CartLine.viewKey returns the same viewKey your Liquid storefront renders, alongside the existing UUID id . How to use Previously, identifying a line by viewKey was input-only: you could send a viewKey , but the response returned a UUID id with no viewK...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-11 - [Shopify AI Toolkit for upgrading extensions to Polaris web components](https://shopify.dev/changelog/shopify-ai-toolkit-for-upgrading-extensions-to-polaris-web-components)
+  - Source: Shopify developer changelog; route: Shopify Checkout and Customer Accounts; categories: Action Required, Tools, Update
+  - Note: The Shopify AI Toolkit now supports upgrading checkout and customer account UI extensions to new API versions, including the migration to Polaris web components. Use the AI Toolkit with your preferred AI coding agent to skip repetitive manual work and speed up the heavy lifting. Your agent will leverage the Shopify AI Toolkit, paired with our enhanced developer documentation, to go through the required migration ste...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-11 - [Streamlined Metaobject API](https://shopify.dev/changelog/streamlined-metaobject-api)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, New, Admin GraphQL API, 2026-07
+  - Note: It's now easier to work with metaobjects. With the new values property , you can fetch all fields of a metaobject in a single call without handling deserialization in your app. The API returns a JSON-compatible object that's ready to use directly. You can also use values when creating or updating metaobjects . Provide a JSON-style object that matches your metaobject's field keys, and the API handles serialization fo...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-08 - [Headless checkout SSO is now documented with sso=silent](https://shopify.dev/changelog/headless-checkout-sso-is-now-documented-with-ssosilent)
+  - Source: Shopify developer changelog; route: Shopify Checkout and Customer Accounts; categories: API, New, Customer Account API, Hydrogen, Storefront GraphQL API
+  - Note: We've updated our headless checkout authentication docs to refer to the silent single sign-on query parameter as sso=silent instead of logged_in=true . This is a terminology and documentation update only. Existing checkout URLs that use logged_in=true will continue to work. Going forward, Shopify docs and examples will use sso=silent when describing the silent SSO flow from a headless storefront to checkout. Learn m...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-05 - [`GiftCardCashOutTransaction` is now resolvable from `GiftCardTransaction`](https://shopify.dev/changelog/giftcardcashouttransaction-now-resolvable-from-giftcardtransaction)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, New, Admin GraphQL API, 2026-07
+  - Note: Starting with GraphQL Admin API version 2026-07, the [ GiftCardCashOutTransaction ]( https://shopify.dev/docs/api/admin-graphql/2026-07/objects/GiftCardCashOutTransaction type is introduced as a new variant of the GiftCardTransaction interface. This type specifically represents transactions where a gift card balance is paid out through a point of sale (POS) system. In previous API versions, such as 2026-04 and earli...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-05 - [Local currency support gift cards now available in the GraphQL Admin API](https://shopify.dev/changelog/gift-card-local-currency-support)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, Update, Admin GraphQL API, 2026-07
+  - Note: Starting in API version 2026-07 , the GraphQL Admin API supports local currency gift cards. You can create gift card products that are issued in a specific currency, and control whether buyers can redeem those gift cards across currencies. If your app creates gift cards directly, migrate from the deprecated initialValue field to initialAmount . What changed Use the new giftCardProductSet mutation to create and updat...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-05 - [Inventory transfer webhooks include origin and destination location IDs, and mutation documentation clarified](https://shopify.dev/changelog/inventory-transfer-webhooks-include-origin-and-destination-location-ids-and-mutation-documentation-clarified)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, Update, Admin GraphQL API, 2026-07
+  - Note: Inventory transfer webhooks: new origin and destination fields Payloads for the following webhook topics now include the source and destination location of the transfer as Location Global IDs: inventory_transfers/add_items inventory_transfers/update_item_quantities inventory_transfers/remove_items inventory_transfers/ready_to_ship inventory_transfers/cancel inventory_transfers/complete Each payload now includes: ori...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-06-02 - [App quality checks now managed in Partner Dashboard](https://shopify.dev/changelog/app-quality-checks-now-managed-in-partner-dashboard)
+  - Source: Shopify developer changelog; route: Shopify developer changelog; categories: Shopify App Store, New
+  - Note: The end-to-end review management experience previously launched for new app submissions in the Partner Dashboard now also applies to app audits. When a published app undergoes a quality check and requires changes, that feedback appears in the Partner Dashboard under App > Distribution. You'll see the same requirement-level tracking, a structured fix workflow, and direct messaging used for app submissions. What to do...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-06-02 - [Identify cart lines by `view_key` in `cartLinesUpdate` and `cartLinesRemove`](https://shopify.dev/changelog/cart-line-mutations-accept-view-key)
+  - Source: Shopify developer changelog; route: Shopify Storefront API; categories: API, New, Storefront GraphQL API, 2026-07
+  - Note: You can now identify cart lines by their view_key when calling the cartLinesUpdate and cartLinesRemove mutations, as an alternative to the cart line id . What's new cartLinesUpdate accepts a viewKey on each CartLineUpdateInput , mutually exclusive with id . cartLinesRemove accepts a viewKeys list, mutually exclusive with lineIds . How to use Provide exactly one identifier per line. Existing integrations that use id...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-05-28 - [Customize /llms.txt, /llms-full.txt and /agents.md](https://shopify.dev/changelog/customize-llmstxt-llms-fulltxt-and-agentsmd)
+  - Source: Shopify developer changelog; route: Shopify developer changelog; categories: Themes, New
+  - Note: Your store includes a default agents.md file accessible at /agents.md . The paths /llms.txt and /llms-full.txt also point to this content by default. Add any of the following templates under Online Store > Themes > Edit code to serve different content per path: templates/agents.md.liquid - controls /agents.md (and the default for the other two paths) templates/llms.txt.liquid - controls /llms.txt only templates/llms...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-27 - [Build App Home as a UI extension](https://shopify.dev/changelog/build-app-home-as-a-ui-extension)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, New, Admin Extensions, 2026-07
+  - Note: You can now create your app's landing page in App Home as a Preact-based admin UI extension using the new admin.app.home.render target. This means your App Home UI extensions are bundled with your other admin UI extensions, eliminating the need for a separate web server to render your app's primary workspace. Use this extension type when you want: A persistent, full-page app workspace that's integrated into your ext...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-21 - [Shopify CLI 4.0: SemVer, auto-updates, removing deprecated flags and commands](https://shopify.dev/changelog/shopify-cli-40-semver-auto-updates-removing-deprecated-flags-and-commands)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: Tools, Update
+  - Note: The release of Shopify CLI 4.0 today brings clarity to CLI versioning, the introduction of automatic updates, and the announced removal of the deprecated --force flag from shopify app deploy . Semantic Versioning Shopify CLI is now following semantic versioning practices. Releases with new features will be minor versions, and bug fixes will be patch versions. When required, major version releases will be used to com...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-05-20 - [Feature preview: Customer account improvements](https://shopify.dev/changelog/feature-preview-customer-account-improvements)
+  - Source: Shopify developer changelog; route: Shopify Checkout and Customer Accounts; categories: Platform, Update
+  - Note: Customer accounts are getting a visual refresh, featuring improved navigation, layout, and consistency across devices. You can preview these changes now and test your Shopify Extensions within the updated layout. What's changing: Single-column native pages : These are now consistent across both desktop and mobile, with simplified navigation. Inline extensions will render in a narrower page width compared to the prev...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-20 - [Shop Minis March April 2026 update](https://shopify.dev/changelog/shop-minis-march-april-2026-update)
+  - Source: Shopify developer changelog; route: Shopify Flow and Functions; categories: API, Update, Shop Minis
+  - Note: New Features Optional Consent Users can now reject scopes and continue using your Mini. Consent is no longer all-or-nothing - if a user declines a scope, your Mini should gracefully degrade rather than block the experience. If your Mini hard-fails when a scope is rejected, please update it using the new hooks below. useCheckScopesConsent Hook Check at runtime which scopes a user has granted. Use this to conditionall...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-20 - [Expiring offline access tokens required for all public apps as of January 1, 2027](https://shopify.dev/changelog/expiring-offline-access-tokens-required-for-all-public-apps-as-of-january-1-2027)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: Action Required, API, Breaking API Change, Admin GraphQL API, Admin REST API
+  - Note: We're changing how public apps handle offline access tokens to enhance merchant data protection. Starting January 1, 2027, all public apps must use expiring offline access tokens when calling the Admin API. After that date, public apps still using non-expiring tokens will receive authentication errors. This extends the April 1, 2026 change , which applied only to newly created public apps, to all public apps, includ...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-20 - [Removing deprecated PRIVATE and PUBLIC_READ enums on metaobject definitions](https://shopify.dev/changelog/removing-deprecated-private-and-publicread-enums-on-metaobject-definitions)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, Deprecation Announcement, Admin GraphQL API, 2026-10
+  - Note: We are updating the MetaobjectAdminAccess enum by deprecating the PRIVATE and PUBLIC_READ values. These values are now obsolete and are never returned by the API. This change removes ambiguity, as the deprecated access values do not accurately reflect the intended access behaviors. There are no required changes, but updating your code will help maintain clarity and prevent potential access issues.
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-05-19 - [Next Generation Events now available in developer preview](https://shopify.dev/changelog/next-generation-events-now-available-in-developer-preview)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, New, Webhook
+  - Note: Next Generation Events are now available in developer preview, with field-level control over when events fire, what data they carry, and what triggered each delivery. Subscribe to exactly what you care about. Field-level triggers pre-qualify deliveries before they reach your endpoint. A subscription scoped to product.variants.price won't fire on title edits, tag updates, or status changes. Only when the price change...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-05-18 - [Shipping line field now available on FulfillmentOrderLineItem](https://shopify.dev/changelog/shipping-line-field-now-available-on-fulfillmentorderlineitem)
+  - Source: Shopify developer changelog; route: Shopify developer changelog; categories: API, New, Admin GraphQL API, 2026-07
+  - Note: You can query the shippingLine field on FulfillmentOrderLineItem . This field returns the ShippingLine associated with a fulfillment order line item, if available. This feature simplifies the process for order management and fulfillment apps to identify the shipping method for each line item. It is particularly useful in scenarios where fulfillment orders are merged across different delivery profiles, and the origin...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-15 - [New `checkoutToken` field added to the `Order` object](https://shopify.dev/changelog/new-checkouttoken-field-added-to-the-order-object)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, New, Admin GraphQL API, 2026-07
+  - Note: The checkoutToken field is now available on the GraphQL Admin API's Order object. This field returns the token associated with the checkout that was used to create the order, matching the existing checkout_token field in the REST Admin API.
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+
+## Update run - 2026-07-26
+
+- [AUTO-CURATED] 2026-07-24 - [Invalid metafield queries now return errors in the GraphQL Admin API](https://shopify.dev/changelog/invalid-metafield-queries-now-return-errors-in-the-graphql-admin-api)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: Action Required, API, Breaking API Change, Admin GraphQL API, Metafields and metaobjects, 2026-10
+  - Note: Starting in API version 2026-10, the GraphQL Admin API returns an error when a query filters by a metafield that isn't set up for filtering, instead of silently returning incorrect results. This is a breaking change. It affects apps that filter resources by metafield on version 2026-10 or later, and you'll need to update affected queries before you upgrade. What changed In API version 2026-10 and later, the GraphQL...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-07-21 - [Metafield triggers and additional topics are now available for Events](https://shopify.dev/changelog/metafield-triggers-and-additional-topics-are-now-available-for-events)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, Update, Events & webhooks
+  - Note: Apps can now subscribe to events for Order , Collection , InventoryItem , InventoryShipment , Location , and can subscribe to metafield changes on Product , Order , Customer , Collection and Location . ProductVariant metafields are supported through the Product topic. This gives apps a precise way to react to more objects and custom data changes. Apps can target the fields that matter in triggers , query the resourc...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-07-21 - [Liquid templates can now compose pages with blocks and partials](https://shopify.dev/changelog/developer-preview-liquid-block-and-partial-tags)
+  - Source: Shopify developer changelog; route: Shopify developer changelog; categories: API, New, Liquid
+  - Note: The Liquid July '26 developer preview introduces a simpler way to build theme pages. Page structure can live directly in a Liquid template, where developers and coding agents can read and edit everything in one place. The peview adds two Liquid tags: {% block %} renders a reusable theme block directly from a template. Name the block, pass its inputs, and provide body content much like you would with {% render %} . {...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-07-21 - [Full-stack capabilities to power app analytics](https://shopify.dev/changelog/full-stack-capabilities-to-power-app-analytics)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, New, Admin GraphQL API, App Events API, Metafields and metaobjects, ShopifyQL, 2026-10
+  - Note: For app developers, building merchant-facing analytics has always meant standing up your own stack: a charting library, a data warehouse to sync merchant data into, handling currencies and locales, and a UI that never quite matched the Shopify admin. With these updates, Shopify Analytics becomes a full-stack analytics platform that apps can build on directly, offloading the infrastructure to Shopify and putting your...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-07-17 - [Physical inventory feature preview](https://shopify.dev/changelog/physical-inventory-feature-preview)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, New, Admin GraphQL API
+  - Note: The physical inventory feature preview gives you early access to a new set of inventory APIs in the unstable version of the GraphQL Admin API. Enable it on a development store to build and test against the core primitives merchants use to organize a stockroom: bins, counts, and purchase orders. Because these APIs are under active development, they're available behind a feature preview. This lets you start building e...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-07-16 - [Card deposit endpoint now requires mTLS certificate](https://shopify.dev/changelog/card-deposit-endpoint-now-requires-mtls-certificate)
+  - Source: Shopify developer changelog; route: Shopify Admin API; categories: API, Update
+  - Note: Shopify's card-deposit endpoint now requires a Shopify-issued mTLS client certificate. Apps that store cardholder data with the customerPaymentMethodCreditCardCreate and customerPaymentMethodCreditCardUpdate GraphQL Admin API mutations must first deposit that data at Shopify's /sessions card-deposit endpoint to receive a session identifier. That deposit call must present a Shopify-issued certificate by October 15, 2...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-07-15 - [Updated App Store requirements: 4.1.2 Use a unique name for your app](https://shopify.dev/changelog/updated-app-store-requirements-4-1-2-use-a-unique-name-for-your-app)
+  - Source: Shopify developer changelog; route: Shopify developer changelog; categories: App store, Update
+  - Note: Your app's name is what merchants use to discover, identify, and remember your app. We've added requirement 4.1.2, "Use a unique name for your app," to reduce merchant confusion over identical and copycat app names in Shopify's App Store. We know that changing an app name isn't easy - it affects your brand, your discoverability, and your existing merchants. That's why this requirement establishes the standard now, w...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-07-15 - [Storefront API `@inContext` supports `channelId`](https://shopify.dev/changelog/new-channelid-argument-for-incontext-directive-in-storefront-api-2026-10)
+  - Source: Shopify developer changelog; route: Shopify Storefront API; categories: API, New, Storefront API, 2026-10
+  - Note: As of Storefront API version 2026-10 , the @inContext directive accepts an optional channelId argument. Use channelId to apply a specific sales channel's context to an entire query, including channel-specific product availability and pricing. Example: query Product($handle: String!, $channelId: ID!) @inContext(channelId: $channelId) { product(handle: $handle) { id title availableForSale priceRange { minVariantPrice...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-07-15 - [`productId`, `title`,`variantSku`, and `variantTitle` fields added to `ExchangeLineItem`](https://shopify.dev/changelog/new-fields-on-exchangelineitem)
+  - Source: Shopify developer changelog; route: Shopify developer changelog; categories: API, New, Admin GraphQL API, 2026-10
+  - Note: No summary provided by source.
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-07-15 - [POS UI Extensions 2026-07 adds discount allocations to bundle components](https://shopify.dev/changelog/pos-ui-extensions-2026-07-adds-discount-allocations-to-bundle-components)
+  - Source: Shopify developer changelog; route: Shopify POS UI; categories: API, Update, POS Extensions, 2026-07
+  - Note: Starting with POS UI Extensions API version 2026-07, product bundle components in cart line item data include discount allocation details. Apps can access component-level discount allocations from bundle components on a cart line item, for example: shopify.cartLineItem.components?.[0]?.discountAllocations The same LineItem shape is also used in Cart API cart state, so apps that read line items from shopify.cart.curr...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-07-09 - [POS Extensions now supports a background extension target](https://shopify.dev/changelog/pos-extensions-now-supports-a-background-extension-target)
+  - Source: Shopify developer changelog; route: Shopify POS UI; categories: API, New, POS Extensions, 2026-07
+  - Note: The pos.app.ready.data target runs for the entire POS session, letting your extension observe POS events and run background logic without rendering any UI surface. Use it for event observation, data storage, and calling non-visual background APIs. What you need to do Subscribe to Shopify POS events with shopify.addEventListener() : shopify.addEventListener('transactioncomplete', (event) => { console.log('Transaction...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-07-09 - [Identity verification for Shopify Partners starts today](https://shopify.dev/changelog/identity-verification-for-partners)
+  - Source: Shopify developer changelog; route: Shopify developer changelog; categories: Action Required, Platform, New
+  - Note: Trust is foundational to the Shopify Partner ecosystem. Partners take actions across Shopify that can directly affect merchants, and merchants need confidence when granting access to their stores. We're introducing identity verification for partners to help protect merchants, reduce abuse, and make it harder for bad actors to operate, while creating a better experience for legitimate partners. What changed Starting...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-07-09 - [Hydrogen developer preview update](https://shopify.dev/changelog/hydrogen-developer-preview-update)
+  - Source: Shopify developer changelog; route: Shopify Storefront API; categories: API, Update, Hydrogen
+  - Note: The Hydrogen developer preview adds new capabilities to the toolkit and extends the ways developers can build Shopify storefronts: Storefront API caching for catalog data: Cache products, collections, and pages at the edge instead of hitting the Storefront API on every request. WebMCP tools for in-browser AI agents: Expose your storefront to in-browser AI agents so they can search the catalog, browse products, and m...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-07-09 - [App Pricing: more plans, no-charge plan testing, and negative and fractional App Events](https://shopify.dev/changelog/app-pricing-more-plans-no-charge-plan-testing-and-negative-and-fractional-app-events)
+  - Source: Shopify developer changelog; route: Shopify developer changelog; categories: App store, Update
+  - Note: We've made several updates to App Pricing: Increased plan limits: You can now create up to 8 public plans (previously 4) and 15 private plans (previously 10) per app. No-charge plan testing: Test app billing flows without generating real charges: During app review, reviewers can now select any of your existing plans, so you no longer need to create a dedicated test plan. In development stores, you can install your o...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-07-08 - [POS UI extensions 2026-07 uses per-unit fixed-amount line item discounts](https://shopify.dev/changelog/pos-ui-extensions-2026-07-uses-per-unit-fixed-amount-line-item-discounts)
+  - Source: Shopify developer changelog; route: Shopify POS UI; categories: Action Required, API, Breaking API Change, POS Extensions, 2026-07
+  - Note: Starting with POS UI extensions API version 2026-07, FixedAmount line item discounts passed to setLineItemDiscount and bulkSetLineItemDiscounts from the Cart API must represent a per-unit discount. Why it's changing In API version 2026-04 and earlier, apps could pass a total fixed discount for the entire line item, and Shopify POS automatically converted it to a per-unit value. In API version 2026-07, this conversio...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-07-07 - [Prepare your app for migration to Shopify App Pricing](https://shopify.dev/changelog/prepare-your-app-for-migration-to-shopify-app-pricing)
+  - Source: Shopify developer changelog; route: Shopify developer changelog; categories: Platform, Update
+  - Note: Developers using the Billing API can now begin preparing their apps to move to Shopify App Pricing. The first part of our migration tool lets you generate, review, edit, and test Shopify App Pricing plans before moving any existing merchant subscriptions. This gives you time to confirm that your pricing configuration is ready while your app continues using its current billing setup. Shopify App Pricing provides a st...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-07-07 - [Shopify Flow: Changes to Action extensions result in fewer breaking changes](https://shopify.dev/changelog/shopify-flow-changes-to-action-extensions-result-in-fewer-breaking-changes)
+  - Source: Shopify developer changelog; route: Shopify Flow and Functions; categories: Tools, Update, 2026-07
+  - Note: Your server-side code now has more control over how breaking changes to an action's configuration fields are handled. Instead of failing validation when there's a field mismatch, workflows that use older versions of an action will continue to execute, and Shopify will still send the request to the configured endpoint URL. Your server can then decide how to handle schema differences: for example, it can set default v...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-07-07 - [Shopify Flow: Action runtime URLs now update automatically](https://shopify.dev/changelog/shopify-flow-action-runtime-urls-now-update-automatically)
+  - Source: Shopify developer changelog; route: Shopify Flow and Functions; categories: Tools, Update, 2026-07
+  - Note: Shopify Flow now resolves an action's runtime_url on every execution. When the runtime_url is changed and the app is redeployed, the new URL is automatically used by existing workflows the next time they run. Merchants no longer need to edit or re-save their workflows to use the updated URL. During local development, when you use shopify app dev , the runtime_url is also updated automatically in any development shop...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-07-06 - [Updated App Store Requirements: 1.3 Always Use Honest and Transparent Review Practices](https://shopify.dev/changelog/updated-app-store-requirements-13-always-use-honest-and-transparent-review-practices)
+  - Source: Shopify developer changelog; route: Shopify developer changelog; categories: App store, Update
+  - Note: All apps published to Shopify's App Store are subject to policy 1.3 "Always use honest and transparent review practices". What's changing: The Shopify App Store requirements policy 1.3 further clarifies our enforcement on the existing Partner Program Agreement Section C.2.1 about reviews in Shopify's App Store. Incentivizing reviews: While incentivizing reviews has always been against policy, we're further clarifyin...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-07-06 - [Customer Account API Customer.lastIncompleteCheckout and Checkout types removed in 2026-10](https://shopify.dev/changelog/customer-account-api-last-incomplete-checkout-and-checkout-types-removed)
+  - Source: Shopify developer changelog; route: Shopify Checkout and Customer Accounts; categories: Action Required, API, Breaking API Change, Customer Account API, 2026-10
+  - Note: As of Customer Account API version 2026-10, the deprecated Customer.lastIncompleteCheckout field is removed. This also removes the now-unreachable Customer Account API Checkout type subtree, including: Checkout Checkout.appliedGiftCards AppliedGiftCard AvailableShippingRates CheckoutLineItem CheckoutLineItemConnection CheckoutLineItemEdge ShippingRate The Customer.lastIncompleteCheckout field was previously deprecat...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-07-02 - [Deprecating the useBuyerJourneyIntercept API on checkout UI extensions](https://shopify.dev/changelog/deprecating-the-usebuyerjourneyintercept-api-on-checkout-ui-extensions)
+  - Source: Shopify developer changelog; route: Shopify Flow and Functions; categories: Action Required, Polaris, Deprecation announcement, 2026-07
+  - Note: Starting in version 2026-07 , the useBuyerJourneyIntercept hook on checkout UI extensions, and the block_progress capability it depends on, are deprecated. Existing extensions will continue to work on current and prior API versions, but this API will be removed in a future version , so you should plan to migrate. The following are deprecated: useBuyerJourneyIntercept (Preact hook) in checkout UI extensions The block...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [NEEDS-MERGE] 2026-06-17 - [Shopify's Spring '26 Edition: Everywhere](https://shopify.dev/changelog/shopify-s-spring-26-edition-everywhere)
+  - Source: Shopify developer changelog; route: Shopify developer changelog; categories: uncategorized
+  - Note: No summary provided by source.
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.
+- [AUTO-CURATED] 2026-05-13 - [Checkout And Accounts Configuration API for unified branding across checkout, customer accounts, and sign-in](https://shopify.dev/changelog/checkout-and-accounts-configuration-api-for-unified-branding-across-checkout-customer-accounts-and-sign-in)
+  - Source: Shopify developer changelog; route: Shopify Checkout and Customer Accounts; categories: API, New, Admin GraphQL API, 2026-04
+  - Note: As of API version 2026-04, the new Checkout And Accounts Configuration API is now available to unlock consistent branding customizations across checkout, customer accounts, and sign-in surfaces. This API is exclusively available to Shopify Plus merchants. This new API replaces the Checkout Profile API and Checkout Branding API (both are now deprecated). All capabilities to customize settings and branding for checkou...
+  - Freshness rule: validate canonical vendor docs/MCP before production guidance.

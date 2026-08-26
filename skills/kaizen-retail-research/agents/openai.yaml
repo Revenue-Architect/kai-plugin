@@ -1,0 +1,7 @@
+interface:
+  display_name: "Kaizen Retail Research"
+  short_description: "Merchant, partner, and retail capability research"
+  default_prompt: "Use $kaizen-retail-research to research this merchant or retail platform question with source-backed findings."
+
+policy:
+  allow_implicit_invocation: false

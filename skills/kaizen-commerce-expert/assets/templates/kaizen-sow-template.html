@@ -1,0 +1,348 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>KaizenCommerce Statement of Work Template</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap">
+  <style>
+    @page cover-p { size: letter; margin: 0; }
+    @page body-page {
+      size: letter;
+      margin: 0.78in 0.75in 0.82in 0.75in;
+      @bottom-left {
+        content: "KaizenCommerce | Confidential";
+        font-family: "Hanken Grotesk", Helvetica, sans-serif;
+        font-size: 7pt;
+        color: rgba(14,14,14,0.42);
+        border-top: 0.5pt solid rgba(14,14,14,0.10);
+        padding-top: 8pt;
+      }
+      @bottom-right {
+        content: "Page " counter(page);
+        font-family: "Hanken Grotesk", Helvetica, sans-serif;
+        font-size: 7pt;
+        color: rgba(14,14,14,0.42);
+        border-top: 0.5pt solid rgba(14,14,14,0.10);
+        padding-top: 8pt;
+      }
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #F5F7F9;
+      color: rgba(14,14,14,0.66);
+      font-family: "Hanken Grotesk", Helvetica, sans-serif;
+    }
+    .cover {
+      page: cover-p;
+      page-break-after: always;
+      width: 612pt;
+      height: 792pt;
+      background: #0e0e0e;
+      color: #F5F7F9;
+      position: relative;
+    }
+    .cover-inner {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: 90pt 72pt 78pt;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .wordmark {
+      font-family: "EB Garamond", Georgia, serif;
+      font-size: 30pt;
+      font-weight: 500;
+      letter-spacing: 0;
+      color: #F5F7F9;
+    }
+    .office {
+      margin-top: 7pt;
+      font-size: 7.5pt;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: rgba(245,247,249,0.36);
+    }
+    .doc-type {
+      margin-bottom: 14pt;
+      font-size: 9pt;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #a8201a;
+    }
+    .cover-title {
+      max-width: 430pt;
+      margin: 0 0 11pt;
+      font-family: "EB Garamond", Georgia, serif;
+      font-size: 40pt;
+      font-weight: 500;
+      line-height: 1.08;
+      color: #F5F7F9;
+    }
+    .cover-subtitle {
+      max-width: 390pt;
+      font-size: 11pt;
+      line-height: 1.5;
+      color: rgba(245,247,249,0.46);
+    }
+    .meta {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18pt 44pt;
+      max-width: 410pt;
+      margin-bottom: 28pt;
+    }
+    .meta-label {
+      display: block;
+      margin-bottom: 5pt;
+      font-size: 7pt;
+      font-weight: 800;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      color: rgba(245,247,249,0.34);
+    }
+    .meta-value {
+      display: block;
+      font-size: 10pt;
+      color: rgba(245,247,249,0.76);
+    }
+    .tagline {
+      font-family: "EB Garamond", Georgia, serif;
+      font-size: 12pt;
+      font-style: italic;
+      color: rgba(245,247,249,0.36);
+    }
+    .body {
+      page: body-page;
+    }
+    .section {
+      break-inside: avoid;
+      margin: 24pt 0 12pt;
+    }
+    .eyebrow {
+      display: block;
+      margin-bottom: 9pt;
+      font-size: 7.5pt;
+      font-weight: 800;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(14,14,14,0.42);
+    }
+    h1 {
+      margin: 0;
+      padding-bottom: 12pt;
+      border-bottom: 0.75pt solid rgba(14,14,14,0.09);
+      font-family: "EB Garamond", Georgia, serif;
+      font-size: 25pt;
+      font-weight: 500;
+      line-height: 1.12;
+      color: #0e0e0e;
+    }
+    h2 {
+      margin: 16pt 0 7pt;
+      font-size: 11.5pt;
+      font-weight: 800;
+      line-height: 1.3;
+      color: #0e0e0e;
+    }
+    h3 {
+      margin: 12pt 0 5pt;
+      font-size: 9.5pt;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #0D1B2A;
+    }
+    p {
+      margin: 0 0 9pt;
+      font-size: 9.5pt;
+      line-height: 1.58;
+      color: rgba(14,14,14,0.66);
+    }
+    strong { color: #0e0e0e; }
+    table {
+      width: 100%;
+      margin: 12pt 0 14pt;
+      border-collapse: collapse;
+      break-inside: avoid;
+    }
+    thead th {
+      padding: 10pt 12pt;
+      background: #0D1B2A;
+      color: #F5F7F9;
+      font-size: 7.5pt;
+      font-weight: 800;
+      letter-spacing: 0.10em;
+      line-height: 1.25;
+      text-align: left;
+      text-transform: uppercase;
+    }
+    table.red thead th { background: #a8201a; }
+    tbody td {
+      padding: 10pt 12pt;
+      border-bottom: 0.5pt solid rgba(14,14,14,0.08);
+      color: rgba(14,14,14,0.66);
+      font-size: 8.8pt;
+      line-height: 1.42;
+      vertical-align: top;
+    }
+    tbody tr:nth-child(even) td { background: rgba(14,14,14,0.035); }
+    tbody td:first-child {
+      color: #0e0e0e;
+      font-weight: 800;
+    }
+    .callout {
+      margin: 13pt 0;
+      padding: 15pt 18pt;
+      background: rgba(14,14,14,0.05);
+      break-inside: avoid;
+    }
+    .callout .label {
+      margin-bottom: 7pt;
+      color: #a8201a;
+      font-size: 7.5pt;
+      font-weight: 800;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+    .signature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30pt;
+      margin-top: 18pt;
+      break-inside: avoid;
+    }
+    .signature-box {
+      min-height: 106pt;
+      padding-top: 18pt;
+      border-top: 0.75pt solid rgba(14,14,14,0.28);
+    }
+    .signature-box .party {
+      margin-bottom: 18pt;
+      font-weight: 800;
+      color: #0e0e0e;
+    }
+    .signature-line {
+      margin-top: 12pt;
+      font-size: 8.5pt;
+      color: rgba(14,14,14,0.56);
+    }
+  </style>
+</head>
+<body>
+  <section class="cover">
+    <div class="cover-inner">
+      <div>
+        <div class="wordmark">KaizenCommerce</div>
+        <div class="office">Montreal / Shopify Plus / Operations Architecture</div>
+      </div>
+      <div>
+        <div class="doc-type">Statement of Work</div>
+        <h1 class="cover-title">[Client Name] Shopify Implementation</h1>
+        <p class="cover-subtitle">A formal scope, delivery, acceptance, and payment agreement based on the accepted KaizenCommerce proposal.</p>
+      </div>
+      <div>
+        <div class="meta">
+          <div><span class="meta-label">Prepared for</span><span class="meta-value">[Client Legal Name]</span></div>
+          <div><span class="meta-label">Prepared by</span><span class="meta-value">KaizenCommerce Inc.</span></div>
+          <div><span class="meta-label">Document</span><span class="meta-value">KC-SOW-[YYYY]-[SEQ]</span></div>
+          <div><span class="meta-label">Authorization</span><span class="meta-value">SOW Version 1.0</span></div>
+        </div>
+        <div class="tagline">Built by people who built Shopify.</div>
+      </div>
+    </div>
+  </section>
+
+  <main class="body">
+    <section class="section">
+      <span class="eyebrow">Section 01 / Parties</span>
+      <h1>Statement of Work</h1>
+      <p>This Statement of Work ("SOW") is entered into between <strong>KaizenCommerce Inc.</strong> and <strong>[Client Legal Name]</strong>. It formalizes the services, responsibilities, acceptance criteria, investment, and commercial terms for the engagement described in the accepted proposal dated <strong>[Proposal Date]</strong>.</p>
+      <table>
+        <thead><tr><th>Party</th><th>Legal name</th><th>Primary contact</th></tr></thead>
+        <tbody>
+          <tr><td>Provider</td><td>KaizenCommerce Inc.</td><td>[Kaizen contact]</td></tr>
+          <tr><td>Client</td><td>[Client Legal Name]</td><td>[Client sponsor]</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <span class="eyebrow">Section 02 / Engagement overview</span>
+      <h1>Scope is tied to the accepted proposal.</h1>
+      <p>KaizenCommerce will deliver the services described in this SOW for <strong>[engagement name]</strong>. The work begins when this SOW is executed, the deposit invoice is paid, and required access is provided by the Client.</p>
+      <div class="callout">
+        <div class="label">Scope principle</div>
+        <p>The SOW mirrors the accepted proposal. If the Client requests additional work, additional systems, extra data volume, or timeline acceleration, KaizenCommerce will issue a written Change order before proceeding.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <span class="eyebrow">Section 03 / Services and deliverables</span>
+      <h1>Deliverables include acceptance criteria.</h1>
+      <table>
+        <thead><tr><th>#</th><th>Deliverable</th><th>Acceptance criteria</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Discovery and system audit</td><td>Current-state findings documented and reviewed with the Client.</td></tr>
+          <tr><td>2</td><td>Configuration and implementation</td><td>Approved Shopify configuration is completed in the target environment.</td></tr>
+          <tr><td>3</td><td>Data preparation and migration support</td><td>Mapped data is validated against agreed import criteria and issue logs are resolved or documented.</td></tr>
+          <tr><td>4</td><td>Training and handoff</td><td>Training session delivered and working files handed to the Client.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <span class="eyebrow">Section 04 / Scope boundaries</span>
+      <h1>Boundaries prevent delivery drift.</h1>
+      <table class="red">
+        <thead><tr><th>Area</th><th>Included</th><th>Excluded unless added by change order</th></tr></thead>
+        <tbody>
+          <tr><td>Data</td><td>[Included product, customer, order, inventory, and gift card entities]</td><td>Additional entities, historical records beyond cap, or unmapped custom data.</td></tr>
+          <tr><td>Systems</td><td>[Named systems in scope]</td><td>New third-party systems, ERP rebuilds, or custom middleware not listed here.</td></tr>
+          <tr><td>Support</td><td>[Hypercare window and response expectations]</td><td>Ongoing managed support after the hypercare window unless covered by retainer.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <span class="eyebrow">Section 05 / Timeline and payment</span>
+      <h1>The timeline starts after execution and deposit.</h1>
+      <table>
+        <thead><tr><th>Milestone</th><th>Timing</th><th>Payment trigger</th></tr></thead>
+        <tbody>
+          <tr><td>SOW execution</td><td>Day 0</td><td>50% deposit due, Net 7.</td></tr>
+          <tr><td>Named mid-project acceptance gate</td><td>[Week X]</td><td>25% milestone invoice due after Client approval, Net 7.</td></tr>
+          <tr><td>Go-live or agreed completion gate</td><td>[Week Y]</td><td>25% final invoice due after confirmation, Net 7.</td></tr>
+        </tbody>
+      </table>
+      <p>All amounts are in USD. Blueprint credits, if applicable, must appear as a visible line item on the first implementation invoice.</p>
+    </section>
+
+    <section class="section">
+      <span class="eyebrow">Section 06 / Acceptance</span>
+      <h1>Both parties approve the scope and terms.</h1>
+      <div class="signature-grid">
+        <div class="signature-box">
+          <div class="party">KaizenCommerce Inc.</div>
+          <div class="signature-line">Signature</div>
+          <div class="signature-line">Name / Title</div>
+          <div class="signature-line">Date</div>
+        </div>
+        <div class="signature-box">
+          <div class="party">[Client Legal Name]</div>
+          <div class="signature-line">Signature</div>
+          <div class="signature-line">Name / Title</div>
+          <div class="signature-line">Date</div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

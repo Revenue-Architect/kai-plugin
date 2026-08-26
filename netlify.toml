@@ -1,0 +1,24 @@
+[build]
+  publish = "public"
+
+[build.environment]
+  NODE_VERSION = "24"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+  included_files = ["skills/**/*", "mcp/workbench.html", "contracts/kaizenos-agent-tools.json"]
+
+[context.production.environment]
+  MCP_TRANSPORT = "http"
+  UI_DOMAIN = "https://kai-commerce-agent.netlify.app"
+  MCP_RESOURCE_URL = "https://kai-commerce-agent.netlify.app/mcp"
+  MCP_OAUTH_RESOURCE_METADATA_URL = "https://kai-commerce-agent.netlify.app/.well-known/oauth-protected-resource"
+  MCP_RESOURCE_DOCUMENTATION = "https://github.com/Kaizen-Commerce/kaizen-commerce"
+  KAIZENOS_MCP_URL = "https://zovuwpfbsmnzgfkgxxpp.supabase.co/functions/v1/agent-mcp"
+  KAIZEN_OAUTH_AUTH_SERVER = "https://zovuwpfbsmnzgfkgxxpp.supabase.co/auth/v1"
+  KAIZEN_OAUTH_ISSUER = "https://zovuwpfbsmnzgfkgxxpp.supabase.co/auth/v1"
+  KAIZEN_OAUTH_JWKS_URI = "https://zovuwpfbsmnzgfkgxxpp.supabase.co/auth/v1/.well-known/jwks.json"
+  KAIZEN_OAUTH_AUDIENCE = "authenticated"
+  KAIZEN_OAUTH_SCOPES = "openid,email,profile,offline_access"
+  KAIZENOS_ALLOW_SERVER_WRITES = "false"

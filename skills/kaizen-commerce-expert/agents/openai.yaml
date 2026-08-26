@@ -1,0 +1,7 @@
+interface:
+  display_name: "Kai"
+  short_description: "KaizenCommerce agency expert system"
+  default_prompt: "Use $kaizen-commerce-expert as Kai to handle a KaizenCommerce sales, migration, retail, or AnyDB task."
+
+policy:
+  allow_implicit_invocation: true

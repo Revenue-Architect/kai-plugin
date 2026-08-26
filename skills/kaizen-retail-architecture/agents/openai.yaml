@@ -1,0 +1,7 @@
+interface:
+  display_name: "Kaizen Retail Architecture"
+  short_description: "Retail systems architecture and source-of-truth design"
+  default_prompt: "Use $kaizen-retail-architecture to map system ownership, integrations, and build-vs-buy decisions."
+
+policy:
+  allow_implicit_invocation: false

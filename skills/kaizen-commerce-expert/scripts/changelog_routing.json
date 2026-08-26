@@ -1,0 +1,146 @@
+{
+  "version": 1,
+  "ambiguous_keywords": [
+    "beta",
+    "early access",
+    "preview",
+    "coming soon",
+    "phased",
+    "gradual rollout",
+    "limited availability",
+    "selected merchants",
+    "not every",
+    "roadmap",
+    "planned",
+    "queued",
+    "in progress"
+  ],
+  "routes": [
+    {
+      "section": "shopify-dev/admin-api",
+      "label": "Shopify Admin API",
+      "source_family": "shopify-dev",
+      "auto_edit": true,
+      "keywords": ["admin api", "graphql admin", "mutation", "bulk operation", "staged upload", "access scope", "api version", "metafield", "metaobject", "inventory", "ordercreate", "webhook"]
+    },
+    {
+      "section": "shopify-dev/custom-data",
+      "label": "Shopify Custom Data",
+      "source_family": "shopify-dev",
+      "auto_edit": true,
+      "keywords": ["metafield", "metaobject", "custom data", "definition", "cart metafield"]
+    },
+    {
+      "section": "shopify-dev/flow-functions",
+      "label": "Shopify Flow and Functions",
+      "source_family": "shopify-dev",
+      "auto_edit": true,
+      "keywords": ["function", "functions", "shopify flow", "flow", "run log", "cart transform", "validation", "discount", "delivery customization", "payment customization"]
+    },
+    {
+      "section": "shopify-dev/pos-ui",
+      "label": "Shopify POS UI",
+      "source_family": "shopify-dev",
+      "auto_edit": true,
+      "keywords": ["pos ui", "point of sale", "pos extension", "smart grid", "pos"]
+    },
+    {
+      "section": "shopify-dev/checkout-accounts",
+      "label": "Shopify Checkout and Customer Accounts",
+      "source_family": "shopify-dev",
+      "auto_edit": true,
+      "keywords": ["checkout", "customer account", "customer accounts", "checkout ui", "polaris web components", "branding"]
+    },
+    {
+      "section": "shopify-dev/storefront-api",
+      "label": "Shopify Storefront API",
+      "source_family": "shopify-dev",
+      "auto_edit": true,
+      "keywords": ["storefront api", "cart", "cart warning", "cart warnings", "cartline", "buyer location", "headless"]
+    },
+    {
+      "section": "shopify-help/pos",
+      "label": "Shopify POS merchant features",
+      "source_family": "shopify-help",
+      "auto_edit": true,
+      "keywords": ["pos", "point of sale", "retail", "smart grid", "staff", "location"]
+    },
+    {
+      "section": "shopify-help/taxes",
+      "label": "Shopify Taxes",
+      "source_family": "shopify-help",
+      "auto_edit": true,
+      "keywords": ["tax", "taxes", "vat", "gst", "hst", "pst", "qst", "province"]
+    },
+    {
+      "section": "shopify-help/payments",
+      "label": "Shopify Payments",
+      "source_family": "shopify-help",
+      "auto_edit": true,
+      "keywords": ["payment", "payments", "shop pay", "shopify payments", "checkout"]
+    },
+    {
+      "section": "shopify-help/checkout-accounts",
+      "label": "Shopify Checkout and Customer Accounts",
+      "source_family": "shopify-help",
+      "auto_edit": true,
+      "keywords": ["checkout", "customer account", "customer accounts", "branding", "sign-in", "shop pay"]
+    },
+    {
+      "section": "shopify-help/markets",
+      "label": "Shopify Markets and localization",
+      "source_family": "shopify-help",
+      "auto_edit": true,
+      "keywords": ["market", "markets", "international", "province", "country", "currency", "localization"]
+    },
+    {
+      "section": "shopify-help/products-inventory",
+      "label": "Shopify Products and Inventory",
+      "source_family": "shopify-help",
+      "auto_edit": true,
+      "keywords": ["product", "products", "inventory", "variant", "location", "stock", "catalog"]
+    },
+    {
+      "section": "shopify-help/flow-automation",
+      "label": "Shopify Flow and Merchant Automation",
+      "source_family": "shopify-help",
+      "auto_edit": true,
+      "keywords": ["flow", "automation", "automate", "shopifyql", "analytics data", "workflow"]
+    },
+    {
+      "section": "anydb/cell-types",
+      "label": "AnyDB Cell Types and Views",
+      "source_family": "anydb",
+      "auto_edit": true,
+      "keywords": ["cell", "cells", "button cell", "timeline", "calendar", "view", "kanban", "multi user", "group select"]
+    },
+    {
+      "section": "anydb/formulas-workflows",
+      "label": "AnyDB Formulas and Workflows",
+      "source_family": "anydb",
+      "auto_edit": true,
+      "keywords": ["formula", "workflow", "automation", "button", "trigger", "anybot", "ai copilot"]
+    },
+    {
+      "section": "anydb/import-export",
+      "label": "AnyDB Import and Export",
+      "source_family": "anydb",
+      "auto_edit": true,
+      "keywords": ["import", "export", "versioning", "csv", "data load"]
+    },
+    {
+      "section": "anydb/shopify-integration",
+      "label": "AnyDB Shopify Integration",
+      "source_family": "anydb",
+      "auto_edit": false,
+      "keywords": ["shopify", "shopify integration", "sync", "products", "orders", "inventory", "customers"]
+    },
+    {
+      "section": "anydb/roadmap",
+      "label": "AnyDB Roadmap",
+      "source_family": "anydb",
+      "auto_edit": false,
+      "keywords": ["roadmap", "now", "next", "later", "planned", "in progress"]
+    }
+  ]
+}

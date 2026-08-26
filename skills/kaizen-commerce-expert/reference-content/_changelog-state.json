@@ -1,0 +1,2245 @@
+{
+  "last_fetch": "2026-07-26T16:15:47Z",
+  "last_fetch_by_source": {
+    "anydb": "2026-07-26T16:15:47Z",
+    "shopify-dev": "2026-07-26T16:15:47Z",
+    "shopify-help": "2026-07-26T16:15:47Z"
+  },
+  "seen_entries": {
+    "anydb:https://www.anydb.com/community/t/anydb-release-april-14-2026/217": {
+      "destination": "anydb/general.md",
+      "needs_merge": false,
+      "published_at": "2026-04-15T00:47:48Z",
+      "review_reason": "Confirmed in official AnyDB release notes: table view became the default, with inline editing, resizable saved columns, direct record creation, and All-view duplication.",
+      "section": "anydb/general",
+      "source": "anydb",
+      "status": "merged",
+      "title": ":rocket: AnyDB Release - April 14, 2026",
+      "url": "https://www.anydb.com/community/t/anydb-release-april-14-2026/217"
+    },
+    "anydb:https://www.anydb.com/community/t/anydb-release-july-10-2026/268": {
+      "categories": [
+        "AnyDB",
+        "Release"
+      ],
+      "needs_merge": true,
+      "published_at": "2026-07-10T17:05:03Z",
+      "review_reason": "review required by route",
+      "section": "anydb/general",
+      "source": "anydb",
+      "status": "pending_review",
+      "summary": "",
+      "title": ":rocket: AnyDB Release - July 10, 2026",
+      "url": "https://www.anydb.com/community/t/anydb-release-july-10-2026/268"
+    },
+    "anydb:https://www.anydb.com/community/t/anydb-release-july-24-2026/274": {
+      "categories": [
+        "AnyDB",
+        "Release"
+      ],
+      "needs_merge": true,
+      "published_at": "2026-07-26T14:58:23Z",
+      "review_reason": "review required by route",
+      "section": "anydb/general",
+      "source": "anydb",
+      "status": "pending_review",
+      "summary": "",
+      "title": ":rocket: AnyDB Release - July 24, 2026",
+      "url": "https://www.anydb.com/community/t/anydb-release-july-24-2026/274"
+    },
+    "anydb:https://www.anydb.com/community/t/anydb-release-june-26-2026/260": {
+      "needs_merge": false,
+      "published_at": "2026-06-26T16:21:39Z",
+      "review_reason": "Reviewed as a duplicate community announcement; the official June 26 release-notes entry is merged separately.",
+      "section": "anydb/general",
+      "source": "anydb",
+      "status": "archived",
+      "title": ":rocket: AnyDB Release - June 26, 2026",
+      "url": "https://www.anydb.com/community/t/anydb-release-june-26-2026/260"
+    },
+    "anydb:https://www.anydb.com/community/t/anydb-release-may-1-2026/231": {
+      "needs_merge": false,
+      "published_at": "2026-05-01T18:25:49Z",
+      "section": "anydb/cell-types",
+      "source": "anydb",
+      "status": "auto_curated",
+      "title": ":rocket: AnyDB Release - May 1, 2026",
+      "url": "https://www.anydb.com/community/t/anydb-release-may-1-2026/231"
+    },
+    "anydb:https://www.anydb.com/community/t/anydb-shopify-coming-soon/220": {
+      "destination": "anydb/roadmap.md",
+      "needs_merge": false,
+      "published_at": "2026-04-19T13:47:51Z",
+      "review_reason": "Official AnyDB roadmap still lists Shopify two-way synchronization as In Progress; do not represent it as shipped or build-ready.",
+      "section": "anydb/shopify-integration",
+      "source": "anydb",
+      "status": "merged",
+      "title": "AnyDB + Shopify coming soon",
+      "url": "https://www.anydb.com/community/t/anydb-shopify-coming-soon/220"
+    },
+    "anydb:https://www.anydb.com/support/releasenotes/#july-10-2026": {
+      "categories": [
+        "AnyDB",
+        "Release Notes"
+      ],
+      "needs_merge": false,
+      "published_at": "2026-07-10T00:00:00Z",
+      "review_reason": "auto-curated route",
+      "section": "anydb/cell-types",
+      "source": "anydb",
+      "status": "auto_curated",
+      "summary": "Calendar views now supports creating new records with the date field pre-filled based on the selected date in the calendar view.; You can now clear all unused old template versions quickly in the types view.; New 'Heading' cell type that allows you to add headings to your templates for better organization and clarity.; New 'SEARCH' function that searches for a particular text in a string; Automation trigger conditio...",
+      "title": "AnyDB Release Notes - July 10, 2026",
+      "url": "https://www.anydb.com/support/releasenotes/#july-10-2026"
+    },
+    "anydb:https://www.anydb.com/support/releasenotes/#july-24-2026": {
+      "categories": [
+        "AnyDB",
+        "Release Notes"
+      ],
+      "needs_merge": false,
+      "published_at": "2026-07-24T00:00:00Z",
+      "review_reason": "auto-curated route",
+      "section": "anydb/cell-types",
+      "source": "anydb",
+      "status": "auto_curated",
+      "summary": "Dynamic Views: Added support for dynamic views that show different records to different users based on their identity. More Information: Dynamic Views; Built-in View Tabs: Added support for bundling custom view tabs with a Type. The configured tabs are automatically created whenever a record of that Type is opened and can display child records, connected records, references, or search results. More Information: Buil...",
+      "title": "AnyDB Release Notes - July 24, 2026",
+      "url": "https://www.anydb.com/support/releasenotes/#july-24-2026"
+    },
+    "anydb:https://www.anydb.com/support/releasenotes/#jun-11-2026": {
+      "needs_merge": false,
+      "published_at": "2026-06-11T00:00:00Z",
+      "section": "anydb/cell-types",
+      "source": "anydb",
+      "status": "auto_curated",
+      "title": "AnyDB Release Notes - Jun 11, 2026",
+      "url": "https://www.anydb.com/support/releasenotes/#jun-11-2026"
+    },
+    "anydb:https://www.anydb.com/support/releasenotes/#jun-19-2026": {
+      "needs_merge": false,
+      "published_at": "2026-06-19T00:00:00Z",
+      "section": "anydb/cell-types",
+      "source": "anydb",
+      "status": "auto_curated",
+      "title": "AnyDB Release Notes - Jun 19, 2026",
+      "url": "https://www.anydb.com/support/releasenotes/#jun-19-2026"
+    },
+    "anydb:https://www.anydb.com/support/releasenotes/#jun-26-2026": {
+      "destination": "anydb/formulas-workflows.md",
+      "needs_merge": false,
+      "published_at": "2026-06-26T00:00:00Z",
+      "review_reason": "Official release notes confirm chart-data fixes, multi-series pie charts, formula-dialog UX, document-preview sizing, and related reliability fixes.",
+      "section": "anydb/formulas-workflows",
+      "source": "anydb",
+      "status": "merged",
+      "title": "AnyDB Release Notes - Jun 26, 2026",
+      "url": "https://www.anydb.com/support/releasenotes/#jun-26-2026"
+    },
+    "anydb:https://www.anydb.com/support/releasenotes/#jun-5-2026": {
+      "needs_merge": false,
+      "published_at": "2026-06-05T00:00:00Z",
+      "section": "anydb/formulas-workflows",
+      "source": "anydb",
+      "status": "auto_curated",
+      "title": "AnyDB Release Notes - Jun 5, 2026",
+      "url": "https://www.anydb.com/support/releasenotes/#jun-5-2026"
+    },
+    "anydb:https://www.anydb.com/support/roadmap/": {
+      "destination": "anydb/roadmap.md",
+      "needs_merge": false,
+      "published_at": "2026-05-14T19:11:26Z",
+      "review_reason": "Directional Q2 2026 roadmap only; Now, Next, and Later are not delivery guarantees and every feature still requires release-note or live-product confirmation.",
+      "section": "anydb/roadmap",
+      "source": "anydb",
+      "status": "merged",
+      "title": "AnyDB roadmap",
+      "url": "https://www.anydb.com/support/roadmap/"
+    },
+    "shopify-dev:https://shopify.dev/changelog/add-actor-field-to-subscription-contract-and-billing-attempt-mutations": {
+      "needs_merge": false,
+      "published_at": "2026-05-01T16:00:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Add actor field to subscription contract and billing attempt mutations",
+      "url": "https://shopify.dev/changelog/add-actor-field-to-subscription-contract-and-billing-attempt-mutations"
+    },
+    "shopify-dev:https://shopify.dev/changelog/added-mostrelevant-value-for-collectionsortorder": {
+      "needs_merge": false,
+      "published_at": "2026-04-17T16:00:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Added MOST_RELEVANT value for `CollectionSortOrder`",
+      "url": "https://shopify.dev/changelog/added-mostrelevant-value-for-collectionsortorder"
+    },
+    "shopify-dev:https://shopify.dev/changelog/admin-graphql-api-now-supports-app-owned-delivery-profiles-that-cover-all-shippable-items": {
+      "needs_merge": false,
+      "published_at": "2026-06-17T16:00:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Admin GraphQL API now supports app-owned delivery profiles that cover all shippable items",
+      "url": "https://shopify.dev/changelog/admin-graphql-api-now-supports-app-owned-delivery-profiles-that-cover-all-shippable-items"
+    },
+    "shopify-dev:https://shopify.dev/changelog/analytics-metric-targets-now-available-in-the-graphql-admin-api": {
+      "destination": "shopify-dev/admin-api.md",
+      "needs_merge": false,
+      "published_at": "2026-04-29T16:00:00Z",
+      "review_reason": "Shipped GraphQL operations for reading, creating, updating, and deleting Analytics metric targets; validate the target API version before implementation.",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "merged",
+      "title": "Analytics metric targets now available in the GraphQL Admin API",
+      "url": "https://shopify.dev/changelog/analytics-metric-targets-now-available-in-the-graphql-admin-api"
+    },
+    "shopify-dev:https://shopify.dev/changelog/app-deployment-in-cicd-is-now-available-for-all-apps": {
+      "destination": "shopify-dev/general.md",
+      "needs_merge": false,
+      "published_at": "2026-05-06T16:00:00Z",
+      "review_reason": "Shipped app-scoped automation tokens for CI/CD deployment; confirm current Shopify CLI requirements before configuring pipelines.",
+      "section": "shopify-dev/general",
+      "source": "shopify-dev",
+      "status": "merged",
+      "title": "App deployment in CI/CD is now available for all apps",
+      "url": "https://shopify.dev/changelog/app-deployment-in-cicd-is-now-available-for-all-apps"
+    },
+    "shopify-dev:https://shopify.dev/changelog/app-events-see-app-usage-and-performance-data-in-your-dev-dashboard": {
+      "needs_merge": false,
+      "published_at": "2026-05-11T18:00:00Z",
+      "section": "shopify-dev/flow-functions",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "App Events: See app usage and performance data in your Dev Dashboard",
+      "url": "https://shopify.dev/changelog/app-events-see-app-usage-and-performance-data-in-your-dev-dashboard"
+    },
+    "shopify-dev:https://shopify.dev/changelog/app-pricing-more-plans-no-charge-plan-testing-and-negative-and-fractional-app-events": {
+      "categories": [
+        "App store",
+        "Update"
+      ],
+      "needs_merge": true,
+      "published_at": "2026-07-09T16:00:00Z",
+      "review_reason": "review required by route",
+      "section": "shopify-dev/general",
+      "source": "shopify-dev",
+      "status": "pending_review",
+      "summary": "We've made several updates to App Pricing: Increased plan limits: You can now create up to 8 public plans (previously 4) and 15 private plans (previously 10) per app. No-charge plan testing: Test app billing flows without generating real charges: During app review, reviewers can now select any of your existing plans, so you no longer need to create a dedicated test plan. In development stores, you can install your own apps and subscribe to any plan at no cost. Mark a plan as free to let other partners and developers install your app and test that plan in their own development stores. Additional App Events support: The App Events API now accepts: Negative values, to adjust or credit previously reported event usage Fractional values, such as 1.5 Previously, event values were limited to whole numbers greater than 0. For more details, see App pricing and the App Events API reference .",
+      "title": "App Pricing: more plans, no-charge plan testing, and negative and fractional App Events",
+      "url": "https://shopify.dev/changelog/app-pricing-more-plans-no-charge-plan-testing-and-negative-and-fractional-app-events"
+    },
+    "shopify-dev:https://shopify.dev/changelog/app-quality-checks-now-managed-in-partner-dashboard": {
+      "destination": "shopify-dev/general.md",
+      "needs_merge": false,
+      "published_at": "2026-06-02T19:00:00Z",
+      "review_reason": "App quality checks and reviewer communication are now managed in Partner Dashboard under app distribution.",
+      "section": "shopify-dev/general",
+      "source": "shopify-dev",
+      "status": "merged",
+      "title": "App quality checks now managed in Partner Dashboard",
+      "url": "https://shopify.dev/changelog/app-quality-checks-now-managed-in-partner-dashboard"
+    },
+    "shopify-dev:https://shopify.dev/changelog/automatic-css-subsetting-for-stylesheet-tags": {
+      "destination": "shopify-dev/general.md",
+      "needs_merge": false,
+      "published_at": "2026-04-15T16:00:00Z",
+      "review_reason": "Shipped automatic CSS subsetting for stylesheet tags; themes should keep component styles colocated and test cross-section dependencies.",
+      "section": "shopify-dev/general",
+      "source": "shopify-dev",
+      "status": "merged",
+      "title": "Automatic CSS subsetting for `{% stylesheet %}` tags",
+      "url": "https://shopify.dev/changelog/automatic-css-subsetting-for-stylesheet-tags"
+    },
+    "shopify-dev:https://shopify.dev/changelog/bots-and-agents-should-identify-themselves-via-web-bot-auth": {
+      "needs_merge": false,
+      "published_at": "2026-05-07T19:00:00Z",
+      "section": "shopify-dev/storefront-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Bots and agents should identify themselves via Web Bot Auth",
+      "url": "https://shopify.dev/changelog/bots-and-agents-should-identify-themselves-via-web-bot-auth"
+    },
+    "shopify-dev:https://shopify.dev/changelog/build-app-home-as-a-ui-extension": {
+      "needs_merge": false,
+      "published_at": "2026-05-27T17:30:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Build App Home as a UI extension",
+      "url": "https://shopify.dev/changelog/build-app-home-as-a-ui-extension"
+    },
+    "shopify-dev:https://shopify.dev/changelog/built-for-shopify-requirements-for-returns-and-exchanges-and-subscription-apps": {
+      "needs_merge": false,
+      "published_at": "2026-06-17T15:45:00Z",
+      "section": "shopify-dev/checkout-accounts",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Built for Shopify requirements for Returns and exchanges apps and Subscription apps (effective December 1, 2026)",
+      "url": "https://shopify.dev/changelog/built-for-shopify-requirements-for-returns-and-exchanges-and-subscription-apps"
+    },
+    "shopify-dev:https://shopify.dev/changelog/bulk-queries-now-execute-faster": {
+      "needs_merge": false,
+      "published_at": "2026-06-17T15:45:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Bulk queries now execute up to 4X faster",
+      "url": "https://shopify.dev/changelog/bulk-queries-now-execute-faster"
+    },
+    "shopify-dev:https://shopify.dev/changelog/businessentity-now-exposes-legalentityid-in-the-admin-api": {
+      "needs_merge": false,
+      "published_at": "2026-07-01T16:00:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "`BusinessEntity` now exposes `legalEntityId` in the GraphQL Admin API",
+      "url": "https://shopify.dev/changelog/businessentity-now-exposes-legalentityid-in-the-admin-api"
+    },
+    "shopify-dev:https://shopify.dev/changelog/card-deposit-endpoint-now-requires-mtls-certificate": {
+      "categories": [
+        "API",
+        "Update"
+      ],
+      "needs_merge": false,
+      "published_at": "2026-07-16T16:00:00Z",
+      "review_reason": "auto-curated route",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "summary": "Shopify's card-deposit endpoint now requires a Shopify-issued mTLS client certificate. Apps that store cardholder data with the customerPaymentMethodCreditCardCreate and customerPaymentMethodCreditCardUpdate GraphQL Admin API mutations must first deposit that data at Shopify's /sessions card-deposit endpoint to receive a session identifier. That deposit call must present a Shopify-issued certificate by October 15, 2026 . This is a required change: after enforcement begins, deposit requests will be required to have a valid certificate. If your app deposits cardholder data, you must update. What changed The card-deposit endpoint at https://checkout-mtls.pci.shopifyinc.com/sessions is unchanged. What's new is that every request to it must present a Shopify-issued mTLS client certificate. Previously, requests to this endpoint did not require a client certificate. The GraphQL Admin API vault mutations are unchanged. You continue to call customerPaymentMethodCreditCardCreate and customerPaymentMethodCreditCardUpdate with the session identifier returned by the deposit call, and your GraphQL Admin API OAuth flow is unaffected. customerPaymentMethodRemoteCreate is out of scope. It imports references to payment methods already held at external gateways and deposits no cardholder data to Shopify. Who's affected This applies to apps that deposit cardholder data to Shopify through customerPaymentMethodCreditCardCreate or customerPaymentMethodCreditCardUpdate . Apps that only call customerPaymentMethodRemoteCreate to import payment methods from external gateways such as Stripe, Braintree, Authorize.Net, Adyen, or PayPal are not affected and need to take no action. Why this matters All cardholder-data traffic reaching the deposit endpoint must be attributable to an authenticated caller. Requiring a client certificate lets Shopify verify who is depositing card data ahead of Black Friday and Cyber Monday 2026, and is the prerequisite for rejecting unauthenticated deposit traffic. What to do If your app deposits cardholder data, migrate before October 15, 2026 : Confirm whether your app calls customerPaymentMethodCreditCardCreate or customerPaymentMethodCreditCardUpdate . If it only calls customerPaymentMethodRemoteCreate , no action is required. Request a Shopify-issued client certificate at shopify-mtls-partnerships@shopify.com . Include your API client ID and technical point of contact. First certificates are signed manually by Shopify and take a few days, so start early. Present the certificate on your /sessions deposit call, and continue passing the returned session identifier to the vault mutations unchanged. Confirm your deposit traffic now arrives with a valid certificate. Shopify validates the cutover on our side. After your first certificate, rotate it self-serve with Shopify's Certificate Signing Service before the 1-year TTL expires . No Shopify involvement is needed. A missed rotation stops your deposits, so monitor certificate expiry as part of your standard observability. Apps that haven't migrated by October 15, 2026 lose the ability to deposit new cardholder data once the certificate requirement is enforced. Related docs customerPaymentMethodCreditCardCreate reference customerPaymentMethodCreditCardUpdate reference",
+      "title": "Card deposit endpoint now requires mTLS certificate",
+      "url": "https://shopify.dev/changelog/card-deposit-endpoint-now-requires-mtls-certificate"
+    },
+    "shopify-dev:https://shopify.dev/changelog/carrier-services-will-no-longer-be-automatically-added-to-the-default-shipping-profile": {
+      "needs_merge": false,
+      "published_at": "2026-06-26T16:00:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Carrier services will no longer be automatically added to the default shipping profile",
+      "url": "https://shopify.dev/changelog/carrier-services-will-no-longer-be-automatically-added-to-the-default-shipping-profile"
+    },
+    "shopify-dev:https://shopify.dev/changelog/cart-line-mutations-accept-view-key": {
+      "needs_merge": false,
+      "published_at": "2026-06-02T16:00:00Z",
+      "section": "shopify-dev/storefront-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Identify cart lines by `view_key` in `cartLinesUpdate` and `cartLinesRemove`",
+      "url": "https://shopify.dev/changelog/cart-line-mutations-accept-view-key"
+    },
+    "shopify-dev:https://shopify.dev/changelog/cart-line-view-key-field": {
+      "needs_merge": false,
+      "published_at": "2026-06-12T17:00:00Z",
+      "section": "shopify-dev/storefront-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Read a cart line's `viewKey` from the `CartLine` type",
+      "url": "https://shopify.dev/changelog/cart-line-view-key-field"
+    },
+    "shopify-dev:https://shopify.dev/changelog/checkout-and-accounts-configuration-api-for-unified-branding-across-checkout-customer-accounts-and-sign-in": {
+      "categories": [
+        "API",
+        "New",
+        "Admin GraphQL API",
+        "2026-04"
+      ],
+      "needs_merge": false,
+      "published_at": "2026-05-13T15:00:00Z",
+      "review_reason": "auto-curated route",
+      "section": "shopify-dev/checkout-accounts",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "summary": "As of API version 2026-04, the new Checkout And Accounts Configuration API is now available to unlock consistent branding customizations across checkout, customer accounts, and sign-in surfaces. This API is exclusively available to Shopify Plus merchants. This new API replaces the Checkout Profile API and Checkout Branding API (both are now deprecated). All capabilities to customize settings and branding for checkout, and customer accounts, and sign-in are now consolidated into one single API. What you can do: Shared branding settings: Use shared designTokens and components to set branding once and apply consistently across checkout, customer accounts, and sign-in pages. Section styles (padding, shadows, colors, borders, and border radius) previously available for checkout only can now be applied to customer account pages. Surface-specific overrides: Apply targeted overrides under surfaces.checkout, surfaces.customerAccounts, and surfaces.signIn for logos, colors, and section styles. Direct color settings : Set color using HEX values or palette colors directly on sections like main, header, and orderSummary - no more mapping through a limited number of color schemes. Save your brand colors to an editable color palette of up to 20 colors and reference anywhere you make a color selection. Update a palette color, and it changes everywhere it is referenced. Customize branding per market : Customize your pages for each market with unique branding settings. View developer documentation for more detail.",
+      "title": "Checkout And Accounts Configuration API for unified branding across checkout, customer accounts, and sign-in",
+      "url": "https://shopify.dev/changelog/checkout-and-accounts-configuration-api-for-unified-branding-across-checkout-customer-accounts-and-sign-in"
+    },
+    "shopify-dev:https://shopify.dev/changelog/color-palettes": {
+      "destination": "shopify-dev/general.md",
+      "needs_merge": false,
+      "published_at": "2026-06-17T15:45:00Z",
+      "review_reason": "Themes can define a global color-palette setting; validate current theme schema syntax before implementation.",
+      "section": "shopify-dev/general",
+      "source": "shopify-dev",
+      "status": "merged",
+      "title": "Color palettes in Themes",
+      "url": "https://shopify.dev/changelog/color-palettes"
+    },
+    "shopify-dev:https://shopify.dev/changelog/create-channel-markets-with-the-graphql-admin-api": {
+      "needs_merge": false,
+      "published_at": "2026-06-17T15:45:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Create channel markets with the GraphQL Admin API",
+      "url": "https://shopify.dev/changelog/create-channel-markets-with-the-graphql-admin-api"
+    },
+    "shopify-dev:https://shopify.dev/changelog/customer-account-api-last-incomplete-checkout-and-checkout-types-removed": {
+      "categories": [
+        "Action Required",
+        "API",
+        "Breaking API Change",
+        "Customer Account API",
+        "2026-10"
+      ],
+      "needs_merge": false,
+      "published_at": "2026-07-06T16:00:00Z",
+      "review_reason": "auto-curated route",
+      "section": "shopify-dev/checkout-accounts",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "summary": "As of Customer Account API version 2026-10, the deprecated Customer.lastIncompleteCheckout field is removed. This also removes the now-unreachable Customer Account API Checkout type subtree, including: Checkout Checkout.appliedGiftCards AppliedGiftCard AvailableShippingRates CheckoutLineItem CheckoutLineItemConnection CheckoutLineItemEdge ShippingRate The Customer.lastIncompleteCheckout field was previously deprecated and returned null . This change removes stale Checkout Classic schema from the Customer Account API. Action required If your app queries Customer.lastIncompleteCheckout or any nested fields on the returned Checkout object, update your queries before upgrading to API version 2026-10. Remove selections such as: customer { lastIncompleteCheckout { id appliedGiftCards { id } } } There is no replacement field in the Customer Account API. If you need active cart or checkout state for a buyer storefront experience, use Storefront API cart flows instead. If you need completed customer purchase history, use the Customer Account API Customer.orders field.",
+      "title": "Customer Account API Customer.lastIncompleteCheckout and Checkout types removed in 2026-10",
+      "url": "https://shopify.dev/changelog/customer-account-api-last-incomplete-checkout-and-checkout-types-removed"
+    },
+    "shopify-dev:https://shopify.dev/changelog/customer-tax-settings-now-available-in-admin-api": {
+      "needs_merge": false,
+      "published_at": "2026-04-24T16:00:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Customer tax settings now available in Admin API",
+      "url": "https://shopify.dev/changelog/customer-tax-settings-now-available-in-admin-api"
+    },
+    "shopify-dev:https://shopify.dev/changelog/customize-llmstxt-llms-fulltxt-and-agentsmd": {
+      "destination": "shopify-dev/general.md",
+      "needs_merge": false,
+      "published_at": "2026-05-28T20:00:00Z",
+      "review_reason": "Stores can customize machine-readable agents and LLM text endpoints through corresponding Liquid templates; validate theme behavior live.",
+      "section": "shopify-dev/general",
+      "source": "shopify-dev",
+      "status": "merged",
+      "title": "Customize /llms.txt, /llms-full.txt and /agents.md",
+      "url": "https://shopify.dev/changelog/customize-llmstxt-llms-fulltxt-and-agentsmd"
+    },
+    "shopify-dev:https://shopify.dev/changelog/default-value-of-appliesonsubscription-changed-to-true-for-app-discount-inputs": {
+      "needs_merge": false,
+      "published_at": "2026-05-04T16:00:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Default value of `appliesOnSubscription` changed to `true` for app discount inputs",
+      "url": "https://shopify.dev/changelog/default-value-of-appliesonsubscription-changed-to-true-for-app-discount-inputs"
+    },
+    "shopify-dev:https://shopify.dev/changelog/define-and-set-metafields-on-inventory-transfers-in-the-admin-graphql-api": {
+      "needs_merge": false,
+      "published_at": "2026-06-17T16:00:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Define and set metafields on inventory transfers in the GraphQL Admin API",
+      "url": "https://shopify.dev/changelog/define-and-set-metafields-on-inventory-transfers-in-the-admin-graphql-api"
+    },
+    "shopify-dev:https://shopify.dev/changelog/deprecating-the-usebuyerjourneyintercept-api-on-checkout-ui-extensions": {
+      "categories": [
+        "Action Required",
+        "Polaris",
+        "Deprecation announcement",
+        "2026-07"
+      ],
+      "needs_merge": false,
+      "published_at": "2026-07-02T16:00:00Z",
+      "review_reason": "auto-curated route",
+      "section": "shopify-dev/flow-functions",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "summary": "Starting in version 2026-07 , the useBuyerJourneyIntercept hook on checkout UI extensions, and the block_progress capability it depends on, are deprecated. Existing extensions will continue to work on current and prior API versions, but this API will be removed in a future version , so you should plan to migrate. The following are deprecated: useBuyerJourneyIntercept (Preact hook) in checkout UI extensions The block_progress capability in the extension's shopify.extension.toml configuration file If you currently use useBuyerJourneyIntercept to enforce merchant business rules, migrate to a cart and checkout validation Function . These Functions run server-side and apply your rules consistently across all checkout surfaces, including express wallets and agentic checkout. If you use useBuyerJourneyIntercept to reject discount codes, migrate that logic to the discount Function API, which now supports rejecting discount codes with a custom message . To learn more and if you've got a use case that's keeping you from moving to Shopify Functions: https://community.shopify.dev/t/the-buyer-journey-intercept-api-is-now-deprecated/35930 .",
+      "title": "Deprecating the useBuyerJourneyIntercept API on checkout UI extensions",
+      "url": "https://shopify.dev/changelog/deprecating-the-usebuyerjourneyintercept-api-on-checkout-ui-extensions"
+    },
+    "shopify-dev:https://shopify.dev/changelog/deprecation-of-cumulative-marketing-engagements": {
+      "needs_merge": false,
+      "published_at": "2026-07-01T16:00:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Deprecation of cumulative marketing engagements",
+      "url": "https://shopify.dev/changelog/deprecation-of-cumulative-marketing-engagements"
+    },
+    "shopify-dev:https://shopify.dev/changelog/developer-preview-liquid-block-and-partial-tags": {
+      "categories": [
+        "API",
+        "New",
+        "Liquid"
+      ],
+      "needs_merge": true,
+      "published_at": "2026-07-21T17:00:00Z",
+      "review_reason": "ambiguous terms: preview",
+      "section": "shopify-dev/general",
+      "source": "shopify-dev",
+      "status": "pending_review",
+      "summary": "The Liquid July '26 developer preview introduces a simpler way to build theme pages. Page structure can live directly in a Liquid template, where developers and coding agents can read and edit everything in one place. The peview adds two Liquid tags: {% block %} renders a reusable theme block directly from a template. Name the block, pass its inputs, and provide body content much like you would with {% render %} . {% partial %} defines a named region of server-rendered HTML that JavaScript can refresh without reloading the full page. Together, these tags let you compose pages in Liquid and add dynamic storefront interactions without moving rendering into a client-side framework. The preview also adds new Theme Check rules for Liquid-first themes. They catch syntax errors, excessive complexity, oversized files, invalid schema structure, and mismatches between block arguments, schemas, and {% doc %} declarations. See the Theme Check 3.28.0 release notes for the complete list. Existing themes continue to work with sections, theme settings, and JSON templates. This preview adds a Liquid-first composition model alongside the existing theme architecture. To try it, create a development store with the Liquid July '26 developer preview. Start with the skeleton theme release candidate , or add the new tags to your own theme. Learn more by reading the developer preview overview , {% block %} reference , and {% partial %} reference . Share feedback in the Shopify developer community .",
+      "title": "Liquid templates can now compose pages with blocks and partials",
+      "url": "https://shopify.dev/changelog/developer-preview-liquid-block-and-partial-tags"
+    },
+    "shopify-dev:https://shopify.dev/changelog/discount-application-information-now-available-for-draft-orders-on-the-customer-account-api": {
+      "needs_merge": false,
+      "published_at": "2026-07-01T16:00:00Z",
+      "section": "shopify-dev/flow-functions",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Discount application information now available for draft orders on the Customer Account API",
+      "url": "https://shopify.dev/changelog/discount-application-information-now-available-for-draft-orders-on-the-customer-account-api"
+    },
+    "shopify-dev:https://shopify.dev/changelog/discountedunitprice-on-draftorderlineitem-customer-account-api-deprecation": {
+      "needs_merge": false,
+      "published_at": "2026-07-01T16:00:00Z",
+      "section": "shopify-dev/checkout-accounts",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "`discountedUnitPrice` on `DraftOrderLineItem` Customer Account API deprecation",
+      "url": "https://shopify.dev/changelog/discountedunitprice-on-draftorderlineitem-customer-account-api-deprecation"
+    },
+    "shopify-dev:https://shopify.dev/changelog/draft-order-deposit-fields-now-available-in-the-admin-and-customer-account-graphql-apis": {
+      "needs_merge": false,
+      "published_at": "2026-07-01T16:00:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Draft order deposit fields are now available in the GraphQL Admin API and Customer Account API",
+      "url": "https://shopify.dev/changelog/draft-order-deposit-fields-now-available-in-the-admin-and-customer-account-graphql-apis"
+    },
+    "shopify-dev:https://shopify.dev/changelog/expiring-offline-access-tokens-required-for-all-public-apps-as-of-january-1-2027": {
+      "needs_merge": false,
+      "published_at": "2026-05-20T16:00:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Expiring offline access tokens required for all public apps as of January 1, 2027",
+      "url": "https://shopify.dev/changelog/expiring-offline-access-tokens-required-for-all-public-apps-as-of-january-1-2027"
+    },
+    "shopify-dev:https://shopify.dev/changelog/feature-preview-customer-account-improvements": {
+      "destination": "shopify-dev/checkout-accounts.md",
+      "needs_merge": false,
+      "published_at": "2026-05-20T21:00:00Z",
+      "review_reason": "Feature preview only; test existing customer-account extensions against the refreshed layout before any rollout recommendation.",
+      "section": "shopify-dev/checkout-accounts",
+      "source": "shopify-dev",
+      "status": "merged",
+      "title": "Feature preview: Customer account improvements",
+      "url": "https://shopify.dev/changelog/feature-preview-customer-account-improvements"
+    },
+    "shopify-dev:https://shopify.dev/changelog/flow-action-extensions-now-support-relative-paths-for-endpoint-urls": {
+      "destination": "shopify-dev/flow-functions.md",
+      "needs_merge": false,
+      "published_at": "2026-06-18T16:00:00Z",
+      "review_reason": "Relative endpoint paths are supported for Flow action extensions and resolve differently in development versus production.",
+      "section": "shopify-dev/flow-functions",
+      "source": "shopify-dev",
+      "status": "merged",
+      "title": "Flow action extensions now support relative paths for endpoint URLs",
+      "url": "https://shopify.dev/changelog/flow-action-extensions-now-support-relative-paths-for-endpoint-urls"
+    },
+    "shopify-dev:https://shopify.dev/changelog/full-stack-capabilities-to-power-app-analytics": {
+      "categories": [
+        "API",
+        "New",
+        "Admin GraphQL API",
+        "App Events API",
+        "Metafields and metaobjects",
+        "ShopifyQL",
+        "2026-10"
+      ],
+      "needs_merge": true,
+      "published_at": "2026-07-21T13:00:00Z",
+      "review_reason": "ambiguous terms: early access",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "pending_review",
+      "summary": "For app developers, building merchant-facing analytics has always meant standing up your own stack: a charting library, a data warehouse to sync merchant data into, handling currencies and locales, and a UI that never quite matched the Shopify admin. With these updates, Shopify Analytics becomes a full-stack analytics platform that apps can build on directly, offloading the infrastructure to Shopify and putting your app's data where merchants already make decisions. Here's what shipped, and how it fits together. Bring your app's data into Shopify Analytics Metafields Mark a metafield definition as analytics-queryable, and it becomes a dimension in ShopifyQL alongside store data. Add, for example, a campaign_source metafield to an order or a subscription_status metafield to a customer. Merchants can group, filter, and chart on it-no ETL, no separate schema. FROM sales SHOW total_sales GROUP BY order.metafields.my_app.campaign_source TIMESERIES day VISUALIZE total_sales App Events (early access) App Events in Analytics makes the custom events your app already emits queryable in Shopify Analytics. Declare events from the new registry in shopify.app.toml , emit them through the App Events API, and merchants can query FROM app_events in ShopifyQL the same way they query their store data. FROM app_events SHOW emails_sent GROUP BY app_name TIMESERIES day VISUALIZE total_sales Query it: ShopifyQL API + dev docs The ShopifyQL API, Shopify's analytics query layer, is now a first-class part of the platform, with schema-level reference documentation on shopify.dev. Every metric and dimension is defined in the docs with its type, description, and working examples. Why it matters: For developers: Build against a stable, versioned, schema-documented surface. For LLMs and agents: Public schema docs mean AI toolchains can generate working ShopifyQL. Embed it: Analytics Web Components The same web components that render analytics in the Shopify admin- the metric card ( <s-shopifyql-metric-card> ), the metrics bar ( <s-metrics-bar> ), and its date picker ( <s-metrics-bar-date-picker> )-are now available for third-party apps to embed. Render a chart with a single element: <s-shopifyql-metric-card heading=\"My weekly sales\" query=\"FROM sales SHOW total_sales TIMESERIES week VISUALIZE total_sales TYPE bar\"> </s-shopifyql-metric-card> Load analytics-ui.js (after polaris.js ), enable Direct API access, then drop in the element. No charting library. No currency or locale handling. No data-formatting code. The component runs the query, renders the chart, and stays in sync with the Shopify admin. Enrich it: Annotations API + Metric Targets API Two new APIs let apps and merchants add context on top of the numbers. Annotations API Partner apps can now create annotations directly on merchant charts through the GraphQL Admin API. Loyalty apps can mark the day a program launched; email apps can mark a new campaign; subscription apps can mark a pricing change-with proper app attribution rendered in the chart panel. Required scopes: read_analytics_annotations , write_analytics_annotations . Metric Targets API Merchants can now set targets on any metric-total sales next quarter, ad-attributed revenue this week-and track progress visually inside reports and dashboards. Targets are a new core primitive in the GraphQL Admin API, so apps can create, read, and overlay them on charts programmatically. How it fits together Model your data with Metafields (and App Events, in early access). Query with the ShopifyQL API. Embed with Analytics Web Components. Enrich with Annotations and Metric Targets. All inside Shopify, where merchants already make decisions. Get started Analytics for Developers Metafields App Events in Analytics - Sign up for early access ShopifyQL API Web Components Annotations API Metric Targets API",
+      "title": "Full-stack capabilities to power app analytics",
+      "url": "https://shopify.dev/changelog/full-stack-capabilities-to-power-app-analytics"
+    },
+    "shopify-dev:https://shopify.dev/changelog/function-run-log-details-are-now-automatically-visible-with-the-right-access-scopes": {
+      "needs_merge": false,
+      "published_at": "2026-05-13T20:00:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Function run log details are now automatically visible with the right access scopes",
+      "url": "https://shopify.dev/changelog/function-run-log-details-are-now-automatically-visible-with-the-right-access-scopes"
+    },
+    "shopify-dev:https://shopify.dev/changelog/gift-card-local-currency-support": {
+      "needs_merge": false,
+      "published_at": "2026-06-05T16:00:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Local currency support gift cards now available in the GraphQL Admin API",
+      "url": "https://shopify.dev/changelog/gift-card-local-currency-support"
+    },
+    "shopify-dev:https://shopify.dev/changelog/giftcardcashouttransaction-now-resolvable-from-giftcardtransaction": {
+      "needs_merge": false,
+      "published_at": "2026-06-05T16:00:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "`GiftCardCashOutTransaction` is now resolvable from `GiftCardTransaction`",
+      "url": "https://shopify.dev/changelog/giftcardcashouttransaction-now-resolvable-from-giftcardtransaction"
+    },
+    "shopify-dev:https://shopify.dev/changelog/headless-checkout-sso-is-now-documented-with-ssosilent": {
+      "needs_merge": false,
+      "published_at": "2026-06-08T16:00:00Z",
+      "section": "shopify-dev/checkout-accounts",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Headless checkout SSO is now documented with sso=silent",
+      "url": "https://shopify.dev/changelog/headless-checkout-sso-is-now-documented-with-ssosilent"
+    },
+    "shopify-dev:https://shopify.dev/changelog/hydrogen-developer-preview": {
+      "destination": "shopify-dev/storefront-api.md",
+      "needs_merge": false,
+      "published_at": "2026-06-17T15:45:00Z",
+      "review_reason": "Developer preview only; Hydrogen's framework-agnostic core is suitable for prototyping, not an unconditional production recommendation.",
+      "section": "shopify-dev/general",
+      "source": "shopify-dev",
+      "status": "merged",
+      "title": "Hydrogen developer preview",
+      "url": "https://shopify.dev/changelog/hydrogen-developer-preview"
+    },
+    "shopify-dev:https://shopify.dev/changelog/hydrogen-developer-preview-update": {
+      "categories": [
+        "API",
+        "Update",
+        "Hydrogen"
+      ],
+      "needs_merge": true,
+      "published_at": "2026-07-09T16:00:00Z",
+      "review_reason": "ambiguous terms: preview",
+      "section": "shopify-dev/storefront-api",
+      "source": "shopify-dev",
+      "status": "pending_review",
+      "summary": "The Hydrogen developer preview adds new capabilities to the toolkit and extends the ways developers can build Shopify storefronts: Storefront API caching for catalog data: Cache products, collections, and pages at the edge instead of hitting the Storefront API on every request. WebMCP tools for in-browser AI agents: Expose your storefront to in-browser AI agents so they can search the catalog, browse products, and manage the cart. Loads automatically from Shopify's CDN, no extra integration required. Customer Account API support: Build logged-in experiences like order history and profile pages with a typed client that handles login, token refresh, and logout. Same-origin predictive search: Add autocomplete search that runs through your own server instead of calling the Storefront API from the browser. Typed routes and redirects: Describe your URL structure once and reuse it for redirects, predictive-search URLs, and Shopify-standard resource mapping. ShopifyScripts for the Shopify browser runtime and unified cart route handling: Render Shopify's standard script tags and browser runtime in one place, and handle cart routes through a single registration that works the same across frameworks. To get started, visit the Hydrogen developer preview documentation . For a detailed breakdown of this release, read the full release notes .",
+      "title": "Hydrogen developer preview update",
+      "url": "https://shopify.dev/changelog/hydrogen-developer-preview-update"
+    },
+    "shopify-dev:https://shopify.dev/changelog/hydrogen-now-deploys-to-vercel": {
+      "destination": "shopify-dev/storefront-api.md",
+      "needs_merge": false,
+      "published_at": "2026-06-30T20:00:00Z",
+      "review_reason": "Hydrogen developer-preview projects can deploy to Vercel; preserve preview status and validate the current starter/runtime contract.",
+      "section": "shopify-dev/storefront-api",
+      "source": "shopify-dev",
+      "status": "merged",
+      "title": "Hydrogen now deploys to Vercel",
+      "url": "https://shopify.dev/changelog/hydrogen-now-deploys-to-vercel"
+    },
+    "shopify-dev:https://shopify.dev/changelog/identity-verification-for-partners": {
+      "categories": [
+        "Action Required",
+        "Platform",
+        "New"
+      ],
+      "needs_merge": true,
+      "published_at": "2026-07-09T17:15:00Z",
+      "review_reason": "review required by route",
+      "section": "shopify-dev/general",
+      "source": "shopify-dev",
+      "status": "pending_review",
+      "summary": "Trust is foundational to the Shopify Partner ecosystem. Partners take actions across Shopify that can directly affect merchants, and merchants need confidence when granting access to their stores. We're introducing identity verification for partners to help protect merchants, reduce abuse, and make it harder for bad actors to operate, while creating a better experience for legitimate partners. What changed Starting today, Shopify Partners can complete identity verification before requesting collaborator access to merchant stores. Identity verification is optional today and will become mandatory in the coming weeks before sending a new collaborator request. For this launch: Identity verification applies to sending new collaborator requests. Every user in your partner organization sending a new collaboration will need to verify their identity. Identity verification isn't required just to access collaborator shops where a merchant has already granted access. Verification is completed through Stripe and requires a government-issued photo ID and a selfie or liveness check. We're starting with collaborator requests because collaborator access is one of the clearest trust moments between merchants and partners. When a merchant approves a collaborator request, they're giving a partner access to a live store. Action required If you or anyone in your partner organization sends collaborator requests, complete identity verification on the Request collaborations page in the Dev Dashboard. Identity verification is optional today, but we recommend completing it now to avoid interruption when it becomes mandatory in the coming weeks. After enforcement begins, unverified users won't be able to send new collaborator requests until they complete verification. To prepare: Complete identity verification before sending new collaborator requests. Make sure every user in your partner organization who requests collaborator access verifies their own identity. Have a government-issued photo ID ready, along with access to a device that can complete a selfie or liveness check. Review the related docs below for more context on identity verification and collaborator access. Related docs Verifying your identity as a Shopify Partner Collaborator requests: Information shared with merchants",
+      "title": "Identity verification for Shopify Partners starts today",
+      "url": "https://shopify.dev/changelog/identity-verification-for-partners"
+    },
+    "shopify-dev:https://shopify.dev/changelog/intents-api-file-picker": {
+      "needs_merge": false,
+      "published_at": "2026-06-17T16:00:00Z",
+      "section": "shopify-dev/flow-functions",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Apps can now open Shopify's file picker with the Intents API",
+      "url": "https://shopify.dev/changelog/intents-api-file-picker"
+    },
+    "shopify-dev:https://shopify.dev/changelog/invalid-metafield-queries-now-return-errors-in-the-graphql-admin-api": {
+      "categories": [
+        "Action Required",
+        "API",
+        "Breaking API Change",
+        "Admin GraphQL API",
+        "Metafields and metaobjects",
+        "2026-10"
+      ],
+      "needs_merge": false,
+      "published_at": "2026-07-24T16:00:00Z",
+      "review_reason": "auto-curated route",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "summary": "Starting in API version 2026-10, the GraphQL Admin API returns an error when a query filters by a metafield that isn't set up for filtering, instead of silently returning incorrect results. This is a breaking change. It affects apps that filter resources by metafield on version 2026-10 or later, and you'll need to update affected queries before you upgrade. What changed In API version 2026-10 and later, the GraphQL Admin API checks metafield filters before it runs a query. If a query filters by a metafield that can't be used for filtering, the query returns an error explaining the problem instead of ignoring the invalid predicate and returning an incorrect result. A metafield filter commonly fails when: The metafield doesn't have a definition. The metafield's definition isn't configured to allow filtering. The metafield's type doesn't support the filter or comparison you used. Previously, invalid predicates in metafield filters were silently ignored, so a query with an invalid filter could return misleading results. Now the response tells you the filter is the problem, so you can correct it. Who's affected This change affects apps and integrations that filter by metafields in the GraphQL Admin API (for example, filtering products, orders, or customers by a metafield) on API version 2026-10 or later. Queries on version 2026-07 and earlier keep the previous behavior and aren't affected until you upgrade. You're affected only when a query filters by a metafield that isn't valid for filtering. Queries that filter by metafields set up for filtering, using a supported comparison, behave exactly as before and return the same results. Why this matters Silently returning incorrect results made invalid metafield filters hard to catch: a mistyped or unsupported filter looked identical to a query that simply had different matches. Returning an error instead lets you find and fix these problems during development, rather than shipping a filter that quietly returns nothing in production. Breaking changes and migrations API version 2026-10 is scheduled for release on October 1, 2026. Once you make requests on 2026-10 or later, a query that filters by a metafield that isn't set up for filtering returns an error instead of an empty result. To migrate: Find the queries in your app that filter by metafields in the GraphQL Admin API. For each one, confirm the metafield has a definition, the definition allows filtering , and the comparison you use is supported for that metafield's type. Update any filter that references a metafield that isn't set up for filtering. Test your queries against version 2026-10 and confirm they return results without an error. If a metafield you rely on can't be filtered yet, keep those queries on version 2026-07 or earlier until you've updated your app, and set up the metafield definition for filtering before you upgrade.",
+      "title": "Invalid metafield queries now return errors in the GraphQL Admin API",
+      "url": "https://shopify.dev/changelog/invalid-metafield-queries-now-return-errors-in-the-graphql-admin-api"
+    },
+    "shopify-dev:https://shopify.dev/changelog/inventory-transfer-webhooks-include-origin-and-destination-location-ids-and-mutation-documentation-clarified": {
+      "needs_merge": false,
+      "published_at": "2026-06-05T16:00:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Inventory transfer webhooks include origin and destination location IDs, and mutation documentation clarified",
+      "url": "https://shopify.dev/changelog/inventory-transfer-webhooks-include-origin-and-destination-location-ids-and-mutation-documentation-clarified"
+    },
+    "shopify-dev:https://shopify.dev/changelog/label-purchase-mutation": {
+      "needs_merge": false,
+      "published_at": "2026-06-17T15:45:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Buy Shipping Labels with the GraphQL Admin API",
+      "url": "https://shopify.dev/changelog/label-purchase-mutation"
+    },
+    "shopify-dev:https://shopify.dev/changelog/market-driven-delivery-profiles-admin-api": {
+      "needs_merge": false,
+      "published_at": "2026-07-01T04:00:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Market-driven shipping Admin API",
+      "url": "https://shopify.dev/changelog/market-driven-delivery-profiles-admin-api"
+    },
+    "shopify-dev:https://shopify.dev/changelog/market-driven-shipping-now-available-in-feature-preview": {
+      "destination": "shopify-dev/checkout-accounts.md",
+      "needs_merge": false,
+      "published_at": "2026-07-01T19:00:00Z",
+      "review_reason": "Feature preview with staged rollout; audit assumptions around delivery profiles and Markets before migration or app changes.",
+      "section": "shopify-dev/checkout-accounts",
+      "source": "shopify-dev",
+      "status": "merged",
+      "title": "Market-driven shipping now available in feature preview",
+      "url": "https://shopify.dev/changelog/market-driven-shipping-now-available-in-feature-preview"
+    },
+    "shopify-dev:https://shopify.dev/changelog/markets-apis-now-support-marketregionsubdivision": {
+      "needs_merge": false,
+      "published_at": "2026-07-03T16:00:00Z",
+      "section": "shopify-dev/flow-functions",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "[DRAFT] Markets APIs now support MarketRegionSubdivision",
+      "url": "https://shopify.dev/changelog/markets-apis-now-support-marketregionsubdivision"
+    },
+    "shopify-dev:https://shopify.dev/changelog/merchant-owned-delivery-profile-apis-are-deprecated-for-market-driven-shipping": {
+      "needs_merge": false,
+      "published_at": "2026-07-01T13:00:00Z",
+      "section": "shopify-dev/flow-functions",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Merchant-owned delivery profile APIs are deprecated for market-driven shipping",
+      "url": "https://shopify.dev/changelog/merchant-owned-delivery-profile-apis-are-deprecated-for-market-driven-shipping"
+    },
+    "shopify-dev:https://shopify.dev/changelog/metafield-triggers-and-additional-topics-are-now-available-for-events": {
+      "categories": [
+        "API",
+        "Update",
+        "Events & webhooks"
+      ],
+      "needs_merge": true,
+      "published_at": "2026-07-21T20:00:00Z",
+      "review_reason": "ambiguous terms: preview",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "pending_review",
+      "summary": "Apps can now subscribe to events for Order , Collection , InventoryItem , InventoryShipment , Location , and can subscribe to metafield changes on Product , Order , Customer , Collection and Location . ProductVariant metafields are supported through the Product topic. This gives apps a precise way to react to more objects and custom data changes. Apps can target the fields that matter in triggers , query the resource that changed, and avoid subscribing to every resource update just to diff payloads in their event handler. Both $app metafields and regular metafields are supported. Access control still applies, so an app must have access to the metafield to subscribe to changes and receive the queried data. For example, an app can subscribe to two targeted product metafields in shopify.app.toml and use query_variables to fetch the metafield that actually changed: [events] api_version = \"unstable\" [[events.subscription]] handle = \"product_material_sync\" topic = \"Product\" actions = [\"update\"] triggers = [ \"product.metafield(namespace: 'custom', key: 'material').value\", \"product.metafield(namespace: '$app', key: 'sourcing_status').value\" ] uri = \"/events/product\" query = \"\"\" query ProductMetafieldSync( $productId: ID! $metafieldNamespace: String! $metafieldKey: String! ) { product(id: $productId) { id title metafield(namespace: $metafieldNamespace, key: $metafieldKey) { namespace key value type } } } \"\"\" When one of those metafields changes, apps receive the payload they designed: { \"topic\": \"Product\", \"action\": \"update\", \"handle\": \"product_material_sync\", \"data\": { \"product\": { \"id\": \"gid://shopify/Product/1234567890\", \"title\": \"Canvas Tote\", \"metafield\": { \"namespace\": \"custom\", \"key\": \"material\", \"value\": \"Cotton\", \"type\": \"single_line_text_field\" } } }, \"fields_changed\": [ \"product.metafield(namespace: 'custom', key: 'material').value\" ], \"query_variables\": { \"productId\": \"gid://shopify/Product/1234567890\", \"metafieldNamespace\": \"custom\", \"metafieldKey\": \"material\" } } If your subscription has no triggers , or subscribes to a parent trigger such as product , it can now receive events for metafield changes on supported resources too. To receive only specific metafield changes, add targeted metafield triggers for the namespace and key your app needs. Events remain available in the unstable API version during developer preview. For topics that are not supported yet, continue using webhooks alongside Events in shopify.app.toml . Learn more about Events: https://shopify.dev/docs/apps/build/events Order: https://shopify.dev/docs/api/events/latest/order Collection: https://shopify.dev/docs/api/events/latest/collection InventoryItem: https://shopify.dev/docs/api/events/latest/intentory-item InventoryShipment: https://shopify.dev/docs/api/events/latest/inventory-shipment Location: https://shopify.dev/docs/api/events/latest/location",
+      "title": "Metafield triggers and additional topics are now available for Events",
+      "url": "https://shopify.dev/changelog/metafield-triggers-and-additional-topics-are-now-available-for-events"
+    },
+    "shopify-dev:https://shopify.dev/changelog/metafields-now-require-a-definition-to-be-accessed-through-the-customer-account-api": {
+      "needs_merge": false,
+      "published_at": "2026-06-16T16:00:00Z",
+      "section": "shopify-dev/custom-data",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Metafields now require a definition to be accessed through the Customer Account API",
+      "url": "https://shopify.dev/changelog/metafields-now-require-a-definition-to-be-accessed-through-the-customer-account-api"
+    },
+    "shopify-dev:https://shopify.dev/changelog/metaobject-scopes-not-required-for-app-metaobjects": {
+      "needs_merge": false,
+      "published_at": "2026-04-30T16:00:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "App-owned metaobjects can be used without access scopes",
+      "url": "https://shopify.dev/changelog/metaobject-scopes-not-required-for-app-metaobjects"
+    },
+    "shopify-dev:https://shopify.dev/changelog/minor-rounding-change-for-custom-line-item-discounts-in-pos-115": {
+      "needs_merge": false,
+      "published_at": "2026-04-27T16:00:00Z",
+      "section": "shopify-dev/pos-ui",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Minor rounding change for custom line item discounts in POS 11.5",
+      "url": "https://shopify.dev/changelog/minor-rounding-change-for-custom-line-item-discounts-in-pos-115"
+    },
+    "shopify-dev:https://shopify.dev/changelog/monitor-admin-web-vitals-in-the-dev-dashboard": {
+      "needs_merge": false,
+      "published_at": "2026-06-17T15:45:00Z",
+      "section": "shopify-dev/flow-functions",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Monitor admin web vitals in the Dev Dashboard",
+      "url": "https://shopify.dev/changelog/monitor-admin-web-vitals-in-the-dev-dashboard"
+    },
+    "shopify-dev:https://shopify.dev/changelog/more-admin-intents-now-support-settings": {
+      "destination": "shopify-dev/admin-api.md",
+      "needs_merge": false,
+      "published_at": "2026-05-08T16:00:00Z",
+      "review_reason": "Seven additional Settings intents can open contextual admin settings; validate supported intents against current docs.",
+      "section": "shopify-dev/general",
+      "source": "shopify-dev",
+      "status": "merged",
+      "title": "More admin intents now support Settings",
+      "url": "https://shopify.dev/changelog/more-admin-intents-now-support-settings"
+    },
+    "shopify-dev:https://shopify.dev/changelog/new-app-submission-experience-in-the-partner-dashboard": {
+      "needs_merge": false,
+      "published_at": "2026-04-21T16:15:00Z",
+      "section": "shopify-dev/flow-functions",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "New app submission experience in the Partner Dashboard",
+      "url": "https://shopify.dev/changelog/new-app-submission-experience-in-the-partner-dashboard"
+    },
+    "shopify-dev:https://shopify.dev/changelog/new-appsubscriptioncancel-mutation-in-the-partner-api": {
+      "needs_merge": false,
+      "published_at": "2026-06-16T16:00:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "New appSubscriptionCancel mutation in the Partner API",
+      "url": "https://shopify.dev/changelog/new-appsubscriptioncancel-mutation-in-the-partner-api"
+    },
+    "shopify-dev:https://shopify.dev/changelog/new-channelid-argument-for-incontext-directive-in-storefront-api-2026-10": {
+      "categories": [
+        "API",
+        "New",
+        "Storefront API",
+        "2026-10"
+      ],
+      "needs_merge": false,
+      "published_at": "2026-07-15T16:00:00Z",
+      "review_reason": "auto-curated route",
+      "section": "shopify-dev/storefront-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "summary": "As of Storefront API version 2026-10 , the @inContext directive accepts an optional channelId argument. Use channelId to apply a specific sales channel's context to an entire query, including channel-specific product availability and pricing. Example: query Product($handle: String!, $channelId: ID!) @inContext(channelId: $channelId) { product(handle: $handle) { id title availableForSale priceRange { minVariantPrice { amount currencyCode } } } } Why it's changing The existing @inContext directive lets you set buyer context such as country and language . With channelId , you can now: Target a specific channel (for example, a marketplace or custom sales channel) when fetching products, prices, and availability. Build channel-aware storefronts that show the correct catalog, pricing, and merchandising rules for each channel. Reduce custom logic in your app by relying on the API to apply channel-specific behavior. Requirements Access requirement: You can only pass the ID of a channel created by the API client making the request. Fallback behavior: If you omit channelId , the Storefront API uses the first channel owned by that API client. Pass channelId explicitly when your app owns multiple channels or needs to select a specific channel. Learn more about contextual queries .",
+      "title": "Storefront API `@inContext` supports `channelId`",
+      "url": "https://shopify.dev/changelog/new-channelid-argument-for-incontext-directive-in-storefront-api-2026-10"
+    },
+    "shopify-dev:https://shopify.dev/changelog/new-checkouttoken-field-added-to-the-order-object": {
+      "needs_merge": false,
+      "published_at": "2026-05-15T16:00:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "New `checkoutToken` field added to the `Order` object",
+      "url": "https://shopify.dev/changelog/new-checkouttoken-field-added-to-the-order-object"
+    },
+    "shopify-dev:https://shopify.dev/changelog/new-collection-model-and-apis-now-available": {
+      "needs_merge": false,
+      "published_at": "2026-06-17T13:00:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "New Collection model and APIs now available",
+      "url": "https://shopify.dev/changelog/new-collection-model-and-apis-now-available"
+    },
+    "shopify-dev:https://shopify.dev/changelog/new-css-variable-for-mobile-safe-area-insets": {
+      "needs_merge": false,
+      "published_at": "2026-04-15T16:00:00Z",
+      "section": "shopify-dev/flow-functions",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "New CSS variable for mobile safe area insets",
+      "url": "https://shopify.dev/changelog/new-css-variable-for-mobile-safe-area-insets"
+    },
+    "shopify-dev:https://shopify.dev/changelog/new-field-carttoken-added-to-the-order-graphql-admin-api": {
+      "needs_merge": false,
+      "published_at": "2026-04-20T16:00:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "New `cartToken` field added to the `Order` object",
+      "url": "https://shopify.dev/changelog/new-field-carttoken-added-to-the-order-graphql-admin-api"
+    },
+    "shopify-dev:https://shopify.dev/changelog/new-fields-on-exchangelineitem": {
+      "categories": [
+        "API",
+        "New",
+        "Admin GraphQL API",
+        "2026-10"
+      ],
+      "needs_merge": true,
+      "published_at": "2026-07-15T16:00:00Z",
+      "review_reason": "review required by route",
+      "section": "shopify-dev/general",
+      "source": "shopify-dev",
+      "status": "pending_review",
+      "summary": "",
+      "title": "`productId`, `title`,`variantSku`, and `variantTitle` fields added to `ExchangeLineItem`",
+      "url": "https://shopify.dev/changelog/new-fields-on-exchangelineitem"
+    },
+    "shopify-dev:https://shopify.dev/changelog/new-lineitem-field-on-the-giftcard-graphql-object": {
+      "needs_merge": false,
+      "published_at": "2026-07-01T16:00:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "New `lineItem` field on the `GiftCard` object",
+      "url": "https://shopify.dev/changelog/new-lineitem-field-on-the-giftcard-graphql-object"
+    },
+    "shopify-dev:https://shopify.dev/changelog/new-productunavailableinbuyerlocation-warning-code-in-the-storefront-api-cart": {
+      "needs_merge": false,
+      "published_at": "2026-05-12T16:00:00Z",
+      "section": "shopify-dev/storefront-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "New `PRODUCT_UNAVAILABLE_IN_BUYER_LOCATION` warning code in the Storefront API Cart",
+      "url": "https://shopify.dev/changelog/new-productunavailableinbuyerlocation-warning-code-in-the-storefront-api-cart"
+    },
+    "shopify-dev:https://shopify.dev/changelog/new-purchasetype-and-recurringcyclelimit-fields-available-in-the-discount-ui-extension-api": {
+      "needs_merge": false,
+      "published_at": "2026-06-17T18:00:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "New purchaseType and recurringCycleLimit fields in the discounts API for discount UI extensions",
+      "url": "https://shopify.dev/changelog/new-purchasetype-and-recurringcyclelimit-fields-available-in-the-discount-ui-extension-api"
+    },
+    "shopify-dev:https://shopify.dev/changelog/next-generation-events-now-available-in-developer-preview": {
+      "destination": "shopify-dev/admin-api.md",
+      "needs_merge": false,
+      "published_at": "2026-05-19T14:00:00Z",
+      "review_reason": "Developer preview only; field-level filtering and custom webhook payloads require preview-specific validation.",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "merged",
+      "title": "Next Generation Events now available in developer preview",
+      "url": "https://shopify.dev/changelog/next-generation-events-now-available-in-developer-preview"
+    },
+    "shopify-dev:https://shopify.dev/changelog/order-attribution-definitions-are-available-in-order-channel-filters": {
+      "needs_merge": false,
+      "published_at": "2026-06-30T16:00:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Configure order attribution for sales channel apps",
+      "url": "https://shopify.dev/changelog/order-attribution-definitions-are-available-in-order-channel-filters"
+    },
+    "shopify-dev:https://shopify.dev/changelog/orderdisplayfulfillmentstatus-now-returns-fulfillmentnotrequired": {
+      "needs_merge": false,
+      "published_at": "2026-07-03T16:00:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "OrderDisplayFulfillmentStatus now returns FULFILLMENT_NOT_REQUIRED for orders with no items to fulfill",
+      "url": "https://shopify.dev/changelog/orderdisplayfulfillmentstatus-now-returns-fulfillmentnotrequired"
+    },
+    "shopify-dev:https://shopify.dev/changelog/payment-mandates-id-field": {
+      "needs_merge": false,
+      "published_at": "2026-06-27T16:00:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Payment mandates now expose an id field",
+      "url": "https://shopify.dev/changelog/payment-mandates-id-field"
+    },
+    "shopify-dev:https://shopify.dev/changelog/physical-inventory-feature-preview": {
+      "categories": [
+        "API",
+        "New",
+        "Admin GraphQL API"
+      ],
+      "needs_merge": true,
+      "published_at": "2026-07-17T16:00:00Z",
+      "review_reason": "ambiguous terms: early access, preview",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "pending_review",
+      "summary": "The physical inventory feature preview gives you early access to a new set of inventory APIs in the unstable version of the GraphQL Admin API. Enable it on a development store to build and test against the core primitives merchants use to organize a stockroom: bins, counts, and purchase orders. Because these APIs are under active development, they're available behind a feature preview. This lets you start building early and provide feedback on the schema and behavior before the APIs become stable. What's included Bins. Named storage locations within a location, such as a shelf or rack. Create and update bins, and read the on-hand quantities held in each one. Counts. Set the on-hand quantity of an inventory item in a specific bin with the inventoryCountCreate mutation. Purchase orders. Read purchase order data through the GraphQL Admin API, including the purchase order, its line items, and its supplier. How to enable it Create a development store or use an existing one. Enable the Physical inventory feature preview on that store. Configure your app to use the unstable version of the GraphQL Admin API for all physical inventory queries and mutations. Only stores with the feature preview enabled can call these APIs; calls from stores that haven't enabled the preview return an access error. For examples and details on how bins integrate with your existing location inventory, see the Physical inventory feature preview guide .",
+      "title": "Physical inventory feature preview",
+      "url": "https://shopify.dev/changelog/physical-inventory-feature-preview"
+    },
+    "shopify-dev:https://shopify.dev/changelog/polaris-web-components-migration-guides-now-available-for-checkout-and-customer-account-ui-extensions": {
+      "needs_merge": false,
+      "published_at": "2026-05-13T20:30:00Z",
+      "section": "shopify-dev/checkout-accounts",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Polaris web components migration guides now available for Checkout and Customer Account UI extensions",
+      "url": "https://shopify.dev/changelog/polaris-web-components-migration-guides-now-available-for-checkout-and-customer-account-ui-extensions"
+    },
+    "shopify-dev:https://shopify.dev/changelog/pos-extensions-now-supports-a-background-extension-target": {
+      "categories": [
+        "API",
+        "New",
+        "POS Extensions",
+        "2026-07"
+      ],
+      "needs_merge": false,
+      "published_at": "2026-07-09T19:00:00Z",
+      "review_reason": "auto-curated route",
+      "section": "shopify-dev/pos-ui",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "summary": "The pos.app.ready.data target runs for the entire POS session, letting your extension observe POS events and run background logic without rendering any UI surface. Use it for event observation, data storage, and calling non-visual background APIs. What you need to do Subscribe to Shopify POS events with shopify.addEventListener() : shopify.addEventListener('transactioncomplete', (event) => { console.log('Transaction complete', event); }); Supported events Supported events include: transactioncomplete cashtrackingsessionstart cashtrackingsessioncomplete For comprehensive details and best practices, refer to the app background target documentation .",
+      "title": "POS Extensions now supports a background extension target",
+      "url": "https://shopify.dev/changelog/pos-extensions-now-supports-a-background-extension-target"
+    },
+    "shopify-dev:https://shopify.dev/changelog/pos-ui-extensions-2026-07-adds-discount-allocations-to-bundle-components": {
+      "categories": [
+        "API",
+        "Update",
+        "POS Extensions",
+        "2026-07"
+      ],
+      "needs_merge": false,
+      "published_at": "2026-07-15T04:00:00Z",
+      "review_reason": "auto-curated route",
+      "section": "shopify-dev/pos-ui",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "summary": "Starting with POS UI Extensions API version 2026-07, product bundle components in cart line item data include discount allocation details. Apps can access component-level discount allocations from bundle components on a cart line item, for example: shopify.cartLineItem.components?.[0]?.discountAllocations The same LineItem shape is also used in Cart API cart state, so apps that read line items from shopify.cart.current.value.lineItems can access component discount allocations on bundle components there as well. Previously, POS UI Extensions exposed discount allocations on the parent line item through lineItem.discountAllocations , while bundle components exposed component-level tax information but not component-level discount allocations. This made it difficult for apps to calculate component-level discount, tax, reporting, or compliance values for discounted product bundles. This change is additive. Apps using API version 2026-04 or earlier do not need to make any changes. Apps adopting API version 2026-07 can use components[].discountAllocations when working with discounted product bundles. Apps should handle the property being absent or empty when a bundle component has no discount allocations. For more information, see the [Cart Line Item API reference]( https://shopify.dev/docs/api/pos-ui-extensions/2026-07-rc/target-apis/contextual-apis/cart-line-item-api#cartlineitemapi- propertydetail-cartlineitem) and the [Cart API current property]( https://shopify.dev/docs/api/pos-ui-extensions/2026-07-rc/target-apis/contextual-apis/cart-api#cartapi-propertydetail-curr ent).",
+      "title": "POS UI Extensions 2026-07 adds discount allocations to bundle components",
+      "url": "https://shopify.dev/changelog/pos-ui-extensions-2026-07-adds-discount-allocations-to-bundle-components"
+    },
+    "shopify-dev:https://shopify.dev/changelog/pos-ui-extensions-2026-07-uses-per-unit-fixed-amount-line-item-discounts": {
+      "categories": [
+        "Action Required",
+        "API",
+        "Breaking API Change",
+        "POS Extensions",
+        "2026-07"
+      ],
+      "needs_merge": false,
+      "published_at": "2026-07-08T16:00:00Z",
+      "review_reason": "auto-curated route",
+      "section": "shopify-dev/pos-ui",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "summary": "Starting with POS UI extensions API version 2026-07, FixedAmount line item discounts passed to setLineItemDiscount and bulkSetLineItemDiscounts from the Cart API must represent a per-unit discount. Why it's changing In API version 2026-04 and earlier, apps could pass a total fixed discount for the entire line item, and Shopify POS automatically converted it to a per-unit value. In API version 2026-07, this conversion no longer occurs. The value you pass is interpreted directly as the discount applied to each unit in the line item. For example, in API version 2026-07, if you pass '5.00' on a line item with quantity 2, POS applies a $5.00 discount to each unit, for a $10.00 total discount. To apply a $5.00 total discount to a line item with quantity 2, you must instead pass '2.50' as the per-unit discount. What you need to do This change only affects FixedAmount line item discounts. Percentage discounts are not affected. Apps using API version 2026-04 or earlier do not need to make any changes. Apps adopting API version 2026-07 must update their discount calculations before using the new version. If your app currently calculates discounts as a total line discount, compute the per-unit discount before calling setLineItemDiscount or bulkSetLineItemDiscounts - for example, by dividing the total discount by the line item quantity. If the total discount does not divide evenly by the line item quantity, choose a rounded per-unit value that matches your app's intended discount behavior and ensures the final discount is consistent with your logic. For more information, see the Cart API reference .",
+      "title": "POS UI extensions 2026-07 uses per-unit fixed-amount line item discounts",
+      "url": "https://shopify.dev/changelog/pos-ui-extensions-2026-07-uses-per-unit-fixed-amount-line-item-discounts"
+    },
+    "shopify-dev:https://shopify.dev/changelog/prepare-your-app-for-migration-to-shopify-app-pricing": {
+      "categories": [
+        "Platform",
+        "Update"
+      ],
+      "needs_merge": true,
+      "published_at": "2026-07-07T16:00:00Z",
+      "review_reason": "ambiguous terms: early access, preview",
+      "section": "shopify-dev/general",
+      "source": "shopify-dev",
+      "status": "pending_review",
+      "summary": "Developers using the Billing API can now begin preparing their apps to move to Shopify App Pricing. The first part of our migration tool lets you generate, review, edit, and test Shopify App Pricing plans before moving any existing merchant subscriptions. This gives you time to confirm that your pricing configuration is ready while your app continues using its current billing setup. Shopify App Pricing provides a standardized pricing experience across the Shopify App Store, plan selection, subscription management, and merchant billing. Generate your App Pricing plans In the Pricing Details of your app's listing in Partner Dashboard click manage . You'll see the migration tool above your list of plans. The tool automatically creates App Pricing draft plans from your eligible manual plans. Plans that are missing App Pricing required fields, like usage charges, are marked with an Action needed badge. Review and test your configuration After your public and private plans are drafted, you can: Review the generated plan names prices, features, and billing intervals. Edit plans or create additional plans as needed. Configure usage charges and app events for usage-based pricing. Test the plans on a development store owned by the same Partner organization as your app. Review your plans using the readiness checklist Preparing plans in the tool doesn't migrate your existing shops or subscriptions. Merchants don't need to take action during this stage. For detailed instructions, plan-generation behavior, limitations, and testing requirements, read the Shopify App Pricing migration guide . Coming next: move existing subscriptions This release is the first part of the manual billing migration tool. In the coming days, we'll be inviting partners to preview the next part of the tool for moving existing shops and subscriptions to your Shopify App Pricing plans. If you'd like to join this Early Access preview, enter your information on this form .",
+      "title": "Prepare your app for migration to Shopify App Pricing",
+      "url": "https://shopify.dev/changelog/prepare-your-app-for-migration-to-shopify-app-pricing"
+    },
+    "shopify-dev:https://shopify.dev/changelog/publish-and-unpublish-product-variants-independently-from-product": {
+      "needs_merge": false,
+      "published_at": "2026-05-07T16:00:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Publish and unpublish product variants independently from product",
+      "url": "https://shopify.dev/changelog/publish-and-unpublish-product-variants-independently-from-product"
+    },
+    "shopify-dev:https://shopify.dev/changelog/purchase-type-filtering-now-enforced-for-app-discounts": {
+      "needs_merge": false,
+      "published_at": "2026-06-17T16:00:00Z",
+      "section": "shopify-dev/flow-functions",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Purchase-type filtering now enforced for app discounts",
+      "url": "https://shopify.dev/changelog/purchase-type-filtering-now-enforced-for-app-discounts"
+    },
+    "shopify-dev:https://shopify.dev/changelog/removal-of-itemnotstockedatlocation-error": {
+      "needs_merge": false,
+      "published_at": "2026-06-19T16:00:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Removal of ITEM_NOT_STOCKED_AT_LOCATION error",
+      "url": "https://shopify.dev/changelog/removal-of-itemnotstockedatlocation-error"
+    },
+    "shopify-dev:https://shopify.dev/changelog/remove-pricerule-from-draft-order-discount-warning": {
+      "needs_merge": false,
+      "published_at": "2026-06-23T18:00:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "`DraftOrderDiscountNotAppliedWarning.priceRule` removed in GraphQL Admin API 2026-10",
+      "url": "https://shopify.dev/changelog/remove-pricerule-from-draft-order-discount-warning"
+    },
+    "shopify-dev:https://shopify.dev/changelog/removing-deprecated-private-and-publicread-enums-on-metaobject-definitions": {
+      "needs_merge": false,
+      "published_at": "2026-05-20T16:00:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Removing deprecated PRIVATE and PUBLIC_READ enums on metaobject definitions",
+      "url": "https://shopify.dev/changelog/removing-deprecated-private-and-publicread-enums-on-metaobject-definitions"
+    },
+    "shopify-dev:https://shopify.dev/changelog/scannable-discount-codes": {
+      "needs_merge": false,
+      "published_at": "2026-04-27T04:00:00Z",
+      "section": "shopify-dev/flow-functions",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Scannable discount codes",
+      "url": "https://shopify.dev/changelog/scannable-discount-codes"
+    },
+    "shopify-dev:https://shopify.dev/changelog/ship-and-pickup-in-one-order-feature-preview": {
+      "destination": "shopify-dev/checkout-accounts.md",
+      "needs_merge": false,
+      "published_at": "2026-04-23T16:00:00Z",
+      "review_reason": "Plus and Enterprise feature preview; apps must test multiple delivery groups and mixed shipping/pickup fulfillment assumptions.",
+      "section": "shopify-dev/checkout-accounts",
+      "source": "shopify-dev",
+      "status": "merged",
+      "title": "Ship and pickup in one order now available in feature preview",
+      "url": "https://shopify.dev/changelog/ship-and-pickup-in-one-order-feature-preview"
+    },
+    "shopify-dev:https://shopify.dev/changelog/shipping-line-field-now-available-on-fulfillmentorderlineitem": {
+      "destination": "shopify-dev/admin-api.md",
+      "needs_merge": false,
+      "published_at": "2026-05-18T23:00:00Z",
+      "review_reason": "Available in Admin API 2026-07; use the shippingLine field only after version-specific schema validation.",
+      "section": "shopify-dev/general",
+      "source": "shopify-dev",
+      "status": "merged",
+      "title": "Shipping line field now available on FulfillmentOrderLineItem",
+      "url": "https://shopify.dev/changelog/shipping-line-field-now-available-on-fulfillmentorderlineitem"
+    },
+    "shopify-dev:https://shopify.dev/changelog/shop-minis-march-april-2026-update": {
+      "needs_merge": false,
+      "published_at": "2026-05-20T16:00:00Z",
+      "section": "shopify-dev/flow-functions",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Shop Minis March April 2026 update",
+      "url": "https://shopify.dev/changelog/shop-minis-march-april-2026-update"
+    },
+    "shopify-dev:https://shopify.dev/changelog/shop-minis-may-june-2026-update": {
+      "needs_merge": false,
+      "published_at": "2026-07-01T20:05:00Z",
+      "section": "shopify-dev/flow-functions",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Shop Minis May June 2026 update",
+      "url": "https://shopify.dev/changelog/shop-minis-may-june-2026-update"
+    },
+    "shopify-dev:https://shopify.dev/changelog/shop-user-metafields-in-shopify-functions": {
+      "needs_merge": false,
+      "published_at": "2026-06-13T16:00:00Z",
+      "section": "shopify-dev/flow-functions",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Shop User Metafields in Shopify Functions",
+      "url": "https://shopify.dev/changelog/shop-user-metafields-in-shopify-functions"
+    },
+    "shopify-dev:https://shopify.dev/changelog/shopify-ai-toolkit-for-upgrading-extensions-to-polaris-web-components": {
+      "needs_merge": false,
+      "published_at": "2026-06-11T18:00:00Z",
+      "section": "shopify-dev/checkout-accounts",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Shopify AI Toolkit for upgrading extensions to Polaris web components",
+      "url": "https://shopify.dev/changelog/shopify-ai-toolkit-for-upgrading-extensions-to-polaris-web-components"
+    },
+    "shopify-dev:https://shopify.dev/changelog/shopify-app-pricing-charge-for-usage-recurring-subscriptions-or-both": {
+      "destination": "shopify-dev/general.md",
+      "needs_merge": false,
+      "published_at": "2026-05-11T18:00:00Z",
+      "review_reason": "Shopify App Pricing replaces Managed Pricing terminology and supports recurring, usage-based, or combined models in Partner Dashboard.",
+      "section": "shopify-dev/general",
+      "source": "shopify-dev",
+      "status": "merged",
+      "title": "Shopify App Pricing: charge for usage, recurring subscriptions, or both",
+      "url": "https://shopify.dev/changelog/shopify-app-pricing-charge-for-usage-recurring-subscriptions-or-both"
+    },
+    "shopify-dev:https://shopify.dev/changelog/shopify-cli-40-semver-auto-updates-removing-deprecated-flags-and-commands": {
+      "needs_merge": false,
+      "published_at": "2026-05-21T21:00:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Shopify CLI 4.0: SemVer, auto-updates, removing deprecated flags and commands",
+      "url": "https://shopify.dev/changelog/shopify-cli-40-semver-auto-updates-removing-deprecated-flags-and-commands"
+    },
+    "shopify-dev:https://shopify.dev/changelog/shopify-flow-action-runtime-urls-now-update-automatically": {
+      "categories": [
+        "Tools",
+        "Update",
+        "2026-07"
+      ],
+      "needs_merge": false,
+      "published_at": "2026-07-07T16:00:00Z",
+      "review_reason": "auto-curated route",
+      "section": "shopify-dev/flow-functions",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "summary": "Shopify Flow now resolves an action's runtime_url on every execution. When the runtime_url is changed and the app is redeployed, the new URL is automatically used by existing workflows the next time they run. Merchants no longer need to edit or re-save their workflows to use the updated URL. During local development, when you use shopify app dev , the runtime_url is also updated automatically in any development shops that have workflows using the action. This mirrors the behavior in production. Why it's changing Previously, the runtime_url for a Shopify Flow action was hard-coded into the workflow at the time it was activated. As a result, changes to an extension's runtime_url only took effect after a merchant reactivated (re-saved) the affected workflow. Because merchants might not do this frequently, existing workflows could continue calling an outdated runtime_url . What you need to do No action is required. However, if you previously relied on an action's runtime_url remaining fixed for a workflow until it was reactivated, be aware that updates now propagate to existing workflows automatically. For more details, see Create Flow action endpoints .",
+      "title": "Shopify Flow: Action runtime URLs now update automatically",
+      "url": "https://shopify.dev/changelog/shopify-flow-action-runtime-urls-now-update-automatically"
+    },
+    "shopify-dev:https://shopify.dev/changelog/shopify-flow-changes-to-action-extensions-result-in-fewer-breaking-changes": {
+      "categories": [
+        "Tools",
+        "Update",
+        "2026-07"
+      ],
+      "needs_merge": false,
+      "published_at": "2026-07-07T16:00:00Z",
+      "review_reason": "auto-curated route",
+      "section": "shopify-dev/flow-functions",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "summary": "Your server-side code now has more control over how breaking changes to an action's configuration fields are handled. Instead of failing validation when there's a field mismatch, workflows that use older versions of an action will continue to execute, and Shopify will still send the request to the configured endpoint URL. Your server can then decide how to handle schema differences: for example, it can set default values for new required fields, ignore fields that were removed, or reject the request. Why it's changing Previously, any change to an action's configuration fields was treated as a breaking change in merchant workflows. Runtime validation would fail, and Shopify wouldn't send the request to the partner server. For example, if a new required field was added or an existing field was removed, any workflows using an older version of that action would always fail and never reach your endpoint. With this change, those workflows continue to run, and your endpoint receives the request even when the payload is based on an older configuration. What you need to do Your action's endpoint may now receive payloads that don't exactly match the action's current configuration, but instead match a previous version that merchants are still using in their workflows. Make sure your endpoint can safely handle: Missing fields that have become required in newer versions Extra fields that existed in older versions but have since been removed Any other unexpected fields or schema differences Typical strategies include applying sensible defaults for missing fields, ignoring unknown or legacy fields, or returning a clear error response when the payload can't be processed safely. For more details on how requests are sent and executed, see Flow action execution .",
+      "title": "Shopify Flow: Changes to Action extensions result in fewer breaking changes",
+      "url": "https://shopify.dev/changelog/shopify-flow-changes-to-action-extensions-result-in-fewer-breaking-changes"
+    },
+    "shopify-dev:https://shopify.dev/changelog/shopify-s-spring-26-edition-everywhere": {
+      "categories": [],
+      "needs_merge": true,
+      "published_at": "2026-06-17T16:00:00Z",
+      "review_reason": "review required by route",
+      "section": "shopify-dev/general",
+      "source": "shopify-dev",
+      "status": "pending_review",
+      "summary": "",
+      "title": "Shopify's Spring '26 Edition: Everywhere",
+      "url": "https://shopify.dev/changelog/shopify-s-spring-26-edition-everywhere"
+    },
+    "shopify-dev:https://shopify.dev/changelog/sidekick-app-extensions-app-store-requirements": {
+      "destination": "shopify-dev/general.md",
+      "needs_merge": false,
+      "published_at": "2026-06-17T15:45:00Z",
+      "review_reason": "App Store requirements now constrain Sidekick extensions to core app functionality and prohibit promotional or cross-sell behavior.",
+      "section": "shopify-dev/general",
+      "source": "shopify-dev",
+      "status": "merged",
+      "title": "New App Store requirements for Sidekick app extensions",
+      "url": "https://shopify.dev/changelog/sidekick-app-extensions-app-store-requirements"
+    },
+    "shopify-dev:https://shopify.dev/changelog/sidekick-app-extensions-available-today": {
+      "destination": "shopify-dev/general.md",
+      "needs_merge": false,
+      "published_at": "2026-06-17T15:45:00Z",
+      "review_reason": "Sidekick App Data and App Actions extensions are available; validate eligibility, scopes, and App Store requirements before use.",
+      "section": "shopify-dev/checkout-accounts",
+      "source": "shopify-dev",
+      "status": "merged",
+      "title": "Sidekick app extensions available today",
+      "url": "https://shopify.dev/changelog/sidekick-app-extensions-available-today"
+    },
+    "shopify-dev:https://shopify.dev/changelog/standard-storefront-events-and-actions": {
+      "needs_merge": false,
+      "published_at": "2026-06-17T15:45:00Z",
+      "section": "shopify-dev/storefront-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Standard storefront events and actions",
+      "url": "https://shopify.dev/changelog/standard-storefront-events-and-actions"
+    },
+    "shopify-dev:https://shopify.dev/changelog/storefront-catalog-mcp-now-implements-ucp": {
+      "destination": "shopify-dev/storefront-api.md",
+      "needs_merge": false,
+      "published_at": "2026-04-22T19:30:00Z",
+      "review_reason": "Storefront Catalog MCP adopted UCP tool names and endpoint shapes; legacy catalog tools had a June 15, 2026 migration deadline.",
+      "section": "shopify-dev/general",
+      "source": "shopify-dev",
+      "status": "merged",
+      "title": "Storefront Catalog MCP now implements UCP",
+      "url": "https://shopify.dev/changelog/storefront-catalog-mcp-now-implements-ucp"
+    },
+    "shopify-dev:https://shopify.dev/changelog/storefront-mcp-cart-tools-are-being-deprecated-in-favour-of-ucp-cart-mcp": {
+      "needs_merge": false,
+      "published_at": "2026-06-24T16:00:00Z",
+      "section": "shopify-dev/storefront-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Storefront MCP cart tools are being deprecated in favour of UCP Cart MCP",
+      "url": "https://shopify.dev/changelog/storefront-mcp-cart-tools-are-being-deprecated-in-favour-of-ucp-cart-mcp"
+    },
+    "shopify-dev:https://shopify.dev/changelog/streamlined-metaobject-api": {
+      "needs_merge": false,
+      "published_at": "2026-06-11T16:00:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Streamlined Metaobject API",
+      "url": "https://shopify.dev/changelog/streamlined-metaobject-api"
+    },
+    "shopify-dev:https://shopify.dev/changelog/target-discounts-to-specific-markets": {
+      "needs_merge": false,
+      "published_at": "2026-05-08T16:00:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "Target discounts to specific markets",
+      "url": "https://shopify.dev/changelog/target-discounts-to-specific-markets"
+    },
+    "shopify-dev:https://shopify.dev/changelog/the-storefront-apis-cart-object-now-exposes-warnings-for-unavailable-delivery-options": {
+      "needs_merge": false,
+      "published_at": "2026-05-11T16:00:00Z",
+      "section": "shopify-dev/storefront-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "The Storefront API's Cart object now exposes warnings for unavailable delivery options",
+      "url": "https://shopify.dev/changelog/the-storefront-apis-cart-object-now-exposes-warnings-for-unavailable-delivery-options"
+    },
+    "shopify-dev:https://shopify.dev/changelog/update-to-app-uninstall-reasons": {
+      "destination": "shopify-dev/general.md",
+      "needs_merge": false,
+      "published_at": "2026-04-23T16:00:00Z",
+      "review_reason": "Merchants must select a standardized uninstall reason; treat the resulting analytics as directional rather than perfect causal data.",
+      "section": "shopify-dev/general",
+      "source": "shopify-dev",
+      "status": "merged",
+      "title": "Update to app uninstall reasons",
+      "url": "https://shopify.dev/changelog/update-to-app-uninstall-reasons"
+    },
+    "shopify-dev:https://shopify.dev/changelog/updated-app-store-requirements-13-always-use-honest-and-transparent-review-practices": {
+      "categories": [
+        "App store",
+        "Update"
+      ],
+      "needs_merge": true,
+      "published_at": "2026-07-06T16:30:00Z",
+      "review_reason": "review required by route",
+      "section": "shopify-dev/general",
+      "source": "shopify-dev",
+      "status": "pending_review",
+      "summary": "All apps published to Shopify's App Store are subject to policy 1.3 \"Always use honest and transparent review practices\". What's changing: The Shopify App Store requirements policy 1.3 further clarifies our enforcement on the existing Partner Program Agreement Section C.2.1 about reviews in Shopify's App Store. Incentivizing reviews: While incentivizing reviews has always been against policy, we're further clarifying how we enforce it. Developers found to be incentivizing reviews may face consequences such as the removal of a portion of reviews, demotion or delisting of your app, or termination of your Partner account. Review trust: We're making adjustments to our logic to evalulate reviews. Going forward, only reviews that meet our trust standards will appear publicly. Reviews that don't meet this standard will be unpublished, and may be published automatically once they meet the standards. Please make sure your app is in compliance by: Using the Reviews API when possible to collect authentic reviews from your users Asking for reviews only in neutral language. Offering any incentives within or outside the app is not allowed. To learn more, see the Shopify App Store Requirements .",
+      "title": "Updated App Store Requirements: 1.3 Always Use Honest and Transparent Review Practices",
+      "url": "https://shopify.dev/changelog/updated-app-store-requirements-13-always-use-honest-and-transparent-review-practices"
+    },
+    "shopify-dev:https://shopify.dev/changelog/updated-app-store-requirements-4-1-2-use-a-unique-name-for-your-app": {
+      "categories": [
+        "App store",
+        "Update"
+      ],
+      "needs_merge": true,
+      "published_at": "2026-07-15T16:00:00Z",
+      "review_reason": "review required by route",
+      "section": "shopify-dev/general",
+      "source": "shopify-dev",
+      "status": "pending_review",
+      "summary": "Your app's name is what merchants use to discover, identify, and remember your app. We've added requirement 4.1.2, \"Use a unique name for your app,\" to reduce merchant confusion over identical and copycat app names in Shopify's App Store. We know that changing an app name isn't easy - it affects your brand, your discoverability, and your existing merchants. That's why this requirement establishes the standard now, while enforcement will roll out gradually. Affected apps will be audited in waves and given a designated timeframe to achieve compliance. What's changing This requirement gives Shopify the ability to act on app name violations. Non-compliant apps will be notified and given a defined timeframe to update their names where failure to comply may result in being delisted from the App Store. Enforcement actions will roll out gradually, so affected developers will have time to plan and make changes. What this means for you If you believe your published app violates this policy: Start considering a plan to rename your app to get ahead of enforcement actions. Ensure that your app name starts with your distinctive brand identifier and does not mislead merchants in confusing it with another app, developer, brand, or Shopify product. If you're submitting a new app: Choose a distinct name that represents your own brand. Don't impersonate other apps or mislead merchants with your app name. If your app name is being copied: At this time, we can only accept reports with a valid registered trademark. If your app trademark is being copied, you can submit a report to Shopify .",
+      "title": "Updated App Store requirements: 4.1.2 Use a unique name for your app",
+      "url": "https://shopify.dev/changelog/updated-app-store-requirements-4-1-2-use-a-unique-name-for-your-app"
+    },
+    "shopify-dev:https://shopify.dev/changelog/whatsapp-marketing-consent-now-available": {
+      "needs_merge": false,
+      "published_at": "2026-06-17T15:45:00Z",
+      "section": "shopify-dev/admin-api",
+      "source": "shopify-dev",
+      "status": "auto_curated",
+      "title": "WhatsApp marketing consent now available in the Admin API and Customer Account API",
+      "url": "https://shopify.dev/changelog/whatsapp-marketing-consent-now-available"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/a-new-home-for-agentic-storefronts-in-your-admin": {
+      "needs_merge": false,
+      "published_at": "2026-05-11T19:30:00Z",
+      "section": "shopify-help/products-inventory",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "A new home for Agentic Storefronts in your admin",
+      "url": "https://changelog.shopify.com/posts/a-new-home-for-agentic-storefronts-in-your-admin"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/annotations-bring-store-event-context-directly-to-your-analytics": {
+      "needs_merge": false,
+      "published_at": "2026-05-05T22:30:00Z",
+      "section": "shopify-help/products-inventory",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Annotations bring store event context directly to your analytics",
+      "url": "https://changelog.shopify.com/posts/annotations-bring-store-event-context-directly-to-your-analytics"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/apply-discounts-to-items-on-the-refund-page": {
+      "needs_merge": false,
+      "published_at": "2026-05-04T16:00:00Z",
+      "section": "shopify-help/taxes",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Apply discounts to items on the refund page",
+      "url": "https://changelog.shopify.com/posts/apply-discounts-to-items-on-the-refund-page"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/assign-discounts-to-specific-markets": {
+      "destination": "shopify-help/markets.md",
+      "needs_merge": false,
+      "published_at": "2026-05-07T16:00:00Z",
+      "review_reason": "Available to merchants on Basic and above using the new Markets experience; preserve market and customer-eligibility interaction caveats.",
+      "section": "shopify-help/markets",
+      "source": "shopify-help",
+      "status": "merged",
+      "title": "Assign discounts to specific markets",
+      "url": "https://changelog.shopify.com/posts/assign-discounts-to-specific-markets"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/b2b-discounts-are-now-available-by-default-on-new-stores": {
+      "needs_merge": false,
+      "published_at": "2026-06-23T21:05:00Z",
+      "section": "shopify-help/markets",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "B2B discounts are now enabled by default for new B2B stores and eligible existing stores",
+      "url": "https://changelog.shopify.com/posts/b2b-discounts-are-now-available-by-default-on-new-stores"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/benchmark-comparisons-in-analytics-will-be-removed-on-may-19th": {
+      "destination": "shopify-help/general.md",
+      "needs_merge": false,
+      "published_at": "2026-05-07T20:30:00Z",
+      "review_reason": "Benchmark Comparisons stopped receiving data and was removed May 19, 2026; use Metric Targets or other current reporting alternatives.",
+      "section": "shopify-help/general",
+      "source": "shopify-help",
+      "status": "merged",
+      "title": "Benchmark Comparisons in Analytics will be removed on May 19th",
+      "url": "https://changelog.shopify.com/posts/benchmark-comparisons-in-analytics-will-be-removed-on-may-19th"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/brazil-cnpj-validation-now-supports-alphanumeric-identifiers": {
+      "needs_merge": false,
+      "published_at": "2026-07-01T04:01:00Z",
+      "section": "shopify-help/payments",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Brazil CNPJ validation now supports alphanumeric identifiers",
+      "url": "https://changelog.shopify.com/posts/brazil-cnpj-validation-now-supports-alphanumeric-identifiers"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/checkout-blocks-block-non-compliant-shipping-addresses-at-checkout": {
+      "needs_merge": false,
+      "published_at": "2026-06-17T15:45:00Z",
+      "section": "shopify-help/payments",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Checkout Blocks: Prevent non-compliant shipping addresses at checkout",
+      "url": "https://changelog.shopify.com/posts/checkout-blocks-block-non-compliant-shipping-addresses-at-checkout"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/checkout-email-field-new-saved-indicator-and-tooltip": {
+      "needs_merge": false,
+      "published_at": "2026-06-22T16:00:00Z",
+      "section": "shopify-help/payments",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Checkout email field: new saved indicator and tooltip",
+      "url": "https://changelog.shopify.com/posts/checkout-email-field-new-saved-indicator-and-tooltip"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/clearer-payout-balance-and-reserve-information-in-shopify-payments": {
+      "needs_merge": false,
+      "published_at": "2026-05-23T16:00:00Z",
+      "section": "shopify-help/payments",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Clearer payout balance and reserve information in Shopify Payments",
+      "url": "https://changelog.shopify.com/posts/clearer-payout-balance-and-reserve-information-in-shopify-payments"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/collect-marketing-consent-on-the-account-component": {
+      "needs_merge": false,
+      "published_at": "2026-05-08T14:00:00Z",
+      "section": "shopify-help/checkout-accounts",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Collect marketing consent on the account component",
+      "url": "https://changelog.shopify.com/posts/collect-marketing-consent-on-the-account-component"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/collections-now-support-multi-source-and-variants": {
+      "categories": [
+        "Admin"
+      ],
+      "needs_merge": false,
+      "published_at": "2026-07-16T14:00:00Z",
+      "review_reason": "auto-curated route",
+      "section": "shopify-help/products-inventory",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "summary": "This release expands collection capabilities to help merchants run complex merchandising strategies without workarounds such as duplicate lists or third-party apps. Previously, collections were created only by automated conditions or hand-picked products. You can now build a collection from multiple sources, target specific variants, reuse other collections, and more. Highlights include: Multiple sources in one collection. Combine automated conditions, hand-picked products, exclusions, other collections, and sources from apps in a single collection. Variant-level collections. Build collections around specific variants, such as a size or color. Those variants appear on collection pages, in filters, and in supported sales channels, including Online Store and POS. * Collections as building blocks. * Add a collection as a source inside another, so parent collections stay in sync when source collections change. ** Reuse across your business. **Apply the same collection in supported workflows such as discounts and taxes, including variant-level collections. ** Redesigned collections admin UI:** Use a visual grid for drag-to-reorder and bulk moves, list view for detail, and control over the sort order customers see on the collection page. Sidekick support . Build and update collections with Sidekick on admin and mobile. There are no breaking changes for existing collections. Existing collections continue to work and are updated in the new admin experience automatically. You do not need to delete or recreate them. If your store uses third-party or custom apps that interact with collections, ask your developers to update to API version 2026-07 to support these new capabilities. See developer instructions. Read help docs for more information.",
+      "title": "Collections now support multi-source and variants",
+      "url": "https://changelog.shopify.com/posts/collections-now-support-multi-source-and-variants"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/compare-multiple-metrics-on-one-chart": {
+      "destination": "shopify-help/general.md",
+      "needs_merge": false,
+      "published_at": "2026-04-23T18:30:00Z",
+      "review_reason": "Analytics supports up to four metrics on a line chart and combined bar-and-line comparisons where metric types are compatible.",
+      "section": "shopify-help/general",
+      "source": "shopify-help",
+      "status": "merged",
+      "title": "Compare multiple metrics on one chart",
+      "url": "https://changelog.shopify.com/posts/compare-multiple-metrics-on-one-chart"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/create-sms-marketing-automations-in-shopify-messaging": {
+      "destination": "shopify-help/flow-automation.md",
+      "needs_merge": false,
+      "published_at": "2026-05-19T16:00:00Z",
+      "review_reason": "Shopify Messaging supports SMS automations, subject to sender registration, consent, country, and channel requirements.",
+      "section": "shopify-help/general",
+      "source": "shopify-help",
+      "status": "merged",
+      "title": "Create SMS marketing automations in Shopify Messaging",
+      "url": "https://changelog.shopify.com/posts/create-sms-marketing-automations-in-shopify-messaging"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/custom-discount-amounts-on-line-items-in-pos-now-apply-per-item": {
+      "needs_merge": false,
+      "published_at": "2026-04-27T16:00:00Z",
+      "section": "shopify-help/pos",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Custom discount amounts on line items in POS now apply per item",
+      "url": "https://changelog.shopify.com/posts/custom-discount-amounts-on-line-items-in-pos-now-apply-per-item"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/customer-accounts-get-a-design-uplift": {
+      "needs_merge": false,
+      "published_at": "2026-06-17T15:45:00Z",
+      "section": "shopify-help/checkout-accounts",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Customer accounts get a design uplift",
+      "url": "https://changelog.shopify.com/posts/customer-accounts-get-a-design-uplift"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/data-driven-insights-now-appear-on-your-analytics-dashboard": {
+      "needs_merge": false,
+      "published_at": "2026-04-28T20:00:00Z",
+      "section": "shopify-help/products-inventory",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Data-driven insights now appear on your analytics dashboard",
+      "url": "https://changelog.shopify.com/posts/data-driven-insights-now-appear-on-your-analytics-dashboard"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/define-and-manage-metafields-on-inventory-transfers": {
+      "needs_merge": false,
+      "published_at": "2026-06-30T16:00:00Z",
+      "section": "shopify-help/products-inventory",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Define and manage metafields on inventory transfers",
+      "url": "https://changelog.shopify.com/posts/define-and-manage-metafields-on-inventory-transfers"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/draft-a-refreshed-sign-in-page-for-customer-accounts-now-customizable-in-the-editor": {
+      "destination": "shopify-help/checkout-accounts.md",
+      "needs_merge": false,
+      "published_at": "2026-05-20T21:00:00Z",
+      "review_reason": "The refreshed customizable sign-in layout applies to new customer accounts; legacy-account merchants must confirm migration readiness.",
+      "section": "shopify-help/checkout-accounts",
+      "source": "shopify-help",
+      "status": "merged",
+      "title": "A refreshed sign-in page for customer accounts, now customizable in the editor",
+      "url": "https://changelog.shopify.com/posts/draft-a-refreshed-sign-in-page-for-customer-accounts-now-customizable-in-the-editor"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/draft-unified-branding-customization-across-checkout-and-customer-accounts": {
+      "needs_merge": false,
+      "published_at": "2026-05-13T15:00:00Z",
+      "section": "shopify-help/checkout-accounts",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Unified branding customization across checkout and customer accounts",
+      "url": "https://changelog.shopify.com/posts/draft-unified-branding-customization-across-checkout-and-customer-accounts"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/drive-international-conversion-with-automated-duties-inclusive-pricing-from-shopify-managed-markets": {
+      "categories": [
+        "Markets"
+      ],
+      "needs_merge": false,
+      "published_at": "2026-07-10T21:00:00Z",
+      "review_reason": "auto-curated route",
+      "section": "shopify-help/markets",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "summary": "Shopify Managed Markets merchants can now use a managed pricing strategy across supported international markets. Pricing will account for cross-border costs like guaranteed duties and import taxes, transaction fees, and currency conversion in product prices, so international buyers can see stable, transparent pricing throughout their journey with no surprise fees at checkout or delivery. When managed pricing is active, duties and import taxes are included in the buyer's product price instead of being shown as a separate duty line at checkout. The duty and import tax amounts displayed to buyers are guaranteed at checkout, which means Shopify Managed Markets covers the difference if the amount charged by customs is different. Managed international pricing also helps keep your payout amounts consistent with domestic orders. Buyers pay for import taxes, duties, foreign exchange fees, and Managed Markets fees directly through the adapted price, and your payout is processed by Shopify Payments. You can review the localized price breakdown on the product detail page using the View as demo . After an order is placed, you can review the price breakdown in the order's payment section to see how the international price was calculated. Learn more about international pricing for Shopify Managed Markets",
+      "title": "Drive international conversion with automated duties-inclusive pricing from Shopify Managed Markets",
+      "url": "https://changelog.shopify.com/posts/drive-international-conversion-with-automated-duties-inclusive-pricing-from-shopify-managed-markets"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/expanded-multi-currency-payout-support-in-us-hk-and-sg": {
+      "needs_merge": false,
+      "published_at": "2026-06-13T16:00:00Z",
+      "section": "shopify-help/payments",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Expanded multi-currency payout support in US, HK and SG",
+      "url": "https://changelog.shopify.com/posts/expanded-multi-currency-payout-support-in-us-hk-and-sg"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/filter-and-group-your-reports-by-physical-storefront": {
+      "needs_merge": false,
+      "published_at": "2026-06-30T16:00:00Z",
+      "section": "shopify-help/pos",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Filter and group your reports by physical storefront",
+      "url": "https://changelog.shopify.com/posts/filter-and-group-your-reports-by-physical-storefront"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/find-products-faster-in-shopify-pos-with-inline-search-suggestions": {
+      "needs_merge": false,
+      "published_at": "2026-04-27T16:00:00Z",
+      "section": "shopify-help/pos",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Find products faster in Shopify POS with inline search suggestions",
+      "url": "https://changelog.shopify.com/posts/find-products-faster-in-shopify-pos-with-inline-search-suggestions"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/flow-automatic-charging-for-vaulted-payment-methods": {
+      "needs_merge": false,
+      "published_at": "2026-06-17T15:50:00Z",
+      "section": "shopify-help/payments",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Flow: Automatic charging for vaulted payment methods",
+      "url": "https://changelog.shopify.com/posts/flow-automatic-charging-for-vaulted-payment-methods"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/flow-copy-and-paste-steps-in-your-workflows": {
+      "categories": [
+        "Apps"
+      ],
+      "needs_merge": false,
+      "published_at": "2026-07-10T19:00:00Z",
+      "review_reason": "auto-curated route",
+      "section": "shopify-help/flow-automation",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "summary": "Building workflows often means recreating steps you've already set up somewhere else. Now you can copy an existing step and paste it, instead of rebuilding it from scratch. Select an action or condition step and use Cmd/Ctrl+C to copy it, then Cmd/Ctrl+V to paste. Flow keeps the copied step's configuration field values and, for conditions, its logic-so a pasted step arrives ready to use with only minor edits. You can paste within the same workflow or into a different one. This makes it faster to reuse steps you've carefully configured, whether you're expanding a single workflow or standardizing steps across several. A few things to note for this first release: - You can copy and paste one action or condition step at a time (triggers and multi-select copy/paste aren't supported yet). - Steps that use a custom configuration page, such as Send Marketing Email, can't be copied. For more information about how it works, visit the documentation. For questions and feedback, visit the Shopify community .",
+      "title": "Flow: Copy and paste steps in your workflows",
+      "url": "https://changelog.shopify.com/posts/flow-copy-and-paste-steps-in-your-workflows"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/flow-new-action-to-get-analytics-data-using-shopifyql": {
+      "needs_merge": false,
+      "published_at": "2026-05-09T13:00:00Z",
+      "section": "shopify-help/flow-automation",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Flow: New action to get analytics data using ShopifyQL",
+      "url": "https://changelog.shopify.com/posts/flow-new-action-to-get-analytics-data-using-shopifyql"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/flow-new-triggers-for-inventory-transfers-completed-and-inventory-transfer-ready-to-ship": {
+      "needs_merge": false,
+      "published_at": "2026-04-30T21:00:00Z",
+      "section": "shopify-help/products-inventory",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Flow: New triggers for inventory transfer completed and inventory transfer ready to ship",
+      "url": "https://changelog.shopify.com/posts/flow-new-triggers-for-inventory-transfers-completed-and-inventory-transfer-ready-to-ship"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/flow-see-exactly-what-changed-in-any-workflow-and-roll-it-back": {
+      "needs_merge": false,
+      "published_at": "2026-05-05T16:00:00Z",
+      "section": "shopify-help/flow-automation",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Flow: View who edited, activated, or deactivated a workflow version",
+      "url": "https://changelog.shopify.com/posts/flow-see-exactly-what-changed-in-any-workflow-and-roll-it-back"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/flow-sidekick-generates-test-cases-for-your-workflows": {
+      "needs_merge": false,
+      "published_at": "2026-05-14T20:00:00Z",
+      "section": "shopify-help/flow-automation",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Flow: Make test events for your workflows with existing shop data",
+      "url": "https://changelog.shopify.com/posts/flow-sidekick-generates-test-cases-for-your-workflows"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/improved-catalog-publishing": {
+      "needs_merge": false,
+      "published_at": "2026-06-08T16:00:00Z",
+      "section": "shopify-help/products-inventory",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Improved catalog publishing",
+      "url": "https://changelog.shopify.com/posts/improved-catalog-publishing"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/improvement-to-draft-order-custom-discount-currency": {
+      "needs_merge": false,
+      "published_at": "2026-06-24T16:00:00Z",
+      "section": "shopify-help/markets",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Custom draft order line item discounts now use presentment currency",
+      "url": "https://changelog.shopify.com/posts/improvement-to-draft-order-custom-discount-currency"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/inventory-adjustment-workflow-now-with-full-change-tracking": {
+      "needs_merge": false,
+      "published_at": "2026-05-07T16:00:00Z",
+      "section": "shopify-help/products-inventory",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Inventory adjustment workflow now with full change tracking",
+      "url": "https://changelog.shopify.com/posts/inventory-adjustment-workflow-now-with-full-change-tracking"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/italy-s-sardinian-province-definitions-updated": {
+      "needs_merge": false,
+      "published_at": "2026-05-14T16:00:00Z",
+      "section": "shopify-help/taxes",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Updates to Italy's Sardinian province definitions",
+      "url": "https://changelog.shopify.com/posts/italy-s-sardinian-province-definitions-updated"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/keyboard-shortcuts-and-navigation-in-shopify-pos": {
+      "needs_merge": false,
+      "published_at": "2026-04-27T16:00:00Z",
+      "section": "shopify-help/pos",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Keyboard shortcuts and navigation in Shopify POS",
+      "url": "https://changelog.shopify.com/posts/keyboard-shortcuts-and-navigation-in-shopify-pos"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/manage-all-your-pos-settings-in-one-place-with-the-new-pos-editor": {
+      "destination": "shopify-help/pos.md",
+      "needs_merge": false,
+      "published_at": "2026-04-30T16:00:00Z",
+      "review_reason": "The new POS Editor centralizes payment, receipt, customer, app-extension, Smart Grid, and device-related settings with a phased rollout.",
+      "section": "shopify-help/pos",
+      "source": "shopify-help",
+      "status": "merged",
+      "title": "Manage all your POS settings in one place with the new POS Editor",
+      "url": "https://changelog.shopify.com/posts/manage-all-your-pos-settings-in-one-place-with-the-new-pos-editor"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/manage-inventory-at-locations-without-activating-them-for-fulfillment": {
+      "needs_merge": false,
+      "published_at": "2026-05-01T22:00:00Z",
+      "section": "shopify-help/products-inventory",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Track inventory that isn't for sale or fulfillment",
+      "url": "https://changelog.shopify.com/posts/manage-inventory-at-locations-without-activating-them-for-fulfillment"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/manage-whatsapp-marketing-consent-in-shopify": {
+      "destination": "shopify-help/general.md",
+      "needs_merge": false,
+      "published_at": "2026-06-17T15:45:00Z",
+      "review_reason": "WhatsApp marketing consent can be managed in customer profiles and imports; verify regional consent and messaging-provider requirements.",
+      "section": "shopify-help/general",
+      "source": "shopify-help",
+      "status": "merged",
+      "title": "Manage WhatsApp marketing consent in Shopify",
+      "url": "https://changelog.shopify.com/posts/manage-whatsapp-marketing-consent-in-shopify"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/mark-fulfillments-without-tracking-as-delivered": {
+      "needs_merge": false,
+      "published_at": "2026-05-03T16:00:00Z",
+      "section": "shopify-help/pos",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Mark fulfillments without tracking as delivered",
+      "url": "https://changelog.shopify.com/posts/mark-fulfillments-without-tracking-as-delivered"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/mid-session-cash-counts": {
+      "needs_merge": false,
+      "published_at": "2026-04-27T17:00:00Z",
+      "section": "shopify-help/pos",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Mid-session cash counts",
+      "url": "https://changelog.shopify.com/posts/mid-session-cash-counts"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/more-local-payment-methods-are-now-available-in-additional-countries": {
+      "needs_merge": false,
+      "published_at": "2026-05-30T16:00:00Z",
+      "section": "shopify-help/payments",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Local payment methods are now available in more countries",
+      "url": "https://changelog.shopify.com/posts/more-local-payment-methods-are-now-available-in-additional-countries"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/more-shopify-payments-methods-available-in-shop-pay-checkout": {
+      "destination": "shopify-help/payments.md",
+      "needs_merge": false,
+      "published_at": "2026-05-12T16:00:00Z",
+      "review_reason": "Shop Pay supports additional Shopify Payments local and regional methods; availability still depends on market, currency, and payment-method eligibility.",
+      "section": "shopify-help/payments",
+      "source": "shopify-help",
+      "status": "merged",
+      "title": "All Shopify Payments payment methods now available in Shop Pay checkout.",
+      "url": "https://changelog.shopify.com/posts/more-shopify-payments-methods-available-in-shop-pay-checkout"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/multi-location-pickup-is-now-available-in-pos": {
+      "needs_merge": false,
+      "published_at": "2026-06-08T18:00:00Z",
+      "section": "shopify-help/pos",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Multi-location pickup is now available in POS",
+      "url": "https://changelog.shopify.com/posts/multi-location-pickup-is-now-available-in-pos"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/multiple-product-discounts-on-the-same-item": {
+      "categories": [
+        "Discounts"
+      ],
+      "needs_merge": false,
+      "published_at": "2026-07-15T16:00:00Z",
+      "review_reason": "auto-curated route",
+      "section": "shopify-help/products-inventory",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "summary": "You can now combine multiple product discounts on the same item, so overlapping promotions apply together without cart conflicts or workarounds. Previously, only one product discount could apply to an item. For example, run a sitewide 20% off the winter collection sale alongside $10 off boots from an affiliate partnership. When a customer adds winter boots to their cart, both discounts apply automatically. What you can do Combine multiple product discounts on the same item. Combine discount codes with automatic product discounts on the same item. How it works Tag your discounts to group them (for example: loyalty, seasonal, affiliate). Set which tagged discounts can combine. Discounts apply automatically at checkout, following your rules. Learn more",
+      "title": "Multiple product discounts on the same item",
+      "url": "https://changelog.shopify.com/posts/multiple-product-discounts-on-the-same-item"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/new-3-eu-import-customs-duty-arrives-july-1": {
+      "needs_merge": false,
+      "published_at": "2026-06-26T09:00:00Z",
+      "section": "shopify-help/markets",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Shopify now supports 3 EU import customs duty collection",
+      "url": "https://changelog.shopify.com/posts/new-3-eu-import-customs-duty-arrives-july-1"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/new-and-updated-staff-permissions-for-payments-payouts-disputes-and-tax-documents": {
+      "categories": [
+        "Admin"
+      ],
+      "needs_merge": false,
+      "published_at": "2026-07-07T16:00:00Z",
+      "review_reason": "auto-curated route",
+      "section": "shopify-help/pos",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "summary": "We've released four new staff permissions, giving you more granular control over who on your team can access information and manage settings. You can now grant staff only the access they need to do their job, without sharing full account capabilities. The new permissions are: * Manage payments settings * Manage disputes * View payouts * View tax documents These are rolling out now and can be assigned to a staff member's role in Settings  Users  Roles  Permissions. Learn more about staff roles and permissions in the Shopify Help Center .",
+      "title": "New and updated staff permissions for payments, payouts, disputes, and tax documents",
+      "url": "https://changelog.shopify.com/posts/new-and-updated-staff-permissions-for-payments-payouts-disputes-and-tax-documents"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/new-app-added-annotations-on-your-analytics-charts": {
+      "categories": [
+        "Analytics"
+      ],
+      "needs_merge": false,
+      "published_at": "2026-07-24T16:00:00Z",
+      "review_reason": "auto-curated route",
+      "section": "shopify-help/payments",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "summary": "Apps can now add business context directly to your analytics charts with annotations . Annotations mark important events on a specific date or date range, such as a product launch, collection launch, marketing campaign, discount, checkout offer, supplier change, landing page launch, payment method change, popup store, market launch, program change, or business milestone. When an app adds an annotation, we will display their name and icon alongside it. This helps you understand where the context came from while reviewing your reports. Use annotations to compare what happened in your business with changes in your analytics data, including some of your favorite metrics such as sales, sessions, conversion rate, average order value, units sold, or fulfillment performance. For example, you can review whether sales changed during a campaign, conversion values changed after a landing page launch, average order value changed during a discount, or fulfillment metrics changed after a supplier or warehouse update. Annotations don't change your report data. They add context to help you understand what might have influenced trends or changes. Learn more about Annotations here",
+      "title": "New app-added annotations on your analytics charts",
+      "url": "https://changelog.shopify.com/posts/new-app-added-annotations-on-your-analytics-charts"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/new-most-relevant-sort-order-for-products-in-a-collection": {
+      "needs_merge": false,
+      "published_at": "2026-04-15T16:00:00Z",
+      "section": "shopify-help/products-inventory",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "New Most Relevant sort order for products in a collection",
+      "url": "https://changelog.shopify.com/posts/new-most-relevant-sort-order-for-products-in-a-collection"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/online-store-editor-with-sidekick-on-mobile": {
+      "destination": "shopify-help/general.md",
+      "needs_merge": false,
+      "published_at": "2026-06-17T15:45:00Z",
+      "review_reason": "The mobile Online Store Editor includes touch-oriented editing and Sidekick on supported phones; confirm device and tablet limitations.",
+      "section": "shopify-help/general",
+      "source": "shopify-help",
+      "status": "merged",
+      "title": "Online Store Editor with Sidekick on mobile",
+      "url": "https://changelog.shopify.com/posts/online-store-editor-with-sidekick-on-mobile"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/pos-activity-log": {
+      "needs_merge": false,
+      "published_at": "2026-06-29T18:00:00Z",
+      "section": "shopify-help/pos",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "POS activity log",
+      "url": "https://changelog.shopify.com/posts/pos-activity-log"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/print-packing-slips-for-inventory-transfers": {
+      "needs_merge": false,
+      "published_at": "2026-05-11T20:00:00Z",
+      "section": "shopify-help/pos",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Print packing slips for inventory transfers",
+      "url": "https://changelog.shopify.com/posts/print-packing-slips-for-inventory-transfers"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/product-listings-now-support-a-disclosures-field": {
+      "needs_merge": false,
+      "published_at": "2026-06-17T15:45:00Z",
+      "section": "shopify-help/products-inventory",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Product listings now support a disclosures field",
+      "url": "https://changelog.shopify.com/posts/product-listings-now-support-a-disclosures-field"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/product-variant-publishing": {
+      "needs_merge": false,
+      "published_at": "2026-05-07T17:00:00Z",
+      "section": "shopify-help/products-inventory",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Product Variant Publishing",
+      "url": "https://changelog.shopify.com/posts/product-variant-publishing"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/purchase-orders-now-create-transfers-to-move-inventory": {
+      "needs_merge": false,
+      "published_at": "2026-06-22T16:00:00Z",
+      "section": "shopify-help/products-inventory",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Purchase orders now create transfers to move inventory",
+      "url": "https://changelog.shopify.com/posts/purchase-orders-now-create-transfers-to-move-inventory"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/reduced-bot-noise-in-abandoned-checkouts": {
+      "needs_merge": false,
+      "published_at": "2026-06-17T00:00:00Z",
+      "section": "shopify-help/payments",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Reduced bot noise in abandoned checkouts",
+      "url": "https://changelog.shopify.com/posts/reduced-bot-noise-in-abandoned-checkouts"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/returns-and-exchanges-in-cart-for-pos": {
+      "needs_merge": false,
+      "published_at": "2026-04-27T18:05:00Z",
+      "section": "shopify-help/pos",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Returns and exchanges in cart for POS",
+      "url": "https://changelog.shopify.com/posts/returns-and-exchanges-in-cart-for-pos"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/scan-discount-codes-in-shopify-pos": {
+      "needs_merge": false,
+      "published_at": "2026-04-27T16:00:00Z",
+      "section": "shopify-help/pos",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Scan discount codes",
+      "url": "https://changelog.shopify.com/posts/scan-discount-codes-in-shopify-pos"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/scatter-plots-and-radar-charts-are-now-in-shopify-analytics": {
+      "needs_merge": false,
+      "published_at": "2026-06-04T16:00:00Z",
+      "section": "shopify-help/products-inventory",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Scatter plots and radar charts are now in Shopify Analytics",
+      "url": "https://changelog.shopify.com/posts/scatter-plots-and-radar-charts-are-now-in-shopify-analytics"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/schedule-publish-and-a-b-test-new-themes-and-checkout-and-customer-account-configurations": {
+      "needs_merge": false,
+      "published_at": "2026-06-05T14:30:00Z",
+      "section": "shopify-help/checkout-accounts",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Schedule, publish, and A/B test new themes and checkout and customer account configurations",
+      "url": "https://changelog.shopify.com/posts/schedule-publish-and-a-b-test-new-themes-and-checkout-and-customer-account-configurations"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/security-update-shopify-mobile-app-ios-android": {
+      "categories": [
+        "Mobile"
+      ],
+      "needs_merge": true,
+      "published_at": "2026-07-08T18:00:00Z",
+      "review_reason": "review required by route",
+      "section": "shopify-help/general",
+      "source": "shopify-help",
+      "status": "pending_review",
+      "summary": "What's changing: * All users must update to the latest version of the app. * Minimum OS requirement: The app now requires Android 11 or later. If your device runs Android 10 or earlier, you can still manage your store at admin.shopify.com from any mobile browser.",
+      "title": "Security update Shopify Mobile App on Android",
+      "url": "https://changelog.shopify.com/posts/security-update-shopify-mobile-app-ios-android"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/see-your-pos-selling-environment-health-at-a-glance": {
+      "categories": [
+        "Pos"
+      ],
+      "needs_merge": false,
+      "published_at": "2026-07-07T18:00:00Z",
+      "review_reason": "auto-curated route",
+      "section": "shopify-help/pos",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "summary": "The connectivity screen in the POS app has been updated to now give a single view of your selling environment health: internet connection, Shopify service status, and hardware connection health. When something is degraded, the panel offers next-best actions, such as guidance on enabling offline checkout, so you can keep selling. Automatically available in POS v11.10. Access the Connectivity screen by hitting the associated icon on the bottom left of the Shopify POS app. Learn more about the connectivity screen in POS",
+      "title": "See your POS selling environment health at a glance",
+      "url": "https://changelog.shopify.com/posts/see-your-pos-selling-environment-health-at-a-glance"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/self-serve-returns-now-support-cancellations": {
+      "needs_merge": false,
+      "published_at": "2026-06-18T13:30:00Z",
+      "section": "shopify-help/markets",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Self-serve returns now support cancellations",
+      "url": "https://changelog.shopify.com/posts/self-serve-returns-now-support-cancellations"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/sell-from-multiple-legal-entities-in-the-same-country-using-shopify-payments": {
+      "needs_merge": false,
+      "published_at": "2026-05-15T17:00:00Z",
+      "section": "shopify-help/payments",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Sell from multiple legal entities in the same country using Shopify Payments",
+      "url": "https://changelog.shopify.com/posts/sell-from-multiple-legal-entities-in-the-same-country-using-shopify-payments"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/sell-gift-cards-in-your-customers-local-currency": {
+      "needs_merge": false,
+      "published_at": "2026-05-11T16:00:00Z",
+      "section": "shopify-help/markets",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Sell gift cards in your customers' local currency",
+      "url": "https://changelog.shopify.com/posts/sell-gift-cards-in-your-customers-local-currency"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/set-and-track-targets-in-shopify-analytics": {
+      "needs_merge": false,
+      "published_at": "2026-04-27T19:00:00Z",
+      "section": "shopify-help/products-inventory",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Set and track targets in Shopify Analytics",
+      "url": "https://changelog.shopify.com/posts/set-and-track-targets-in-shopify-analytics"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/set-channel-specific-prices-availability-and-currency-with-markets": {
+      "needs_merge": false,
+      "published_at": "2026-06-17T15:45:00Z",
+      "section": "shopify-help/markets",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Set channel-specific prices, availability and currency with Markets",
+      "url": "https://changelog.shopify.com/posts/set-channel-specific-prices-availability-and-currency-with-markets"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/ship-and-pickup-in-one-order": {
+      "needs_merge": false,
+      "published_at": "2026-06-17T15:45:00Z",
+      "section": "shopify-help/payments",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Ship and pickup in one order available for Plus and Enterprise plans",
+      "url": "https://changelog.shopify.com/posts/ship-and-pickup-in-one-order"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/shipping-performance-metrics-and-verified-tracking-badge-in-shopify-collective": {
+      "destination": "shopify-help/general.md",
+      "needs_merge": false,
+      "published_at": "2026-06-10T16:00:00Z",
+      "review_reason": "Shopify Collective exposes shipping-performance metrics and a Verified Tracking badge based on carrier-tracking coverage; validate current thresholds.",
+      "section": "shopify-help/general",
+      "source": "shopify-help",
+      "status": "merged",
+      "title": "Shipping performance metrics and Verified Tracking badge in Shopify Collective",
+      "url": "https://changelog.shopify.com/posts/shipping-performance-metrics-and-verified-tracking-badge-in-shopify-collective"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/shopify-balance-domestic-wire-transfers": {
+      "needs_merge": false,
+      "published_at": "2026-04-29T16:00:00Z",
+      "section": "shopify-help/payments",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Shopify Balance Domestic Wire Transfers",
+      "url": "https://changelog.shopify.com/posts/shopify-balance-domestic-wire-transfers"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/shopify-collective-is-now-available-in-australia": {
+      "needs_merge": false,
+      "published_at": "2026-06-10T18:00:00Z",
+      "section": "shopify-help/products-inventory",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Shopify Collective is now available in Australia",
+      "url": "https://changelog.shopify.com/posts/shopify-collective-is-now-available-in-australia"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/shopify-managed-markets-now-supports-eu-buyer-cancellation-and-return-requests": {
+      "categories": [
+        "Markets"
+      ],
+      "needs_merge": false,
+      "published_at": "2026-07-16T20:00:00Z",
+      "review_reason": "auto-curated route",
+      "section": "shopify-help/markets",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "summary": "Shopify Managed Markets now supports buyer cancellation and return requests for applicable EU orders to comply with newly established Right of Withdrawal requirements for online stores. For merchants using Managed Markets to sell into EU countries, Shopify has added a managed 14-day cancellation and return rule for covered EU-bound orders. What's supported: * Applicable EU Managed Markets orders now include a 14-day cancellation and return rule, managed by Shopify's Merchant of Record (MOR) partner Global-e. * Buyers can request cancellation or return through supported Shopify buyer surfaces. Merchants are responsible for procuring return labels. * The rule is managed for as long as you use Managed Markets for the EU region. No action is required to continue using Managed Markets for applicable EU orders. Learn more about EU tax and customs guidance in the Shopify Help Center .",
+      "title": "Shopify Managed Markets now supports EU buyer cancellation and return requests",
+      "url": "https://changelog.shopify.com/posts/shopify-managed-markets-now-supports-eu-buyer-cancellation-and-return-requests"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/shopify-tax-has-expanded-to-canada": {
+      "needs_merge": false,
+      "published_at": "2026-05-13T16:00:00Z",
+      "section": "shopify-help/taxes",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Shopify Tax has expanded to Canada",
+      "url": "https://changelog.shopify.com/posts/shopify-tax-has-expanded-to-canada"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/simpler-inventory-transfers": {
+      "needs_merge": false,
+      "published_at": "2026-05-12T03:00:00Z",
+      "section": "shopify-help/products-inventory",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Simpler inventory transfers",
+      "url": "https://changelog.shopify.com/posts/simpler-inventory-transfers"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/smart-delivery-in-shopify-messaging": {
+      "destination": "shopify-help/flow-automation.md",
+      "needs_merge": false,
+      "published_at": "2026-06-17T15:45:00Z",
+      "review_reason": "Smart delivery filters Shopify Messaging audiences using engagement signals and is enabled by default, with merchant controls.",
+      "section": "shopify-help/general",
+      "source": "shopify-help",
+      "status": "merged",
+      "title": "Smart delivery in Shopify Messaging",
+      "url": "https://changelog.shopify.com/posts/smart-delivery-in-shopify-messaging"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/spot-trends-with-new-analytics-insights": {
+      "needs_merge": false,
+      "published_at": "2026-04-20T16:00:00Z",
+      "section": "shopify-help/pos",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Spot trends with new Analytics insights",
+      "url": "https://changelog.shopify.com/posts/spot-trends-with-new-analytics-insights"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/staff-attribution-improvements-in-pos": {
+      "needs_merge": false,
+      "published_at": "2026-06-22T16:00:00Z",
+      "section": "shopify-help/pos",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Staff attribution improvements in POS",
+      "url": "https://changelog.shopify.com/posts/staff-attribution-improvements-in-pos"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/the-marketing-tab-is-now-the-growth-tab": {
+      "destination": "shopify-help/general.md",
+      "needs_merge": false,
+      "published_at": "2026-06-17T15:45:00Z",
+      "review_reason": "The admin Marketing surface is now Growth; related campaign, attribution, and automation locations may vary by rollout and app availability.",
+      "section": "shopify-help/general",
+      "source": "shopify-help",
+      "status": "merged",
+      "title": "The Marketing tab is now the Growth tab",
+      "url": "https://changelog.shopify.com/posts/the-marketing-tab-is-now-the-growth-tab"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/the-spring-26-edition-is-live": {
+      "needs_merge": false,
+      "published_at": "2026-06-17T16:10:00Z",
+      "review_reason": "Reviewed as a high-level Editions index; specific operational changes are tracked through their individual canonical changelog items.",
+      "section": "shopify-help/general",
+      "source": "shopify-help",
+      "status": "archived",
+      "title": "The Spring '26 Edition is live",
+      "url": "https://changelog.shopify.com/posts/the-spring-26-edition-is-live"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/turn-automatic-hreflang-tags-on-or-off-from-your-admin-settings": {
+      "categories": [
+        "Admin"
+      ],
+      "needs_merge": false,
+      "published_at": "2026-07-10T16:00:00Z",
+      "review_reason": "auto-curated route",
+      "section": "shopify-help/markets",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "summary": "Hreflang tags tell search engines which language or region version of a page to serve to which visitors. Shopify generates them automatically from your Markets language and domain settings. The automatic hreflang tag setting is on by default, but you can turn it off if you prefer to manage hreflang tags yourself and want to avoid duplicate tags. To turn it off, go in your Shopify admin to Online Store > Preferences , and then change the setting in the Social sharing and SEO section.",
+      "title": "Turn automatic hreflang tags on or off from your admin settings",
+      "url": "https://changelog.shopify.com/posts/turn-automatic-hreflang-tags-on-or-off-from-your-admin-settings"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/u-s-retailers-can-adjust-retail-prices-on-shopify-collective": {
+      "needs_merge": false,
+      "published_at": "2026-04-27T14:05:00Z",
+      "section": "shopify-help/pos",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "U.S. retailers can adjust retail prices on Shopify Collective",
+      "url": "https://changelog.shopify.com/posts/u-s-retailers-can-adjust-retail-prices-on-shopify-collective"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/understand-your-markets-setup-at-a-glance-with-the-redesigned-graph": {
+      "needs_merge": false,
+      "published_at": "2026-06-17T15:45:00Z",
+      "section": "shopify-help/markets",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Understand your Markets setup at a glance with the redesigned graph",
+      "url": "https://changelog.shopify.com/posts/understand-your-markets-setup-at-a-glance-with-the-redesigned-graph"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/unified-pos-staff-management": {
+      "needs_merge": false,
+      "published_at": "2026-06-11T14:15:00Z",
+      "section": "shopify-help/pos",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Unified staff permissions for retail teams",
+      "url": "https://changelog.shopify.com/posts/unified-pos-staff-management"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/unlink-a-customer-from-your-custom-identity-provider": {
+      "needs_merge": false,
+      "published_at": "2026-06-11T13:00:00Z",
+      "section": "shopify-help/checkout-accounts",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Unlink a customer from your custom identity provider",
+      "url": "https://changelog.shopify.com/posts/unlink-a-customer-from-your-custom-identity-provider"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/updated-disclosure-for-subscription-purchases-on-checkout": {
+      "needs_merge": false,
+      "published_at": "2026-06-17T19:00:00Z",
+      "section": "shopify-help/payments",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Updated disclosure for subscription purchases on Checkout",
+      "url": "https://changelog.shopify.com/posts/updated-disclosure-for-subscription-purchases-on-checkout"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/updates-to-local-pickup-user-experience-in-checkout": {
+      "needs_merge": false,
+      "published_at": "2026-04-21T16:00:00Z",
+      "section": "shopify-help/payments",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Updates to local pickup user experience in checkout",
+      "url": "https://changelog.shopify.com/posts/updates-to-local-pickup-user-experience-in-checkout"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/use-location-metafields-as-dimensions-and-filters-in-analytics": {
+      "needs_merge": false,
+      "published_at": "2026-06-30T16:00:00Z",
+      "section": "shopify-help/products-inventory",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Use location metafields as dimensions and filters in Analytics",
+      "url": "https://changelog.shopify.com/posts/use-location-metafields-as-dimensions-and-filters-in-analytics"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/use-matches-in-shopifyql-to-filter-by-what-customers-did": {
+      "needs_merge": false,
+      "published_at": "2026-04-24T19:00:00Z",
+      "section": "shopify-help/flow-automation",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Use MATCHES in ShopifyQL to filter by what customers did",
+      "url": "https://changelog.shopify.com/posts/use-matches-in-shopifyql-to-filter-by-what-customers-did"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/view-and-manage-all-your-pos-devices-from-shopify-admin": {
+      "needs_merge": false,
+      "published_at": "2026-06-29T14:00:00Z",
+      "section": "shopify-help/pos",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "View and manage all your POS devices from Shopify admin",
+      "url": "https://changelog.shopify.com/posts/view-and-manage-all-your-pos-devices-from-shopify-admin"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/view-cumulative-metrics-over-time-in-analytics": {
+      "needs_merge": false,
+      "published_at": "2026-05-20T19:00:00Z",
+      "section": "shopify-help/flow-automation",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "View cumulative metrics over time in Analytics",
+      "url": "https://changelog.shopify.com/posts/view-cumulative-metrics-over-time-in-analytics"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/view-data-access-changes-with-the-new-app-pixel-activity-log": {
+      "destination": "shopify-help/general.md",
+      "needs_merge": false,
+      "published_at": "2026-06-29T19:00:00Z",
+      "review_reason": "Customer events now includes an app-pixel data-access activity log for audit visibility; confirm retention and access behavior live.",
+      "section": "shopify-help/general",
+      "source": "shopify-help",
+      "status": "merged",
+      "title": "View data access changes with the new app pixel activity log",
+      "url": "https://changelog.shopify.com/posts/view-data-access-changes-with-the-new-app-pixel-activity-log"
+    },
+    "shopify-help:https://changelog.shopify.com/posts/visualize-your-data-with-bubble-and-sunburst-charts-in-analytics": {
+      "needs_merge": false,
+      "published_at": "2026-06-17T15:45:00Z",
+      "section": "shopify-help/products-inventory",
+      "source": "shopify-help",
+      "status": "auto_curated",
+      "title": "Visualize your data with bubble and sunburst charts in Analytics",
+      "url": "https://changelog.shopify.com/posts/visualize-your-data-with-bubble-and-sunburst-charts-in-analytics"
+    }
+  },
+  "sources": {
+    "anydb-releasenotes": "https://www.anydb.com/support/releasenotes/",
+    "anydb-releases": "https://www.anydb.com/community/c/releases/6.json",
+    "anydb-roadmap": "https://www.anydb.com/support/roadmap/",
+    "shopify-dev": "https://shopify.dev/changelog/feed.xml",
+    "shopify-help": "https://changelog.shopify.com/feed.xml"
+  },
+  "version": 1
+}

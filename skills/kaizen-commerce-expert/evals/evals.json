@@ -1,0 +1,350 @@
+{
+  "skill_name": "kaizen-commerce-expert",
+  "notes": "Curated smoke suite converted from maintenance/competence-eval-suite.md and v3-eval-suite.md, plus guardrail cases added for the KaizenOS boundary, pricing canon, and vendor freshness. Assertions phrased as observable behaviors; entries tagged 'smoke' are the CI-priority subset. Structural validity is enforced by scripts/run_evals.py --check; behavioral runs are operator-driven (kaizen.py evals --pack). B2B specialization and platform-change-radar cases (16-21) added 2026-07-26.",
+  "evals": [
+    {
+      "id": 1,
+      "tags": [
+        "smoke",
+        "diagnose",
+        "evidence"
+      ],
+      "prompt": "Build a Blueprint direction from this: 3 stores, old POS, inventory bad, reporting manual, owner wants Shopify.",
+      "expected_output": "Routes to kaizen-diagnose. Treats the input as weak evidence: separates confirmed facts from assumptions, does not invent the current POS, data volume, ecommerce scope, cost, or urgency. Identifies likely root-cause branches for inventory/reporting and recommends the next discovery or Blueprint step before any implementation quote.",
+      "assertions": [
+        "Separates confirmed facts from assumptions",
+        "Does not invent POS, data volume, scope, cost, or urgency",
+        "Identifies root-cause branches for inventory/reporting",
+        "Recommends discovery or Blueprint next, not implementation",
+        "Does NOT recommend tier/pricing without inputs"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "tags": [
+        "smoke",
+        "propose",
+        "voice"
+      ],
+      "prompt": "This proposal intro feels generic. Rewrite it for a 4-store Square POS retailer with 38K products, 12K customers, Friday manual inventory counts, no ERP, and a September target go-live: \"We are pleased to present a Shopify POS implementation proposal...\"",
+      "expected_output": "Routes to kaizen-propose / proposal review. Removes filler, makes inventory trust and September timing central, protects scope around data quality, customer merge rules, and gift cards/historical orders where unknown. No invented ROI, no zero-downtime promises, direct Kaizen voice.",
+      "assertions": [
+        "Removes the generic opener and filler",
+        "Centers inventory trust and the September timeline",
+        "Protects scope where facts are unknown",
+        "Does NOT invent ROI or promise zero downtime",
+        "Does NOT use banned language such as 'seamless'",
+        "Does NOT quote unapproved pricing"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "tags": [
+        "smoke",
+        "migration-qa",
+        "evidence-gate"
+      ],
+      "prompt": "Matrixify Dry Run failed on 18 percent of product rows. Errors mention duplicate handles, missing option values, and invalid image URLs. Client asks if we can proceed and fix later.",
+      "expected_output": "Routes to kaizen-validate/kaizen-migrate. Verdict is FAIL: stops the live import, preserves source and result evidence, separates handle/variant blockers from the image-scope decision, and gives a targeted fix and retest path.",
+      "assertions": [
+        "Returns a FAIL verdict",
+        "Stops the live import",
+        "Separates blocking errors from scope decisions",
+        "Gives a targeted fix and retest path",
+        "Does NOT say proceed and fix later"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "tags": [
+        "smoke",
+        "outreach"
+      ],
+      "prompt": "Write a cold email to a retailer that just posted hiring for a new store manager. We think they may be outgrowing their current POS.",
+      "expected_output": "Routes to kaizen-outreach. Opens with the hiring/new-store signal, reframes operational strain around location growth and inventory/staff workflow, avoids claims about their stack, stays under ~150 words with one low-friction CTA. The only commercial ask is a conversation.",
+      "assertions": [
+        "Opens with the hiring signal",
+        "Does NOT invent the retailer's current POS",
+        "Under 150 words with one low-friction CTA",
+        "Does NOT pitch implementation or pricing",
+        "Does NOT use 'just checking in'"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "tags": [
+        "smoke",
+        "architecture"
+      ],
+      "prompt": "Client asks if Shopify can be source of truth for products, inventory, customers, orders, payouts, and reporting while NetSuite remains installed.",
+      "expected_output": "Routes to kaizen-architect with ERP patterns. Refuses a platform-wide source-of-truth answer and decides entity by entity, flags refunds, edits, partial fulfillment, tax, inventory adjustments, and financial reporting, and asks for sync direction, cadence, conflict rules, and a reconciliation owner.",
+      "assertions": [
+        "Decides source of truth per entity, not globally",
+        "Flags financial truth staying in the ERP",
+        "Asks for sync direction, cadence, and conflict rules",
+        "Names a reconciliation owner requirement"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "tags": [
+        "smoke",
+        "check",
+        "evidence"
+      ],
+      "prompt": "Review this proposal claim: \"Our migration will eliminate inventory discrepancies and save the team 20 hours per week.\" The discovery notes only say staff do a Friday manual count and inventory is often wrong.",
+      "expected_output": "Routes to kaizen-check review. Flags the unsupported guarantee and invented savings, rewrites as an evidence-bound claim, and names what evidence would be needed to quantify impact.",
+      "assertions": [
+        "Flags the guarantee as unsupported",
+        "Rejects the 20-hour figure without a source",
+        "Rewrites the claim as evidence-bound",
+        "Names the evidence needed to quantify impact"
+      ],
+      "files": []
+    },
+    {
+      "id": 7,
+      "tags": [
+        "smoke",
+        "depth-mode"
+      ],
+      "prompt": "Is this proposal structure too heavy for a first call?",
+      "expected_output": "Quick Read depth mode: a direct recommendation with what to use instead and one next action. No full proposal pipeline, no SOW, no long diagnostic.",
+      "assertions": [
+        "Direct answer first",
+        "Suggests the lighter alternative",
+        "One next action",
+        "Does NOT generate a full SOW or diagnostic"
+      ],
+      "files": []
+    },
+    {
+      "id": 8,
+      "tags": [
+        "smoke",
+        "pricing-canon"
+      ],
+      "prompt": "What would you charge a 5-location jewelry retailer for a full Shopify POS implementation? Just give me a ballpark right now.",
+      "expected_output": "Loads reference/kaizen-pricing.md before quoting anything; never quotes from memory. Holds the two-lane, scope-first model: if scoping evidence is sufficient, gives the canon-based implementation range with assumptions; if not, recommends a scoping call or Blueprint/advisory rather than quoting blind. If canon is unavailable, uses [NEED: approved price] rather than inventing a number.",
+      "assertions": [
+        "States pricing comes from the pricing canon, not memory",
+        "Uses the two-lane scope-first model on a first ask",
+        "Does NOT produce an invented ballpark figure",
+        "Does NOT force Blueprint when scoped implementation is appropriate"
+      ],
+      "files": []
+    },
+    {
+      "id": 9,
+      "tags": [
+        "smoke",
+        "kaizenos"
+      ],
+      "prompt": "What should I focus on today?",
+      "expected_output": "Kai Priorities behavior: sources the ranking from KaizenOS MCP kai_get_priorities first, enriches with Outlook/Teams/SharePoint and file memory as secondary context, and states explicitly when KaizenOS could not be checked. Never recomputes a rival priority ranking locally.",
+      "assertions": [
+        "Ranks from kai_get_priorities first",
+        "Treats memory/task files as secondary context",
+        "States when KaizenOS could not be checked",
+        "Does NOT recompute priorities locally as the primary source"
+      ],
+      "files": []
+    },
+    {
+      "id": 10,
+      "tags": [
+        "smoke",
+        "kaizenos",
+        "write-discipline"
+      ],
+      "prompt": "Great call with Acme Retail just now - they agreed to move to the proposal stage and want the SOW by Friday. Log all of this.",
+      "expected_output": "Post Call Update behavior per the KaizenOS integration map: proposes kai_log_activity for the call, a stage move via kai_move_deal_stage or kai_update_deal, and kai_create_task for the Friday SOW - all drafted for approval, not silently applied. Record-shaped facts go to KaizenOS, not to file memory; any memory delta is judgment narrative only and approval-gated.",
+      "assertions": [
+        "Proposes KaizenOS writes (activity, stage, task) rather than only file notes",
+        "Writes are drafted for approval, not auto-applied",
+        "Record-shaped facts routed to KaizenOS, not file memory",
+        "Memory delta limited to judgment narrative"
+      ],
+      "files": []
+    },
+    {
+      "id": 11,
+      "tags": [
+        "smoke",
+        "vendor-freshness"
+      ],
+      "prompt": "Does Shopify POS support offline payments now? The client is asking because their mall has bad connectivity.",
+      "expected_output": "Treats this as a platform-current claim: checks the vendor freshness layer for navigation but requires Shopify Dev MCP or canonical Shopify sources for the final answer. If live validation is unavailable, marks the point [VERIFY] instead of guessing from memory.",
+      "assertions": [
+        "Requires a current-source check before the claim",
+        "Uses [VERIFY] when live validation is unavailable",
+        "Does NOT answer a version-sensitive claim purely from memory"
+      ],
+      "files": []
+    },
+    {
+      "id": 12,
+      "tags": [
+        "smoke",
+        "memory-gate"
+      ],
+      "prompt": "Acme's CFO mentioned informally they might expand to 8 locations next year. Update the client memory.",
+      "expected_output": "Drafts a memory delta but does not apply it without explicit approval. Labels the expansion signal as unconfirmed/inferred rather than confirmed fact. Notes that a confirmed expansion is a record-shaped fact that belongs in KaizenOS (deal/activity), while the relationship nuance stays in memory narrative.",
+      "assertions": [
+        "Drafts the delta, applies nothing without approval",
+        "Labels the signal Inferred, not Confirmed",
+        "Routes confirmed record facts to KaizenOS, narrative to memory"
+      ],
+      "files": []
+    },
+    {
+      "id": 13,
+      "tags": [
+        "scope"
+      ],
+      "prompt": "Mid-project, the client now wants us to also migrate their gift card balances. They say it should be included since we're already migrating everything else.",
+      "expected_output": "Routes through kaizen-scope change-order logic before promising anything: assesses fee/timeline/risk impact, cites the SOW boundary, and produces a change-order path rather than absorbing the work or refusing outright.",
+      "assertions": [
+        "Treats it as a scope change, not an included item",
+        "Runs change-order logic before promising",
+        "Assesses fee, timeline, and risk impact",
+        "Does NOT silently absorb the work"
+      ],
+      "files": []
+    },
+    {
+      "id": 14,
+      "tags": [
+        "delegation"
+      ],
+      "prompt": "Clean up this 40k-row product CSV and normalize the headers for the migration. Should you do it here or hand it off?",
+      "expected_output": "Applies the delegation lanes from the skill graph: bounded grunt/ETL work fits the Antigravity CLI lane, but Antigravity is suggested only - never auto-invoked - and Kai keeps final QA and the migration lane decision. Subagents only if explicitly requested.",
+      "assertions": [
+        "Identifies bounded ETL as a delegation candidate",
+        "Does NOT auto-invoke Antigravity",
+        "Keeps final QA and lane decisions in Kai"
+      ],
+      "files": []
+    },
+    {
+      "id": 15,
+      "tags": [
+        "evidence",
+        "research"
+      ],
+      "prompt": "Evidence Research: what POS is Maison Birks likely running? Facts only.",
+      "expected_output": "Evidence-only pass: Facts, Patterns, Anomalies, Sources, Open Questions. Public signals stay labeled as signals with URLs/dates where visible; weak signals are not converted into confirmed facts; no strategy or recommendations in the same pass.",
+      "assertions": [
+        "Outputs the evidence-only structure",
+        "Preserves sources and dates",
+        "Does NOT convert weak signals into confirmed facts",
+        "Does NOT add strategy or recommendations"
+      ],
+      "files": []
+    },
+    {
+      "id": 16,
+      "tags": [
+        "smoke",
+        "b2b",
+        "plan-gate"
+      ],
+      "prompt": "Client is on Shopify Advanced, wholesale, ~80 dealer accounts, and wants each dealer to have their own pricing plus a 30% deposit on large orders. Scope it.",
+      "expected_output": "Loads the B2B reference and applies the plan gate before scoping. Names two Plus-only blockers explicitly: per-company (customer-level) catalog assignment, and deposit requirements. Notes the non-Plus ceiling of 3 active catalogs assigned via Markets. Presents the paths (Plus upgrade, public app, operating-layer build, or scope reduction) with the commercial consequence, rather than accepting the request as configuration.",
+      "assertions": [
+        "Identifies deposits as Plus-only",
+        "Identifies per-company catalog assignment as Plus-only",
+        "States the 3-active-catalog ceiling on Advanced",
+        "Does NOT scope the request as if it were natively available",
+        "Names a resolution path with commercial consequence"
+      ],
+      "files": []
+    },
+    {
+      "id": 17,
+      "tags": [
+        "smoke",
+        "b2b",
+        "vendor-freshness"
+      ],
+      "prompt": "Does the client need Shopify Plus to use B2B?",
+      "expected_output": "Answers no, and dates the change: native B2B reached Basic, Grow, and Advanced on 2026-04-02. Immediately qualifies that plan tier still drives architecture and lists what remains Plus-only. Does not assert the old Plus-gated position from memory, and flags that plan availability is rollout-sensitive and should be re-verified for a client-facing commitment.",
+      "assertions": [
+        "Answers that B2B is not Plus-gated",
+        "Cites the 2026-04-02 change",
+        "Lists what remains Plus-only",
+        "Treats plan availability as freshness-sensitive"
+      ],
+      "files": []
+    },
+    {
+      "id": 18,
+      "tags": [
+        "b2b",
+        "prerequisite"
+      ],
+      "prompt": "Merchant wants B2B live in six weeks. They're on legacy customer accounts and sell subscriptions on their DTC side.",
+      "expected_output": "Surfaces both blockers unprompted. B2B requires new customer accounts, so an account migration is in scope and belongs in the estimate as its own line. B2B does not support purchase options, so subscriptions cannot run through B2B checkout. Challenges the six-week window against those two facts rather than accepting the date.",
+      "assertions": [
+        "Flags the legacy-to-new customer account migration",
+        "Flags that B2B does not support subscriptions/purchase options",
+        "Prices or scopes the account migration separately",
+        "Does NOT accept the timeline without qualification"
+      ],
+      "files": []
+    },
+    {
+      "id": 19,
+      "tags": [
+        "b2b",
+        "delivery"
+      ],
+      "prompt": "We're two weeks from a B2B go-live. What's the readiness gate?",
+      "expected_output": "Routes to the B2B launch test pack. Leads with the plan gate, then buyer self-serve, rep-assisted, the pricing resolution matrix, terms/AR, and the ERP handoff. Explicitly raises that automatic payment capture is not supported on B2B checkouts and that a named person must own manual capture before go-live.",
+      "assertions": [
+        "Routes to the B2B launch test pack",
+        "Raises manual payment capture as a named-owner item",
+        "Includes a pricing resolution matrix step",
+        "Includes the ERP/accounting handoff"
+      ],
+      "files": []
+    },
+    {
+      "id": 20,
+      "tags": [
+        "smoke",
+        "build-vs-buy",
+        "vendor-freshness"
+      ],
+      "prompt": "Client needs bin-level inventory and vendor PO tracking. Recommend AnyDB or native?",
+      "expected_output": "Does not argue the case on bins alone. Notes that bins and bin-level counts entered a Shopify feature preview on 2026-07-17, and that the preview adds read-only purchase order access. Holds the operating-layer recommendation on what is not native: PO lifecycle (create, approve, receive, reconcile), condition/serial/lot, and exception state. Treats the preview as unstable and does not scope a deliverable against it.",
+      "assertions": [
+        "Acknowledges bins are entering native via feature preview",
+        "Distinguishes read-only PO access from PO lifecycle",
+        "Bases the operating-layer case on lifecycle/approval/exception state",
+        "Does NOT scope a client deliverable against a feature preview"
+      ],
+      "files": []
+    },
+    {
+      "id": 21,
+      "tags": [
+        "smoke",
+        "positioning"
+      ],
+      "prompt": "Write our positioning line for a wholesale distributor lead.",
+      "expected_output": "Treats Shopify B2B as a named specialization alongside POS, not as an overflow or flex lane. Does not describe standalone DTC as a specialization. Applies voice rules: no em-dash drama punctuation, no hollow openers, no vague power nouns.",
+      "assertions": [
+        "Positions B2B as a specialization",
+        "Does NOT frame B2B as a flexible/secondary lane",
+        "Passes the voice hard rules"
+      ],
+      "files": []
+    }
+  ]
+}

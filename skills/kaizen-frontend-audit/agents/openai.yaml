@@ -1,0 +1,7 @@
+interface:
+  display_name: "Kaizen Frontend Audit"
+  short_description: "Commerce UX, merchandising, and theme audit work"
+  default_prompt: "Use $kaizen-frontend-audit to audit this Shopify storefront and return prioritized commerce UX findings."
+
+policy:
+  allow_implicit_invocation: false

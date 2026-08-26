@@ -1,0 +1,7 @@
+interface:
+  display_name: "Kaizen Subagent Orchestrator"
+  short_description: "Subagent routing for specialist Kaizen work"
+  default_prompt: "Use $kaizen-subagent-orchestrator to split this KaizenCommerce task across globally installed specialist subagents."
+
+policy:
+  allow_implicit_invocation: false

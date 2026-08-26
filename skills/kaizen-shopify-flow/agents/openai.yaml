@@ -1,0 +1,7 @@
+interface:
+  display_name: "Kaizen Shopify Flow"
+  short_description: "Shopify Flow design, verification, and routing"
+  default_prompt: "Use $kaizen-shopify-flow to design or verify the Shopify Flow automation for this KaizenCommerce workflow."
+
+policy:
+  allow_implicit_invocation: false

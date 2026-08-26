@@ -1,0 +1,187 @@
+{
+  "version": "4.1",
+  "updated": "2026-05-31",
+  "canonical_visual_reference": "reference/kaizen-ds-v2.html",
+  "portable_reference": "reference/kaizen-design-system.md",
+  "principle": "DS v2 core tokens are the default. Supporting ramps are allowed only when they serve a documented reading or hierarchy job in dense documents, tables, data panels, or calibration artifacts.",
+  "core_palette": {
+    "black": {
+      "hex": "#0e0e0e",
+      "role": "Primary surface, heading ink, dark bookends, authority."
+    },
+    "mid_black": {
+      "hex": "#181818",
+      "role": "Secondary bento cells against Black only."
+    },
+    "deep_navy": {
+      "hex": "#0D1B2A",
+      "role": "Process, trust, Blueprint moments, featured Gold tier, method context."
+    },
+    "red": {
+      "hex": "#a8201a",
+      "role": "Problem framing, urgency, primary action, risk/action emphasis."
+    },
+    "white": {
+      "hex": "#F5F7F9",
+      "role": "Paper/canvas, text on dark, max-contrast CTA fill."
+    },
+    "ice_blue": {
+      "hex": "#aaccdb",
+      "role": "Text accent on Navy only. Never a fill."
+    }
+  },
+  "governed_extensions": {
+    "grey_ramp": {
+      "allowed_when": "Dense light-surface documents, tables, footers, metadata, or exported formats where alpha black cannot be represented reliably.",
+      "avoid_when": "Marketing slides, website sections, or any place alpha black/white will render correctly.",
+      "tokens": {
+        "body": "#424548",
+        "secondary": "#6B6E71",
+        "muted": "#888B8E",
+        "faint": "#909396",
+        "scope": "#525456",
+        "hairline": "#D7DBDF",
+        "dark_value": "#C8CCCF"
+      }
+    },
+    "steel_blue_ramp": {
+      "allowed_when": "Quiet operational accents, small labels on dark/navy, sub-list markers, or legacy reference-artifact calibration where Ice Blue is too bright.",
+      "avoid_when": "Gold tier fills, CTA fills, large panels, or replacement for Navy process/trust surfaces.",
+      "tokens": {
+        "steel": "#7298AA",
+        "steel_light": "#9BBCCA",
+        "steel_deep": "#2A4A5E"
+      }
+    },
+    "red_tints": {
+      "allowed_when": "Severity nuance, secondary text on red surfaces, or risk tables where full Red would overpower body copy.",
+      "avoid_when": "Primary CTA, main problem accent, or large panel fills that should use core Red.",
+      "tokens": {
+        "important": "#C05048",
+        "label_on_red": "#D47A77",
+        "body_on_red": "#F0BBB9"
+      }
+    },
+    "light_panel_fills": {
+      "allowed_when": "Dense print/PDF table fills, first-column emphasis, or low-contrast document panels where alpha fills are unavailable or unreliable.",
+      "avoid_when": "Website cards, slide cards, decorative panels, or any layout where a DS v2 bento surface can carry hierarchy.",
+      "tokens": {
+        "callout": "#ECEEF0",
+        "table_first_column": "#E8EBED",
+        "table_alt_row": "#EEF1F3",
+        "card_one": "#D0D6DA",
+        "card_two": "#C8DCE8",
+        "card_three": "#E4E8EB"
+      }
+    },
+    "reference_dark_variants": {
+      "allowed_when": "PPTX template/reference calibration where the source deck uses a near-black or deep-navy export variant for stacked dark panels.",
+      "avoid_when": "New web/UI surfaces, primary DS v2 documentation, or replacement for core Black/Navy outside PPTX reference/template reproduction.",
+      "tokens": {
+        "navy_shadow": "#0A1420",
+        "black_variant": "#0E0E18"
+      }
+    }
+  },
+  "internal_preview_only": {
+    "allowed_paths": [
+      "skills/kaizen-commerce-expert/reference/kaizen-ds-v2.html"
+    ],
+    "tokens": {
+      "dim_preview": "#222222",
+      "preview_tab": "#111111",
+      "do_background": "#f0faf5",
+      "dont_background": "#fff5f5",
+      "do_label": "#1a7a40",
+      "dark_do_background": "#0a1f12",
+      "dark_dont_background": "#200a0a",
+      "dark_do_label": "#4ade80"
+    }
+  },
+  "alpha_policy": {
+    "allowed": true,
+    "light_surface": "rgba(14,14,14,0.05-0.72)",
+    "dark_surface": "rgba(245,247,249,0.05-0.75)",
+    "red_surface": "rgba(245,247,249,0.55-0.75)"
+  },
+  "fonts": {
+    "allowed_brand": [
+      "EB Garamond",
+      "Hanken Grotesk"
+    ],
+    "allowed_fallbacks": [
+      "Georgia",
+      "Helvetica",
+      "Helvetica Neue",
+      "Arial",
+      "sans-serif",
+      "serif"
+    ],
+    "banned_brand": [
+      "Inter",
+      "IBM Plex",
+      "Bebas Neue",
+      "Space Grotesk",
+      "Geist"
+    ]
+  },
+  "banned_hex": [
+    "#050d15",
+    "#00b8a0",
+    "#00e5ff",
+    "#0088ff",
+    "#00ff88",
+    "#ff4444",
+    "#ffaa00",
+    "#061a2e",
+    "#071a2e",
+    "#8a9aaa",
+    "#22D3EE"
+  ],
+  "banned_constructive_patterns": [
+    "rounded cards",
+    "border-radius greater than zero",
+    "ROUNDED_RECTANGLE",
+    "roundRect",
+    "box-shadow",
+    "drop shadow",
+    "atmospheric orbs",
+    "gradient backgrounds",
+    "decorative glows",
+    "generic neon cyan/teal"
+  ],
+  "audit": {
+    "scan_extensions": [
+      ".md",
+      ".py",
+      ".js",
+      ".ts",
+      ".tsx",
+      ".css",
+      ".html"
+    ],
+    "skip_paths": [
+      ".git",
+      "__pycache__",
+      "node_modules",
+      "reference-content"
+    ],
+    "token_registry_path": "skills/kaizen-commerce-expert/reference/kaizen-design-tokens.json",
+    "prohibition_context_markers": [
+      "never",
+      "do not",
+      "don't",
+      "must not",
+      "no ",
+      "not ",
+      "reject",
+      "banned",
+      "forbidden",
+      "retired",
+      "old design token",
+      "avoid",
+      "dont-txt",
+      "dont-label"
+    ]
+  }
+}

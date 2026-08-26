@@ -1,0 +1,7 @@
+interface:
+  display_name: "Kaizen AnyDB Schema"
+  short_description: "AnyDB schema, formulas, and build-ready spec work"
+  default_prompt: "Use $kaizen-anydb-schema to design or audit the AnyDB schema for this KaizenCommerce workflow."
+
+policy:
+  allow_implicit_invocation: false

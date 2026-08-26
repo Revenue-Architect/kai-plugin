@@ -1,0 +1,293 @@
+[
+  {
+    "name": "kai_search_context",
+    "title": "Search Context",
+    "action": "search_context",
+    "description": "Search KaizenOS merchants, contacts, deals, projects, tasks, invoices, activity, evidence sources, and canonical documents including Teams transcripts.",
+    "inputDescription": "Search input such as query and optional limit."
+  },
+  {
+    "name": "kai_get_record_context",
+    "title": "Get Record Context",
+    "action": "get_record_context",
+    "description": "Fetch a bounded context pack for one merchant, contact, deal, project, task, invoice, activity, or decision. Includes linked canonical documents and Teams transcripts plus relationship intelligence: merchant warm paths and resurrection status, contact relationship strength and keep-in-touch cadence, contact-linked deals and projects, and deal referral attribution and relationship risk.",
+    "inputDescription": "Record locator such as entityType and entityId."
+  },
+  {
+    "name": "kai_get_priorities",
+    "title": "Get Priorities",
+    "action": "get_priorities",
+    "description": "Read the canonical action queue that powers the command center, notifications, and agent priorities, including relationship-decay and keep-in-touch signals.",
+    "inputDescription": "Optional limit or filtering context."
+  },
+  {
+    "name": "kai_create_merchant",
+    "title": "Create Merchant",
+    "action": "create_merchant",
+    "description": "Create a merchant/account with row-level provenance.",
+    "inputDescription": "Merchant fields such as name, posPlatform, ecommercePlatform, websiteUrl, lifecycle status, owner, GMV range, and notes.",
+    "destructive": true
+  },
+  {
+    "name": "kai_update_merchant",
+    "title": "Update Merchant",
+    "action": "update_merchant",
+    "description": "Update an existing canonical merchant with audited row-level provenance.",
+    "inputDescription": "Merchant id plus editable fields including posPlatform, ecommercePlatform, and websiteUrl. Explicit null clears nullable fields.",
+    "destructive": true
+  },
+  {
+    "name": "kai_create_partner",
+    "title": "Create Partner",
+    "action": "create_partner",
+    "description": "Create a partner as a role-specific profile on a canonical Merchant organization.",
+    "inputDescription": "Merchant fields plus partnerType, programName, relationshipStatus, partnerTier, referralDirection, accountOwnerId, regions, specialties, ecosystems, externalPartnerId, partnerSince, agreementStatus, and partnerNotes. relationshipOwnerId remains accepted as a compatibility alias for accountOwnerId.",
+    "destructive": true
+  },
+  {
+    "name": "kai_update_partner",
+    "title": "Update Partner",
+    "action": "update_partner",
+    "description": "Update canonical Merchant fields and partner-specific relationship data together.",
+    "inputDescription": "Partner or merchant id plus Merchant or partner-profile fields. Explicit null clears nullable fields.",
+    "destructive": true
+  },
+  {
+    "name": "kai_create_contact",
+    "title": "Create Contact",
+    "action": "create_contact",
+    "description": "Create a CRM contact, optionally creating or linking a merchant.",
+    "inputDescription": "Contact fields and optional merchant object or link.",
+    "destructive": true
+  },
+  {
+    "name": "kai_update_contact",
+    "title": "Update Contact",
+    "action": "update_contact",
+    "description": "Update an existing contact while preserving canonical merchant relationships.",
+    "inputDescription": "Contact id plus editable contact fields. Explicit null clears nullable fields.",
+    "destructive": true
+  },
+  {
+    "name": "kai_create_deal",
+    "title": "Create Deal",
+    "action": "create_deal",
+    "description": "Create a deal with a canonical buyer merchant/contact and an optional upstream referral partner/referrer relationship.",
+    "inputDescription": "Deal fields plus optional merchant/contact, referralPartnerMerchantId, referrerContactId, referralType, engagementModel, scopeSource, scopeApprovalStatus, and evidence. Proposal and SOW lifecycle fields are derived from Deal Desk evidence.",
+    "destructive": true
+  },
+  {
+    "name": "kai_update_deal",
+    "title": "Update Deal",
+    "action": "update_deal",
+    "description": "Update Deal fields and its upstream referral relationship through the same operating contract used by the app.",
+    "inputDescription": "Deal id plus editable fields including engagementModel, scopeSource, scopeApprovalStatus, referralPartnerMerchantId, referrerContactId, referralType, painSignal, closePlanStatus, decisionCriteria, implementationRisk, outcomeReason, and outcomeComment. Proposal and SOW lifecycle fields are derived from Deal Desk evidence. Set referralPartnerMerchantId to null to clear the upstream referral link.",
+    "destructive": true
+  },
+  {
+    "name": "kai_move_deal_stage",
+    "title": "Move Deal Stage",
+    "action": "move_deal_stage",
+    "description": "Move a deal through the canonical engagement, scope, Proposal, and SOW stage-gate contract with provenance and audit.",
+    "inputDescription": "Deal id and target stage. Closed Won or Lost requires outcomeReason; Other also requires outcomeComment.",
+    "destructive": true
+  },
+  {
+    "name": "kai_create_project",
+    "title": "Create Project",
+    "action": "create_project",
+    "description": "Create a project or convert/link one from a deal while preserving source_deal_id and enforcing implementation scope gates.",
+    "inputDescription": "Project fields plus sourceDealId or dealId, merchant, and evidence. Implementation requires an accepted SOW and approved scope source on the source deal.",
+    "destructive": true
+  },
+  {
+    "name": "kai_activate_deal_engagement",
+    "title": "Activate Deal Engagement",
+    "action": "activate_deal_engagement",
+    "description": "Preview or atomically activate an accepted Deal Desk quote into its linked delivery project, milestone and task plan, deposit draft, and remaining phase billing.",
+    "inputDescription": "dealId, projectName, templateId, projectType, kickoffDate, targetGoLive, optional projectManagerId, and the reviewed milestones/tasks plan. Use dryRun first; confirmation must echo expectedQuoteId, expectedQuoteContentRevision, expectedAcceptanceId when present, expectedCommercialFingerprint, and expectedScheduleIds exactly as previewed so changed commercial terms or payment rows cannot be activated.",
+    "destructive": true
+  },
+  {
+    "name": "kai_send_quote_for_acceptance",
+    "title": "Send Quote for Acceptance",
+    "action": "send_quote_for_acceptance",
+    "description": "Preview or mint a revision-bound client portal link for a generated proposal, SOW, or change order. This sends no email and cannot accept on the client's behalf.",
+    "inputDescription": "quoteId, documentKind (proposal, sow, or change_order), and documentFingerprint (the SHA-256 of the exact rendered HTML). Use dryRun first to review the document revision and payment schedule.",
+    "destructive": true
+  },
+  {
+    "name": "kai_update_project",
+    "title": "Update Project",
+    "action": "update_project",
+    "description": "Update project fields with row-level provenance.",
+    "inputDescription": "Project id plus the fields to update.",
+    "destructive": true
+  },
+  {
+    "name": "kai_move_project_status",
+    "title": "Move Project Status",
+    "action": "move_project_status",
+    "description": "Move a project status with row-level provenance.",
+    "inputDescription": "Project id and target status.",
+    "destructive": true
+  },
+  {
+    "name": "kai_create_task",
+    "title": "Create Task",
+    "action": "create_task",
+    "description": "Create a project child task with assignee, due date, acceptance criteria, and dependency links.",
+    "inputDescription": "Task fields plus required projectId or project, optional dependencies, and evidence.",
+    "destructive": true
+  },
+  {
+    "name": "kai_update_task",
+    "title": "Update Task",
+    "action": "update_task",
+    "description": "Update a task, including dependency links.",
+    "inputDescription": "Task id plus fields or dependencies to update.",
+    "destructive": true
+  },
+  {
+    "name": "kai_create_project_milestone",
+    "title": "Create Project Milestone",
+    "action": "create_project_milestone",
+    "description": "Create a persisted milestone in a project's canonical delivery plan.",
+    "inputDescription": "Project id, title, phase, date, position, required state, and client visibility.",
+    "destructive": true
+  },
+  {
+    "name": "kai_update_project_milestone",
+    "title": "Update Project Milestone",
+    "action": "update_project_milestone",
+    "description": "Update milestone timing, phase, status, requirement, or client visibility.",
+    "inputDescription": "Milestone id plus the fields to update.",
+    "destructive": true
+  },
+  {
+    "name": "kai_delete_project_milestone",
+    "title": "Delete Project Milestone",
+    "action": "delete_project_milestone",
+    "description": "Delete a milestone from an active project's canonical delivery plan.",
+    "inputDescription": "Milestone id.",
+    "destructive": true
+  },
+  {
+    "name": "kai_log_activity",
+    "title": "Log Activity",
+    "action": "log_activity",
+    "description": "Append CRM activity to a merchant, contact, deal, project, task, or invoice.",
+    "inputDescription": "Activity link fields, action, title, body, and visibility.",
+    "destructive": true
+  },
+  {
+    "name": "kai_attach_source",
+    "title": "Attach Source",
+    "action": "attach_source",
+    "description": "Attach a SharePoint, OneDrive, URL, MCP, or export evidence link to a CRM or project record.",
+    "inputDescription": "entityType, entityId, sourceType, title, url, externalId, summary, and confidence.",
+    "destructive": true
+  },
+  {
+    "name": "kai_link_document",
+    "title": "Link Existing Document",
+    "action": "link_document",
+    "description": "Reuse a canonical SharePoint or OneDrive document on a Deal without uploading it again.",
+    "inputDescription": "documentId or sourceSystem plus externalId, dealId, and designation: related, scope_basis (the scope source), or sow. Classification does not approve scope or change SOW status.",
+    "destructive": true
+  },
+  {
+    "name": "kai_create_client_request",
+    "title": "Create Client Request",
+    "action": "create_client_request",
+    "description": "Create a client-visible approval or structured project request (document, information, choice, credential, acknowledgement). Credential asks never capture secrets.",
+    "inputDescription": "requestType (approval | document | information | choice | credential | acknowledgement | file_request), projectId, title, body or instructions, dueDate, clientVisible, and options (required for choice, 2+ labels).",
+    "destructive": true
+  },
+  {
+    "name": "kai_list_client_update_drafts",
+    "title": "List Client Update Drafts",
+    "action": "list_client_update_drafts",
+    "description": "List client-update drafts awaiting operator review, optionally scoped to one project or status.",
+    "inputDescription": "Optional projectId, status (draft, approved, sent, skipped; default draft), and limit (max 50)."
+  },
+  {
+    "name": "kai_draft_client_update",
+    "title": "Draft Client Update",
+    "action": "draft_client_update",
+    "description": "Create or revise the content of a draft client update. Never approves, queues, or sends; the operator reviews and sends from the app.",
+    "inputDescription": "updateId to revise an existing draft, or projectId with periodStart (and optional periodEnd, default one week) to create one. Content fields: subject, editedBody, recipientEmails.",
+    "destructive": true
+  },
+  {
+    "name": "kai_invoice_status",
+    "title": "Invoice Status",
+    "action": "invoice_status",
+    "description": "Read invoice totals, payment rows, and invoice evidence sources.",
+    "inputDescription": "invoiceId or invoiceNumber."
+  },
+  {
+    "name": "kai_create_expense",
+    "title": "Create Expense",
+    "action": "create_expense",
+    "description": "Record a finance-gated project or merchant expense with cost, rebilling terms, receipt linkage, and agent provenance.",
+    "inputDescription": "projectId or merchantId, description, category, amount, optional taxAmount, currency, incurredOn, vendor, billable, markupPercent, receiptDocumentId, and note. Supports dryRun.",
+    "destructive": true
+  },
+  {
+    "name": "kai_update_expense",
+    "title": "Update Expense",
+    "action": "update_expense",
+    "description": "Update an unbilled expense while preserving its finance audit trail and provenance.",
+    "inputDescription": "expense id plus editable expense fields. Supports dryRun.",
+    "destructive": true
+  },
+  {
+    "name": "kai_bill_expenses_to_invoice",
+    "title": "Bill Expenses To Invoice",
+    "action": "bill_expenses_to_invoice",
+    "description": "Idempotently add selected unbilled project expenses to a Draft invoice at their client-facing rebill amounts.",
+    "inputDescription": "invoiceId and expenseIds. Use dryRun to review the invoice, expense descriptions, and rebill amounts before mutation.",
+    "destructive": true
+  },
+  {
+    "name": "kai_set_project_margin_baseline",
+    "title": "Set Project Margin Baseline",
+    "action": "set_project_margin_baseline",
+    "description": "Set the finance-reviewed opening delivery-cost budget and margin thresholds for a legacy or direct project. Accepted-quote baselines remain immutable.",
+    "inputDescription": "projectId, plannedCost, targetMarginPercent, and optional marginFloorPercent. Use dryRun to review the project and thresholds before mutation.",
+    "destructive": true
+  },
+  {
+    "name": "kai_queue_invoice_reminder",
+    "title": "Queue Invoice Reminder",
+    "action": "queue_invoice_reminder",
+    "description": "Queue invoice reminder notifications through the approval-gated automation.",
+    "inputDescription": "Optional invoiceId to queue one overdue invoice; omit it to run the scheduled bulk reminder queue.",
+    "destructive": true
+  },
+  {
+    "name": "kai_trigger_outlook_sync",
+    "title": "Trigger Microsoft 365 Sync",
+    "action": "trigger_outlook_sync",
+    "description": "Trigger Microsoft 365 activity, Teams transcript capture, and optional SharePoint or OneDrive document capture.",
+    "inputDescription": "Sync scope such as days, users, email, meetings, documents, documentDriveIds, documentSiteIds, documentSiteSearch, documentUsers, maxMailboxes, topMessages, topEvents, maxDocumentDepth, or maxDocumentItems.",
+    "destructive": true
+  },
+  {
+    "name": "kai_send_intake_request",
+    "title": "Send Discovery Questionnaire",
+    "action": "send_intake_request",
+    "description": "Create a private discovery questionnaire link for a merchant, optionally scoped to a deal. Returns the link secret once; it is never recoverable afterwards. Preview with dryRun first; commit requires a top-level idempotencyKey so retries never mint a second request or email.",
+    "inputDescription": "merchantId (required); optional dealId, modules (core, pos, ecommerce, migration, integration, b2b, hardware), sentToEmail, expiresAt, and sendEmail. sendEmail=true requires a valid recipient email. Commit requires top-level idempotencyKey.",
+    "destructive": true
+  },
+  {
+    "name": "kai_get_intake_answers",
+    "title": "Read Discovery Answers",
+    "action": "get_intake_answers",
+    "description": "Read submitted discovery questionnaire answers for a merchant or a single request. Applying answers to records stays a human action in the Review Queue.",
+    "inputDescription": "intakeRequestId or merchantId.",
+    "destructive": false
+  }
+]
