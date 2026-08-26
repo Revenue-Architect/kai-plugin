@@ -5,7 +5,7 @@ const DEFAULT_ISSUER = DEFAULT_AUTH_SERVER;
 const DEFAULT_JWKS_URI = `${DEFAULT_AUTH_SERVER}/.well-known/jwks.json`;
 const DEFAULT_AUDIENCE = "authenticated";
 const DEFAULT_SCOPES = Object.freeze(["openid", "email", "profile", "offline_access"]);
-const DEFAULT_RESOURCE_DOCUMENTATION = "https://github.com/Kaizen-Commerce/kaizen-commerce";
+const DEFAULT_RESOURCE_DOCUMENTATION = "https://github.com/Revenue-Architect/kai-plugin";
 
 const remoteJwks = new Map();
 

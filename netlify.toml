@@ -14,7 +14,7 @@
   UI_DOMAIN = "https://kai-commerce-agent.netlify.app"
   MCP_RESOURCE_URL = "https://kai-commerce-agent.netlify.app/mcp"
   MCP_OAUTH_RESOURCE_METADATA_URL = "https://kai-commerce-agent.netlify.app/.well-known/oauth-protected-resource"
-  MCP_RESOURCE_DOCUMENTATION = "https://github.com/Kaizen-Commerce/kaizen-commerce"
+  MCP_RESOURCE_DOCUMENTATION = "https://github.com/Revenue-Architect/kai-plugin"
   KAIZENOS_MCP_URL = "https://zovuwpfbsmnzgfkgxxpp.supabase.co/functions/v1/agent-mcp"
   KAIZEN_OAUTH_AUTH_SERVER = "https://zovuwpfbsmnzgfkgxxpp.supabase.co/auth/v1"
   KAIZEN_OAUTH_ISSUER = "https://zovuwpfbsmnzgfkgxxpp.supabase.co/auth/v1"
